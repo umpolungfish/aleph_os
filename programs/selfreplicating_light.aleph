@@ -1,19 +1,10 @@
-# Self-Replicating Light
 let light = palace(3) mediate(vav, mediate(vav, aleph, mem), shin)
-
-# First replication
 let replica1 = mediate(vav, light, light)
-
-# Second replication with Aleph as witness (higher coherence)
 let replica2 = mediate(aleph, replica1, shin)
-
-# Verify lineage
 d(light, replica1)
 d(replica1, replica2)
 d(replica2, system())
-
 palace(3) replica1
 palace(3) replica2
-
 tier(replica2)
 probe_Φ(replica2)
