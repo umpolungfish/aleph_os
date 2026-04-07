@@ -1,0 +1,38 @@
+feat: enhance REPL with Rich UI and add .aleph program file execution
+
+Aesthetic & UX Improvements:
+- Integrate Rich library for beautiful terminal output (colors, panels, tables)
+- Enhanced banner with styled panels and formatted text
+- Visual 12-primitive tuple display with colored progress bars
+- Color-coded ouroboricity tiers (O_inf=green, O_2=cyan, O_1=yellow, O_0=dim)
+- Styled error messages with context and helpful suggestions
+- Markdown-formatted help and tips
+- Tab completion for letter names, glyphs, commands, and operations
+- Command history tracking with :history command
+
+New REPL Commands:
+- :explain <letter> — Full type breakdown with consciousness gates & score
+- :history — Show recent command history (last 20)
+- :clear — Clear terminal screen
+- :tips — Display quick start examples and pro tips
+
+File Execution (.aleph programs):
+- Run .aleph files: python aleph_eval.py programs/creation.aleph
+- Smart file discovery (searches current dir, programs/ dir, explicit paths)
+- Line-by-line execution with line numbers and formatted output
+- Supports all expressions, let bindings, and REPL commands in files
+- Execution summary with success/error counts and binding counts
+- :list CLI flag to show all available .aleph programs
+
+New CLI Flags:
+- --help, -h — Show usage information
+- --list — List available .aleph programs
+- --repl — Start interactive REPL (same as no args)
+- --expr "..." — Evaluate inline expression
+- <file.aleph> — Run .aleph program with auto-discovery
+
+Other Changes:
+- Copy aleph_1.py from .archive/ to project root for import accessibility
+- Add Rich library dependency to .venv
+- Update README.md with new features, commands, and examples
+- Graceful ANSI fallback when Rich library not available

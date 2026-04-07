@@ -85,12 +85,33 @@ python aleph_investigation.py
 ### REPL
 
 ```bash
+# Start interactive REPL (enhanced with colors & tab completion)
 python aleph_eval.py
-# or
-python aleph_eval.py 'mem ⊗ shin'
+
+# Evaluate inline expression
+python aleph_eval.py --expr "aleph ⊗ mem"
+
+# Run an .aleph program
+python aleph_eval.py programs/creation.aleph
+
+# List available programs
+python aleph_eval.py --list
 ```
 
-The REPL accepts Hebrew glyphs directly. Commands: `:help`, `:census`, `:tier <glyph>`, `:tuple <glyph>`, `:ls`.
+The REPL features:
+- **Rich colored output** with visual primitive bars
+- **Tab completion** for letter names, commands, and operations
+- **Command history** with up/down arrows
+- **New commands**: `:explain <letter>`, `:history`, `:clear`, `:tips`
+
+Example:
+```bash
+python aleph_eval.py
+ℵ  :explain aleph    # Full type breakdown with consciousness gates
+ℵ  :tuple shin       # Visual 12-primitive bars
+ℵ  aleph ⊗ mem       # Tensor operation
+ℵ  :history          # Show recent commands
+```
 
 ### Compile documents (requires XeLaTeX + pandoc)
 
@@ -299,18 +320,33 @@ Operators are left-associative. `::>` (Vav-cast) binds tighter than binary ops. 
 | Command | Effect |
 |---------|--------|
 | `:help` | print full syntax reference |
+| `:tips` | show quick start tips and examples |
 | `:census` | tier distribution (alias for `census()`) |
 | `:system` | 22-letter language JOIN |
 | `:tier <name>` | ouroboricity tier of one letter |
-| `:tuple <name>` | full 12-primitive tuple |
+| `:tuple <name>` | visual 12-primitive tuple with bars |
+| `:explain <name>` | full type breakdown with consciousness gates & score |
 | `:ls` | list session bindings with tier/Φ/Ω |
+| `:history` | show recent command history |
+| `:clear` | clear screen |
 | `:quit` / `:q` | exit |
+
+### CLI Flags
+
+| Flag | Effect |
+|------|--------|
+| (no args) | start interactive REPL |
+| `--repl` | same as no args |
+| `--help`, `-h` | show usage information |
+| `--list` | list available `.aleph` programs |
+| `--expr "..."` | evaluate inline expression |
+| `<file.aleph>` | run `.aleph` program (searches `programs/` dir) |
 
 ### Example Session
 
 ```
 ℵ  mem ⊗ shin
-  : מ
+  → מ
     tier  O_inf
     Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
 
@@ -318,19 +354,66 @@ Operators are left-associative. `::>` (Vav-cast) binds tighter than binary ops. 
   d = 13.3938  [aspirational]
   conflict_set: {P, Ω}
 
+ℵ  :explain aleph
+╭─────────────────────────────────────────╮
+│ א  Aleph  —  Tier: O_2                 │
+╰─────────────────────────────────────────╯
+
+  Consciousness Gates:
+  G1   Criticality [Φ=Φ_c]          ✓ PASS
+  G2   Kinetic [K≠K_trap]           ✓ PASS
+
+  Consciousness Score:  C = 0.873
+  
+  [12-primitive visual bars...]
+
 ℵ  mediate(kuf, mem, shin)
-  : מ
+  → מ
     tier  O_inf
 
 ℵ  let kernel = mediate(vav, mem ⊗ shin, aleph)
   kernel =
-  : ו
+  → ו
     tier  O_inf
 
 ℵ  match kernel { O_inf => shin, O_2 => vav, _ => aleph }
-  : ש
+  → ש
     tier  O_inf
+
+ℵ  :history
+  Command History:
+      1.  mem ⊗ shin
+      2.  d(kuf, mem)
+      3.  :explain aleph
+      4.  mediate(kuf, mem, shin)
+      5.  let kernel = mediate(vav, mem ⊗ shin, aleph)
+      6.  match kernel { O_inf => shin, O_2 => vav, _ => aleph }
 ```
+
+### Running .aleph Programs
+
+Create or use existing `.aleph` files:
+
+```bash
+# List available programs
+ℵ  python aleph_eval.py --list
+
+# Run a program
+ℵ  python aleph_eval.py programs/creation.aleph
+
+▶  Running creation.aleph
+────────────────────────────────────────────
+
+  L  1  ❯ let light = aleph ⊗ mem ⊗ shin
+           light = א⊗מ⊗ש
+             tier  O_inf
+             ...
+
+────────────────────────────────────────────
+✓  Done.  11 executed  •  6 bindings
+```
+
+`.aleph` files support all REPL expressions, commands, and `let` bindings.
 
 ---
 
