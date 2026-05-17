@@ -26,6 +26,43 @@
 
 <hr>
 
+## Visualizations
+
+### Full-corpus animated dataflow
+
+**Nodes** — 86 nodes, one per named entity (variable binding or operation result) across
+all 18 `.aleph` source programs. Each `let x = expr` statement in an ALEPH program
+creates a node for `x`. Nodes are positioned via spring layout. Size scales with in-degree
+(how many other bindings depend on this one). Color encodes ouroboricity tier:
+O_0 (dim grey) → O_1 (mid blue) → O_2 (bright cyan) → O_inf (gold).
+
+**Edges** — 297 directed edges encoding dataflow dependencies. An edge u → v means
+binding v consumes the value of binding u: `let v = op(u, ...)`. The six ALEPH operation
+types produce different edge semantics — `tensor` (⊗) creates composition edges,
+`join` (∨) and `meet` (∧) create lattice edges, `mediate` creates bridging edges,
+`d()` (exterior derivative) creates differential edges, `palace()` creates Hekhalot
+ascent edges.
+
+**Cross-program edges** — 137 edges crossing program file boundaries: a binding defined
+in one `.aleph` file is referenced by another. These are the inter-program dependencies
+that form the ALEPH OS as a unified system rather than a collection of independent
+scripts. When a cross-program edge first appears in Phase 1, it flashes amber.
+
+**Phase 1 — build:** Programs appear one by one in filesystem order. Within each program,
+nodes are revealed in source-definition order. The title bar shows the current program name
+and binding. Cross-program back-edges flash amber on first appearance.
+
+**Phase 2 — flow wave:** A Gaussian pulse travels node-by-node through all 86 bindings.
+O_inf nodes (gold) pulse brightest — their baseline gold color blends toward white at the
+peak. Cross-program edges glow amber near the pulse; intra-program edges glow the source
+program's color. The 22 Hebrew letter primitives (Aleph through Tav) are labelled on the
+nodes that correspond to them, showing how the type system flows through the dataflow graph.
+
+![ALEPH CFG](docs/animated_cfg_aleph.gif)
+
+
+---
+
 ## Overview
 
 ℵ-OS is the execution layer of **λ_ℵ** — a formal type calculus grounded in the **SynthOmnicon 12-primitive semantic grammar** and the **22 letters of the Hebrew alphabet**.
@@ -460,42 +497,6 @@ The threshold τ is **4.0** for pairs with Ω ≥ *Ω_{Z₂}* (topologically pro
 > **Aleph Coherence Geometry (ACG)**: a geometry in which objects are defined by their interaction profiles, equivalence is induced by behavioral indistinguishability, coherence paths (mediations) are the geodesics, and identity is a derived quotient of interaction structure.
 
 <hr>
-
-## Visualizations
-
-### Full-corpus animated dataflow
-
-**Nodes** — 86 nodes, one per named entity (variable binding or operation result) across
-all 18 `.aleph` source programs. Each `let x = expr` statement in an ALEPH program
-creates a node for `x`. Nodes are positioned via spring layout. Size scales with in-degree
-(how many other bindings depend on this one). Color encodes ouroboricity tier:
-O_0 (dim grey) → O_1 (mid blue) → O_2 (bright cyan) → O_inf (gold).
-
-**Edges** — 297 directed edges encoding dataflow dependencies. An edge u → v means
-binding v consumes the value of binding u: `let v = op(u, ...)`. The six ALEPH operation
-types produce different edge semantics — `tensor` (⊗) creates composition edges,
-`join` (∨) and `meet` (∧) create lattice edges, `mediate` creates bridging edges,
-`d()` (exterior derivative) creates differential edges, `palace()` creates Hekhalot
-ascent edges.
-
-**Cross-program edges** — 137 edges crossing program file boundaries: a binding defined
-in one `.aleph` file is referenced by another. These are the inter-program dependencies
-that form the ALEPH OS as a unified system rather than a collection of independent
-scripts. When a cross-program edge first appears in Phase 1, it flashes amber.
-
-**Phase 1 — build:** Programs appear one by one in filesystem order. Within each program,
-nodes are revealed in source-definition order. The title bar shows the current program name
-and binding. Cross-program back-edges flash amber on first appearance.
-
-**Phase 2 — flow wave:** A Gaussian pulse travels node-by-node through all 86 bindings.
-O_inf nodes (gold) pulse brightest — their baseline gold color blends toward white at the
-peak. Cross-program edges glow amber near the pulse; intra-program edges glow the source
-program's color. The 22 Hebrew letter primitives (Aleph through Tav) are labelled on the
-nodes that correspond to them, showing how the type system flows through the dataflow graph.
-
-![ALEPH CFG](docs/animated_cfg_aleph.gif)
-
----
 
 ## License
 
