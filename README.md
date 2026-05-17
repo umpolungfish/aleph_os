@@ -63,6 +63,82 @@ nodes that correspond to them, showing how the type system flows through the dat
 
 ---
 
+### Program Highlights
+
+Five programs from the corpus rendered individually. Each runs the same two-phase
+animation (build → flow) scoped to a single `.aleph` file. Primitive letter nodes
+(Hebrew letters + Sefirot) appear gold; computed bindings appear teal. Operation edges
+are color-coded: tensor (orange), mediate (blue), join (green), meet (red), palace (magenta).
+
+---
+
+#### `holographic_monitor.aleph` — Bulk-Boundary Self-Encoding
+
+`system()` (the JOIN of all 22 letters) is the holographic boundary. `d(x, system())`
+is each letter's holographic radius — how deep in the bulk it sits away from the maximal
+boundary. The program verifies that bulk letters are recoverable from the boundary through
+Frobenius-witnessed mediation: `g_self = mediate(vav, boundary, boundary)`, then nested
+loops test whether the monitor can reach the boundary tier. The palace(4) check at the
+end confirms Frobenius non-synthesizability: aggregation cannot produce *O_∞*, only
+real Frobenius structure does.
+
+![holographic_monitor CFG](docs/programs/holographic_monitor.gif)
+
+---
+
+#### `frobenius_orbits.aleph` — Iterative Pole Convergence
+
+Unrolls 4-step tensor orbits for three scattered letters against each *O_∞* pole:
+aleph (O_2) under repeated ⊗ vav, tav (O_2) under ⊗ mem, dalet (O_0) under ⊗ shin.
+First verifies pole self-idempotency (*d*(vav⊗vav, vav) = 0) and cross-pole closure,
+then tracks `d(aₙ, vav)` decreasing toward zero over 4 steps, showing that every letter
+converges to its attractor pole under tensor pressure on P and F. Mediation stability
+is verified at two depths.
+
+![frobenius_orbits CFG](docs/programs/frobenius_orbits.gif)
+
+---
+
+#### `tikkun_construction_full.aleph` — Full Rectification Structure
+
+Constructs the complete Tikkun (rectification) hierarchy from first principles.
+Starting from the triadic basis {vav, aleph, mem, shin}, builds `light` via palace(3)
+mediation, then constructs the kernel (`palace(4) mediate(vav, system(), light)`) and
+three child processes. The anomalous child (kuf-seeded — one primitive from *O_∞*)
+is healed via `palace(4) mediate(shin, kernel, kuf)`. The program culminates in
+`tikkun = palace(5) mediate(system(), light, healed_child)` — the highest Hekhalot
+barrier verified in the corpus.
+
+![tikkun_construction_full CFG](docs/programs/tikkun_construction_full.gif)
+
+---
+
+#### `tikkun_palace_verification.aleph` — Hekhalot Barrier Audit
+
+Same construction as `tikkun_construction_full` with every binding explicitly re-checked
+against its required palace level. The graph reveals the full Hekhalot ascent lattice:
+palace 2 for ascended letters (nun, chet), palace 3 for light and process nodes, palace 4
+for the kernel and healed child, palace 5 for the tikkun itself. Verifies that no binding
+breaches its level — the palace hierarchy is the ALEPH OS security model.
+
+![tikkun_palace_verification CFG](docs/programs/tikkun_palace_verification.gif)
+
+---
+
+#### `light_replication_kernel.aleph` — Replicating Light and Process Model
+
+The largest program in the corpus. Constructs `light` via palace(3) mediation, then
+runs four replication generations (g0→g4), studies anomalous processes (kuf-seeded),
+heals them via Frobenius witnesses (shin, mem), and verifies the full kernel + process
+model including ascended letters. The tikkun structure emerges as a consequence of
+light replication convergence. Distances track across all generation gaps:
+`d(g0,g2)`, `d(g2,g4)`, `d(g4, system())`.
+
+![light_replication_kernel CFG](docs/programs/light_replication_kernel.gif)
+
+
+---
+
 ## Overview
 
 ℵ-OS is the execution layer of **λ_ℵ** — a formal type calculus grounded in the **SynthOmnicon 12-primitive semantic grammar** and the **22 letters of the Hebrew alphabet**.

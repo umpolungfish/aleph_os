@@ -66,6 +66,12 @@ try:
 except ImportError as exc:
     sys.exit(f"[ALEPH] Cannot import aleph_1.py: {exc}")
 
+try:
+    from aleph_sefirot import sefirot_census, SEFIROT_META, PHI_GATE_NAMES, emanation_chain
+    HAS_SEFIROT = True
+except ImportError:
+    HAS_SEFIROT = False
+
 # Initialize Rich console if available
 if HAS_RICH:
     console = Console()
@@ -913,8 +919,8 @@ if HAS_RICH:
         COMPLETION_WORDS = set()
         
         # Add commands
-        for cmd in [':help', ':quit', ':q', ':census', ':system', ':tier', ':tuple', 
-                    ':explain', ':ls', ':history', ':clear', ':tips']:
+        for cmd in [':help', ':quit', ':q', ':census', ':system', ':tier', ':tuple',
+                    ':explain', ':ls', ':history', ':clear', ':tips', ':sefirot_census']:
             COMPLETION_WORDS.add(cmd)
         
         # Add letter names and glyphs
@@ -1013,6 +1019,51 @@ def run_repl():
                     members = census.get(t, [])
                     if members:
                         print(f"  {t:8s} ({len(members):2d}): {', '.join(members)}")
+            continue
+
+        if stripped == ':sefirot_census':
+            if not HAS_SEFIROT:
+                if HAS_RICH:
+                    console.print("[red]aleph_sefirot.py not found[/red]")
+                else:
+                    print("  [ALEPH] aleph_sefirot.py not found")
+            else:
+                census_s = sefirot_census()
+                chain    = emanation_chain()
+                if HAS_RICH:
+                    table = Table(title="15 Sefirot — Emanation Chain", box=box.ROUNDED)
+                    table.add_column("#",    style="dim",        width=3)
+                    table.add_column("Name", style="bold cyan",  width=22)
+                    table.add_column("Tier", style="cyan",       width=8)
+                    table.add_column("Gate", style="magenta",    width=26)
+                    for name, depth, tier, gate in chain:
+                        gate_s = PHI_GATE_NAMES.get(gate, "?")
+                        tier_style = _color_for_tier(tier)
+                        table.add_row(
+                            str(depth),
+                            name,
+                            Text(tier, style=tier_style),
+                            gate_s,
+                        )
+                    console.print(table)
+                    tier_table = Table(title="Tier Distribution (Sefirot)", box=box.SIMPLE)
+                    tier_table.add_column("Tier",    style="bold cyan", width=8)
+                    tier_table.add_column("Count",   style="yellow",    width=6)
+                    tier_table.add_column("Members", style="green")
+                    for t in PALACE_ORDER:
+                        members = census_s.get(t, [])
+                        if members:
+                            tier_style = _color_for_tier(t)
+                            tier_table.add_row(
+                                Text(t, style=tier_style),
+                                str(len(members)),
+                                ', '.join(members),
+                            )
+                    console.print(tier_table)
+                else:
+                    print("  15 Sefirot — Emanation Chain:")
+                    for name, depth, tier, gate in chain:
+                        print(f"    {depth:2d}  {name:22s}  {tier:8s}  {PHI_GATE_NAMES.get(gate,'?')}")
             continue
 
         if stripped == ':system':
@@ -1240,6 +1291,24 @@ def run_file(filepath: str) -> None:
                         members = census.get(t, [])
                         if members:
                             print(f"  {t:8s} ({len(members):2d}): {', '.join(members)}")
+            elif stripped == ':sefirot_census':
+                if HAS_SEFIROT:
+                    chain = emanation_chain()
+                    if HAS_RICH:
+                        table = Table(title="15 Sefirot — Emanation Chain", box=box.ROUNDED)
+                        table.add_column("#",    style="dim",       width=3)
+                        table.add_column("Name", style="bold cyan", width=22)
+                        table.add_column("Tier", style="cyan",      width=8)
+                        table.add_column("Gate", style="magenta",   width=26)
+                        for name, depth, tier, gate in chain:
+                            tier_style = _color_for_tier(tier)
+                            table.add_row(str(depth), name,
+                                          Text(tier, style=tier_style),
+                                          PHI_GATE_NAMES.get(gate, "?"))
+                        console.print(table)
+                    else:
+                        for name, depth, tier, gate in chain:
+                            print(f"  {depth:2d}  {name:22s}  {tier:8s}  {PHI_GATE_NAMES.get(gate,'?')}")
             elif stripped == ':system':
                 L = system_language()
                 print(format_ok(L))
