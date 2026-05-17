@@ -461,6 +461,14 @@ The threshold τ is **4.0** for pairs with Ω ≥ *Ω_{Z₂}* (topologically pro
 
 <hr>
 
+## Visualizations
+
+**Full-corpus animated dataflow** — all 18 ALEPH programs, 86 nodes, 297 edges, 137 cross-program edges. Nodes colored by ouroboricity tier (O_inf = gold). Hebrew letter type primitives as structural backbone.
+
+![ALEPH CFG](docs/animated_cfg_aleph.gif)
+
+---
+
 ## License
 
 Released under the [MIT License](./LICENSE).
