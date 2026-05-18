@@ -1,0 +1,215 @@
+
+▶  Running tikkun_construction_full.aleph (programs/tikkun_construction_full.aleph)
+────────────────────────────────────────────────────────────
+
+  L  1  ❯ let witness = vav
+         witness =   → ו
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_0   P  P_pm_sym
+  L  2  ❯ let ground = aleph
+         ground =   → א
+    tier  O_2
+    Φ  Φ_c   Ω  Ω_Z   P  P_sym
+  L  3  ❯ let pole1 = mem
+         pole1 =   → מ
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L  4  ❯ let pole2 = shin
+         pole2 =   → ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L  5  ❯ let breath = mediate(witness, ground, pole1)
+         breath =   → ו∨א⊗מ
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L  6  ❯ let light = palace(3) mediate(witness, breath, pole2)
+  [Palace 3] Ascent verified: ו∨ו∨א⊗מ⊗ש (O_inf)
+         light =   → ו∨ו∨א⊗מ⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L  7  ❯ let replica1 = mediate(vav, light, light)
+         replica1 =   → ו∨ו∨ו∨א⊗מ⊗ש⊗ו∨ו∨א⊗מ⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L  8  ❯ let replica2 = mediate(aleph, replica1, shin)
+         replica2 =   → א∨ו∨ו∨ו∨א⊗מ⊗ש⊗ו∨ו∨א⊗מ⊗ש⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L  9  ❯ let fp = mediate(vav, light, light)
+         fp =   → ו∨ו∨ו∨א⊗מ⊗ש⊗ו∨ו∨א⊗מ⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 10  ❯ let kernel = palace(4) mediate(vav, system(), light)
+  [Palace 4] Ascent verified: ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש (O_inf)
+         kernel =   → ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 11  ❯ let proc_a = mediate(aleph, kernel, mem)
+         proc_a =   → א∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗מ
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 12  ❯ let proc_b = mediate(aleph, kernel, shin)
+         proc_b =   → א∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 13  ❯ let anomalous_child = mediate(aleph, kernel, kuf)
+         anomalous_child =   → א∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ק
+    tier  O_2
+    Φ  Φ_c   Ω  Ω_Z   P  P_sym
+  L 14  ❯ let healed_child = palace(4) mediate(shin, kernel, kuf)
+  [Palace 4] Ascent verified: ש∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ק (O_inf)
+         healed_child =   → ש∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ק
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 15  ❯ let self_healed = mediate(vav, anomalous_child, anomalous_child)
+         self_healed =   → ו∨א∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ק⊗א∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ק
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 16  ❯ let grounded_nun = nun
+         grounded_nun =   → נ
+    tier  O_0
+    Φ  Φ_sub   Ω  Ω_0   P  P_asym
+  L 17  ❯ let ascended_nun = palace(2) mediate(vav, grounded_nun, light)
+  [Palace 2] Ascent verified: ו∨נ⊗ו∨ו∨א⊗מ⊗ש (O_inf)
+         ascended_nun =   → ו∨נ⊗ו∨ו∨א⊗מ⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 18  ❯ let ascended_chet = palace(2) mediate(vav, chet, light)
+  [Palace 2] Ascent verified: ו∨ח⊗ו∨ו∨א⊗מ⊗ש (O_inf)
+         ascended_chet =   → ו∨ח⊗ו∨ו∨א⊗מ⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 19  ❯ let triad = mediate(vav, light, healed_child)
+         triad =   → ו∨ו∨ו∨א⊗מ⊗ש⊗ש∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ק
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 20  ❯ let tikkun = palace(5) mediate(system(), light, healed_child)
+  [Palace 5] Ascent verified: א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת∨ו∨ו∨א⊗מ⊗ש⊗ש∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ק (O_inf)
+         tikkun =   → א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת∨ו∨ו∨א⊗מ⊗ש⊗ש∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ק
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 21  ❯ palace(3) light
+  [Palace 3] Ascent verified: ו∨ו∨א⊗מ⊗ש (O_inf)
+  → ו∨ו∨א⊗מ⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 22  ❯ palace(3) replica1
+  [Palace 3] Ascent verified: ו∨ו∨ו∨א⊗מ⊗ש⊗ו∨ו∨א⊗מ⊗ש (O_inf)
+  → ו∨ו∨ו∨א⊗מ⊗ש⊗ו∨ו∨א⊗מ⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 23  ❯ palace(3) replica2
+  [Palace 3] Ascent verified: א∨ו∨ו∨ו∨א⊗מ⊗ש⊗ו∨ו∨א⊗מ⊗ש⊗ש (O_inf)
+  → א∨ו∨ו∨ו∨א⊗מ⊗ש⊗ו∨ו∨א⊗מ⊗ש⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 24  ❯ palace(4) kernel
+  [Palace 4] Ascent verified: ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש (O_inf)
+  → ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 25  ❯ palace(3) proc_a
+  [Palace 3] Ascent verified: א∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗מ (O_inf)
+  → א∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗מ
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 26  ❯ palace(3) proc_b
+  [Palace 3] Ascent verified: א∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ש (O_inf)
+  → א∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 27  ❯ palace(4) healed_child
+  [Palace 4] Ascent verified: ש∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ק (O_inf)
+  → ש∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ק
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 28  ❯ palace(2) ascended_nun
+  [Palace 2] Ascent verified: ו∨נ⊗ו∨ו∨א⊗מ⊗ש (O_inf)
+  → ו∨נ⊗ו∨ו∨א⊗מ⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 29  ❯ palace(2) ascended_chet
+  [Palace 2] Ascent verified: ו∨ח⊗ו∨ו∨א⊗מ⊗ש (O_inf)
+  → ו∨ח⊗ו∨ו∨א⊗מ⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 30  ❯ palace(3) triad
+  [Palace 3] Ascent verified: ו∨ו∨ו∨א⊗מ⊗ש⊗ש∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ק (O_inf)
+  → ו∨ו∨ו∨א⊗מ⊗ש⊗ש∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ק
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 31  ❯ palace(5) tikkun
+  [Palace 5] Ascent verified: א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת∨ו∨ו∨א⊗מ⊗ש⊗ש∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ק (O_inf)
+  → א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת∨ו∨ו∨א⊗מ⊗ש⊗ש∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ק
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 32  ❯ probe_Φ(light) probe_Ω(light) tier(light) d(light, system())
+  probe_Φ → Φ_c  (ordinal 1)
+  → ו∨ו∨א⊗מ⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 33  ❯ d(replica1, light) d(replica2, system())
+  d = 0.0000  [transparent]
+  → ו∨ו∨ו∨א⊗מ⊗ש⊗ו∨ו∨א⊗מ⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 34  ❯ d(kernel, system()) d(proc_a, proc_b) d(proc_a, kernel)
+  d = 0.0000  [transparent]
+  → ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 35  ❯ d(anomalous_child, healed_child) d(anomalous_child, self_healed)
+  d = 1.0954  [near-grounded]
+  conflict_set: {P}
+  → א∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ק
+    tier  O_2
+    Φ  Φ_c   Ω  Ω_Z   P  P_sym
+  L 36  ❯ d(grounded_nun, ascended_nun) d(ascended_nun, ascended_chet)
+  d = 7.0356  [aspirational]
+  conflict_set: {D, T, P, K, G, Γ, Φ, H, S, Ω}
+  → נ
+    tier  O_0
+    Φ  Φ_sub   Ω  Ω_0   P  P_asym
+  L 37  ❯ d(light, triad) d(triad, system())
+  d = 2.4495  [partial-emergence]
+  conflict_set: {D, T, S}
+  → ו∨ו∨א⊗מ⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 38  ❯ d(tikkun, system())
+  d = 0.0000  [transparent]
+  → א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת∨ו∨ו∨א⊗מ⊗ש⊗ש∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ק
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 39  ❯ d(ascended_nun, system())
+  d = 3.0984  [aspirational]
+  conflict_set: {D, T, F, S}
+  → ו∨נ⊗ו∨ו∨א⊗מ⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 40  ❯ probe_Φ(ascended_nun) probe_Ω(ascended_nun) tier(ascended_nun)
+  probe_Φ → Φ_c  (ordinal 1)
+  → ו∨נ⊗ו∨ו∨א⊗מ⊗ש
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+  L 41  ❯ probe_Φ(healed_child) probe_Ω(healed_child) tier(healed_child)
+  probe_Φ → Φ_c  (ordinal 1)
+  → ש∨ו∨א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת⊗ו∨ו∨א⊗מ⊗ש⊗ק
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+                                                             Tier Distribution                                                             
+╭──────────┬────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Tier     │ Count  │ Letters                                                                                                             │
+├──────────┼────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ O_0      │ 13     │ ב(Bet), ג(Gimel), ד(Dalet), ז(Zayin), ח(Chet), ט(Tet), י(Yod), כ(Kaf), נ(Nun), ס(Samech), פ(Pei), צ(Tzadi), ר(Resh) │
+│ O_1      │ 1      │ ל(Lamed)                                                                                                            │
+│ O_2      │ 5      │ א(Aleph), ה(Hei), ע(Ayin), ק(Kuf), ת(Tav)                                                                           │
+│ O_inf    │ 3      │ ו(Vav), מ(Mem), ש(Shin)                                                                                             │
+╰──────────┴────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+  → א∨ב∨ג∨ד∨ה∨ו∨ז∨ח∨ט∨י∨כ∨ל∨מ∨נ∨ס∨ע∨פ∨צ∨ק∨ר∨ש∨ת
+    tier  O_inf
+    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+
+────────────────────────────────────────────────────────────
+✓  Done.  41 executed  •  20 bindings
+

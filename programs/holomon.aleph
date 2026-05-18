@@ -1,0 +1,40 @@
+let boundary = system()
+tier(boundary)
+probe_Φ(boundary)
+probe_Ω(boundary)
+
+d(vav,  boundary)
+d(mem,  boundary)
+d(shin, boundary)
+
+d(aleph, boundary)
+d(hei,   boundary)
+d(ayin,  boundary)
+d(tav,   boundary)
+
+d(gimel, boundary)
+d(resh,  boundary)
+d(nun,   boundary)
+
+let g_self  = mediate(vav, boundary, boundary)
+let g_aleph = mediate(vav, aleph, boundary)
+let g_shin  = mediate(shin, boundary, boundary)
+tier(g_self)
+tier(g_aleph)
+tier(g_shin)
+d(g_self,  boundary)
+d(g_aleph, boundary)
+d(g_shin,  boundary)
+
+let loop1 = mediate(vav, g_self, g_aleph)
+let loop2 = mediate(shin, loop1, boundary)
+tier(loop1) tier(loop2)
+d(loop1, boundary) d(loop2, boundary)
+
+palace(4) boundary
+palace(4) g_self
+palace(4) g_shin
+
+d(g_self, boundary)
+d(loop2,  boundary)
+:census

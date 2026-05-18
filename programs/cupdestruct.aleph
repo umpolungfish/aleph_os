@@ -1,0 +1,33 @@
+tier(mem)
+tier(shin)
+
+let mm = mem x mem
+let ss = shin x shin
+tier(vv) tier(mm) tier(ss)
+d(vv, vav) d(mm, mem) d(ss, shin)
+
+tier(c3)
+d(c3, vav)
+probe_Φ(c3)
+
+tier(c2)
+d(c2, vav)
+
+tier(c0)
+d(c0, vav)
+
+probe_Φ(c3)
+probe_Φ(c2)
+probe_Φ(c0)
+
+tier(recovery)
+d(recovery, vav)
+d(recovery, c0)
+
+palace(4) c3
+palace(4) c2
+palace(2) c0
+
+d(c2, vav)
+d(c0, vav)
+:census
