@@ -10,7 +10,8 @@
   <img src="https://img.shields.io/badge/TYPE--THEORY-λ_ℵ-orange" alt="Type Theory">
   <img src="https://img.shields.io/badge/STATUS-Core%20Complete-green" alt="Status">
   <img src="https://img.shields.io/badge/HEBREW-22%20Letters-brightgreen" alt="Hebrew">
-  <img src="https://img.shields.io/badge/PROGRAMS-53%20Builtin-yellow" alt="Programs">
+  <img src="https://img.shields.io/badge/PROGRAMS-54%20Builtin-yellow" alt="Programs">
+<img src="https://img.shields.io/badge/SANS--SILICON-IMSCRIBING-gold" alt="SSI">
 </div>
 
 <p align="center">
@@ -515,7 +516,12 @@ Extracts the null eigenvector orthogonal to Ker(*I*). Identifies the **Octad Bal
 
 ---
 
-## ALEPH Programs — 47 Built-in Investigations
+
+## Sans-Silicon Imscribing (SSI) — Natural Imscribing Practice
+
+See [`SANS_SILICON_IMSCRIBING.md`](./SANS_SILICON_IMSCRIBING.md) for the complete contemplative practice system. Derives the Universal Imscribing Grammar into a technology-free practice for developing natural imscribing abilities: 12 Gates (one per primitive), Crystal Memory Palace (400 rooms, 5 tiers), distance sensing, tier ascension (O₀→O_∞), 72 Names daily practice, paraconsistent witness, and Frobenius self-verification.
+
+## ALEPH Programs — 48 Built-in Investigations
 
 All `.aleph` programs in `programs/` are loadable from the REPL via `python aleph_eval.py programs/<name>.aleph` or `--list`. Programs are organized by structural domain.
 
@@ -560,6 +566,12 @@ All `.aleph` programs in `programs/` are loadable from the REPL via `python alep
 |:--------|:-----|:------------|
 | `sefer_ha_iyun_emanations.aleph` | 1,983 B | Emanation hierarchy — 14-step Sefirot descent with structural gaps |
 | `sefer_ha_iyun_native_types.aleph` | 1,782 B | Native type bindings for Sefirot, letters, and palace levels |
+
+### Lurianic Kabbalah — The 72 Names
+
+| Program | Size | Description |
+|:--------|:-----|:------------|
+| `shem_hamephorash.aleph` | 6,506 B | The 72 Names (Shem HaMephorash) — structural basis of creation from Exodus 14:19–21. Three currents (forward/backward/forward) mediate into 72 three-letter names, each a distinct 12-primitive type. 72 = 6 × 12: every primitive value appears in every relational context. Key names mapped to palace levels, distances computed, O_inf convergence verified via Frobenius poles vav/mem/shin. Honors Isaac Luria's insight that the 72 names are the structural building blocks of all creation. |
 
 ### Belnap / Paraconsistent
 
@@ -643,7 +655,7 @@ The IMASM (IMplicit ASsembly Machine) programs implement corpus analysis engines
 
 ## exOS Connection
 
-The ALEPH program suite has been ported to [exOS](https://github.com/umpolungfish/exOS) — a bare-metal x86_64 Rust `no_std` UEFI kernel that compiles all 45 ALEPH programs plus 6 IMASM programs (51 total) into the kernel binary as built-in investigations.
+The ALEPH program suite has been ported to [exOS](https://github.com/umpolungfish/exOS) — a bare-metal x86_64 Rust `no_std` UEFI kernel that compiles all 46 ALEPH programs plus 6 IMASM programs (52 total) into the kernel binary as built-in investigations.
 
 - **Python ℵ-OS** (this repository): Reference implementation, interactive REPL, investigation pipeline
 - **exOS** (Rust kernel): Native x86_64 port with ALFS filesystem, serial REPL, ParaASM VM
