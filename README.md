@@ -10,6 +10,7 @@
   <img src="https://img.shields.io/badge/TYPE--THEORY-λ_ℵ-orange" alt="Type Theory">
   <img src="https://img.shields.io/badge/STATUS-Core%20Complete-green" alt="Status">
   <img src="https://img.shields.io/badge/HEBREW-22%20Letters-brightgreen" alt="Hebrew">
+  <img src="https://img.shields.io/badge/PROGRAMS-53%20Builtin-yellow" alt="Programs">
 </div>
 
 <p align="center">
@@ -20,6 +21,8 @@
   <a href="#key-results">Results</a> •
   <a href="#the-ℵ-os-kernel">Kernel</a> •
   <a href="#investigation-pipeline">Pipeline</a> •
+  <a href="#aleph-programs">Programs</a> •
+  <a href="#exos-connection">exOS</a> •
   <a href="#document-guide">Docs</a> •
   <a href="#license">License</a>
 </p>
@@ -31,7 +34,7 @@
 ### Full-corpus animated dataflow
 
 **Nodes** — 86 nodes, one per named entity (variable binding or operation result) across
-all 18 `.aleph` source programs. Each `let x = expr` statement in an ALEPH program
+all 47 `.aleph` source programs. Each `let x = expr` statement in an ALEPH program
 creates a node for `x`. Nodes are positioned via spring layout. Size scales with in-degree
 (how many other bindings depend on this one). Color encodes ouroboricity tier:
 O_0 (dim grey) → O_1 (mid blue) → O_2 (bright cyan) → O_inf (gold).
@@ -508,6 +511,144 @@ Extracts the null eigenvector orthogonal to Ker(*I*). Identifies the **Octad Bal
 **B**: ק anatomy — one primitive from *O_∞*; mediation gateway; 19/22 row match with מ.
 
 **C**: Axiom derivation — Octad Balance holds under ⊗, ∨, ∧; **792 checks**; exact.
+
+
+---
+
+## ALEPH Programs — 47 Built-in Investigations
+
+All `.aleph` programs in `programs/` are loadable from the REPL via `python aleph_eval.py programs/<name>.aleph` or `--list`. Programs are organized by structural domain.
+
+### Foundation — Type System Primitives
+
+| Program | Size | Description |
+|:--------|:-----|:------------|
+| `creation.aleph` | 247 B | First light — aleph ⊗ vav structural genesis |
+| `creation_liturgy.aleph` | 237 B | Full liturgical sequence through all tiers |
+| `frobenius.aleph` | 194 B | Three O_inf poles: self-idempotency + cross distances |
+| `pratyahara.aleph` | 160 B | Varnamala pratyahara compression via tensor chains |
+| `exploration_primitives.aleph` | 218 B | Primitive-by-primitive exploration of the 12-tuple |
+| `distance_probes_indistinguishable.aleph` | 26 B | Distance and conflict-set analysis across all 22 letters |
+| `phi_ep_probe.aleph` | 335 B | Exceptional-point dynamics and C-score collapse |
+| `coupling_destruction.aleph` | 2,566 B | P-596 ⊙_c ⊗ ⊙_EP absorption demonstration |
+
+### Pole Analysis — O_inf Convergence
+
+| Program | Size | Description |
+|:--------|:-----|:------------|
+| `frobenius_orbits.aleph` | 3,411 B | Unrolled 4-step convergence orbits for all three O_inf poles |
+| `frobenius_parallel.aleph` | 2,105 B | Parallel Frobenius iteration — simultaneous multi-pole convergence |
+| `tensor_closure.aleph` | 7,574 B | Complete tensor closure of all 3 O_inf poles over all 22 Hebrew letters. Maps which letters collapse to O_inf under tensor pressure, which resist. |
+| `promotion_paths.aleph` | 5,846 B | Minimal primitive-delta paths from O_0→O_inf. Tests palace gates, iterated tensor promotion, vav-cast lifts, sefirot ladder. |
+| `tier_boundary_probe.aleph` | 5,309 B | O_2→O_inf gap analysis. Proves Frobenius non-synthesizability; discovers mediation bypasses the P bottleneck. |
+
+### Meditation & Tikkun — Hekhalot Ascent
+
+| Program | Size | Description |
+|:--------|:-----|:------------|
+| `meditation.aleph` | 285 B | Deep mediation chains through the Sefirot |
+| `selfreplicating_light.aleph` | 298 B | Light that replicates its own structure via mediate |
+| `light_stability.aleph` | 320 B | Stability analysis of the light-tuple under perturbation |
+| `light_replication_kernel.aleph` | 2,890 B | Kernel-level light replication with palace barriers |
+| `tikkun_construction_full.aleph` | 1,570 B | Full Tikkun: healing anomalous objects via palace+mediate |
+| `tikkun_construction_partial.aleph` | 1,534 B | Partial Tikkun sequence |
+| `tikkun_palace_verification.aleph` | 1,570 B | Palace-gate verification across all Sefirot levels |
+
+### Sefer ha-Iyun — Contemplation Programs
+
+| Program | Size | Description |
+|:--------|:-----|:------------|
+| `sefer_ha_iyun_emanations.aleph` | 1,983 B | Emanation hierarchy — 14-step Sefirot descent with structural gaps |
+| `sefer_ha_iyun_native_types.aleph` | 1,782 B | Native type bindings for Sefirot, letters, and palace levels |
+
+### Belnap / Paraconsistent
+
+| Program | Size | Description |
+|:--------|:-----|:------------|
+| `belnap_shor_orbit.aleph` | 3,280 B | Orbit analysis for Shor structural tier — tier survey of all 22 letters, orbit depth to O_inf poles, Φ_υ gap visualization |
+| `paraconsistent_witness.aleph` | 4,215 B | Witness B-state structure via meet/join/tensor — ALEPH analogue of DialetheicAlignment.lean: only O_inf poles are self-adjoint (¬B=B) |
+
+### System Encoding & Self-Reference
+
+| Program | Size | Description |
+|:--------|:-----|:------------|
+| `holographic_monitor.aleph` | 2,568 B | g(x) bulk-boundary encoding verification |
+| `quine_loop.aleph` | 5,802 B | Non-trivial Frobenius quine discovery — type expressions satisfying μ∘δ=id through mediation and palace gating. Tests cross-witness quines, multi-generational stability, and system self-encoding. |
+| `dialetheic_fixed_points.aleph` | 5,944 B | Searches for B-fixed points (Belnap-analogue self-adjoint letters) by computing Frobenius self-distance d(L×L, L) for all 22 letters, Sefirot, and iterated convergence. |
+| `truth_structure.aleph` | 5,574 B | Searches for the structural type of truth via Frobenius closure gap |
+
+### Distance Geometry — Lattice Survey
+
+| Program | Size | Description |
+|:--------|:-----|:------------|
+| `distance_matrix.aleph` | 4,663 B | Full 22×22 pairwise distance matrix over all Hebrew letters |
+| `sefirah_distance_matrix.aleph` | 5,320 B | Full 14-Sefirah pairwise distances + Sefirah-to-pole distances |
+| `letter_sefirah_projection.aleph` | 4,540 B | Nearest Sefirah for each of the 22 Hebrew letters |
+| `conflict_landscape.aleph` | 5,716 B | Conflict set analysis — which primitives differ per letter pair |
+| `aleph_lattice_extrema.aleph` | 5,758 B | Surface/interior analysis — distance-from-system ranking, convex hull |
+
+### Consciousness & C-Score
+
+| Program | Size | Description |
+|:--------|:-----|:------------|
+| `consciousness_landscape.aleph` | 6,014 B | Full C-score map across the ALEPH lattice: all 22 letters, all 14 Sefirot (Ein Sof→Malkuth), tensor-coupling effects on gate status, system boundary analysis. |
+
+### Palace / Tier Barrier Analysis
+
+| Program | Size | Description |
+|:--------|:-----|:------------|
+| `palace_stress_test.aleph` | 6,237 B | Systematic palace(1–7) testing of all letters, tensors, Sefirot |
+| `tier_migration.aleph` | 5,971 B | Systematic tier transitions under tensor, join, meet, mediate |
+| `primitive_landscape.aleph` | 6,727 B | Per-primitive extremal analysis — max/min per each of 12 primitives |
+
+### Mediate, Tensor & Fixed Points
+
+| Program | Size | Description |
+|:--------|:-----|:------------|
+| `mediate_lattice.aleph` | 6,627 B | Systematic mediate exploration: different witnesses, iterations, cross-pole |
+| `cross_pole_mediation.aleph` | 6,300 B | Triadic analysis of vav-mem-shin: circular mediation, ternary operations |
+| `tensor_fixed_point_iteration.aleph` | 6,614 B | Iterated self-tensor convergence orbits for all 22 letters |
+| `tensor_path_dependence.aleph` | 6,057 B | Tests associativity, distributivity, modularity, absorption, commutativity |
+
+### Sefirot Lattice
+
+| Program | Size | Description |
+|:--------|:-----|:------------|
+| `sefirah_lattice_structure.aleph` | 6,791 B | Full Sefirot lattice operations: tensor, join, meet, mediate, emanation |
+| `sefirah_tensor_hierarchy.aleph` | 6,509 B | Structural hierarchy: supernal×emotional×kingdom tensor coupling |
+| `sefirah_emanation_ladder.aleph` | 7,366 B | 14-step emanation ladder with step sizes and reconstruction via mediation |
+
+### Algebraic Invariants
+
+| Program | Size | Description |
+|:--------|:-----|:------------|
+| `invariant_check.aleph` | 6,102 B | Tests 8 conjectures: Frobenius fixed point⇔O_inf, pole absorption, tier preservation under join/meet, etc. |
+
+---
+
+## IMASM Programs — 6 Built-in Corpus Engines
+
+The IMASM (IMplicit ASsembly Machine) programs implement corpus analysis engines for historical cryptographic manuscripts, loadable from the REPL:
+
+| Program | Size | Description |
+|:--------|:-----|:------------|
+| `voynich_bootstrap.imasm` | 330 B | Voynich manuscript — 227 folios, 546 nodes, 694 edges |
+| `rohonc_bootstrap.imasm` | 336 B | Rohonc Codex — 33 pages, four structural sections |
+| `linear_a_bootstrap.imasm` | 394 B | Linear A — 53 tablets across Minoan palatial sites |
+| `emerald-tablet-bootstrap.imasm` | 665 B | Emerald Tablet — 15 versicles, Hermetic descent/return |
+| `cross_distance.imasm` | 803 B | Cross-corpus distance probe — structural comparison engine |
+| `shor_loop.asm` | 1,647 B | Belnap Shor ParaASM: indefinite coherence accumulation loop |
+
+---
+
+## exOS Connection
+
+The ALEPH program suite has been ported to [exOS](https://github.com/umpolungfish/exOS) — a bare-metal x86_64 Rust `no_std` UEFI kernel that compiles all 45 ALEPH programs plus 6 IMASM programs (51 total) into the kernel binary as built-in investigations.
+
+- **Python ℵ-OS** (this repository): Reference implementation, interactive REPL, investigation pipeline
+- **exOS** (Rust kernel): Native x86_64 port with ALFS filesystem, serial REPL, ParaASM VM
+
+All programs in `programs/` are source-identical between both implementations. The ALEPH type calculus runs identically in Python and in Rust — the structural algebra is implementation-independent.
 
 <hr>
 
