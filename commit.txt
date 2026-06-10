@@ -1,38 +1,38 @@
-feat: enhance REPL with Rich UI and add .aleph program file execution
+SNS_PRIME.md notation migration: O_inf→O_∞, O_0→O₀, O_1→O₁, O_2→O₂ (32 files)
 
-Aesthetic & UX Improvements:
-- Integrate Rich library for beautiful terminal output (colors, panels, tables)
-- Enhanced banner with styled panels and formatted text
-- Visual 12-primitive tuple display with colored progress bars
-- Color-coded ouroboricity tiers (O_inf=green, O_2=cyan, O_1=yellow, O_0=dim)
-- Styled error messages with context and helpful suggestions
-- Markdown-formatted help and tips
-- Tab completion for letter names, glyphs, commands, and operations
-- Command history tracking with :history command
+---
 
-New REPL Commands:
-- :explain <letter> — Full type breakdown with consciousness gates & score
-- :history — Show recent command history (last 20)
-- :clear — Clear terminal screen
-- :tips — Display quick start examples and pro tips
+REPAIRING.md: six TikZ figures with correct Hebrew rendering (2026-05-29)
+  — ltx-fig preprocessor extracts and compiles embedded ```latex blocks as standalone figures
+  — Hebrew fix: \newfontfamily\hebrewfont{Noto Sans Hebrew}[Script=Hebrew, RightToLeft]
+    with explicit \heb{...} wrapping at every node (vowel-pointed forms included)
+  — ltx-fig font patches cleared: standalone figures manage their own fontspec, no patching needed
 
-File Execution (.aleph programs):
-- Run .aleph files: python aleph_eval.py programs/creation.aleph
-- Smart file discovery (searches current dir, programs/ dir, explicit paths)
-- Line-by-line execution with line numbers and formatted output
-- Supports all expressions, let bindings, and REPL commands in files
-- Execution summary with success/error counts and binding counts
-- :list CLI flag to show all available .aleph programs
+KABBALIST_NARRATIVE.md + ltx: 1500s kabbalist narrative + compile wrapper (2026-05-28)
+  — Hebrew characters added throughout: letter glyphs, SY quote, session record lines, key terms
+KABBALIST_OPERATOR.md: operator's manual for the ALEPH_OS (2026-05-28)
+=======================================================================
 
-New CLI Flags:
-- --help, -h — Show usage information
-- --list — List available .aleph programs
-- --repl — Start interactive REPL (same as no args)
-- --expr "..." — Evaluate inline expression
-- <file.aleph> — Run .aleph program with auto-discovery
+New document: KABBALIST_OPERATOR.md
 
-Other Changes:
-- Copy aleph_1.py from .archive/ to project root for import accessibility
-- Add Rich library dependency to .venv
-- Update README.md with new features, commands, and examples
-- Graceful ANSI fallback when Rich library not available
+An operator's manual explaining how a kabbalist would use the four
+mechanical devices of the ALEPH_OS — the REPL (aleph_eval.py), the
+.aleph liturgical programs, the .imasm corpus bootstrap instruments, and
+the six-stage Python investigation pipeline — to conduct the structural
+operations of Sefer Yetzirah on silicon.
+
+Covers:
+- Device architecture and mode of use for each instrument
+- SSI (Sans-Silicon Imscribing) as prerequisite preparation
+- The 22-letter tier census (the kabbalist's crystal map)
+- All ten operation classes: creation, tikkun, sefirot, divine names,
+  contemplative, frobenius, coupling destruction, witness, holographic
+  monitoring, promotion/ascent, bootstrap
+- The six-stage investigation pipeline (scholarly mode)
+- Output reading reference table
+- The operator's workflow (session protocol)
+- Structural wisdom: the computed surprises (Vav as third mother,
+  triadic apex, mediation > tensor, holographic 22→18, Kuf null-space)
+
+All structural quantities cited were computed via tool round-trip from
+alephvav.md program traces; no value was estimated.

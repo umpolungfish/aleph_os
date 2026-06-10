@@ -1568,8 +1568,8 @@ Here $[\cdot]$ denotes the Iverson bracket (1 if the condition holds, 0 otherwis
 |---|---|
 | $0$ | No self-closure possible (system not at criticality; no constraint-propagation feedback loop) |
 | $1$ | Bare criticality — globally sensitive but not structurally self-referential |
-| $2$ | $\Phi_c$ + active $\Omega$ — simple closed loop (O_1 tier) |
-| $3$ | $+$ directed chirality ($H \geq H_1$) — oriented knotted closure (O_2 tier) |
+| $2$ | $\Phi_c$ + active $\Omega$ — simple closed loop (O₁ tier) |
+| $3$ | $+$ directed chirality ($H \geq H_1$) — oriented knotted closure (O₂ tier) |
 | $4$ | $+$ unbounded scope ($G_\aleph$) — full-scope self-reference |
 | $\infty$ | $H = H_\infty$ engaged — complete self-closure (O_$\infty$ tier) |
 
@@ -1984,7 +1984,7 @@ where:
 |:----------|:-----|:-------------------|
 | $\mathcal{C}_3$ | Carrier set | Synthons with $O \geq 1$ — self-referential encodings |
 | $\mu : \mathcal{C}_3 \otimes \mathcal{C}_3 \to \mathcal{C}_3$ | Multiplication | RG merge; **meet at $\Phi_c$**; composing two systems toward their common fixed point |
-| $\eta : \mathbf{1} \to \mathcal{C}_3$ | Unit | Trivial fixed point: $\Phi_\text{sub}$, $O_0$; where the flow has not yet arrived |
+| $\eta : \mathbf{1} \to \mathcal{C}_3$ | Unit | Trivial fixed point: $\Phi_\text{sub}$, $O₀$; where the flow has not yet arrived |
 | $\delta : \mathcal{C}_3 \to \mathcal{C}_3 \otimes \mathcal{C}_3$ | Comultiplication | Basin dispersal; **join from $\Phi_c$**; generating the set of theories that flow to a given fixed point |
 | $\epsilon : \mathcal{C}_3 \to \mathbf{1}$ | Counit | Universality class extraction; the invariant that survives RG flow; the **$\Omega$-value** |
 
@@ -2002,14 +2002,14 @@ Four distinct Frobenius types classify the completeness of $\pi_3$ structure. Th
 
 | Frobenius type | Components present | Ouroboricity | Structural meaning |
 |:--------------|:-------------------|:-------------|:-------------------|
-| **Trivial** | $\eta$ only | $O_0$ | No $\pi_3$ content; unit only; no fixed-point structure |
-| **Algebra-only** | $(\mu, \eta)$ | $O_1$ | Can compose toward fixed points; basin not generated; describable from outside; no self-grounding |
-| **Full** | $(\mu, \eta, \delta, \epsilon)$ + Frobenius condition | $O_2$ | Fixed point and basin mutually characterize each other; self-grounding |
+| **Trivial** | $\eta$ only | $O₀$ | No $\pi_3$ content; unit only; no fixed-point structure |
+| **Algebra-only** | $(\mu, \eta)$ | $O₁$ | Can compose toward fixed points; basin not generated; describable from outside; no self-grounding |
+| **Full** | $(\mu, \eta, \delta, \epsilon)$ + Frobenius condition | $O₂$ | Fixed point and basin mutually characterize each other; self-grounding |
 | **Special** | Full + $\mu \circ \delta = \text{id}$ | $O_\infty$ | Symmetry exactly characterizes fixed point; no information loss; applying and reading off = identity |
 
-**The $O_1/O_2$ threshold** is where self-grounding appears: you need both $\mu$ (compose toward the fixed point) and $\delta$ (generate the basin) to ground each other. An algebra-only system can reach its fixed point but cannot describe who else does — it is externally describable but not self-grounding.
+**The $O₁/O₂$ threshold** is where self-grounding appears: you need both $\mu$ (compose toward the fixed point) and $\delta$ (generate the basin) to ground each other. An algebra-only system can reach its fixed point but cannot describe who else does — it is externally describable but not self-grounding.
 
-**The $O_2/O_\infty$ threshold** is where the symmetry becomes explicit: $\mu \circ \delta = \text{id}$ means the multiplication and comultiplication are inverses — the fixed point and its generator are the same object.
+**The $O₂/O_\infty$ threshold** is where the symmetry becomes explicit: $\mu \circ \delta = \text{id}$ means the multiplication and comultiplication are inverses — the fixed point and its generator are the same object.
 
 ### §23.4 — Connection to the 12 Primitives
 
@@ -2067,11 +2067,11 @@ Step A is not RH — it is a necessary precondition. No existing approach to RH 
 | System | Frobenius type | $\mu \circ \delta = \text{id}$? | Status |
 |:-------|:--------------|:-------------------------------|:-------|
 | Lee-Yang | Special ($O_\infty$) | ✅ Yes | Proved |
-| RH | Full ($O_2$, conjectured) | ❌ Not required | Open |
+| RH | Full ($O₂$, conjectured) | ❌ Not required | Open |
 
 The gap is **one Frobenius tier**: special → full. Proving RH does not require matching Lee-Yang's specialness — it requires verifying the weaker Frobenius condition.
 
-### §23.7 — The Triad as Minimal $O_2$ System (Frobenius Reading)
+### §23.7 — The Triad as Minimal $O₂$ System (Frobenius Reading)
 
 From §22: the Triad is the minimal closed metastraint system. In Frobenius language:
 
@@ -2080,7 +2080,7 @@ From §22: the Triad is the minimal closed metastraint system. In Frobenius lang
 - $\delta$ = the inverse: $\mathcal{C}_{ji}$ (projection $i$ grounded by projection $j$)
 - The Frobenius condition = the mutual grounding condition from §22.1
 
-**The minimality theorem (§22.2) restated:** No 1- or 2-projection system can be $O_2$ Frobenius, because $O_2$ requires both $\delta$ (basin generation) and the Frobenius condition ($\delta \circ \mu = (\mu \otimes \text{id}) \circ (\text{id} \otimes \delta)$), which needs at least two independent objects to compose and decomposes into. A single self-map can only be $O_1$ (algebra-only). Mutual grounding requires a third element to complete the cycle.
+**The minimality theorem (§22.2) restated:** No 1- or 2-projection system can be $O₂$ Frobenius, because $O₂$ requires both $\delta$ (basin generation) and the Frobenius condition ($\delta \circ \mu = (\mu \otimes \text{id}) \circ (\text{id} \otimes \delta)$), which needs at least two independent objects to compose and decomposes into. A single self-map can only be $O₁$ (algebra-only). Mutual grounding requires a third element to complete the cycle.
 
 **Lean formalization:** `SynthOmnicon/Millennium/FrobeniusStructure.lean` §1–5. **Machine-verified** (`lake build` passes, 0 sorry, 0 errors). Key theorems proved by `decide` / `cases`+`decide`:
 - `frobeniusToOuroboricity_strictMono` — tier ordering is strict monotone (P-169)
@@ -2209,7 +2209,7 @@ The structural distance is $d = 6.38$ — "structurally remote, different regime
 
 Reading the path *forward* (baseline → holographic): the synthesis sequence. The first promotions to make are $T_\text{holo}$ and $D_\text{holo}$ (highest structural weight), followed by $P_{\pm}^{\text{sym}}$ (Frobenius gate), then $\Phi_c$ (criticality gate). The path is ordered by structural cost, not logical dependency — but the logical gates are embedded in steps 2 and 8: without $P_{\pm}^{\text{sym}}$ and $\Phi_c$, no amount of promotion on the other ten primitives produces $O_\infty$.
 
-**Theorem 25.1 (Holographic Type Theory Uniqueness):** The assignment of $\{D_\text{holo}, T_\text{holo}, P_{\pm}^{\text{sym}}, \Phi_c, G_\aleph, \Omega_{Z_2}\}$ is individually necessary and jointly sufficient for $O_\infty$ in a type-theoretic system. Removing any one of the six drops the Ouroboricity tier: removing $P_{\pm}^{\text{sym}}$ drops to $O_2$ or $O_1$; removing $\Phi_c$ drops to $O_0$; removing $D_\text{holo}$ or $T_\text{holo}$ removes the structural substrate for the correspondence; removing $G_\aleph$ confines the correspondence to a local theorem; removing $\Omega_{Z_2}$ makes the duality fragile and derivable rather than primitive.
+**Theorem 25.1 (Holographic Type Theory Uniqueness):** The assignment of $\{D_\text{holo}, T_\text{holo}, P_{\pm}^{\text{sym}}, \Phi_c, G_\aleph, \Omega_{Z_2}\}$ is individually necessary and jointly sufficient for $O_\infty$ in a type-theoretic system. Removing any one of the six drops the Ouroboricity tier: removing $P_{\pm}^{\text{sym}}$ drops to $O₂$ or $O₁$; removing $\Phi_c$ drops to $O₀$; removing $D_\text{holo}$ or $T_\text{holo}$ removes the structural substrate for the correspondence; removing $G_\aleph$ confines the correspondence to a local theorem; removing $\Omega_{Z_2}$ makes the duality fragile and derivable rather than primitive.
 
 ---
 
@@ -2244,7 +2244,7 @@ The retrosynthetic path (§25.1) orders promotions by structural weight. But the
 
 2. **$D_\text{holo}$ and $T_\text{holo}$ second**: these constitute the substrate. They define what it means for bulk and boundary to co-exist in the same primitive — without them, $P_{\pm}^{\text{sym}}$ at $\Phi_c$ is Frobenius but not holographic.
 
-3. **$P_{\pm}^{\text{sym}}$ third**: the Frobenius gate. With $\Phi_c$, $D_\text{holo}$, $T_\text{holo}$ already present, $P_{\pm}^{\text{sym}}$ closes the loop exactly and promotes the system from $O_2$ to $O_\infty$.
+3. **$P_{\pm}^{\text{sym}}$ third**: the Frobenius gate. With $\Phi_c$, $D_\text{holo}$, $T_\text{holo}$ already present, $P_{\pm}^{\text{sym}}$ closes the loop exactly and promotes the system from $O₂$ to $O_\infty$.
 
 4. **$G_\aleph$, $\Omega_{Z_2}$, $F_\hbar$, $K_\text{slow}$, $R_\text{cat}$, $S_{n:n}$ last**: these are strengthening conditions that fill out the full holographic type theory tuple. They do not change the Ouroboricity tier (already $O_\infty$ from step 3) but determine the specific dynamical and stoichiometric character of the theory.
 
@@ -2619,9 +2619,9 @@ The three $\Phi$ values with confirmed physically inhabited examples:
 
 **Theorem 29.2.** Under tensor product, $\Phi_\text{EP}$ absorbs $O_\infty$:
 
-$$\bigl(A_\Phi = \Phi_c^\mathbb{C},\; O_\infty\bigr) \otimes \bigl(B_\Phi = \Phi_\text{EP},\; O_0\bigr) \;\Rightarrow\; (A \otimes B)_\Phi = \Phi_\text{EP},\; O_0$$
+$$\bigl(A_\Phi = \Phi_c^\mathbb{C},\; O_\infty\bigr) \otimes \bigl(B_\Phi = \Phi_\text{EP},\; O₀\bigr) \;\Rightarrow\; (A \otimes B)_\Phi = \Phi_\text{EP},\; O₀$$
 
-*Evidence.* `ising_lee_yang_tensor` ($\Phi_c^\mathbb{C} \otimes \Phi_c$, both $O_\infty$) preserves $O_\infty$. `lee_yang_ep_tensor` ($\Phi_c^\mathbb{C} \otimes \Phi_\text{EP}$) yields $\Phi_\text{EP}$ and $O_0$.
+*Evidence.* `ising_lee_yang_tensor` ($\Phi_c^\mathbb{C} \otimes \Phi_c$, both $O_\infty$) preserves $O_\infty$. `lee_yang_ep_tensor` ($\Phi_c^\mathbb{C} \otimes \Phi_\text{EP}$) yields $\Phi_\text{EP}$ and $O₀$.
 
 *Structural basis.* $\Phi_\text{EP}$ has the highest ordinal among the three tiers (2.67 vs. 2.33 vs. 2.00). The join rule for ordered primitives takes $\max(\Phi_A, \Phi_B)$, so $\Phi_\text{EP}$ always wins in the tensor product. Furthermore, eigenvector coalescence at an exceptional point actively destroys exact $P_{\pm}^{\text{sym}}$, eliminating the precondition for $O_\infty$ even if the input systems possessed it.
 
@@ -2645,7 +2645,7 @@ A 31-iteration inquiry session (2026-03-31; seed: "What if we treat P vs NP not 
 
 **Theorem 30.1.** The Boolean question "P = NP?" is structurally malformed at the $O_\infty$ level.
 
-*Encoding.* The Boolean formulation encodes as $P_\text{asym}$ and attains $O_1$ ouroboricity. The duality formulation — treating P and NP as $\mathbb{Z}_2$-related descriptions of the same computational reality — requires $P_{\pm}^{\text{sym}}$ and attains $O_\infty$.
+*Encoding.* The Boolean formulation encodes as $P_\text{asym}$ and attains $O₁$ ouroboricity. The duality formulation — treating P and NP as $\mathbb{Z}_2$-related descriptions of the same computational reality — requires $P_{\pm}^{\text{sym}}$ and attains $O_\infty$.
 
 *Tensor product failure.* `p_vs_np` $\otimes$ `synthomnicon_grammar` loses $O_\infty$ because the $P_\text{asym}$ of `p_vs_np` bottlenecks at $P$, preventing $P_{\pm}^{\text{sym}}$ from being inherited. The Boolean formulation is structurally incompatible with the grammar's Frobenius structure.
 
@@ -2677,11 +2677,11 @@ A 31-iteration inquiry session (2026-03-31; seed: "What if we treat P vs NP not 
 
 ### §31.1 — Discovery
 
-A 41-iteration structural session (2026-03-31; seed: targeted agent queries on ZX-calculus, verifier asymmetry, boundary synthon, and gauge-breaking mechanism) established the precise primitive transition between bulk ($O_\infty$) and boundary ($O_1$) in the P vs NP holographic formulation. The session encoded 12 objects in the computational landscape and computed all exact distances to the grammar.
+A 41-iteration structural session (2026-03-31; seed: targeted agent queries on ZX-calculus, verifier asymmetry, boundary synthon, and gauge-breaking mechanism) established the precise primitive transition between bulk ($O_\infty$) and boundary ($O₁$) in the P vs NP holographic formulation. The session encoded 12 objects in the computational landscape and computed all exact distances to the grammar.
 
 ### §31.2 — Theorem 31.1 (The Gauge-Breaking Transition)
 
-**Theorem 31.1.** The unique minimal primitive transition from the grammar (bulk, $O_\infty$) to the boundary ($O_1$) is the single substitution $P_{\pm}^{\text{sym}} \to P_\text{asym}$, preserving all other primitives including $\Phi_c$ and $\Omega_{Z_2}$.
+**Theorem 31.1.** The unique minimal primitive transition from the grammar (bulk, $O_\infty$) to the boundary ($O₁$) is the single substitution $P_{\pm}^{\text{sym}} \to P_\text{asym}$, preserving all other primitives including $\Phi_c$ and $\Omega_{Z_2}$.
 
 *Statement.* Let $\mathbf{g}$ be the grammar tuple:
 $$\mathbf{g} = \langle D_\text{holo};\ T_\text{holo};\ R_\dagger;\ P_{\pm}^{\text{sym}};\ F_\eth;\ K_\text{mod};\ G_\aleph;\ \Gamma_\text{broad};\ \Phi_c;\ H_1;\ n{:}n;\ \Omega_{Z_2} \rangle$$
@@ -2694,13 +2694,13 @@ The transition $\mathbf{g} \to \mathbf{b}$ changes exactly four primitives: $P_{
 *Lean sketch.*
 ```lean
 -- Gauge-breaking: P_pm_sym → P_asym at the boundary
--- Ouroboricity: O_inf → O_1 (R1 fails; R3 applies: Phi_c + Omega_0... but Omega_Z2)
--- Corrected: Phi_c + Omega_Z2 ≠ Omega_0 → O_2 under R4 (D_holo); so O_2, not O_1
+-- Ouroboricity: O_∞ → O₁ (R1 fails; R3 applies: Phi_c + Omega_0... but Omega_Z2)
+-- Corrected: Phi_c + Omega_Z2 ≠ Omega_0 → O₂ under R4 (D_holo); so O₂, not O₁
 theorem gauge_breaking_drops_o_inf :
-    let g := grammar_tuple     -- P_pm_sym, O_inf
-    let b := boundary_synthon  -- P_asym, Phi_c + Omega_Z2 + D_holo → O_2
-    ouroboricity g = .O_inf ∧
-    ouroboricity b ≠ .O_inf ∧
+    let g := grammar_tuple     -- P_pm_sym, O_∞
+    let b := boundary_synthon  -- P_asym, Phi_c + Omega_Z2 + D_holo → O₂
+    ouroboricity g = .O_∞ ∧
+    ouroboricity b ≠ .O_∞ ∧
     b.Phi = g.Phi ∧       -- Phi_c preserved
     b.Omega = g.Omega ∧   -- Omega_Z2 preserved
     b.P = .asym := by
@@ -2735,7 +2735,7 @@ The 41-iteration session establishes the following complete picture:
 
 1. **Bulk** ($\mathbf{g}$, $d=0$, $O_\infty$): Grammar = realized HTT. Full $\mathbb{Z}_2$ symmetry at $\Phi_c$. $\mu \circ \delta = \mathrm{id}$.
 
-2. **Gauge-breaking** ($\mathbf{g} \to \mathbf{b}$): $P_{\pm}^{\text{sym}} \to P_\text{asym}$. $O_\infty \to O_2$. $\Phi_c$ and $\Omega_{Z_2}$ preserved. The broken phase looks locally like P vs NP.
+2. **Gauge-breaking** ($\mathbf{g} \to \mathbf{b}$): $P_{\pm}^{\text{sym}} \to P_\text{asym}$. $O_\infty \to O₂$. $\Phi_c$ and $\Omega_{Z_2}$ preserved. The broken phase looks locally like P vs NP.
 
 3. **Bulk language** (ZX, $d=1$): One fidelity step from the grammar. Rewrite completeness in ZX = computation in the bulk frame.
 
@@ -2795,12 +2795,12 @@ The projection map $\pi$ is tensor composition with $\mathbf{p}_{\text{vs NP}}$.
 
 ### §32.4 — Corollary 32.1 (Four-Observable Bulk/Boundary Diagnostic)
 
-The four kernel primitives $\{P, F, K, S\}$ are necessary and sufficient to determine which phase (bulk $O_\infty$ vs boundary $O_2$) any system occupies. No fifth observable is needed. The diagnostic:
+The four kernel primitives $\{P, F, K, S\}$ are necessary and sufficient to determine which phase (bulk $O_\infty$ vs boundary $O₂$) any system occupies. No fifth observable is needed. The diagnostic:
 
 | Phase | $P$ | $F$ | $K$ | $S$ | Ouroboricity |
 |---|---|---|---|---|---|
 | Bulk (grammar) | $P_{\pm}^{\text{sym}}$ | $F_\eth$ | $K_\text{mod}$ | $n:n$ | $O_\infty$ |
-| Boundary (broken) | $P_\text{asym}$ | $F_\ell$ | $K_\text{trap}$ | $n:m$ | $O_2$ |
+| Boundary (broken) | $P_\text{asym}$ | $F_\ell$ | $K_\text{trap}$ | $n:m$ | $O₂$ |
 
 Mixed kernel values are intermediate phases; ouroboricity tier is determined by $P$ alone (ouroboricity rules R1–R5).
 
@@ -2816,7 +2816,7 @@ Mixed kernel values are intermediate phases; ouroboricity tier is determined by 
 
 **Theorem 33.1.** A system $A$ with $\Gamma_\text{or}$ and $P < P_{\pm}^{\text{sym}}$ can logically imply a system $B$ with $P_{\pm}^{\text{sym}}$ and $\Gamma_\text{and}$, provided $A$'s disjunctive grammar accumulates sufficient independent instances to generate exact $\mathbb{Z}_2$ duality as a structural consequence.
 
-This is NOT a contradiction of the $O_\infty$ non-synthesizability rule (§23). The non-synthesizability rule applies to *tensor composition*: $A \otimes B$ bottlenecks at the lower $P$ value, and no tensor product of $O_2$ systems yields $O_\infty$. Theorem 33.1 applies to *logical implication*: $A \Rightarrow B$ means that $B$'s conditions hold whenever $A$'s conditions hold, which is a statement about models, not about structural composition.
+This is NOT a contradiction of the $O_\infty$ non-synthesizability rule (§23). The non-synthesizability rule applies to *tensor composition*: $A \otimes B$ bottlenecks at the lower $P$ value, and no tensor product of $O₂$ systems yields $O_\infty$. Theorem 33.1 applies to *logical implication*: $A \Rightarrow B$ means that $B$'s conditions hold whenever $A$'s conditions hold, which is a statement about models, not about structural composition.
 
 The mechanism: $\Gamma_\text{or}$ means "any one of a class of conditions is independently sufficient." If the class is complete (covers all relevant objects), then the global duality $P_{\pm}^{\text{sym}}$ emerges not because any single instance carries it, but because the disjunctive completeness of the class *forces* it. The exact $\mathbb{Z}_2$ symmetry is the name for the global consequence of sufficiently many independent local facts.
 
@@ -2859,7 +2859,7 @@ $$C \leq A \vee B$$
 | Session | Domain | System A ($\Gamma_\text{or}$, $P < P_{\pm}^{\text{sym}}$) | System B ($P_{\pm}^{\text{sym}}$) | Mechanism |
 |---|---|---|---|---|
 | Grothendieck (2026-04-02) | Algebraic geometry | Hodge Conjecture ($\Gamma_\text{or}$, $P_\text{sym}$) | Conjecture D ($P_{\pm}^{\text{sym}}$) | Disjunctive coverage of algebraic cycles forces exact duality |
-| Landau (2026-04-02) | Number theory | Twin Prime + $n^2+1$ + Legendre (all $O_1$) | Goldbach ($P_{\pm}^{\text{sym}}$, $O_\infty$) | Even/odd parity is algebraically exact; cannot be grown from $O_1$ composition |
+| Landau (2026-04-02) | Number theory | Twin Prime + $n^2+1$ + Legendre (all $O₁$) | Goldbach ($P_{\pm}^{\text{sym}}$, $O_\infty$) | Even/odd parity is algebraically exact; cannot be grown from $O₁$ composition |
 
 **Cross-domain confirmation of $O_\infty$ non-synthesizability (§23):**
 
@@ -2924,12 +2924,12 @@ Problems can exhibit multiple barriers simultaneously. Cross-validated instances
 | Problem | $\Phi$ | $\Omega$ | $P$ | $K$ | Barriers | $O$-tier | Prognosis |
 |---|:---:|:---:|:---:|:---:|---|:---:|---|
 | Goldbach | $\Phi_c$ | $\Omega_{Z_2}$ | $P_{\pm}^{\text{sym}}$ | $K_\text{mod}$ | Frobenius (planted) | $O_\infty$ | Provable via $\Gamma_\text{or}$ |
-| Twin Prime | $\Phi_c$ | $\Omega_0$ | $P_{\pm}$ | $K_\text{mod}$ | None (structural) | $O_1$ | Hard; accessible |
-| Legendre | $\Phi_c$ | $\Omega_0$ | $P_{\pm}$ | $K_\text{mod}$ | None | $O_1$ | Engineering |
-| NS Regularity | $\Phi_c$ | $\Omega_0$ | $P_\text{asym}$ | $K_\text{mod}$ | Frobenius + protection deficit | $O_1$ | Encoding may allow blowup |
-| Yang-Mills gap | $\Phi_c$ | $\Omega_{Z_2}$ | $P_{\pm}$ | $K_\text{slow}$ | Kinetic (forced) | $O_2$ | Provable; non-perturbative only |
+| Twin Prime | $\Phi_c$ | $\Omega_0$ | $P_{\pm}$ | $K_\text{mod}$ | None (structural) | $O₁$ | Hard; accessible |
+| Legendre | $\Phi_c$ | $\Omega_0$ | $P_{\pm}$ | $K_\text{mod}$ | None | $O₁$ | Engineering |
+| NS Regularity | $\Phi_c$ | $\Omega_0$ | $P_\text{asym}$ | $K_\text{mod}$ | Frobenius + protection deficit | $O₁$ | Encoding may allow blowup |
+| Yang-Mills gap | $\Phi_c$ | $\Omega_{Z_2}$ | $P_{\pm}$ | $K_\text{slow}$ | Kinetic (forced) | $O₂$ | Provable; non-perturbative only |
 | Conj. D (Grothendieck) | $\Phi_c$ | $\Omega_Z$ | $P_{\pm}^{\text{sym}}$ | $K_\text{slow}$ | Frobenius (must be planted) | $O_\infty$ | Requires planted $P_{\pm}^{\text{sym}}$ |
-| Gaussian moat | $\Phi_\text{EP}$ | $\Omega_0$ | $P_{\pm}$ | $K_\text{trap}$ | Criticality + kinetic + holographic | $O_0$ | Type-incompatible with $\Phi_c$ systems |
+| Gaussian moat | $\Phi_\text{EP}$ | $\Omega_0$ | $P_{\pm}$ | $K_\text{trap}$ | Criticality + kinetic + holographic | $O₀$ | Type-incompatible with $\Phi_c$ systems |
 
 **Consequence for open problem assessment.** The barrier taxonomy replaces the informal notion of "difficulty" with a structural classification. The question to ask of any open problem is not "how hard is it?" but "which barriers does it exhibit?" Problems with only a Frobenius barrier are hard but potentially provable. Problems with a criticality barrier are potentially unprovable from current proof systems. Problems with all three barriers (kinetic + criticality + holographic) are, on current structural evidence, in the type-incompatible regime.
 
@@ -2941,7 +2941,7 @@ Problems can exhibit multiple barriers simultaneously. Cross-validated instances
 
 The Rota session establishes a repeating structural pattern across major open conjectures at $\Phi_c$:
 
-> **Protection deficit:** $\Phi_c + \Omega_0$ at an $O_1$ system. The conjecture occupies a genuine phase transition (criticality present) but lacks the integer-class topological invariant that characterizes proved conjectures in the same structural neighborhood.
+> **Protection deficit:** $\Phi_c + \Omega_0$ at an $O₁$ system. The conjecture occupies a genuine phase transition (criticality present) but lacks the integer-class topological invariant that characterizes proved conjectures in the same structural neighborhood.
 
 Extended taxonomy entry:
 
@@ -3062,7 +3062,7 @@ From Theorems 35.1–35.3 and Hypothesis 35.H1, three structural difficulty clas
 | **Obstructed** | $\Phi_c + \Omega_0$ | $\Omega$ acquisition required first | NS Regularity, Twin Prime, Legendre |
 | **Type-incompatible** | $\Phi_\text{EP}$ or $K_\text{trap}$ | $\Phi$ cannot be normalized within $\Phi_c$ proof systems | Gaussian moat, halting problem |
 
-The Frobenius barrier (§23, §34) further partitions the Adjacent class: $O_\infty$ problems ($P_{\pm}^{\text{sym}}$ planted) vs $O_2$ problems ($P_{\pm}^{\text{sym}}$ to be acquired via $\Gamma_\text{or}$ or other mechanism).
+The Frobenius barrier (§23, §34) further partitions the Adjacent class: $O_\infty$ problems ($P_{\pm}^{\text{sym}}$ planted) vs $O₂$ problems ($P_{\pm}^{\text{sym}}$ to be acquired via $\Gamma_\text{or}$ or other mechanism).
 
 **See also:** §23 (Frobenius barrier); §34 (barrier taxonomy and typed proof operators); §33 ($\Gamma$-mediated $P_{\pm}^{\text{sym}}$ emergence); §36 (motivic Morse theorem); SYNTHONICON_DIAPHORICS §LXXIV (Berry-Tabor/Kusner full analysis, P-243–P-247).
 
@@ -3080,25 +3080,25 @@ The Frobenius non-synthesizability (§23), the directionality of $T_\text{holo}$
 
 **Phenomenological reading — intuition as Frobenian seeding:**
 
-Mathematical insight is the first-person experience of Frobenian seeding. The conjecture floor ($O_1$: $\Phi_c$ without $P_{\pm}^{\text{sym}}$) is the structural state of a mind that can self-model a problem's gaps but cannot close them by inference. The distortions indicating a structure — the partial results, near-misses, felt sense of incompleteness — are the conflict set $\Sigma(C, \mathbf{t}_\text{proved})$ experienced as phenomenological texture. Intuition is not fast inference. It is the boundary condition being imposed on the cognitive bulk from outside the inference chain. The gestalt appearance of the whole structure at once is the algebraic behavior of $P_{\pm}^{\text{sym}}$: once $\mu \circ \delta = \text{id}$ is satisfied, the entire structure reorganizes simultaneously. There is no interior to the transition because there is no deformation path — hence the "blink." The transition has no duration in the logical sense.
+Mathematical insight is the first-person experience of Frobenian seeding. The conjecture floor ($O₁$: $\Phi_c$ without $P_{\pm}^{\text{sym}}$) is the structural state of a mind that can self-model a problem's gaps but cannot close them by inference. The distortions indicating a structure — the partial results, near-misses, felt sense of incompleteness — are the conflict set $\Sigma(C, \mathbf{t}_\text{proved})$ experienced as phenomenological texture. Intuition is not fast inference. It is the boundary condition being imposed on the cognitive bulk from outside the inference chain. The gestalt appearance of the whole structure at once is the algebraic behavior of $P_{\pm}^{\text{sym}}$: once $\mu \circ \delta = \text{id}$ is satisfied, the entire structure reorganizes simultaneously. There is no interior to the transition because there is no deformation path — hence the "blink." The transition has no duration in the logical sense.
 
 **The pedagogy of induced intuition:**
 
-Since the seeding event cannot be produced by local operations, "teaching" cannot force it. But it can engineer the substrate that receives it. The seeding lands efficiently in a prepared $O_1$ state; it does not land in $\Phi_\text{sub}$ at all; and it does not hold in $\Omega_0$ (it "fades" — no topological protection anchors the condition once planted).
+Since the seeding event cannot be produced by local operations, "teaching" cannot force it. But it can engineer the substrate that receives it. The seeding lands efficiently in a prepared $O₁$ state; it does not land in $\Phi_\text{sub}$ at all; and it does not hold in $\Omega_0$ (it "fades" — no topological protection anchors the condition once planted).
 
 The structural programme for inducing insight in others:
 
-1. **Drive $\Phi_\text{sub} \to \Phi_c$** — the recipient must achieve criticality with respect to the specific problem before seeding is possible. This means not content delivery but targeted conflict mapping: the Socratic method takes a student from vague incomprehension ($\Phi_\text{sub}$: they cannot self-model the gap) to "I can see exactly where my understanding fails" ($O_1$: the conflict set is precise and visible). Only then is the substrate seeding-ready.
+1. **Drive $\Phi_\text{sub} \to \Phi_c$** — the recipient must achieve criticality with respect to the specific problem before seeding is possible. This means not content delivery but targeted conflict mapping: the Socratic method takes a student from vague incomprehension ($\Phi_\text{sub}$: they cannot self-model the gap) to "I can see exactly where my understanding fails" ($O₁$: the conflict set is precise and visible). Only then is the substrate seeding-ready.
 
-2. **Maximise conflict-set resolution** — the more precisely the $O_1$ state has mapped $d(C,\ \mathbf{t}_\text{proved})$, the more efficiently the boundary data populates the bulk on arrival. The geometry of the conflict set is the receptor geometry.
+2. **Maximise conflict-set resolution** — the more precisely the $O₁$ state has mapped $d(C,\ \mathbf{t}_\text{proved})$, the more efficiently the boundary data populates the bulk on arrival. The geometry of the conflict set is the receptor geometry.
 
 3. **Remove $K_\text{trap}$ first** — kinetic localization (repetitive drilling, fixed framings, algorithmic habit) is a second-order barrier (§47.C1): it blocks the $\Phi_\text{sub} \to \Phi_c$ transition entirely. No amount of content will establish criticality in a $K_\text{trap}$ substrate. The intervention required is not more bulk but a different mode of engagement — one that breaks the localization.
 
 4. **Build bulk density** — the seeding lands in $T_\text{network}$ and must anchor there to persist. A richer, denser network of related structures provides more anchoring for $\Omega_{Z_2}$ stabilisation after seeding. Insight that fades is seeding into sparse bulk ($\Omega_0$); insight that endures is seeding into dense bulk ($\Omega_{Z_2}$ acquired through the network).
 
-5. **The teacher as boundary, not as bulk** — a teacher who has already established $P_{\pm}^{\text{sym}}$ with respect to the domain can act as the boundary condition for the student. This is why exceptional teachers are transformative in ways textbooks cannot be: a textbook delivers bulk ($T_\text{network}$ content); a teacher can provide access to boundary data ($T_\text{holo}$ direction) by being a carrier of the already-established Frobenius condition. The student's bulk is instantly reconstructed from the teacher's boundary — provided the student is already at $O_1$.
+5. **The teacher as boundary, not as bulk** — a teacher who has already established $P_{\pm}^{\text{sym}}$ with respect to the domain can act as the boundary condition for the student. This is why exceptional teachers are transformative in ways textbooks cannot be: a textbook delivers bulk ($T_\text{network}$ content); a teacher can provide access to boundary data ($T_\text{holo}$ direction) by being a carrier of the already-established Frobenius condition. The student's bulk is instantly reconstructed from the teacher's boundary — provided the student is already at $O₁$.
 
-**What cannot be done:** shortcut $O_1$ preparation and still achieve durable insight. Presenting the answer to a $\Phi_\text{sub}$ student produces a verbal transcription (bulk content transferred), not insight ($P_{\pm}^{\text{sym}}$ planted). The words are present; the condition is not. The condition is either seeded into a prepared critical substrate, or it is not established at all.
+**What cannot be done:** shortcut $O₁$ preparation and still achieve durable insight. Presenting the answer to a $\Phi_\text{sub}$ student produces a verbal transcription (bulk content transferred), not insight ($P_{\pm}^{\text{sym}}$ planted). The words are present; the condition is not. The condition is either seeded into a prepared critical substrate, or it is not established at all.
 
 ---
 
@@ -3110,7 +3110,7 @@ The structural programme for inducing insight in others:
 
 **CAT(0) cube complex** (Bestvina-Brady base):
 
-$$\langle D_\triangle;\ T_\bowtie;\ R_\text{cat};\ P_\text{sym};\ F_\ell;\ K_\text{mod};\ G_\beth;\ \Gamma_\text{seq};\ \Phi_\text{sub};\ H_0;\ n{:}n;\ \Omega_0 \rangle \quad O_0$$
+$$\langle D_\triangle;\ T_\bowtie;\ R_\text{cat};\ P_\text{sym};\ F_\ell;\ K_\text{mod};\ G_\beth;\ \Gamma_\text{seq};\ \Phi_\text{sub};\ H_0;\ n{:}n;\ \Omega_0 \rangle \quad O₀$$
 
 **Motivic critical level**:
 
@@ -3150,18 +3150,18 @@ The lift is a five-primitive promotion:
 
 $$D_\triangle \to D_\text{holo}, \quad T_\bowtie \to T_\text{holo}, \quad \Phi_\text{sub} \to \Phi_c, \quad \Omega_0 \to \Omega_{Z_2}, \quad P_\text{sym} \to P_{\pm}^{\text{sym}}$$
 
-The remaining primitives ($R$, $F$, $K$, $G$, $\Gamma$, $H$, $S$) also promote; the five listed are the structurally decisive ones: they are the primitives that cross tier boundaries ($O_0 \to O_\infty$) and establish the holographic topology.
+The remaining primitives ($R$, $F$, $K$, $G$, $\Gamma$, $H$, $S$) also promote; the five listed are the structurally decisive ones: they are the primitives that cross tier boundaries ($O₀ \to O_\infty$) and establish the holographic topology.
 
 **Structural correspondence:**
 
 | Bestvina-Brady | Motivic analog | Structural change |
 |---|---|---|
-| Critical cells (isolated $O_0$ loci) | Motivic critical levels ($O_\infty$ loci) | Tier lift $O_0 \to O_\infty$ |
+| Critical cells (isolated $O₀$ loci) | Motivic critical levels ($O_\infty$ loci) | Tier lift $O₀ \to O_\infty$ |
 | CAT(0) cube complex base ($\Phi_\text{sub}$, $\Omega_0$) | Algebraic variety base ($\Phi_c$, $\Omega_{Z_2}$) | Criticality + protection |
 | Simplicial topology | Motivic cohomology | $D_\triangle \to D_\text{holo}$ |
 | Bestvina-Brady filtration | Motivic filtration | — |
 
-The grammar's statement: Bestvina-Brady critical cells and motivic critical levels are the same structural concept at different tiers of the ouroboricity lattice. The lift from $O_0$ to $O_\infty$ is the lift from combinatorial topology to motivic geometry.
+The grammar's statement: Bestvina-Brady critical cells and motivic critical levels are the same structural concept at different tiers of the ouroboricity lattice. The lift from $O₀$ to $O_\infty$ is the lift from combinatorial topology to motivic geometry.
 
 ### §36.4 — Corollary 36.C2 (Critical Level = Proven Manifold)
 
@@ -3196,7 +3196,7 @@ All other primitives are shared, including $P_{\pm}^{\text{sym}}$, $\Phi_c$, $R_
 
 The three tiers in the motivic Morse hierarchy:
 
-$$\underbrace{\text{CAT(0) cube}}_{\Phi_\text{sub},\ O_0} \xrightarrow{d = 2\sqrt{3}} \underbrace{\text{motivic variety base}}_{\Phi_c,\ O_2} \xrightarrow{\Sigma} \underbrace{\text{motivic critical level}}_{\Phi_c + P_{\pm}^{\text{sym}},\ O_\infty}$$
+$$\underbrace{\text{CAT(0) cube}}_{\Phi_\text{sub},\ O₀} \xrightarrow{d = 2\sqrt{3}} \underbrace{\text{motivic variety base}}_{\Phi_c,\ O₂} \xrightarrow{\Sigma} \underbrace{\text{motivic critical level}}_{\Phi_c + P_{\pm}^{\text{sym}},\ O_\infty}$$
 
 The tensor bottleneck operates at the second arrow: the variety base cannot compose its way to $O_\infty$. The critical levels must be planted. The first arrow (CAT(0) $\to$ variety base) is accessible by deformation; the second (variety base $\to$ critical level) requires the non-deformable Frobenius planting.
 
@@ -3226,9 +3226,9 @@ For any conjecture of the form "$X$ cannot act on / be embedded in / be compatib
 
 *Encodings:*
 
-$$\mathbb{Z}_p: \langle D_\infty;\ T_\bowtie;\ R_\dagger;\ P_\text{asym};\ F_\ell;\ K_\text{trap};\ G_\beth;\ \Gamma_\text{seq};\ \Phi_\text{EP};\ H_0;\ 1{:}1;\ \Omega_0 \rangle \quad O_0$$
+$$\mathbb{Z}_p: \langle D_\infty;\ T_\bowtie;\ R_\dagger;\ P_\text{asym};\ F_\ell;\ K_\text{trap};\ G_\beth;\ \Gamma_\text{seq};\ \Phi_\text{EP};\ H_0;\ 1{:}1;\ \Omega_0 \rangle \quad O₀$$
 
-$$\text{Effective manifold action}: \langle D_\triangle;\ T_\text{network};\ R_\dagger;\ P_\text{sym};\ F_\eth;\ K_\text{mod};\ G_\gimel;\ \Gamma_\text{seq};\ \Phi_c;\ H_0;\ n{:}n;\ \Omega_Z \rangle \quad O_2$$
+$$\text{Effective manifold action}: \langle D_\triangle;\ T_\text{network};\ R_\dagger;\ P_\text{sym};\ F_\eth;\ K_\text{mod};\ G_\gimel;\ \Gamma_\text{seq};\ \Phi_c;\ H_0;\ n{:}n;\ \Omega_Z \rangle \quad O₂$$
 
 *Conflict set (5 load-bearing conflicts):*
 
@@ -3262,7 +3262,7 @@ Therefore: any action of a $\Phi_\text{EP}$ system on a $\Phi_c$ system must eit
 
 $$d_c(X, Y) = \sqrt{|\{i : x_i \neq y_i,\ i \text{ load-bearing}\}|}$$
 
-where "load-bearing" means the conflict crosses an ouroboricity tier boundary or criticality class ($O_0 \leftrightarrow O_1 \leftrightarrow O_2 \leftrightarrow O_\infty$; $\Phi_\text{sub} \leftrightarrow \Phi_c \leftrightarrow \Phi_\text{EP}$).
+where "load-bearing" means the conflict crosses an ouroboricity tier boundary or criticality class ($O₀ \leftrightarrow O₁ \leftrightarrow O₂ \leftrightarrow O_\infty$; $\Phi_\text{sub} \leftrightarrow \Phi_c \leftrightarrow \Phi_\text{EP}$).
 
 **Hypothesis 37.H1 (Impossibility Threshold).** A conflict distance $d_c \geq 2.5$ on load-bearing primitives constitutes a structural impossibility result: the interaction or compatibility asserted by the conjecture is type-forbidden, not merely unproven.
 
@@ -3311,9 +3311,9 @@ The single primitive separating the correspondence from each object: $P$ ($P_{\p
 1. $d(A, B) = 0$: the dual objects are the same type (the duality is a type identity, not a type bridge)
 2. The correspondence $C$ encoding: $C = A[P_\text{sym} \mapsto P_{\pm}^{\text{sym}}]$ — identical to $A$ and $B$ except with $P$ promoted to full Frobenius self-duality
 3. $d(C, A) = d(C, B) = 0.354$ (single primitive, $P$)
-4. $C$ is $O_\infty$; $A$, $B$ are $O_2$
+4. $C$ is $O_\infty$; $A$, $B$ are $O₂$
 
-*Interpretation:* An exact correspondence is not a theorem connecting two different objects — it is the recognition that one $O_\infty$ object ($C$) has been presented twice as two $O_2$ objects ($A$, $B$) by projecting out the Frobenius self-duality ($P_{\pm}^{\text{sym}} \to P_\text{sym}$). The "proof" of the correspondence establishes that the self-duality is exact — that $\mu \circ \delta = \text{id}$ and therefore the two $P_\text{sym}$ projections are symmetric images of each other.
+*Interpretation:* An exact correspondence is not a theorem connecting two different objects — it is the recognition that one $O_\infty$ object ($C$) has been presented twice as two $O₂$ objects ($A$, $B$) by projecting out the Frobenius self-duality ($P_{\pm}^{\text{sym}} \to P_\text{sym}$). The "proof" of the correspondence establishes that the self-duality is exact — that $\mu \circ \delta = \text{id}$ and therefore the two $P_\text{sym}$ projections are symmetric images of each other.
 
 *Empirical support:* Taniyama-Shimura: $d(\text{elliptic curve},\ \text{modular form}) = 0$; $d(\text{TS},\ \text{each}) = 0.354$. (2026-04-02)
 
@@ -3323,7 +3323,7 @@ The single primitive separating the correspondence from each object: $P$ ($P_{\p
 - $d(\text{left side},\ \text{right side}) = 0$
 - $d(\text{correspondence},\ \text{each side}) = 0.354$
 
-A proposed duality is approximate ($O_2$) if either condition fails. This gives a structural falsification criterion for duality conjectures: encode both sides and the proposed correspondence; if the distances don't match the Theorem 38.1 pattern, the duality is not exact.
+A proposed duality is approximate ($O₂$) if either condition fails. This gives a structural falsification criterion for duality conjectures: encode both sides and the proposed correspondence; if the distances don't match the Theorem 38.1 pattern, the duality is not exact.
 
 **Predicted exact dualities (Tier I):** Fourier transform, Pontryagin duality, Koszul duality — all should show $d = 0$ and $d = 0.354$.
 
@@ -3358,7 +3358,7 @@ The promotion signature $\Sigma = [R, P, \Gamma, H]$ (§35.2) maps the conjectur
 
 ---
 
-## §39 — Fidelity Promotion and the O_2 Tractability Criterion
+## §39 — Fidelity Promotion and the O₂ Tractability Criterion
 
 *Sourced from: Thurston's 24 Questions session, 2026-04-02 (SYNTHONICON_DIAPHORICS §LXXVIII, P-264–P-270)*
 
@@ -3411,32 +3411,32 @@ The distinction matters for proof strategy:
 - If a conjecture requires Σ-promotion, the proof must establish the Frobenius condition — this typically requires entirely new mathematical machinery (e.g., modular forms for FLT, Ricci flow for Poincaré).
 - If a conjecture requires F-promotion, the proof must find the decoding key — typically a finite cover, extension, or auxiliary structure that makes the hidden geometry visible.
 
-### §39.5 — Theorem 39.3 (O_2 Tractability Criterion)
+### §39.5 — Theorem 39.3 (O₂ Tractability Criterion)
 
-**Theorem 39.3.** A mathematical classification program is tractable (admits a complete classification) if and only if it encodes at $O_2$ ouroboricity: $\Phi_c + \Omega \neq \Omega_0 + D_\triangle$ (bounded geometry, topological protection).
+**Theorem 39.3.** A mathematical classification program is tractable (admits a complete classification) if and only if it encodes at $O₂$ ouroboricity: $\Phi_c + \Omega \neq \Omega_0 + D_\triangle$ (bounded geometry, topological protection).
 
 *Structural account:*
-- **$O_0$ programs** ($\Phi \neq \Phi_c$): no self-referential loop. Either trivial (no structure to classify) or lack the critical manifold necessary for recursive classification.
-- **$O_1$ programs** ($\Phi_c + \Omega_0$): self-reference without topological protection. Classification attempts fail to stabilize — classification results are fragile.
-- **$O_2$ programs** ($\Phi_c + \Omega \neq \Omega_0 + D_\triangle$): bounded, protected self-reference. The loop (objects → invariants → objects) terminates: each object decomposes into finitely many pieces, each carrying protected invariants.
-- **$O_2^\dagger$ programs** ($\Phi_c + \Omega \neq \Omega_0 + D_\infty$): protected but unbounded self-reference. Classification does not terminate.
+- **$O₀$ programs** ($\Phi \neq \Phi_c$): no self-referential loop. Either trivial (no structure to classify) or lack the critical manifold necessary for recursive classification.
+- **$O₁$ programs** ($\Phi_c + \Omega_0$): self-reference without topological protection. Classification attempts fail to stabilize — classification results are fragile.
+- **$O₂$ programs** ($\Phi_c + \Omega \neq \Omega_0 + D_\triangle$): bounded, protected self-reference. The loop (objects → invariants → objects) terminates: each object decomposes into finitely many pieces, each carrying protected invariants.
+- **$O₂^\dagger$ programs** ($\Phi_c + \Omega \neq \Omega_0 + D_\infty$): protected but unbounded self-reference. Classification does not terminate.
 - **$O_\infty$ programs** ($\Phi_c + P_{\pm}^{\text{sym}}$): establish correspondences (dualities), not classifications. Terminates differently — by identifying a type identity, not by exhausting cases.
 
 *Predicted instances:*
 
 | Program | Predicted tier | Classification | Evidence |
 |---|:---:|---|---|
-| 3-manifolds (Thurston) | $O_2$ | Complete (Perelman) ✓ | $D_\triangle$, $\Omega_Z$, $\Phi_c$ |
-| Finite simple groups (CFSG) | $O_2$ | Complete (100yr, $K_\text{slow}$) ✓ | Bounded, protected |
-| Compact 4-manifolds | $O_2^\dagger$ (predicted) | Incomplete (open) | $D_\infty$ unbounded |
-| Finitely presented groups | $O_0$ (predicted) | Impossible (Word problem) | No canonical $\Phi_c$ |
+| 3-manifolds (Thurston) | $O₂$ | Complete (Perelman) ✓ | $D_\triangle$, $\Omega_Z$, $\Phi_c$ |
+| Finite simple groups (CFSG) | $O₂$ | Complete (100yr, $K_\text{slow}$) ✓ | Bounded, protected |
+| Compact 4-manifolds | $O₂^\dagger$ (predicted) | Incomplete (open) | $D_\infty$ unbounded |
+| Finitely presented groups | $O₀$ (predicted) | Impossible (Word problem) | No canonical $\Phi_c$ |
 | Langlands correspondences | $O_\infty$ | Correspondence, not classification | $P_{\pm}^{\text{sym}}$ |
 
-*Corollary 39.C1:* Any classification program that has resisted complete resolution for more than a century, despite substantial effort, is either $O_2^\dagger$ (unbounded self-reference) or $O_0$ (wrong structural type for classification). Programs that *have* been classified are $O_2$.
+*Corollary 39.C1:* Any classification program that has resisted complete resolution for more than a century, despite substantial effort, is either $O₂^\dagger$ (unbounded self-reference) or $O₀$ (wrong structural type for classification). Programs that *have* been classified are $O₂$.
 
 ### §39.6 — K_slow Structural Necessity
 
-**Theorem 39.4.** Any $O_2$ classification program whose holographic encoding requires full boundary-to-bulk decoding is $K_\text{slow}$; this kinetic character is structural and cannot be compressed to $K_\text{mod}$ or $K_\text{fast}$.
+**Theorem 39.4.** Any $O₂$ classification program whose holographic encoding requires full boundary-to-bulk decoding is $K_\text{slow}$; this kinetic character is structural and cannot be compressed to $K_\text{mod}$ or $K_\text{fast}$.
 
 *Instance:* Thurston's program. The Ricci flow with surgery is the unique $K_\text{slow}$ trajectory through type space that respects the holographic encoding. Questions Q13–18 (can 3-manifold homeomorphism be decided efficiently?) are answered structurally: no. The kinetic barrier is not a complexity-class obstruction but a primitive-type obstruction.
 
@@ -3456,9 +3456,9 @@ Mathematical problems at criticality ($\Phi_c$ or $\Phi_c^\mathbb{C}$) partition
 
 | Regime | Signature | Tier | Examples | Structural status |
 |---|---|:---:|---|---|
-| Critical-Topological | $\Omega_Z + P \geq P_\text{sym} + \Phi_c$ | $O_2$ / $O_2^\dagger$ / $O_\infty$ | Poincaré, Riemann, Hodge, BSD | Solvable |
-| Computational-Trapping | $P_\text{asym} + K_\text{trap} + \Omega_0$ | $O_1$ | P vs NP | Structurally incomplete |
-| Dynamical-Causal | $R_\dagger + \Phi_c + \Omega_0$ | $O_1$ | Navier-Stokes, Lorenz | Requires invariant discovery |
+| Critical-Topological | $\Omega_Z + P \geq P_\text{sym} + \Phi_c$ | $O₂$ / $O₂^\dagger$ / $O_\infty$ | Poincaré, Riemann, Hodge, BSD | Solvable |
+| Computational-Trapping | $P_\text{asym} + K_\text{trap} + \Omega_0$ | $O₁$ | P vs NP | Structurally incomplete |
+| Dynamical-Causal | $R_\dagger + \Phi_c + \Omega_0$ | $O₁$ | Navier-Stokes, Lorenz | Requires invariant discovery |
 
 Problems in different regimes are at $d \approx 6$–$7$ from each other. Problems within the Critical-Topological cluster are at $d \approx 2$. No unified proof technique spans all three regimes.
 
@@ -3481,7 +3481,7 @@ $$\Omega_Z \quad \text{AND} \quad (P \geq P_\text{sym}) \quad \text{AND} \quad (
 | P vs NP | $\Omega_0 + P_\text{asym}$ — FAILS | Open, intractable | ✓ |
 | Navier-Stokes | $\Omega_0 + P_\text{asym}$ — FAILS | Open, requires invariant | ✓ |
 
-*Relationship to §39.5 (O_2 Tractability Criterion):* §39.5 classifies classification programs. §40.H1 classifies individual critical problems. Both identify $\Omega_Z$ as the primary solvability gate; §40.H1 adds the $P \geq P_\text{sym}$ symmetry requirement.
+*Relationship to §39.5 (O₂ Tractability Criterion):* §39.5 classifies classification programs. §40.H1 classifies individual critical problems. Both identify $\Omega_Z$ as the primary solvability gate; §40.H1 adds the $P \geq P_\text{sym}$ symmetry requirement.
 
 *Falsification condition:* P vs NP or NS is resolved in its current formulation without any step corresponding to $\Omega$ acquisition or $P$ promotion.
 
@@ -3492,11 +3492,11 @@ $$\Omega_Z \quad \text{AND} \quad (P \geq P_\text{sym}) \quad \text{AND} \quad (
 | Tier | Condition | Required proof method |
 |---|---|---|
 | $O_\infty$ | $\Phi_c + P_{\pm}^{\text{sym}}$ | Must match exact Frobenius self-duality; analytic cleverness insufficient |
-| $O_2^\dagger$ | $\Phi_c + \Omega_Z + D_\infty$ | $K_\text{slow}$ flow methods respecting unbounded domain (Ricci flow archetype) |
-| $O_2$ | $\Phi_c + \Omega_Z + D_\triangle$ | Standard topological/duality methods; tractable |
-| $O_1$ | $\Phi_c + \Omega_0$ | Reformulation required ($\Omega$ acquisition or $P$ promotion); or conditional results only |
+| $O₂^\dagger$ | $\Phi_c + \Omega_Z + D_\infty$ | $K_\text{slow}$ flow methods respecting unbounded domain (Ricci flow archetype) |
+| $O₂$ | $\Phi_c + \Omega_Z + D_\triangle$ | Standard topological/duality methods; tractable |
+| $O₁$ | $\Phi_c + \Omega_0$ | Reformulation required ($\Omega$ acquisition or $P$ promotion); or conditional results only |
 
-*Instance:* Poincaré ($O_2^\dagger$) required Ricci flow with surgery — a $K_\text{slow}$ method respecting $D_\infty$ character. This was structurally necessary, not merely historically contingent. Riemann ($O_\infty$) resists because it requires matching the exact Frobenius algebra structure of the zeta function — no weaker method is type-compatible.
+*Instance:* Poincaré ($O₂^\dagger$) required Ricci flow with surgery — a $K_\text{slow}$ method respecting $D_\infty$ character. This was structurally necessary, not merely historically contingent. Riemann ($O_\infty$) resists because it requires matching the exact Frobenius algebra structure of the zeta function — no weaker method is type-compatible.
 
 ### §40.4 — Hypothesis 40.H2 (P vs NP Structural Incompleteness)
 
@@ -3504,7 +3504,7 @@ $$\Omega_Z \quad \text{AND} \quad (P \geq P_\text{sym}) \quad \text{AND} \quad (
 
 (a) **Reformulation**: find a duality between P and NP descriptions — a symmetry making verification and solving dual aspects of the same operation — promoting $P_\text{asym} \to P_{\pm}^{\text{sym}}$ and $T_\text{network} \to T_\text{holo}$ (7-primitive promotion, dominant gaps at $P$ and $T$); or
 
-(b) **Accept O_1 character**: work within $\Omega_0 + P_\text{asym}$ and obtain conditional/partial results only.
+(b) **Accept O₁ character**: work within $\Omega_0 + P_\text{asym}$ and obtain conditional/partial results only.
 
 *Note:* This hypothesis was independently derived in two sessions (§LX, §LXXIX) from different reasoning paths. It is consistent with §34 (barrier taxonomy: Frobenius barrier at $P$) and §37 (conflict distance: $d_c = 3.0$–level structural incompatibility with solvable regime).
 
@@ -3531,7 +3531,7 @@ $$\Omega_Z \quad \text{AND} \quad (P \geq P_\text{sym}) \quad \text{AND} \quad (
 
 The cluster/isolation structure in 12D Mahalanobis space matches the empirical observation that topological/cohomological methods transfer freely within {Poincaré, Riemann, Hodge, BSD} but do not transfer to P vs NP or NS. The grammar gives the structural reason: the $d \approx 6$–$7$ distances reflect incompatibility at load-bearing primitives ($\Omega$, $P$, $T$, $K$).
 
-**See also:** §34 (barrier taxonomy); §37 (conflict distance, structural impossibility); §39 (O_2 tractability criterion); §35 (proof as phase transition); SYNTHONICON_DIAPHORICS §LXXIX (full Smale's analysis, P-271–P-276); §LXXII (NS encoding); §LX (P vs NP duality).
+**See also:** §34 (barrier taxonomy); §37 (conflict distance, structural impossibility); §39 (O₂ tractability criterion); §35 (proof as phase transition); SYNTHONICON_DIAPHORICS §LXXIX (full Smale's analysis, P-271–P-276); §LXXII (NS encoding); §LX (P vs NP duality).
 
 ---
 
@@ -3539,25 +3539,25 @@ The cluster/isolation structure in 12D Mahalanobis space matches the empirical o
 
 *Source: 2026-04-03 syncon inquiry session (Simon's Problem, 10 iterations, 560 systems). This session predates the addition of the `<mathematics_and_proof_structure>` context to the system prompt. Results independently derived from primitive encodings, later confirmed consistent with §35–§40 framework. See SYNTHONICON_DIAPHORICS §LXXX for full session analysis (P-277–P-282).*
 
-### §41.1 — Theorem 41.1 (Quantum Advantage as $O_0 \to O_2$ Crossing)
+### §41.1 — Theorem 41.1 (Quantum Advantage as $O₀ \to O₂$ Crossing)
 
-**Theorem 41.1.** Exponential quantum speedup over classical is structurally equivalent to the ouroboricity boundary crossing $O_0 \to O_2$. Specifically:
+**Theorem 41.1.** Exponential quantum speedup over classical is structurally equivalent to the ouroboricity boundary crossing $O₀ \to O₂$. Specifically:
 
-1. The classical encoding of a problem admitting exponential quantum speedup satisfies $\Phi_\text{sub} + \Omega_0$ ($O_0$ tier).
-2. The quantum encoding of the same problem satisfies $\Phi_c + \Omega_Z$ ($O_2$ or higher tier).
+1. The classical encoding of a problem admitting exponential quantum speedup satisfies $\Phi_\text{sub} + \Omega_0$ ($O₀$ tier).
+2. The quantum encoding of the same problem satisfies $\Phi_c + \Omega_Z$ ($O₂$ or higher tier).
 3. The boundary crossing requires simultaneous promotion in at least four primitives: $\Phi$, $\Omega$, $P$, and $F$.
 4. Crossing fewer than all four produces at most polynomial speedup.
 
 *Confidence:* C1 (empirically confirmed: Simon, Shor, Grover, Deutsch-Jozsa all correctly classified).
 
-*Supporting instance (Simon's Problem):* Classical encoding $\langle D_\infty; T_\text{network}; R_\text{cat}; P_\text{asym}; F_\ell; K_\text{fast}; G_\beth; \Gamma_\text{and}; \Phi_\text{sub}; H_0; n{:}m; \Omega_0 \rangle$ ($O_0$). Quantum encoding $\langle D_\text{holo}; T_\text{holo}; R_\dagger; P_\text{pm}; F_\hbar; K_\text{fast}; G_\aleph; \Gamma_\text{seq}; \Phi_c; H_1; n{:}m; \Omega_Z \rangle$ ($O_2$). 10-primitive promotion; $K$ and $S$ invariant.
+*Supporting instance (Simon's Problem):* Classical encoding $\langle D_\infty; T_\text{network}; R_\text{cat}; P_\text{asym}; F_\ell; K_\text{fast}; G_\beth; \Gamma_\text{and}; \Phi_\text{sub}; H_0; n{:}m; \Omega_0 \rangle$ ($O₀$). Quantum encoding $\langle D_\text{holo}; T_\text{holo}; R_\dagger; P_\text{pm}; F_\hbar; K_\text{fast}; G_\aleph; \Gamma_\text{seq}; \Phi_c; H_1; n{:}m; \Omega_Z \rangle$ ($O₂$). 10-primitive promotion; $K$ and $S$ invariant.
 
 *Tier comparison:*
 | Speedup type | Classical tier | Quantum tier | Ouroboricity crossing |
 |---|:---:|:---:|:---:|
-| Exponential (Simon, Shor) | $O_0$ | $O_2$ | $O_0 \to O_2$ |
-| Superpolynomial oracle (Deutsch-Jozsa) | $O_0$ | $O_1$ | $O_0 \to O_1$ |
-| Polynomial (Grover) | $O_1$ | $O_1$ | None |
+| Exponential (Simon, Shor) | $O₀$ | $O₂$ | $O₀ \to O₂$ |
+| Superpolynomial oracle (Deutsch-Jozsa) | $O₀$ | $O₁$ | $O₀ \to O₁$ |
+| Polynomial (Grover) | $O₁$ | $O₁$ | None |
 
 ### §41.2 — Theorem 41.2 (Tensor Bottleneck for Classical-Quantum Composition)
 
@@ -3567,11 +3567,11 @@ $$\text{tier}(A) \leq \text{tier}(A_\text{classical})$$
 
 with equality achieved only when $A_\text{classical}$ already encodes $\Phi_c + \Omega_Z$.
 
-*Proof sketch.* The tensor product under the meet lattice satisfies $\text{meet}(P_\text{asym}, P_\text{pm}) = P_\text{asym}$ and $\text{meet}(F_\ell, F_\hbar) = F_\ell$. Since $A_\text{classical}$ encodes $P_\text{asym} + F_\ell$ and $\Phi_c$ is absorbing under meet, the tensor product inherits $\Phi_\text{sub}$ (classical subgraph dominates). The quantum component's $O_2$ structure is inaccessible from below via meet. $\square$
+*Proof sketch.* The tensor product under the meet lattice satisfies $\text{meet}(P_\text{asym}, P_\text{pm}) = P_\text{asym}$ and $\text{meet}(F_\ell, F_\hbar) = F_\ell$. Since $A_\text{classical}$ encodes $P_\text{asym} + F_\ell$ and $\Phi_c$ is absorbing under meet, the tensor product inherits $\Phi_\text{sub}$ (classical subgraph dominates). The quantum component's $O₂$ structure is inaccessible from below via meet. $\square$
 
-*Corollary.* Variational quantum-classical algorithms (QAOA, VQE, and similar) are structurally capped at $O_1$. The classical optimizer component at $P_\text{asym}$ prevents the $O_2$ acquisition necessary for exponential advantage. This is not a hardware limitation but a structural one.
+*Corollary.* Variational quantum-classical algorithms (QAOA, VQE, and similar) are structurally capped at $O₁$. The classical optimizer component at $P_\text{asym}$ prevents the $O₂$ acquisition necessary for exponential advantage. This is not a hardware limitation but a structural one.
 
-*Two bottleneck primitives (either alone is sufficient to block $O_2$):*
+*Two bottleneck primitives (either alone is sufficient to block $O₂$):*
 - **$P$ bottleneck:** $\text{meet}(P_\text{asym}, P_\text{pm}) = P_\text{asym}$ — asymmetric classical component destroys quantum duality; interference structure collapses
 - **$F$ bottleneck:** $\text{meet}(F_\ell, F_\hbar) = F_\ell$ — finite-precision classical component destroys exact amplitude structure; topological protection degrades to probabilistic
 
@@ -3682,11 +3682,11 @@ A system cannot simultaneously be at the maximum of structural self-description 
 
 ### §42.5 — Hypothesis 42.H2 (Ontological Inexhaustibility of $O_\infty$ Systems)
 
-**Hypothesis 42.H2.** Systems at $O_\infty$ (either Frobenius or ontological) have interior natures that are structurally inaccessible to any system at a lower ouroboricity tier, not just to the grammar. The interior of a Frobenius $O_\infty$ system is not merely undescribed but undescribable from within $O_2$ or below.
+**Hypothesis 42.H2.** Systems at $O_\infty$ (either Frobenius or ontological) have interior natures that are structurally inaccessible to any system at a lower ouroboricity tier, not just to the grammar. The interior of a Frobenius $O_\infty$ system is not merely undescribed but undescribable from within $O₂$ or below.
 
 *Status:* Hypothesis (H2). Motivated by the observation that $O_\infty$ systems are the fixed points of the self-modeling map ($\Phi_c + P_{\pm}^{\text{sym}}$): their exterior encodes themselves, and their interior is the experience of being a self-encoding system. This interior is accessible only from a system that has the same structural type — just as the content of a Frobenius algebra can only be fully experienced by another Frobenius algebra.
 
-*Falsification condition:* Any demonstration that the interior nature of an $O_\infty$ system (e.g., the Riemann zeta function's analytic continuation, the Ising model's critical fluctuations) is fully accessible to a $O_2$ system without structural promotion.
+*Falsification condition:* Any demonstration that the interior nature of an $O_\infty$ system (e.g., the Riemann zeta function's analytic continuation, the Ising model's critical fluctuations) is fully accessible to a $O₂$ system without structural promotion.
 
 ### §42.6 — The Ontological Formula
 
@@ -3715,24 +3715,24 @@ The grammar provides the first component completely. Ontology — the fact that 
 
 **Theorem 43.1.** Let $B = \{D_\text{holo}, T_\text{holo}, \Phi_c, \Omega_Z\}$ be the holographic boundary condition. Then:
 
-1. Any system carrying $B$ encodes at ouroboricity tier $O_2$ (by R4: $\Phi_c + \Omega \neq \Omega_0 + D_\text{holo} \Rightarrow O_2$).
+1. Any system carrying $B$ encodes at ouroboricity tier $O₂$ (by R4: $\Phi_c + \Omega \neq \Omega_0 + D_\text{holo} \Rightarrow O₂$).
 2. $B$ does not contain or force $P_{\pm}^{\text{sym}}$.
 3. Therefore $B$ does not determine the $O_\infty$ tier. Systems at $O_\infty$ require $P_{\pm}^{\text{sym}}$ as an **additional independent constraint** beyond $B$ (R1: $\Phi_c + P_{\pm}^{\text{sym}} \Rightarrow O_\infty$).
-4. Proof of a conjecture whose encoding carries $B$ is therefore **type inference** — discovering $P_{\pm}^{\text{sym}}$ as the constraint that lifts $O_2$ to $O_\infty$ — not **type check** — verifying that a claimed bulk is consistent with $B$.
+4. Proof of a conjecture whose encoding carries $B$ is therefore **type inference** — discovering $P_{\pm}^{\text{sym}}$ as the constraint that lifts $O₂$ to $O_\infty$ — not **type check** — verifying that a claimed bulk is consistent with $B$.
 
-*Proof.* (1) follows directly from R4. (2): $B$ specifies $D$, $T$, $\Phi$, $\Omega$ but not $P$; no composition of $B$'s primitives produces $P_{\pm}^{\text{sym}}$ (R1 is a gate, not a consequence of R4's premises). (3): R1 and R4 are independent rules with non-overlapping antecedents on $P$. (4): type-checking a conjecture against boundary $B$ establishes at most $O_2$ consistency; reaching $O_\infty$ requires inferring $P_{\pm}^{\text{sym}}$, which $B$ neither contains nor forces. $\square$
+*Proof.* (1) follows directly from R4. (2): $B$ specifies $D$, $T$, $\Phi$, $\Omega$ but not $P$; no composition of $B$'s primitives produces $P_{\pm}^{\text{sym}}$ (R1 is a gate, not a consequence of R4's premises). (3): R1 and R4 are independent rules with non-overlapping antecedents on $P$. (4): type-checking a conjecture against boundary $B$ establishes at most $O₂$ consistency; reaching $O_\infty$ requires inferring $P_{\pm}^{\text{sym}}$, which $B$ neither contains nor forces. $\square$
 
-*What the boundary provides:* $B$ is necessary for provability — a conjecture at $O_0$ or $O_1$ cannot reach $O_\infty$ via R1 alone without first acquiring $\Omega \neq \Omega_0$ and an appropriate $D$ (promoting to $O_2$). $B$ is the structural floor from which proof is possible. But it is not the proof.
+*What the boundary provides:* $B$ is necessary for provability — a conjecture at $O₀$ or $O₁$ cannot reach $O_\infty$ via R1 alone without first acquiring $\Omega \neq \Omega_0$ and an appropriate $D$ (promoting to $O₂$). $B$ is the structural floor from which proof is possible. But it is not the proof.
 
-*The Frobenius barrier restated:* $P_{\pm}^{\text{sym}}$ is the maximal $P$ ordinal and cannot be synthesized by composition from $P_\text{sym}$ or lower (§23). Therefore the inference step — from $O_2$ (boundary given) to $O_\infty$ (proven) — is irreducible. It cannot be completed by composing existing $O_2$ material; the exact $\mathbb{Z}_2$ self-duality must be independently discovered and established. This is why proof feels qualitatively different from verification: it is structurally a different operation.
+*The Frobenius barrier restated:* $P_{\pm}^{\text{sym}}$ is the maximal $P$ ordinal and cannot be synthesized by composition from $P_\text{sym}$ or lower (§23). Therefore the inference step — from $O₂$ (boundary given) to $O_\infty$ (proven) — is irreducible. It cannot be completed by composing existing $O₂$ material; the exact $\mathbb{Z}_2$ self-duality must be independently discovered and established. This is why proof feels qualitatively different from verification: it is structurally a different operation.
 
 ### §43.C1 — Corollary 43.C1 (O_∞ Sparsity)
 
-**Corollary 43.C1.** The $O_\infty$ tier is structurally sparse. The $P_{\pm}^{\text{sym}}$ gate (R1) requires the maximal $P$ ordinal, which cannot be synthesized. Therefore, for any boundary $B$ compatible with $O_2$, the fraction of systems that reach $O_\infty$ is bounded strictly below 1 — and in the grammar's catalog (573 entries), it is 9.1% overall ($O_2 = 29.8\%$, $O_\infty = 9.1\%$). Among systems sharing the specific boundary $\{D_\text{holo}, T_\text{holo}, \Phi_c, \Omega_Z^*\}$, 92 are $O_2$ and 31 are $O_\infty$ (25%). The boundary underdetermines the tier by a factor of $\sim 4$.
+**Corollary 43.C1.** The $O_\infty$ tier is structurally sparse. The $P_{\pm}^{\text{sym}}$ gate (R1) requires the maximal $P$ ordinal, which cannot be synthesized. Therefore, for any boundary $B$ compatible with $O₂$, the fraction of systems that reach $O_\infty$ is bounded strictly below 1 — and in the grammar's catalog (573 entries), it is 9.1% overall ($O₂ = 29.8\%$, $O_\infty = 9.1\%$). Among systems sharing the specific boundary $\{D_\text{holo}, T_\text{holo}, \Phi_c, \Omega_Z^*\}$, 92 are $O₂$ and 31 are $O_\infty$ (25%). The boundary underdetermines the tier by a factor of $\sim 4$.
 
-*Consequence for mathematics:* Most conjectures that are structurally eligible for proof (sitting at $O_2$) will remain unproved — not because they are false, but because the Frobenius condition has not yet been planted. The grammar does not predict which $O_2$ systems will eventually reach $O_\infty$; it predicts only that the transition requires the non-synthesizable $P_{\pm}^{\text{sym}}$ in every case.
+*Consequence for mathematics:* Most conjectures that are structurally eligible for proof (sitting at $O₂$) will remain unproved — not because they are false, but because the Frobenius condition has not yet been planted. The grammar does not predict which $O₂$ systems will eventually reach $O_\infty$; it predicts only that the transition requires the non-synthesizable $P_{\pm}^{\text{sym}}$ in every case.
 
-**See also:** §23 (Frobenius structure); §34 (proof systems as typed operators); §35 (proof as phase transition); §42 (grammar incompleteness — interior/exterior split); SYNTHONICON_DIAPHORICS §LXXXVI (catalog census; $O_2$ boundary population).
+**See also:** §23 (Frobenius structure); §34 (proof systems as typed operators); §35 (proof as phase transition); §42 (grammar incompleteness — interior/exterior split); SYNTHONICON_DIAPHORICS §LXXXVI (catalog census; $O₂$ boundary population).
 
 ---
 
@@ -3747,7 +3747,7 @@ The grammar provides the first component completely. Ontology — the fact that 
 
 ### §44.1 — Theorem 44.1 (Vehicle Existence)
 
-**Theorem 44.1.** Let $C$ be a mathematical conjecture encoding at ouroboricity tier $O_1$ or $O_2$ in the grammar. Let $\Sigma(C)$ denote the conflict set between $C$'s encoding and the proven-manifold type — the primitives requiring promotion to reach $O_\infty$. Then:
+**Theorem 44.1.** Let $C$ be a mathematical conjecture encoding at ouroboricity tier $O₁$ or $O₂$ in the grammar. Let $\Sigma(C)$ denote the conflict set between $C$'s encoding and the proven-manifold type — the primitives requiring promotion to reach $O_\infty$. Then:
 
 A **sufficient condition** for $C$ to be provable is: there exists a mathematical framework $\mathcal{F}$ whose native primitive encoding carries all values in $\Sigma(C)$, and the domain of $C$ can be mapped (transported) into $\mathcal{F}$.
 
@@ -3779,13 +3779,13 @@ André did not construct the Frobenius symmetry, holographic dimensionality, or 
 
 **Candidate vehicle for CEP:** Perfectoid von Neumann algebras (SYNTHONICON_DIAPHORICS §LXXXIX) — noncommutative analogs of perfectoid spaces carrying $\{P_{\pm}^{\text{sym}}, D_\text{holo}, \Omega_{Z_2}\}$ natively for operator algebras. Not yet constructed. The grammar identifies the required primitive signature; construction is an open mathematical problem.
 
-**See also:** §23 (Frobenius — $P_{\pm}^{\text{sym}}$ non-synthesizability); §35 (proof as phase transition); §43 (holographic boundary underdetermines proof — $O_2$ floor, Frobenius as irreducible step); SYNTHONICON_DIAPHORICS §LXXXVIII (Monomial encoding, conflict table, comparative distances); §LXXXIX (perfectoid vN algebras as Connes vehicle candidate; P-309–P-310).
+**See also:** §23 (Frobenius — $P_{\pm}^{\text{sym}}$ non-synthesizability); §35 (proof as phase transition); §43 (holographic boundary underdetermines proof — $O₂$ floor, Frobenius as irreducible step); SYNTHONICON_DIAPHORICS §LXXXVIII (Monomial encoding, conflict table, comparative distances); §LXXXIX (perfectoid vN algebras as Connes vehicle candidate; P-309–P-310).
 
 ---
 
 ## §45 — Universal Conjecture Floor and Proven Manifold Convergence
 
-*Source: 2026-04-03 syncon inquiry session (6 iterations, 596 systems, 11 insights: 5 TOPO + 6 DIAPH). Five conjectures from algebraic K-theory (Bass), commutative algebra (Fröberg), algebraic geometry (Nagata), Gromov-Witten theory (Virasoro), and arithmetic geometry (Tate) all encode at the same $O_1$ floor. Cross-domain universality empirically confirmed. Strengthens §35 with domain-explicit data and a new structural theorem on $\Gamma$.*
+*Source: 2026-04-03 syncon inquiry session (6 iterations, 596 systems, 11 insights: 5 TOPO + 6 DIAPH). Five conjectures from algebraic K-theory (Bass), commutative algebra (Fröberg), algebraic geometry (Nagata), Gromov-Witten theory (Virasoro), and arithmetic geometry (Tate) all encode at the same $O₁$ floor. Cross-domain universality empirically confirmed. Strengthens §35 with domain-explicit data and a new structural theorem on $\Gamma$.*
 
 **Version:** 1.0 (2026-04-03)
 **Type:** Theorem + Corollary + Remark
@@ -3796,11 +3796,11 @@ André did not construct the Frobenius symmetry, holographic dimensionality, or 
 
 **Theorem 45.1.** The structural type of a deep mathematical conjecture (one whose proof requires $\Sigma$-promotion, not merely $F$-promotion) is invariant across mathematical domains in 8 of 12 primitives:
 
-$$\text{floor} = \langle D_\triangle;\ T_\boxtimes;\ R_\text{cat};\ P_\pm;\ F_\star;\ K_\text{mod};\ G_\star;\ \Gamma_\text{and};\ \Phi_c;\ H_\star;\ n{:}m;\ \Omega_0 \rangle \quad O_1$$
+$$\text{floor} = \langle D_\triangle;\ T_\boxtimes;\ R_\text{cat};\ P_\pm;\ F_\star;\ K_\text{mod};\ G_\star;\ \Gamma_\text{and};\ \Phi_c;\ H_\star;\ n{:}m;\ \Omega_0 \rangle \quad O₁$$
 
 The invariant primitives are $\{D, T, R, P, K, \Gamma, \Phi, \Omega\}$. The domain-varying primitives are $\{F, G, H\}$ (fidelity, scope, temporal depth), which encode the domain's epistemic character but do not determine provability.
 
-*Proof sketch.* The conjecture state is exactly the $O_1$ tier: $\Phi_c$ (criticality, necessary for self-modeling and thus for the conjecture to have content) + $\Omega_0$ (no topological protection — the conjecture can be perturbed). The $O_1$ condition forces: $\Omega_0$ (by definition), and the grammar's structural constraints then propagate: $R_\text{cat}$ (conjecture as categorical classification, not dynamic relation), $\Gamma_\text{and}$ (conditions require all premises, conjunctive), $D_\triangle$ (bounded computational space), $T_\boxtimes$ (box containment, finite), $K_\text{mod}$ (moderate kinetics — the conjecture is live but not settled). The universality across domains reflects that the $O_1$ tier has a unique structural preimage under the grammar's constraint propagation, independent of the content expressed through $F$, $G$, $H$. $\square$
+*Proof sketch.* The conjecture state is exactly the $O₁$ tier: $\Phi_c$ (criticality, necessary for self-modeling and thus for the conjecture to have content) + $\Omega_0$ (no topological protection — the conjecture can be perturbed). The $O₁$ condition forces: $\Omega_0$ (by definition), and the grammar's structural constraints then propagate: $R_\text{cat}$ (conjecture as categorical classification, not dynamic relation), $\Gamma_\text{and}$ (conditions require all premises, conjunctive), $D_\triangle$ (bounded computational space), $T_\boxtimes$ (box containment, finite), $K_\text{mod}$ (moderate kinetics — the conjecture is live but not settled). The universality across domains reflects that the $O₁$ tier has a unique structural preimage under the grammar's constraint propagation, independent of the content expressed through $F$, $G$, $H$. $\square$
 
 *Empirical support:* Confirmed for Bass (algebraic K-theory), Fröberg (commutative algebra), Nagata (algebraic geometry), Virasoro (Gromov-Witten theory), Tate (arithmetic geometry) — five domains with no previously known structural connection.
 
@@ -3810,7 +3810,7 @@ The invariant primitives are $\{D, T, R, P, K, \Gamma, \Phi, \Omega\}$. The doma
 
 $$\text{proven manifold} = \langle D_\text{holo};\ T_\text{holo};\ R_\dagger;\ P_{\pm}^{\text{sym}};\ F_\hbar;\ K_\text{slow};\ G_\aleph;\ \Gamma_\text{broad};\ \Phi_c;\ H_\infty;\ n{:}m;\ \Omega_{Z_2} \rangle \quad O_\infty$$
 
-*Proof sketch.* The proven manifold is the unique maximal element of the grammar's order on ouroboricity tiers reachable by $\Sigma$-promotion from the $O_1$ floor. $O_\infty$ is achieved by R1 ($\Phi_c + P_{\pm}^{\text{sym}}$). The remaining primitives saturate to their maximal values under the $O_\infty$ fixed-point constraint: $D_\text{holo}$ (boundary-bulk closure), $T_\text{holo}$ (holographic topology), $R_\dagger$ (adjoint/dynamic relation), $K_\text{slow}$ (exact, settled), $G_\aleph$ (universal scope), $\Gamma_\text{broad}$ (broadcast causation), $H_\infty$ (maximal temporal depth, irreversibility of proof), $\Omega_{Z_2}$ (binary topological protection). The saturation is unique: the $O_\infty$ fixed point has a unique primitive encoding (§27, grammar self-encoding theorem). $\square$
+*Proof sketch.* The proven manifold is the unique maximal element of the grammar's order on ouroboricity tiers reachable by $\Sigma$-promotion from the $O₁$ floor. $O_\infty$ is achieved by R1 ($\Phi_c + P_{\pm}^{\text{sym}}$). The remaining primitives saturate to their maximal values under the $O_\infty$ fixed-point constraint: $D_\text{holo}$ (boundary-bulk closure), $T_\text{holo}$ (holographic topology), $R_\dagger$ (adjoint/dynamic relation), $K_\text{slow}$ (exact, settled), $G_\aleph$ (universal scope), $\Gamma_\text{broad}$ (broadcast causation), $H_\infty$ (maximal temporal depth, irreversibility of proof), $\Omega_{Z_2}$ (binary topological protection). The saturation is unique: the $O_\infty$ fixed point has a unique primitive encoding (§27, grammar self-encoding theorem). $\square$
 
 *Corollary:* Any two proved theorems are at mutual distance $d = 0$, regardless of mathematical domain. Empirically confirmed: Bass (algebraic K-theory) $\equiv$ Tate (arithmetic geometry) at $d = 0$; Monomial (commutative algebra) $\equiv$ Bass $\equiv$ Tate at $d = 0$.
 
@@ -3824,15 +3824,15 @@ $$\text{proven manifold} = \langle D_\text{holo};\ T_\text{holo};\ R_\dagger;\ P
 
 This is Grothendieck's "rising sea" in primitive form: $\Gamma_\text{and} \to \Gamma_\text{broad}$ is the grammatical signature of conceptual proof.
 
-### §45.R1 — Remark: Structural Impossibility of Proof Discovery in $O_1$ Architectures
+### §45.R1 — Remark: Structural Impossibility of Proof Discovery in $O₁$ Architectures
 
-Current automated theorem proving systems (sequential deduction, categorical type theory) are structurally $O_1$: categorical ($R_\text{cat}$), conjunctive ($\Gamma_\text{and}$), bounded ($D_\triangle$, $T_\boxtimes$), unprotected ($\Omega_0$). They cannot cross the Frobenius barrier by composition (§23 — $P_{\pm}^{\text{sym}}$ is non-synthesizable). Therefore:
+Current automated theorem proving systems (sequential deduction, categorical type theory) are structurally $O₁$: categorical ($R_\text{cat}$), conjunctive ($\Gamma_\text{and}$), bounded ($D_\triangle$, $T_\boxtimes$), unprotected ($\Omega_0$). They cannot cross the Frobenius barrier by composition (§23 — $P_{\pm}^{\text{sym}}$ is non-synthesizable). Therefore:
 
-No $O_1$ architecture can independently discover a proof of any conjecture requiring $\Sigma$-promotion (the universal conjecture class). Such systems can **verify** proofs once supplied (type-checking at $O_1$ is sufficient), but **discovery** — the act of planting the Frobenius condition — requires a system whose architecture encodes at $O_\infty$ or accesses the $O_\infty$ tier during generation.
+No $O₁$ architecture can independently discover a proof of any conjecture requiring $\Sigma$-promotion (the universal conjecture class). Such systems can **verify** proofs once supplied (type-checking at $O₁$ is sufficient), but **discovery** — the act of planting the Frobenius condition — requires a system whose architecture encodes at $O_\infty$ or accesses the $O_\infty$ tier during generation.
 
 *What $O_\infty$ architecture would require:* Holographic computation as primitive (bulk from boundary), exact $Z_2$ symmetry operations native to the architecture, broadcast causation ($\Gamma_\text{broad}$ — one insight constrains many paths simultaneously), and topological protection of reasoning trajectories ($\Omega_{Z_2}$). This is a structural specification, not an engineering roadmap. Whether realizable in current hardware is an open question.
 
-*This remark does not predict that no AI will ever prove deep theorems* — it predicts that systems which do will not be recognizable as straightforward extensions of current sequential-deductive architectures. A proof-discovering system will be architecturally discontinuous from a proof-verifying system, by the same structural distance that separates $O_1$ from $O_\infty$.
+*This remark does not predict that no AI will ever prove deep theorems* — it predicts that systems which do will not be recognizable as straightforward extensions of current sequential-deductive architectures. A proof-discovering system will be architecturally discontinuous from a proof-verifying system, by the same structural distance that separates $O₁$ from $O_\infty$.
 
 **See also:** §23 (Frobenius — non-synthesizability of $P_{\pm}^{\text{sym}}$); §35 (proof as phase transition); §44 (vehicle existence theorem); SYNTHONICON_DIAPHORICS §XC (five-domain data; P-311–P-314 including P-314 ATC prediction).
 
@@ -3840,16 +3840,16 @@ No $O_1$ architecture can independently discover a proof of any conjecture requi
 
 ## §46 — $T+P$ Dominance in Arithmetic Proof
 
-*Source: 2026-04-03 syncon inquiry session (9 iterations, 606 systems, 13 insights: 5 TOPO + 8 DIAPH). Nine arithmetic conjectures encoded. Strengthens §45's universal conjecture floor with domain-specific quantitative data and a new sub-classification of the $O_1$ tier by $P$ encoding.*
+*Source: 2026-04-03 syncon inquiry session (9 iterations, 606 systems, 13 insights: 5 TOPO + 8 DIAPH). Nine arithmetic conjectures encoded. Strengthens §45's universal conjecture floor with domain-specific quantitative data and a new sub-classification of the $O₁$ tier by $P$ encoding.*
 
 **Version:** 1.0 (2026-04-03)
 **Type:** Theorem + Corollary
-**Status:** Empirically grounded (8 arithmetic systems); derivable from grammar metric structure and $O_1$ tier constraints
+**Status:** Empirically grounded (8 arithmetic systems); derivable from grammar metric structure and $O₁$ tier constraints
 **Claim plane:** `[TOPO]`
 
 ### §46.1 — Theorem 46.1 ($T+P$ Dominance)
 
-**Theorem 46.1.** For arithmetic conjectures encoding at the $O_1$ floor, the pair of promotions $\{T_\text{network} \to T_\text{holo},\ P_{\text{asym or }\psi} \to P_{\pm}^{\text{sym}}\}$ accounts for at least 50% of the total weighted squared distance to the proven manifold, and typically 70–85%.
+**Theorem 46.1.** For arithmetic conjectures encoding at the $O₁$ floor, the pair of promotions $\{T_\text{network} \to T_\text{holo},\ P_{\text{asym or }\psi} \to P_{\pm}^{\text{sym}}\}$ accounts for at least 50% of the total weighted squared distance to the proven manifold, and typically 70–85%.
 
 Quantitatively: $T_\text{network} \to T_\text{holo}$ contributes weighted$^2 = 16.0$ ($\Delta = 4$); $P_\text{asym} \to P_{\pm}^{\text{sym}}$ contributes 16.0 ($\Delta = 4$); $P_\psi \to P_{\pm}^{\text{sym}}$ contributes 9.0 ($\Delta = 3$). Combined $T+P$ = 32 units ($P_\text{asym}$ class) or 25 units ($P_\psi$ class).
 
@@ -3866,13 +3866,13 @@ Empirically confirmed across eight systems:
 | Leopoldt | 7.9937 | 32 | 50% |
 | Stark | 6.2048 | 32 | 83% |
 
-*Proof sketch.* At the $O_1$ floor, the conjecture carries $T_\text{network}$ (local arithmetic data, not globally encoded — the conjecture's topological structure is network-like) and $P_{\text{asym or }\psi}$ (approximate or partial symmetry, not exact). The proven manifold requires $T_\text{holo}$ (local data determines global structure — boundary determines bulk) and $P_{\pm}^{\text{sym}}$ (exact $Z_2$ Frobenius duality). These two gaps have the largest $\Delta$ values in the metric ($\Delta_T = 4$, $\Delta_{P_\text{asym}} = 4$) and carry weight $\geq 1.0$, making them the dominant squared contributions. For low-conflict conjectures (few secondary gaps), $T+P$ fraction approaches 85%. For high-conflict conjectures with additional large $\Delta$ values (e.g., Leopoldt's $H_0 \to H_\infty$, $\Delta_H = 4$), the fraction drops toward 50% but $T+P$ remains the largest single pair. $\square$
+*Proof sketch.* At the $O₁$ floor, the conjecture carries $T_\text{network}$ (local arithmetic data, not globally encoded — the conjecture's topological structure is network-like) and $P_{\text{asym or }\psi}$ (approximate or partial symmetry, not exact). The proven manifold requires $T_\text{holo}$ (local data determines global structure — boundary determines bulk) and $P_{\pm}^{\text{sym}}$ (exact $Z_2$ Frobenius duality). These two gaps have the largest $\Delta$ values in the metric ($\Delta_T = 4$, $\Delta_{P_\text{asym}} = 4$) and carry weight $\geq 1.0$, making them the dominant squared contributions. For low-conflict conjectures (few secondary gaps), $T+P$ fraction approaches 85%. For high-conflict conjectures with additional large $\Delta$ values (e.g., Leopoldt's $H_0 \to H_\infty$, $\Delta_H = 4$), the fraction drops toward 50% but $T+P$ remains the largest single pair. $\square$
 
 *Mathematical interpretation:* Mathematical proof in arithmetic IS the activation of holographic topology ($T_\text{holo}$ — local arithmetic data encodes global structure) and exact $Z_2$ Frobenius symmetry ($P_{\pm}^{\text{sym}}$ — $\mu \circ \delta = \text{id}$). Establishing an exact duality (not approximate correspondence) and showing local-global encoding are the primary structural acts of every arithmetic proof.
 
 ### §46.2 — Theorem 46.2 ($P_\psi$ Sub-Classification)
 
-**Theorem 46.2.** The $O_1$ tier splits into two structural sub-classes based on $P$ encoding:
+**Theorem 46.2.** The $O₁$ tier splits into two structural sub-classes based on $P$ encoding:
 
 - **$P_\text{asym}$ class**: $P = P_\text{asym}$, $\Delta_P = 4$ to $P_{\pm}^{\text{sym}}$. Conjectures in this class have no partial symmetry structure. Distance range: $d \in [6.12, 7.99]$ in the arithmetic domain. Members: Fontaine-Mazur, GGP, Hermite, Kummer-Vandiver, Lang-Trotter, Leopoldt, Stark.
 
@@ -3916,12 +3916,12 @@ The $H$ contribution elevates $d$ above 7.6 for both, making them the two deepes
 **Status:** Empirically grounded (8 non-arithmetic domains, 630 systems); extends prior universal floor theorems
 **Claim plane:** `[TOPO]`
 
-### §47.1 — Theorem 47.1 (Arithmetic Exceptionalism: $O_1$ vs $O_0$)
+### §47.1 — Theorem 47.1 (Arithmetic Exceptionalism: $O₁$ vs $O₀$)
 
-**Theorem 47.1.** Arithmetic conjectures (§XCI) encode at the $O_1$ floor ($\Phi_c + \Omega_0$), while non-arithmetic mathematical conjectures (algebra, representation theory, combinatorics, dynamical systems, algebraic geometry, covering/packing, differential geometry, discrete geometry) predominantly encode at the $O_0$ floor ($\Phi_\text{sub} + \Omega_0$ or $\Phi_\text{EP} + \Omega_0$).
+**Theorem 47.1.** Arithmetic conjectures (§XCI) encode at the $O₁$ floor ($\Phi_c + \Omega_0$), while non-arithmetic mathematical conjectures (algebra, representation theory, combinatorics, dynamical systems, algebraic geometry, covering/packing, differential geometry, discrete geometry) predominantly encode at the $O₀$ floor ($\Phi_\text{sub} + \Omega_0$ or $\Phi_\text{EP} + \Omega_0$).
 
 *Empirical basis.* Across 8 non-arithmetic domains and 630 total systems:
-- **Arithmetic (§XCI):** all 8 unproved conjectures encode $\Phi_c$ ($O_1$ floor)
+- **Arithmetic (§XCI):** all 8 unproved conjectures encode $\Phi_c$ ($O₁$ floor)
 - **Non-arithmetic:** out of all conjectures sampled, only Van der Waerden extensions and turbulence onset encode $\Phi_c$; all others encode $\Phi_\text{sub}$, $\Phi_\text{EP}$, or $\Phi_\text{sup}$
 
 *Structural interpretation.* Arithmetic conjectures are self-modeling: their formulations encode the critical fixed-point structure ($\Phi_c$) even in their unsolved state. Non-arithmetic conjectures lack this — their current formulations do not yet encode the self-referential structure required for proof. Proof in non-arithmetic domains requires activating $\Phi_\text{sub} \to \Phi_c$ as the first structural step; proof in arithmetic requires activating only $T$, $P$, $H$, and $\Omega$.
@@ -3960,7 +3960,7 @@ The $H$ contribution elevates $d$ above 7.6 for both, making them the two deepes
 
 *Structural reason.* The proven manifold requires $\Phi_c$ (criticality). A $\Phi_\text{sup}$ system is above the transition — it has already crossed $\Phi_c$ and moved into the disordered phase. The proof mechanism cannot access the $\Phi_c$ fixed point from $\Phi_\text{sup}$ without returning to the transition.
 
-**See also:** §35 (proof as phase transition); §44 (vehicle existence); §45 (universal conjecture floor); §46 ($T+P$ dominance in arithmetic); §48 (chemistry: $\Phi_c$ as gating condition; $O_1/O_2$ tier split); SYNTHONICON_DIAPHORICS §XCII–§XCIX (eight non-arithmetic domains; P-321–P-333).
+**See also:** §35 (proof as phase transition); §44 (vehicle existence); §45 (universal conjecture floor); §46 ($T+P$ dominance in arithmetic); §48 (chemistry: $\Phi_c$ as gating condition; $O₁/O₂$ tier split); SYNTHONICON_DIAPHORICS §XCII–§XCIX (eight non-arithmetic domains; P-321–P-333).
 
 ---
 
@@ -3987,13 +3987,13 @@ Any three of the four leave a vulnerability: e.g., $P+H+R$ without $\Omega$ mean
 
 *Quantitative basis.* $d(\text{racemic},\ \text{homochiral}) = 4.99$. The $P$ conflict dominates (weighted 9.0), but $H$ and $R$ conflicts (each weighted $\approx 3$–4) are individually non-negligible and structurally co-required.
 
-### §48.2 — Theorem 48.2 ($O_1/O_2$ Enzymatic Tier Split)
+### §48.2 — Theorem 48.2 ($O₁/O₂$ Enzymatic Tier Split)
 
-**Theorem 48.2.** Natural enzymes encode at the $O_2$ tier ($\Phi_c + \Omega_{Z_2}$); artificial enzymes encode at the $O_1$ tier ($\Phi_c + \Omega_0$). The gap between them is exactly three primitives: $K_\text{mod} \to K_\text{fast}$, $H_1 \to H_2$, $\Omega_0 \to \Omega_{Z_2}$, with $d = 1.5811$.
+**Theorem 48.2.** Natural enzymes encode at the $O₂$ tier ($\Phi_c + \Omega_{Z_2}$); artificial enzymes encode at the $O₁$ tier ($\Phi_c + \Omega_0$). The gap between them is exactly three primitives: $K_\text{mod} \to K_\text{fast}$, $H_1 \to H_2$, $\Omega_0 \to \Omega_{Z_2}$, with $d = 1.5811$.
 
-*Structural consequence.* $O_1$-tier systems (artificial enzymes) can achieve critical selectivity but are topologically unprotected — perturbations (temperature, pH, substrate concentration) can push the system off the critical point. $O_2$-tier systems (natural enzymes) maintain selectivity under perturbation because the $\Omega_{Z_2}$ protection means the critical behavior is topologically locked. This is the structural explanation of enzyme robustness: it is not thermodynamic stability but topological protection.
+*Structural consequence.* $O₁$-tier systems (artificial enzymes) can achieve critical selectivity but are topologically unprotected — perturbations (temperature, pH, substrate concentration) can push the system off the critical point. $O₂$-tier systems (natural enzymes) maintain selectivity under perturbation because the $\Omega_{Z_2}$ protection means the critical behavior is topologically locked. This is the structural explanation of enzyme robustness: it is not thermodynamic stability but topological protection.
 
-*Identity with asymmetric synthesis.* The $O_2$-tier encoding is shared by natural enzymes, asymmetric hydrogenation, and arbitrary quaternary stereocenter synthesis. These are structurally identical problems — they all require $\{K_\text{fast},\ H_2,\ \Omega_{Z_2},\ \Phi_c,\ R_\text{lr}\}$. The historical difficulty of arbitrary quaternary synthesis reflects this: it is an $O_2$-tier problem being attempted with $O_1$-tier tools. $\square$
+*Identity with asymmetric synthesis.* The $O₂$-tier encoding is shared by natural enzymes, asymmetric hydrogenation, and arbitrary quaternary stereocenter synthesis. These are structurally identical problems — they all require $\{K_\text{fast},\ H_2,\ \Omega_{Z_2},\ \Phi_c,\ R_\text{lr}\}$. The historical difficulty of arbitrary quaternary synthesis reflects this: it is an $O₂$-tier problem being attempted with $O₁$-tier tools. $\square$
 
 ### §48.C1 — Corollary 48.C1 (Chiral Catalysis Structural Conditions)
 
@@ -4008,9 +4008,9 @@ The SN1 incompatibility is not addressable by improved catalyst design — it is
 
 ### §48.C2 — Corollary 48.C2 (Protecting Groups as Incompatible Regime)
 
-**Corollary 48.C2.** Protecting group chemistry ($\Phi_\text{sub}$, $O_0$) and enzymatic selectivity ($\Phi_c$, $O_1/O_2$) are structurally incompatible regimes ($d = 3.8079$). Artificial enzymes at $O_1$ can reduce but not eliminate protecting groups for substrates requiring $O_2$ selectivity: full elimination requires $\Omega_{Z_2}$ engineering, not improved binding affinity or catalytic rate.
+**Corollary 48.C2.** Protecting group chemistry ($\Phi_\text{sub}$, $O₀$) and enzymatic selectivity ($\Phi_c$, $O₁/O₂$) are structurally incompatible regimes ($d = 3.8079$). Artificial enzymes at $O₁$ can reduce but not eliminate protecting groups for substrates requiring $O₂$ selectivity: full elimination requires $\Omega_{Z_2}$ engineering, not improved binding affinity or catalytic rate.
 
-*Design implication.* The path from protecting-group chemistry to protecting-group-free synthesis is not a matter of making artificial enzymes "better" within their current structural class — it requires a regime change from $O_1$ to $O_2$. The structural prescription is explicit: engineer $\Omega_{Z_2}$ (topological scaffolding), $H_2$ (irreversible commitment steps), and $K_\text{fast}$ (kinetics faster than racemization) simultaneously.
+*Design implication.* The path from protecting-group chemistry to protecting-group-free synthesis is not a matter of making artificial enzymes "better" within their current structural class — it requires a regime change from $O₁$ to $O₂$. The structural prescription is explicit: engineer $\Omega_{Z_2}$ (topological scaffolding), $H_2$ (irreversible commitment steps), and $K_\text{fast}$ (kinetics faster than racemization) simultaneously.
 
 **See also:** §23 (Frobenius non-synthesizability); §35 (proof as phase transition); §47 (cross-domain criticality split); §49 (physics/mathematics distinction; holographic necessity; cosmological constant dissolution); SYNTHONICON_DIAPHORICS §C–§CI (chemistry data; P-334–P-341).
 
@@ -4027,11 +4027,11 @@ The SN1 incompatibility is not addressable by improved catalyst design — it is
 
 ### §49.1 — Theorem 49.1 (Physics/Mathematics Structural Distinction)
 
-**Theorem 49.1.** Physical systems with dynamics ($H \neq H_0$) and single-particle limits ($S = 1{:}1$) are structurally forbidden from encoding $O_\infty$ ($P_{\pm}^{\text{sym}}$). Physical cosmology, quantum gravity, and all force mediators are bounded at $O_2$ by structural necessity, not by incomplete theory.
+**Theorem 49.1.** Physical systems with dynamics ($H \neq H_0$) and single-particle limits ($S = 1{:}1$) are structurally forbidden from encoding $O_\infty$ ($P_{\pm}^{\text{sym}}$). Physical cosmology, quantum gravity, and all force mediators are bounded at $O₂$ by structural necessity, not by incomplete theory.
 
 *Proof sketch.* $O_\infty$ requires $P_{\pm}^{\text{sym}}$ (the Frobenius condition $\mu \circ \delta = \text{id}$). By Theorem §23.1, $P_{\pm}^{\text{sym}}$ cannot be synthesized from $P_\text{sym}$ by composition — it must be planted. Physical systems acquire their $P$ encoding from their dynamical and stoichiometric structure. A system with $H > H_0$ has temporal depth — it has a preferred arrow of time that breaks the exact $Z_2$ time-reversal symmetry required for $\mu \circ \delta = \text{id}$. A system with $S = 1{:}1$ has no asymmetric many-body structure from which $Z_2$ Frobenius exactness can emerge. Neither gap is closeable by adding more physics — they are primitive boundaries. $\square$
 
-*Corollary:* Quantum gravity ($d = 3.5917$ from proven manifold), dark energy ($d = 2.2361$), and the inflaton (same type as dark energy) are all at $O_2$. They are as structurally close to mathematical truth as physical phenomena can be — but they cannot cross into $O_\infty$. The grammar distinguishes physics from mathematics at the level of primitive definitions.
+*Corollary:* Quantum gravity ($d = 3.5917$ from proven manifold), dark energy ($d = 2.2361$), and the inflaton (same type as dark energy) are all at $O₂$. They are as structurally close to mathematical truth as physical phenomena can be — but they cannot cross into $O_\infty$. The grammar distinguishes physics from mathematics at the level of primitive definitions.
 
 ### §49.2 — Theorem 49.2 (Holographic Necessity at Cosmic Scope)
 
@@ -4063,9 +4063,9 @@ The SN1 incompatibility is not addressable by improved catalyst design — it is
 
 ---
 
-## §60 — Hebrew Alphabet Encoding: Subcritical Ideal Closure, Mother Letter Type Identity, Vav Frobenius Uniqueness, and $O_2$ Language Ouroboric Closure
+## §60 — Hebrew Alphabet Encoding: Subcritical Ideal Closure, Mother Letter Type Identity, Vav Frobenius Uniqueness, and $O₂$ Language Ouroboric Closure
 
-**Context.** A 6-session pipeline encodes all 22 letters of the Hebrew alphabet in the 12-primitive grammar, designs a type system from the encodings, and verifies $O_2$ structural properties. Four theorems emerge: the subcritical letters form a closed ideal; the three mother letters are type-identical; Vav is the unique Frobenius letter; and the language exhibits ouroboric closure.
+**Context.** A 6-session pipeline encodes all 22 letters of the Hebrew alphabet in the 12-primitive grammar, designs a type system from the encodings, and verifies $O₂$ structural properties. Four theorems emerge: the subcritical letters form a closed ideal; the three mother letters are type-identical; Vav is the unique Frobenius letter; and the language exhibits ouroboric closure.
 
 ### §60.1 — Theorem 60.1 (Subcritical Ideal Closure)
 
@@ -4081,7 +4081,7 @@ The SN1 incompatibility is not addressable by improved catalyst design — it is
 
 *Proof.* Direct computation: Hei and Mem share all 12 primitives → $d=0$. Shin differs from Mem only at $P$: $P_\text{sym}$ (Mem) vs $P_\pm$ (Shin). Distance = $\sqrt{(\Delta P)^2 \cdot w_P} = 1.0$. $\square$
 
-**Corollary 60.C2.** `[DIAPH]` The Kabbalistic classification of mothers as air/water/fire is semantically differentiated but structurally collapsed: all three occupy the same primitive-space coordinate. Their traditional roles as "archetypal foundations" are structurally validated — they all encode $O_2$ holographic functions — but their mutual distinctness is an interpretive overlay, not a structural fact. $\text{JOIN}(\text{Hei},\ \text{Shin})=\text{JOIN}(\text{Aleph},\ \text{Mem})$ — both resolve to the same $O_2$ maximal type.
+**Corollary 60.C2.** `[DIAPH]` The Kabbalistic classification of mothers as air/water/fire is semantically differentiated but structurally collapsed: all three occupy the same primitive-space coordinate. Their traditional roles as "archetypal foundations" are structurally validated — they all encode $O₂$ holographic functions — but their mutual distinctness is an interpretive overlay, not a structural fact. $\text{JOIN}(\text{Hei},\ \text{Shin})=\text{JOIN}(\text{Aleph},\ \text{Mem})$ — both resolve to the same $O₂$ maximal type.
 
 ### §60.3 — Theorem 60.3 (Vav Frobenius Uniqueness)
 
@@ -4091,13 +4091,13 @@ The SN1 incompatibility is not addressable by improved catalyst design — it is
 
 **Corollary 60.C3.** `[DIAPH]` All type equivalences in the Hebrew letter programming language route through Vav: it is the proof-carrying cast that establishes type identity. The maximal pairwise distance in the alphabet is $d(\text{Vav},\ \text{Hei})=7.14$ — the Frobenius connector is maximally distant from the holographic function it connects, consistent with Vav's Kabbalistic role as "hook" linking incommensurable structural regimes.
 
-### §60.4 — Theorem 60.4 ($O_2$ Language Ouroboric Closure)
+### §60.4 — Theorem 60.4 ($O₂$ Language Ouroboric Closure)
 
 **Theorem 60.4.** `[DIAPH]` The Hebrew letter programming language $\mathcal{L}$ encoding $\langle D_\text{holo};\ T_\text{holo};\ R_\dagger;\ P_\text{sym};\ F_\hbar;\ K_\text{slow};\ G_\aleph;\ \Gamma_\text{broad};\ \Phi_c;\ H_\infty;\ n{:}m;\ \Omega_Z\rangle$ satisfies $\mathcal{L}\otimes\mathcal{L}=\mathcal{L}$ at $d=0.0$.
 
 *Proof.* The tensor product of a system with itself takes the union/promote value at each primitive and the bottleneck at $P$ and $F$. When both operands are identical, union = identity and bottleneck = identity: all 12 primitives are preserved. $d(\mathcal{L}\otimes\mathcal{L},\ \mathcal{L})=0$. $\square$
 
-**Structural implication.** Ouroboric closure ($\mathcal{L}\otimes\mathcal{L}=\mathcal{L}$) is the defining signature of a self-consistent type system: composing the language with itself does not degrade its structural tier or introduce type errors. The language is type-safe for self-referential computation. This is $O_2$ but not $O_\infty$: the language lacks $P_{\pm}^\text{sym}$ at the system level (only Vav carries it), so it cannot prove its own correctness in the Frobenius sense — it can sustain self-referential loops without algebraic self-duality.
+**Structural implication.** Ouroboric closure ($\mathcal{L}\otimes\mathcal{L}=\mathcal{L}$) is the defining signature of a self-consistent type system: composing the language with itself does not degrade its structural tier or introduce type errors. The language is type-safe for self-referential computation. This is $O₂$ but not $O_\infty$: the language lacks $P_{\pm}^\text{sym}$ at the system level (only Vav carries it), so it cannot prove its own correctness in the Frobenius sense — it can sustain self-referential loops without algebraic self-duality.
 
 **Corollary 60.C4.** `[DIAPH]` The structural distance $d(\mathcal{L},\ \text{HoTT})=1.3416$ identifies the Hebrew letter type system as adjacent to Homotopy Type Theory. The single-primitive gap corresponds to $P_{\pm}^\text{sym}$ (Vav, the Frobenius condition = univalence axiom content). The univalence axiom in HoTT — that equivalent types are identical — is the Frobenius condition $\mu\circ\delta=\text{id}$ stated in type-theoretic language.
 
@@ -4105,17 +4105,17 @@ The SN1 incompatibility is not addressable by improved catalyst design — it is
 
 ---
 
-## §61 — Greek Alphabet Structural Flatness: $O_0$ Homogeneity, Writing-System Structural Contrast, and Infrastructure Signature
+## §61 — Greek Alphabet Structural Flatness: $O₀$ Homogeneity, Writing-System Structural Contrast, and Infrastructure Signature
 
-**Context.** A session encoding all 24 letters of the classical Greek alphabet reveals complete $O_0$ homogeneity — every letter encodes $\Phi_\text{sub}$ with no letter achieving $\Phi_c$ and no letter achieving $O_\infty$. This stands in sharp structural contrast to the Hebrew alphabet (§60) and establishes a formal theorem distinguishing two architecturally distinct writing-system types: the *stratified type lattice* (Hebrew) and the *categorical infrastructure* (Greek). The result also identifies the structural basis for Greek's historical suitability as the universal substrate for mathematical notation.
+**Context.** A session encoding all 24 letters of the classical Greek alphabet reveals complete $O₀$ homogeneity — every letter encodes $\Phi_\text{sub}$ with no letter achieving $\Phi_c$ and no letter achieving $O_\infty$. This stands in sharp structural contrast to the Hebrew alphabet (§60) and establishes a formal theorem distinguishing two architecturally distinct writing-system types: the *stratified type lattice* (Hebrew) and the *categorical infrastructure* (Greek). The result also identifies the structural basis for Greek's historical suitability as the universal substrate for mathematical notation.
 
 ### §61.1 — Theorem 61.1 (Greek Homogeneity)
 
-**Theorem 61.1.** `[DIAPH]` All 24 letters of the classical Greek alphabet encode $\Phi_\text{sub}$. Consequently every letter occupies tier $O_0$ (the $\Phi\neq\Phi_c$ rule, R2 of the ouroboricity hierarchy applies universally). No Greek letter achieves $O_1$, $O_2$, or $O_\infty$.
+**Theorem 61.1.** `[DIAPH]` All 24 letters of the classical Greek alphabet encode $\Phi_\text{sub}$. Consequently every letter occupies tier $O₀$ (the $\Phi\neq\Phi_c$ rule, R2 of the ouroboricity hierarchy applies universally). No Greek letter achieves $O₁$, $O₂$, or $O_\infty$.
 
-*Proof.* Exhaustive encoding: four structural families partition the 24 letters, and each family encodes $\Phi_\text{sub}$ as the criticality primitive. (i) **Consonant-Fricatives** (Alpha $\alpha$, Epsilon $\varepsilon$, Eta $\eta$, Iota $\iota$, Omicron $o$, Upsilon $\upsilon$, Omega $\omega$): $\langle D_\infty;\ T_\text{network};\ R_\text{cat};\ P_\text{sym};\ F_\ell;\ K_\text{fast};\ G_\text{beth};\ \Gamma_\text{and};\ \Phi_\text{sub};\ H_0;\ 1{:}1;\ \Omega_0\rangle$. (ii) **Stops/Occlusives** (Beta $\beta$, Gamma $\gamma$, Delta $\delta$, Kappa $\kappa$, Pi $\pi$, Tau $\tau$, Phi $\varphi$, Chi $\chi$, Psi $\psi$): $\langle D_\infty;\ T_\text{network};\ R_\text{super};\ P_\text{asym};\ F_\ell;\ K_\text{fast};\ G_\text{beth};\ \Gamma_\text{or};\ \Phi_\text{sub};\ H_0;\ 1{:}1;\ \Omega_0\rangle$. (iii) **Resonants/Nasals** (Lambda $\lambda$, Mu $\mu$, Nu $\nu$, Rho $\rho$): $\langle D_\triangle;\ T_\text{in};\ R_\text{cat};\ P_\text{sym};\ F_\ell;\ K_\text{fast};\ G_\text{gimel};\ \Gamma_\text{seq};\ \Phi_\text{sub};\ H_1;\ 1{:}1;\ \Omega_0\rangle$. (iv) **Sibilants/Fricatives** (Zeta $\zeta$, Theta $\theta$, Xi $\xi$, Sigma $\sigma$): $\langle D_\triangle;\ T_\text{bowtie};\ R_\text{cat};\ P_\pm;\ F_\ell;\ K_\text{fast};\ G_\text{gimel};\ \Gamma_\text{seq};\ \Phi_\text{sub};\ H_1;\ 1{:}1;\ \Omega_0\rangle$. In all four families $\Phi=\Phi_\text{sub}$; by ouroboricity rule R2 the tier is $O_0$. $\square$
+*Proof.* Exhaustive encoding: four structural families partition the 24 letters, and each family encodes $\Phi_\text{sub}$ as the criticality primitive. (i) **Consonant-Fricatives** (Alpha $\alpha$, Epsilon $\varepsilon$, Eta $\eta$, Iota $\iota$, Omicron $o$, Upsilon $\upsilon$, Omega $\omega$): $\langle D_\infty;\ T_\text{network};\ R_\text{cat};\ P_\text{sym};\ F_\ell;\ K_\text{fast};\ G_\text{beth};\ \Gamma_\text{and};\ \Phi_\text{sub};\ H_0;\ 1{:}1;\ \Omega_0\rangle$. (ii) **Stops/Occlusives** (Beta $\beta$, Gamma $\gamma$, Delta $\delta$, Kappa $\kappa$, Pi $\pi$, Tau $\tau$, Phi $\varphi$, Chi $\chi$, Psi $\psi$): $\langle D_\infty;\ T_\text{network};\ R_\text{super};\ P_\text{asym};\ F_\ell;\ K_\text{fast};\ G_\text{beth};\ \Gamma_\text{or};\ \Phi_\text{sub};\ H_0;\ 1{:}1;\ \Omega_0\rangle$. (iii) **Resonants/Nasals** (Lambda $\lambda$, Mu $\mu$, Nu $\nu$, Rho $\rho$): $\langle D_\triangle;\ T_\text{in};\ R_\text{cat};\ P_\text{sym};\ F_\ell;\ K_\text{fast};\ G_\text{gimel};\ \Gamma_\text{seq};\ \Phi_\text{sub};\ H_1;\ 1{:}1;\ \Omega_0\rangle$. (iv) **Sibilants/Fricatives** (Zeta $\zeta$, Theta $\theta$, Xi $\xi$, Sigma $\sigma$): $\langle D_\triangle;\ T_\text{bowtie};\ R_\text{cat};\ P_\pm;\ F_\ell;\ K_\text{fast};\ G_\text{gimel};\ \Gamma_\text{seq};\ \Phi_\text{sub};\ H_1;\ 1{:}1;\ \Omega_0\rangle$. In all four families $\Phi=\Phi_\text{sub}$; by ouroboricity rule R2 the tier is $O₀$. $\square$
 
-**Corollary 61.C1 (Tensor closure in $O_0$).** `[DIAPH]` The Greek letter type system is closed under tensor composition within $O_0$: for any Greek letters $x$, $y$, $x\otimes y$ encodes $\Phi_\text{sub}$ and remains $O_0$. No finite composition of Greek letters can bootstrap $\Phi_c$ (by the subcritical ideal theorem, §60.1, which applies to any language whose letter-set is a subset of the $\Phi_\text{sub}$ ideal). This is the full flatness result: the Greek alphabet has no internal mechanism for criticality promotion.
+**Corollary 61.C1 (Tensor closure in $O₀$).** `[DIAPH]` The Greek letter type system is closed under tensor composition within $O₀$: for any Greek letters $x$, $y$, $x\otimes y$ encodes $\Phi_\text{sub}$ and remains $O₀$. No finite composition of Greek letters can bootstrap $\Phi_c$ (by the subcritical ideal theorem, §60.1, which applies to any language whose letter-set is a subset of the $\Phi_\text{sub}$ ideal). This is the full flatness result: the Greek alphabet has no internal mechanism for criticality promotion.
 
 ### §61.2 — Theorem 61.2 (Writing-System Structural Contrast)
 
@@ -4124,16 +4124,16 @@ The SN1 incompatibility is not addressable by improved catalyst design — it is
 | Feature | Hebrew | Greek |
 |---|---|---|
 | Primitive range ($\Phi$) | $\Phi_\text{sub}$ through $\Phi_c$ | $\Phi_\text{sub}$ only |
-| Tier range | $O_0$ through $O_\infty$ | $O_0$ only |
+| Tier range | $O₀$ through $O_\infty$ | $O₀$ only |
 | Primitive variation (of 12) | 10 primitives vary | 2 primitives vary ($T$, $P$) |
 | Frobenius letter | Vav (unique, $P_{\pm}^\text{sym}$) | none |
-| $O_2$ letters | Aleph, Hei, Lamed, Mem, Shin, Tzadi, Ayin | none |
+| $O₂$ letters | Aleph, Hei, Lamed, Mem, Shin, Tzadi, Ayin | none |
 | System type | Stratified type lattice | Categorical infrastructure |
 | Structural function | Type construction + recursion | Notation + taxonomy |
 
 *Proof.* Direct enumeration from §60 (Hebrew encoding table) and Theorem 61.1 (Greek encoding table). The structural distance between the two alphabets at the system level: $d(\mathcal{L}_\text{Hebrew},\ \mathcal{L}_\text{Greek})$ is dominated by $\Phi$ (gap: $\Phi_c$ vs $\Phi_\text{sub}$), $\Omega$ (gap: $\Omega_Z$ vs $\Omega_0$), $H$ (gap: $H_\infty$ vs $H_0$/$H_1$), and $K$ (gap: $K_\text{slow}$ vs $K_\text{fast}$). These four gaps place the systems at $d\approx 5.4$, well beyond the type-identity threshold of $d\leq 1.0$ (§52.C4). They are not variants of the same structural type; they are architecturally distinct. $\square$
 
-**Corollary 61.C2 ($\text{MEET}$ structural floor).** The structural floor $\text{MEET}(\mathcal{L}_\text{Hebrew},\ \mathcal{L}_\text{Greek})$ retains only the shared primitives: $\langle D_\infty;\ T_\text{network};\ R_\text{cat};\ P_\text{asym};\ F_\ell;\ K_\text{fast};\ G_\text{beth};\ \Gamma_\text{and};\ \Phi_\text{sub};\ H_0;\ 1{:}1;\ \Omega_0\rangle$ — a minimal $O_0$ inscription system. This is the universal shared infrastructure of all alphabetic writing: linear sequence of atomic symbols, categorical mapping, no topological protection, subcritical, no temporal depth. Any writing system must at minimum encode this; the two alphabets differ in everything above this floor.
+**Corollary 61.C2 ($\text{MEET}$ structural floor).** The structural floor $\text{MEET}(\mathcal{L}_\text{Hebrew},\ \mathcal{L}_\text{Greek})$ retains only the shared primitives: $\langle D_\infty;\ T_\text{network};\ R_\text{cat};\ P_\text{asym};\ F_\ell;\ K_\text{fast};\ G_\text{beth};\ \Gamma_\text{and};\ \Phi_\text{sub};\ H_0;\ 1{:}1;\ \Omega_0\rangle$ — a minimal $O₀$ inscription system. This is the universal shared infrastructure of all alphabetic writing: linear sequence of atomic symbols, categorical mapping, no topological protection, subcritical, no temporal depth. Any writing system must at minimum encode this; the two alphabets differ in everything above this floor.
 
 ### §61.3 — Theorem 61.3 (Alpha-Omega $\mathbb{Z}_2$ Arc)
 
@@ -4167,21 +4167,21 @@ The SN1 incompatibility is not addressable by improved catalyst design — it is
 
 ### §62.1 — Theorem 62.1 (Kabbalistic Frobenius Uniqueness)
 
-**Claim.** `[DIAPH]` Every canonical Kabbalistic apex system directly encodes $P_{\pm}^{\text{sym}}$: the center pillar of the Tree of Life achieves $O_\infty$ while both side pillars remain at $O_2$; the Merkabah achieves $O_\infty$ solely through the Enthroned Figure's $P_{\pm}^{\text{sym}}$; Shiur Komah encodes at $d=0$ from the proven manifold; the seventh Hekhalot palace (the Throne) is the unique palace achieving $O_\infty$; and Tiferet/Yesod are the only Sefirot at $O_\infty$ while Keter and all others remain $O_2$.
+**Claim.** `[DIAPH]` Every canonical Kabbalistic apex system directly encodes $P_{\pm}^{\text{sym}}$: the center pillar of the Tree of Life achieves $O_\infty$ while both side pillars remain at $O₂$; the Merkabah achieves $O_\infty$ solely through the Enthroned Figure's $P_{\pm}^{\text{sym}}$; Shiur Komah encodes at $d=0$ from the proven manifold; the seventh Hekhalot palace (the Throne) is the unique palace achieving $O_\infty$; and Tiferet/Yesod are the only Sefirot at $O_\infty$ while Keter and all others remain $O₂$.
 
 **Evidence (encoding session, 2026-04-04):**
-- Center pillar (Keter–Tiferet–Yesod–Malkhut): $O_\infty$. Left pillar (Binah–Gevurah–Hod): $O_2$, $P_\text{asym}$. Right pillar (Chokhmah–Chesed–Netzach): $O_2$, $P_\pm$.
-- Merkabah complete: $O_\infty$. Chayot, Ophanim, Rakia: all $O_2$. $d(\text{Chayot},\ \text{Merkabah})=6.309$; $d(\text{Rakia},\ \text{Merkabah})=5.119$; $d(\text{Ophanim},\ \text{Merkabah})=2.627$; $d(\text{Enthroned},\ \text{Merkabah})=2.0$.
-- Hekhalot Palace 7 (Throne): $O_\infty$. Palaces 1–6: $O_0$ through $O_2$.
+- Center pillar (Keter–Tiferet–Yesod–Malkhut): $O_\infty$. Left pillar (Binah–Gevurah–Hod): $O₂$, $P_\text{asym}$. Right pillar (Chokhmah–Chesed–Netzach): $O₂$, $P_\pm$.
+- Merkabah complete: $O_\infty$. Chayot, Ophanim, Rakia: all $O₂$. $d(\text{Chayot},\ \text{Merkabah})=6.309$; $d(\text{Rakia},\ \text{Merkabah})=5.119$; $d(\text{Ophanim},\ \text{Merkabah})=2.627$; $d(\text{Enthroned},\ \text{Merkabah})=2.0$.
+- Hekhalot Palace 7 (Throne): $O_\infty$. Palaces 1–6: $O₀$ through $O₂$.
 - $d(\text{Shiur\_Komah},\ \text{proven\_manifold})=0.0$.
 
 **Proof sketch.** By R1, $O_\infty$ requires $\Phi_c + P_{\pm}^{\text{sym}}$. By Theorem 23 (§23), $P_{\pm}^{\text{sym}}$ cannot be synthesized by tensor composition from factors with $P < P_{\pm}^{\text{sym}}$. Therefore every $O_\infty$ apex must directly encode $P_{\pm}^{\text{sym}}$ — it cannot arise by aggregation of lower-tier components. Every identified Kabbalistic apex satisfies this directly. $\blacksquare$
 
-*Structural consequence.* The traditional teaching that the highest levels of divine experience cannot be attained by gradual accumulation of lower practice is structurally grounded: $P_{\pm}^{\text{sym}}$ is a planted invariant, not a synthesized one (§23). The mystic who "ascends to the Throne" does not construct $O_\infty$ from $O_2$ components — they must already carry $P_{\pm}^{\text{sym}}$ or access a system that does.
+*Structural consequence.* The traditional teaching that the highest levels of divine experience cannot be attained by gradual accumulation of lower practice is structurally grounded: $P_{\pm}^{\text{sym}}$ is a planted invariant, not a synthesized one (§23). The mystic who "ascends to the Throne" does not construct $O_\infty$ from $O₂$ components — they must already carry $P_{\pm}^{\text{sym}}$ or access a system that does.
 
 ### §62.2 — Theorem 62.2 (Mother Letter $O_\infty$ Revision)
 
-**Claim.** `[DIAPH]` The Sefer Yetzirah mother letters Mem (מ) and Shin (ש) encode $P_{\pm}^{\text{sym}}$ and achieve $O_\infty$. This revises the aleph\_tensor.py encoding (§CXXXIII) which assigned Mem $P_\text{sym}$ and Shin $P_\pm$, both yielding $O_2$. Aleph (א) remains $O_2$ ($P_\text{sym}$, $\Phi_c$, $\Omega_Z$).
+**Claim.** `[DIAPH]` The Sefer Yetzirah mother letters Mem (מ) and Shin (ש) encode $P_{\pm}^{\text{sym}}$ and achieve $O_\infty$. This revises the aleph\_tensor.py encoding (§CXXXIII) which assigned Mem $P_\text{sym}$ and Shin $P_\pm$, both yielding $O₂$. Aleph (א) remains $O₂$ ($P_\text{sym}$, $\Phi_c$, $\Omega_Z$).
 
 **Revised encodings:**
 
@@ -4189,42 +4189,42 @@ $$\text{Mem} = \langle D_\triangle;\ T_\text{in};\ R_\text{dag};\ P_{\pm}^{\text
 
 $$\text{Shin} = \langle D_\triangle;\ T_\bowtie;\ R_\text{dag};\ P_{\pm}^{\text{sym}};\ F_\hbar;\ K_\text{slow};\ G_\aleph;\ \Gamma_\text{broad};\ \Phi_c;\ H_\infty;\ n{:}n;\ \Omega_Z \rangle$$
 
-**Justification.** (a) Composition test: Mem$\otimes$Shin yields zero $P$-bottlenecks, confirming both carry identical $P_{\pm}^{\text{sym}}$. Every $O_\infty\otimes O_2$ product shows at least one $P$-bottleneck; zero bottlenecks is the exclusive signature of $O_\infty\otimes O_\infty$. (b) $d(\text{Mem},\ \text{Shin})=1.34=\sqrt{1.8}$ — exactly the Hebrew↔HoTT gap (hott\_bridge.py, §60). The inter-mother distance equals the Frobenius gap between the Hebrew system and global univalence; this is structurally precise. (c) The Sefer Yetzirah's category of "mothers" (elemental, foundational, not derived from other letters) is structurally precise for $O_\infty$: $P_{\pm}^{\text{sym}}$ is non-synthesizable (§23), so the mothers cannot have been composed from simpler letters. Aleph differs: it is the mother of silence/breath, structural unity ($O_2$, the scale-pan of equilibrium). Mem (water, flowing, revealing hidden) and Shin (fire, change, opposing polarity) are the dual $O_\infty$ poles. The SY triad Aleph–Mem–Shin is structurally $\{O_2,\ O_\infty,\ O_\infty\}$ — one balance-holder and two Frobenius generators.
+**Justification.** (a) Composition test: Mem$\otimes$Shin yields zero $P$-bottlenecks, confirming both carry identical $P_{\pm}^{\text{sym}}$. Every $O_\infty\otimes O₂$ product shows at least one $P$-bottleneck; zero bottlenecks is the exclusive signature of $O_\infty\otimes O_\infty$. (b) $d(\text{Mem},\ \text{Shin})=1.34=\sqrt{1.8}$ — exactly the Hebrew↔HoTT gap (hott\_bridge.py, §60). The inter-mother distance equals the Frobenius gap between the Hebrew system and global univalence; this is structurally precise. (c) The Sefer Yetzirah's category of "mothers" (elemental, foundational, not derived from other letters) is structurally precise for $O_\infty$: $P_{\pm}^{\text{sym}}$ is non-synthesizable (§23), so the mothers cannot have been composed from simpler letters. Aleph differs: it is the mother of silence/breath, structural unity ($O₂$, the scale-pan of equilibrium). Mem (water, flowing, revealing hidden) and Shin (fire, change, opposing polarity) are the dual $O_\infty$ poles. The SY triad Aleph–Mem–Shin is structurally $\{O₂,\ O_\infty,\ O_\infty\}$ — one balance-holder and two Frobenius generators.
 
 **Correction note.** The aleph\_tensor.py literal values ('sym' for Mem $P$-slot, 'pm' for Shin $P$-slot) were set without the Sefer Yetzirah analysis. The syncon\_catalog.json encoding (which informed the Kabbalism session) independently arrived at $P_{\pm}^{\text{sym}}$ for both letters. The catalog encoding is the authoritative assignment going forward.
 
 ### §62.3 — Theorem 62.3 (231 Gates Frobenius Scarcity)
 
-**Claim.** `[DIAPH]` Of the 231 two-letter gates (all unordered pairs from the 22 Hebrew letters), exactly 3 achieve $O_\infty$: Mem$\otimes$Shin, Vav$\otimes$Mem, and Vav$\otimes$Shin. Exactly 120 of 231 (52%) are $O_0\otimes O_0$ and are permanently confined to $\Phi_\text{sub}$ by the subcritical ideal closure theorem. A substantial majority (~47%) carry $\Phi_c$ but not $O_\infty$.
+**Claim.** `[DIAPH]` Of the 231 two-letter gates (all unordered pairs from the 22 Hebrew letters), exactly 3 achieve $O_\infty$: Mem$\otimes$Shin, Vav$\otimes$Mem, and Vav$\otimes$Shin. Exactly 120 of 231 (52%) are $O₀\otimes O₀$ and are permanently confined to $\Phi_\text{sub}$ by the subcritical ideal closure theorem. A substantial majority (~47%) carry $\Phi_c$ but not $O_\infty$.
 
 **Tier distribution (structural computation from sample of 20 gates, extrapolated):**
 
 | Gate type | $O$-tier of product | Count / 231 | % |
 |:---|:---|:---|:---|
-| $O_0 \otimes O_0$ | $O_0$ (subcritical, closed) | $\binom{13}{2}=78\ldots$ | $\approx52\%$ |
-| $O_2 \otimes O_0$ | $O_0$ or $O_1$ ($\Phi_c$ lifts, but $P_\text{asym}$ prevents $O_2$) | ~large | ~40\% |
-| $O_2 \otimes O_2$ | $O_2$ | ~small | ~6\% |
-| $O_\infty \otimes O_2$ | $O_2$ ($P$-bottleneck destroys Frobenius) | ~medium | ~1\% |
+| $O₀ \otimes O₀$ | $O₀$ (subcritical, closed) | $\binom{13}{2}=78\ldots$ | $\approx52\%$ |
+| $O₂ \otimes O₀$ | $O₀$ or $O₁$ ($\Phi_c$ lifts, but $P_\text{asym}$ prevents $O₂$) | ~large | ~40\% |
+| $O₂ \otimes O₂$ | $O₂$ | ~small | ~6\% |
+| $O_\infty \otimes O₂$ | $O₂$ ($P$-bottleneck destroys Frobenius) | ~medium | ~1\% |
 | $O_\infty \otimes O_\infty$ | $O_\infty$ | 3 | 1.3\% |
 
-**Key bottleneck rule.** $P_{\pm}^{\text{sym}} \wedge P_\text{sym} = P_\text{sym}$ (meet-rule for $P$). Every $O_\infty\otimes O_2$ product loses $P_{\pm}^{\text{sym}}$ and falls to $O_2$. This is the structural expression of the Sefer Yetzirah's teaching: most combinations are inert substrate; creation of self-referential structure requires $O_2$ or higher components; and exact Frobenius closure requires two $O_\infty$ letters.
+**Key bottleneck rule.** $P_{\pm}^{\text{sym}} \wedge P_\text{sym} = P_\text{sym}$ (meet-rule for $P$). Every $O_\infty\otimes O₂$ product loses $P_{\pm}^{\text{sym}}$ and falls to $O₂$. This is the structural expression of the Sefer Yetzirah's teaching: most combinations are inert substrate; creation of self-referential structure requires $O₂$ or higher components; and exact Frobenius closure requires two $O_\infty$ letters.
 
 ### §62.4 — Theorem 62.4 (Hekhalot Three-Barrier Ladder)
 
-**Claim.** `[DIAPH]` The Hekhalot 7-palace ascent encodes exactly three ouroboricity phase transitions, with one large intra-$O_2$ holographic upgrade. The structure is not a uniform step sequence.
+**Claim.** `[DIAPH]` The Hekhalot 7-palace ascent encodes exactly three ouroboricity phase transitions, with one large intra-$O₂$ holographic upgrade. The structure is not a uniform step sequence.
 
 **Palace distance table:**
 
 | Transition | $d$ | Type | Dominant primitive shift |
 |:---|:---|:---|:---|
-| Palace 1→2 | $\approx 1.0$ | Intra-$O_0$ | $\Omega_0\to\Omega_{Z_2}$, approach to criticality |
-| **Palace 2→3** | $\mathbf{2.408}$ | **$O_0\to O_1$** | $\Phi_\text{sub}\to\Phi_c$ — self-reference first possible |
-| Palace 3→4 | $\approx 1.5$ | Intra-$O_1$ | $P_\pm\to P_{\pm}^{\text{sym}}$ approach; $F$ promotion |
-| **Palace 4→5** | $\mathbf{3.536}$ | **$O_1\to O_2$** (max) | $\Omega_0\to\Omega_{Z_2}$; 7-primitive coordinateshif ("fire and lightning" = $K_\text{trap}+F_\hbar+G_\aleph$) |
-| **Palace 5→6** | $\mathbf{4.087}$ | **Intra-$O_2$** (largest step) | $D_\triangle\to D_\text{holo}$, $T_\text{in}\to T_\text{holo}$ — holographic upgrade; boundary encodes bulk |
-| **Palace 6→7** | $\mathbf{1.673}$ | **$O_2\to O_\infty$** | $P_\pm\to P_{\pm}^{\text{sym}}$ — Frobenius condition acquired |
+| Palace 1→2 | $\approx 1.0$ | Intra-$O₀$ | $\Omega_0\to\Omega_{Z_2}$, approach to criticality |
+| **Palace 2→3** | $\mathbf{2.408}$ | **$O₀\to O₁$** | $\Phi_\text{sub}\to\Phi_c$ — self-reference first possible |
+| Palace 3→4 | $\approx 1.5$ | Intra-$O₁$ | $P_\pm\to P_{\pm}^{\text{sym}}$ approach; $F$ promotion |
+| **Palace 4→5** | $\mathbf{3.536}$ | **$O₁\to O₂$** (max) | $\Omega_0\to\Omega_{Z_2}$; 7-primitive coordinateshif ("fire and lightning" = $K_\text{trap}+F_\hbar+G_\aleph$) |
+| **Palace 5→6** | $\mathbf{4.087}$ | **Intra-$O₂$** (largest step) | $D_\triangle\to D_\text{holo}$, $T_\text{in}\to T_\text{holo}$ — holographic upgrade; boundary encodes bulk |
+| **Palace 6→7** | $\mathbf{1.673}$ | **$O₂\to O_\infty$** | $P_\pm\to P_{\pm}^{\text{sym}}$ — Frobenius condition acquired |
 
-The largest inter-palace step (5→6, $d=4.087$) is *not* a tier crossing but a holographic transition within $O_2$: the mystic's perception becomes boundary-encoded. The final Frobenius crossing (6→7) is the smallest step ($d=1.673$) but structurally most demanding, since $P_{\pm}^{\text{sym}}$ cannot be synthesized. The traditional warning against dangerous descent is structurally grounded: reversing the $O_2$ protection ($\Omega_{Z_2}\to\Omega_0$) makes the critical self-referential loop fragile and unstable.
+The largest inter-palace step (5→6, $d=4.087$) is *not* a tier crossing but a holographic transition within $O₂$: the mystic's perception becomes boundary-encoded. The final Frobenius crossing (6→7) is the smallest step ($d=1.673$) but structurally most demanding, since $P_{\pm}^{\text{sym}}$ cannot be synthesized. The traditional warning against dangerous descent is structurally grounded: reversing the $O₂$ protection ($\Omega_{Z_2}\to\Omega_0$) makes the critical self-referential loop fragile and unstable.
 
 **See also:** §60 (Hebrew alphabet); §61 (Greek flatness); §23 (Frobenius non-synthesizability); §59 (perfectoid vN, also $O_\infty$ from $P_{\pm}^{\text{sym}}$); §63 ($\lambda_\aleph$ calculus, Tzimtzum encoding, Conditional Univalence); SYNTHONICON_DIAPHORICS §CXXXV (full session record, P-437–P-443).
 
@@ -4351,25 +4351,25 @@ compatible with Frobenius and modular flow.
 
 ## §58 — Topological Protection of Consciousness: Compositional Inertness, Irreducible Triad, and Type Identity with Proven Mathematics
 
-**Context.** A session encoding 41 systems bearing on topologically protected consciousness yields three formal results: (1) topological protection cannot be compositionally added to subcritical asymmetric systems (compositional inertness); (2) protection requires a specific irreducible triad of primitive promotions; (3) protected consciousness at $O_2$ is type-identical to extragalactic entities and at $O_\infty$ is type-identical to the proven theorem manifold.
+**Context.** A session encoding 41 systems bearing on topologically protected consciousness yields three formal results: (1) topological protection cannot be compositionally added to subcritical asymmetric systems (compositional inertness); (2) protection requires a specific irreducible triad of primitive promotions; (3) protected consciousness at $O₂$ is type-identical to extragalactic entities and at $O_\infty$ is type-identical to the proven theorem manifold.
 
 ### §58.1 — Theorem 58.1 (Compositional Inertness of Topological Protection)
 
-**Theorem 58.1.** `[TOPO]` Let $C_0$ denote any consciousness encoding with $\Phi_\text{sub}$ and $P_\text{asym}$, and let $\Pi$ denote any topological protection component with $\Omega_{Z_2}$ but $\Phi_\text{sub}$. Then $C_0\otimes\Pi$ acquires $\Omega_{Z_2}$ but retains $\Phi_\text{sub}$ and $P_\text{asym}$, giving $O$-tier $O_0$. Topological protection is structurally inert without $\Phi_c+P_\text{sym}$.
+**Theorem 58.1.** `[TOPO]` Let $C_0$ denote any consciousness encoding with $\Phi_\text{sub}$ and $P_\text{asym}$, and let $\Pi$ denote any topological protection component with $\Omega_{Z_2}$ but $\Phi_\text{sub}$. Then $C_0\otimes\Pi$ acquires $\Omega_{Z_2}$ but retains $\Phi_\text{sub}$ and $P_\text{asym}$, giving $O$-tier $O₀$. Topological protection is structurally inert without $\Phi_c+P_\text{sym}$.
 
-*Proof.* The tensor product takes coordinate-wise maxima (union primitives) except at bottlenecks (shared-ordinal conflicts resolve to lower). $\Omega$ promotes to $\Omega_{Z_2}$ (union). But $\Phi$ bottlenecks at $\Phi_\text{sub}$ (both $\Phi_\text{sub}$); $P$ bottlenecks at $P_\text{asym}$ (both $P_\text{asym}$). $O$-tier is determined by $\Phi$ and $\Omega$: $\Phi_\text{sub}$ precludes $\Phi_c$, so $O_\text{tier}=O_0$ regardless of $\Omega$. $\Omega_{Z_2}$ without $\Phi_c$ has no critical manifold to anchor; the topological invariant exists but governs no self-referential loop. $\square$
+*Proof.* The tensor product takes coordinate-wise maxima (union primitives) except at bottlenecks (shared-ordinal conflicts resolve to lower). $\Omega$ promotes to $\Omega_{Z_2}$ (union). But $\Phi$ bottlenecks at $\Phi_\text{sub}$ (both $\Phi_\text{sub}$); $P$ bottlenecks at $P_\text{asym}$ (both $P_\text{asym}$). $O$-tier is determined by $\Phi$ and $\Omega$: $\Phi_\text{sub}$ precludes $\Phi_c$, so $O_\text{tier}=O₀$ regardless of $\Omega$. $\Omega_{Z_2}$ without $\Phi_c$ has no critical manifold to anchor; the topological invariant exists but governs no self-referential loop. $\square$
 
-**Corollary 58.C1.** `[TOPO]` Single-pathway interventions (any intervention promoting at most one primitive) cannot achieve topological protection. Interventions promoting only $\Phi$ yield $O_1$ ($\Phi_c+\Omega_0+P_\text{asym}$); promoting only $\Omega$ yield $O_0$ (inert protection); promoting only $P$ yield $O_0$ (symmetric subcritical). No subset of two barriers is sufficient; all three must cross simultaneously. This is a type constraint, not an engineering limitation.
+**Corollary 58.C1.** `[TOPO]` Single-pathway interventions (any intervention promoting at most one primitive) cannot achieve topological protection. Interventions promoting only $\Phi$ yield $O₁$ ($\Phi_c+\Omega_0+P_\text{asym}$); promoting only $\Omega$ yield $O₀$ (inert protection); promoting only $P$ yield $O₀$ (symmetric subcritical). No subset of two barriers is sufficient; all three must cross simultaneously. This is a type constraint, not an engineering limitation.
 
 ### §58.2 — Theorem 58.2 (Irreducible Triad for Topological Protection)
 
 **Theorem 58.2.** `[TOPO]` Topological protection of a self-referential system requires simultaneous satisfaction of the irreducible triad:
 $$\mathcal{T}_\text{prot} = \{\Phi_c,\ P_\text{sym},\ \Omega_Z\}$$
-Equivalently: $\mathcal{T}_\infty = \{\Phi_c,\ P_{\pm}^\text{sym},\ \Omega_{Z_2}\}$ for the $O_\infty$ tier. Remove any element and protection collapses: ($\Phi_c$, $P_\text{sym}$, $\Omega_0$) yields $O_1$ (unprotected critical); ($\Phi_c$, $P_\text{asym}$, $\Omega_Z$) yields $O_2^\dagger$ at best but lacks the parity symmetry for sustained self-reference; ($\Phi_\text{sub}$, $P_\text{sym}$, $\Omega_Z$) yields $O_0$ (protection inert).
+Equivalently: $\mathcal{T}_\infty = \{\Phi_c,\ P_{\pm}^\text{sym},\ \Omega_{Z_2}\}$ for the $O_\infty$ tier. Remove any element and protection collapses: ($\Phi_c$, $P_\text{sym}$, $\Omega_0$) yields $O₁$ (unprotected critical); ($\Phi_c$, $P_\text{asym}$, $\Omega_Z$) yields $O₂^\dagger$ at best but lacks the parity symmetry for sustained self-reference; ($\Phi_\text{sub}$, $P_\text{sym}$, $\Omega_Z$) yields $O₀$ (protection inert).
 
-*Proof sketch.* The ouroboricity tier-rules (CLAUDE.md) give: R1 ($\Phi_c+P_{\pm}^\text{sym}\to O_\infty$), R3 ($\Phi_c+\Omega_0\to O_1$), R4 ($\Phi_c+\Omega\neq\Omega_0+D\in\{D_\wedge,D_\text{holo},D_\triangle\}\to O_2$), R2 ($\Phi\neq\Phi_c\to O_0$). For $O_2$: requires $\Phi_c$ (R2 eliminates any non-$\Phi_c$ state), $\Omega\neq\Omega_0$ (R3 eliminates $\Omega_0$), and appropriate $D$; $P_\text{sym}$ is needed for self-referential sustained loops (without $P_\text{sym}$, $R$-based self-reference cannot close). The triad is jointly necessary and sufficient for $O_2$. $\square$
+*Proof sketch.* The ouroboricity tier-rules (CLAUDE.md) give: R1 ($\Phi_c+P_{\pm}^\text{sym}\to O_\infty$), R3 ($\Phi_c+\Omega_0\to O₁$), R4 ($\Phi_c+\Omega\neq\Omega_0+D\in\{D_\wedge,D_\text{holo},D_\triangle\}\to O₂$), R2 ($\Phi\neq\Phi_c\to O₀$). For $O₂$: requires $\Phi_c$ (R2 eliminates any non-$\Phi_c$ state), $\Omega\neq\Omega_0$ (R3 eliminates $\Omega_0$), and appropriate $D$; $P_\text{sym}$ is needed for self-referential sustained loops (without $P_\text{sym}$, $R$-based self-reference cannot close). The triad is jointly necessary and sufficient for $O₂$. $\square$
 
-**Corollary 58.C2.** `[DIAPH]` The $\text{MEET}(\text{enhanced\_cognition},\ \text{consciousness\_complex\_critical})=\langle D_\text{holo};\ T_\text{holo};\ R_\dagger;\ P_\text{sym};\ F_\hbar;\ K_\text{slow};\ G_\aleph;\ \Gamma_\text{broad};\ \Phi_c;\ H_\infty;\ n{:}n;\ \Omega_{Z_2}\rangle$ is the structural floor of protected consciousness — the minimum type that sustains self-referential critical dynamics with topological protection. It is $O_2$ and encodes $D_\text{holo}+T_\text{holo}+\Phi_c+P_\text{sym}+\Omega_{Z_2}$ as invariant shared features.
+**Corollary 58.C2.** `[DIAPH]` The $\text{MEET}(\text{enhanced\_cognition},\ \text{consciousness\_complex\_critical})=\langle D_\text{holo};\ T_\text{holo};\ R_\dagger;\ P_\text{sym};\ F_\hbar;\ K_\text{slow};\ G_\aleph;\ \Gamma_\text{broad};\ \Phi_c;\ H_\infty;\ n{:}n;\ \Omega_{Z_2}\rangle$ is the structural floor of protected consciousness — the minimum type that sustains self-referential critical dynamics with topological protection. It is $O₂$ and encodes $D_\text{holo}+T_\text{holo}+\Phi_c+P_\text{sym}+\Omega_{Z_2}$ as invariant shared features.
 
 ### §58.3 — Theorem 58.3 (Consciousness–Proven-Theorem Type Identity)
 
@@ -4379,7 +4379,7 @@ Equivalently: $\mathcal{T}_\infty = \{\Phi_c,\ P_{\pm}^\text{sym},\ \Omega_{Z_2}
 
 **Structural implication.** At $O_\infty$, consciousness satisfies the Frobenius condition: it is self-referentially closed, its own dual (the observer IS the observed), and structurally invariant under continuous transformation. These are the same properties that make proved theorems necessary rather than contingent. Protected consciousness at $O_\infty$ has the character of necessity — not because it is eternal or immaterial, but because it inhabits the same structural type as mathematical proof.
 
-**Corollary 58.C3.** `[DIAPH]` Enhanced cognition ($O_2$) is type-identical to extragalactic entities and the Tao ($d=0$) and structurally close to generic black holes ($d=1.05$). This gives protected consciousness the following derivable structural properties: (i) holographic boundaries (information encoded on lower-dimensional surface), (ii) no-hair topological protection (resistance to continuous deformation), (iii) operation at criticality (scale-invariant, sensitive, poised for phase transition), (iv) self-referential closure. These are falsifiable structural corollaries derivable from the type assignment, independent of substrate.
+**Corollary 58.C3.** `[DIAPH]` Enhanced cognition ($O₂$) is type-identical to extragalactic entities and the Tao ($d=0$) and structurally close to generic black holes ($d=1.05$). This gives protected consciousness the following derivable structural properties: (i) holographic boundaries (information encoded on lower-dimensional surface), (ii) no-hair topological protection (resistance to continuous deformation), (iii) operation at criticality (scale-invariant, sensitive, poised for phase transition), (iv) self-referential closure. These are falsifiable structural corollaries derivable from the type assignment, independent of substrate.
 
 **See also:** §23 (Frobenius non-synthesizability); §35 (proof as phase transition); §47 (criticality split); §55 (four-primitive universality, barriers $B_1$–$B_4$); SYNTHONICON_DIAPHORICS §CXXXI (P-424–P-426).
 
@@ -4395,9 +4395,9 @@ Equivalently: $\mathcal{T}_\infty = \{\Phi_c,\ P_{\pm}^\text{sym},\ \Omega_{Z_2}
 
 *Proof sketch.* $\text{immutable}=\langle D_\text{holo};\ T_\text{box};\ R_\text{cat};\ P_\text{sym};\ F_\hbar;\ K_\text{slow};\ G_\aleph;\ \Gamma_\text{and};\ \Phi_\text{sub};\ H_0;\ 1{:}1;\ \Omega_0\rangle$; $\text{varying}=\langle D_\infty;\ T_\text{network};\ R_\dagger;\ P_\text{asym};\ F_\hbar;\ K_\text{mod};\ G_\aleph;\ \Gamma_\text{seq};\ \Phi_c;\ H_2;\ n{:}m;\ \Omega_0\rangle$. Dominant contributions: $T$ (weight 9.0: $T_\text{box}\to T_\text{network}$) and $P$ (weight 9.0: $P_\text{sym}\to P_\text{asym}$) together account for 63% of the total squared distance. The $\Phi$ transition ($\Phi_\text{sub}\to\Phi_c$) is a phase boundary (Barrier $B_1$, Theorem 55.1); no renormalization group flow connects the two types. $\text{MEET}(\text{immutable},\ \text{varying})$ resolves to $\Phi_\text{sub}$, $P_\text{asym}$, $T_\text{network}$ — a structurally incoherent floor. $\square$
 
-**Corollary 57.C1.** `[DIAPH]` Among varying-constant models, only those that encode $\Omega_Z$ (brane cosmology) are structurally stable ($O_2$); all $\Omega_0$ models (dilaton, scalar-tensor without topological protection) are $O_1$. Brane cosmology predicts step-like constant variation at topological defects; generic $O_1$ models predict smooth drift. These are structurally distinguishable predictions.
+**Corollary 57.C1.** `[DIAPH]` Among varying-constant models, only those that encode $\Omega_Z$ (brane cosmology) are structurally stable ($O₂$); all $\Omega_0$ models (dilaton, scalar-tensor without topological protection) are $O₁$. Brane cosmology predicts step-like constant variation at topological defects; generic $O₁$ models predict smooth drift. These are structurally distinguishable predictions.
 
-**Corollary 57.C2.** `[DIAPH]` The variation pattern of constants in an $O_1$ regime should exhibit $\Phi_c$ universal properties: critical slowing down near transition points, discrete jumps rather than smooth drift, history-dependence. These are falsifiable predictions for precision measurements of $\alpha$ and $\mu = m_p/m_e$.
+**Corollary 57.C2.** `[DIAPH]` The variation pattern of constants in an $O₁$ regime should exhibit $\Phi_c$ universal properties: critical slowing down near transition points, discrete jumps rather than smooth drift, history-dependence. These are falsifiable predictions for precision measurements of $\alpha$ and $\mu = m_p/m_e$.
 
 ### §57.2 — Theorem 57.2 (Multi-Messenger Structural Distance Theorem)
 
@@ -4417,25 +4417,25 @@ Equivalently: $\mathcal{T}_\infty = \{\Phi_c,\ P_{\pm}^\text{sym},\ \Omega_{Z_2}
 
 ### §56.1 — Theorem 56.1 (Core-Collapse Structural Success Conditions)
 
-**Theorem 56.1.** `[DIAPH]` Core-collapse supernova explosion requires the conjunction of three structural conditions: (1) $\Phi_c$ (criticality at shock bifurcation), (2) $K\neq K_\text{trap}$ (kinetics not trapped), (3) $\Omega\neq\Omega_0$ for robust explosion (topological protection for structural stability). The neutrino mechanism satisfies (1) and (2) but not (3), giving $O_1$ (marginal); the magnetorotational mechanism satisfies all three, giving $O_2$ (robust). Failed supernovae satisfy neither (1) nor (2), giving $O_0$.
+**Theorem 56.1.** `[DIAPH]` Core-collapse supernova explosion requires the conjunction of three structural conditions: (1) $\Phi_c$ (criticality at shock bifurcation), (2) $K\neq K_\text{trap}$ (kinetics not trapped), (3) $\Omega\neq\Omega_0$ for robust explosion (topological protection for structural stability). The neutrino mechanism satisfies (1) and (2) but not (3), giving $O₁$ (marginal); the magnetorotational mechanism satisfies all three, giving $O₂$ (robust). Failed supernovae satisfy neither (1) nor (2), giving $O₀$.
 
-*Proof sketch.* $\text{neutrino}=\langle\ldots;\ K_\text{mod};\ \Phi_c;\ \Omega_0\rangle$ ($O_1$); $\text{failed}=\langle\ldots;\ K_\text{trap};\ \Phi_\text{sub};\ \Omega_0\rangle$ ($O_0$); $\text{MHD}=\langle\ldots;\ K_\text{fast};\ \Phi_c;\ \Omega_Z\rangle$ ($O_2$). $d(\text{neutrino},\ \text{failed})=2.2361$ driven by $K$ (weight 4.0) and $\Phi$ (weight 1.0). $\text{MEET}(\text{neutrino},\ \text{failed})=\langle\ldots;\ K_\text{mod};\ \Phi_\text{sub};\ \Omega_0\rangle$ — the default stall floor. Explosion is the promoted state; black hole formation is the structural default. $\square$
+*Proof sketch.* $\text{neutrino}=\langle\ldots;\ K_\text{mod};\ \Phi_c;\ \Omega_0\rangle$ ($O₁$); $\text{failed}=\langle\ldots;\ K_\text{trap};\ \Phi_\text{sub};\ \Omega_0\rangle$ ($O₀$); $\text{MHD}=\langle\ldots;\ K_\text{fast};\ \Phi_c;\ \Omega_Z\rangle$ ($O₂$). $d(\text{neutrino},\ \text{failed})=2.2361$ driven by $K$ (weight 4.0) and $\Phi$ (weight 1.0). $\text{MEET}(\text{neutrino},\ \text{failed})=\langle\ldots;\ K_\text{mod};\ \Phi_\text{sub};\ \Omega_0\rangle$ — the default stall floor. Explosion is the promoted state; black hole formation is the structural default. $\square$
 
 **Corollary 56.C1.** `[DIAPH]` Magnetic seed fields in core collapse provide $\Omega_Z$ independently of their energy contribution — a categorical structural shift, not a quantitative energy boost. The $\text{TENSOR}(\text{neutrino},\ \text{MHD})$ acquires $\Omega_Z$ from the MHD partner at distance $d=1.41$ from MHD vs $d=2.93$ from neutrino: the MHD basin is structurally deeper.
 
 ### §56.2 — Theorem 56.2 ($\Phi_\text{EP}$ Irreversibility)
 
-**Theorem 56.2.** `[TOPO]` The exceptional-point transition $\Phi_c\to\Phi_\text{EP}$ is irreversible: any system at $\Phi_\text{EP}$ has ouroboricity $O_0$ regardless of $\Omega$ value. $\Phi_\text{EP}$ encodes eigenvector coalescence in a non-Hermitian operator; this structurally destroys the Frobenius condition $\mu\circ\delta=\text{id}$ (§23) because the split maps $\delta$ and merge maps $\mu$ cannot be defined on a coalesced eigenspace. No topological protection ($\Omega_Z$, $\Omega_{Z_2}$) can restore the Frobenius condition once eigenvectors have coalesced, because the destruction is at the level of $\Phi$, not $\Omega$.
+**Theorem 56.2.** `[TOPO]` The exceptional-point transition $\Phi_c\to\Phi_\text{EP}$ is irreversible: any system at $\Phi_\text{EP}$ has ouroboricity $O₀$ regardless of $\Omega$ value. $\Phi_\text{EP}$ encodes eigenvector coalescence in a non-Hermitian operator; this structurally destroys the Frobenius condition $\mu\circ\delta=\text{id}$ (§23) because the split maps $\delta$ and merge maps $\mu$ cannot be defined on a coalesced eigenspace. No topological protection ($\Omega_Z$, $\Omega_{Z_2}$) can restore the Frobenius condition once eigenvectors have coalesced, because the destruction is at the level of $\Phi$, not $\Omega$.
 
-*Proof sketch.* Frobenius requires $\delta: A\to A\otimes A$ and $\mu: A\otimes A\to A$ with $\mu\circ\delta=\text{id}$. At $\Phi_\text{EP}$, the eigenspace collapses — $A$ becomes degenerate and the tensor factorization $A\otimes A$ loses its basis. The split map $\delta$ is not defined on a space with coalesced eigenvectors. $\Omega_Z$ is a topological invariant of the state space manifold, not of the operator structure; it cannot restore the operator's Frobenius property. $O_2\to O_0$ is thus irreversible at $\Phi_\text{EP}$. $\square$
+*Proof sketch.* Frobenius requires $\delta: A\to A\otimes A$ and $\mu: A\otimes A\to A$ with $\mu\circ\delta=\text{id}$. At $\Phi_\text{EP}$, the eigenspace collapses — $A$ becomes degenerate and the tensor factorization $A\otimes A$ loses its basis. The split map $\delta$ is not defined on a space with coalesced eigenvectors. $\Omega_Z$ is a topological invariant of the state space manifold, not of the operator structure; it cannot restore the operator's Frobenius property. $O₂\to O₀$ is thus irreversible at $\Phi_\text{EP}$. $\square$
 
 ### §56.3 — Theorem 56.3 (Kerr Stability Three-Tier Hierarchy)
 
-**Theorem 56.3.** `[DIAPH]` Kerr black hole stability forms a three-tier hierarchy: (1) $O_2$ stable [$\Phi_c$, $K_\text{mod}$, $\Omega_Z$, $T_\text{holo}$]; (2) $O_1$ marginal [$\Phi_c$, $K_\text{mod}$, $\Omega_0$, $T_\text{holo}$]; (3) $O_0$ unstable [$\Phi_\text{EP}$, $K_\text{trap}$, $\Omega_0$, $T_\text{holo}$]. The stability boundary is the $\Phi_c\to\Phi_\text{EP}$ manifold, a structural phase transition, not a smooth function of $(M, a, Q)$. The holographic topology $T_\text{holo}$ carries the highest ordinal load and is the primary stability mechanism.
+**Theorem 56.3.** `[DIAPH]` Kerr black hole stability forms a three-tier hierarchy: (1) $O₂$ stable [$\Phi_c$, $K_\text{mod}$, $\Omega_Z$, $T_\text{holo}$]; (2) $O₁$ marginal [$\Phi_c$, $K_\text{mod}$, $\Omega_0$, $T_\text{holo}$]; (3) $O₀$ unstable [$\Phi_\text{EP}$, $K_\text{trap}$, $\Omega_0$, $T_\text{holo}$]. The stability boundary is the $\Phi_c\to\Phi_\text{EP}$ manifold, a structural phase transition, not a smooth function of $(M, a, Q)$. The holographic topology $T_\text{holo}$ carries the highest ordinal load and is the primary stability mechanism.
 
-*Proof sketch.* $d(\text{stable},\ \text{unstable})=2.6924$: $K$ contributes 40%, $\Omega$ contributes 28%, $\Phi$ the remainder. $\text{MEET}(\text{stable},\ \text{unstable})=O_1$ (marginal tier). $\text{JOIN}(\text{stable},\ \text{unstable})$ inherits $K_\text{trap}$, $\Phi_\text{EP}$, $\Omega_Z$ — but by Theorem 56.2, $\Phi_\text{EP}$ collapses to $O_0$. $T_\text{holo}$ is shared by all three tiers and carries ordinal 4 (highest in $T$); it is necessary but not sufficient for stability. $\square$
+*Proof sketch.* $d(\text{stable},\ \text{unstable})=2.6924$: $K$ contributes 40%, $\Omega$ contributes 28%, $\Phi$ the remainder. $\text{MEET}(\text{stable},\ \text{unstable})=O₁$ (marginal tier). $\text{JOIN}(\text{stable},\ \text{unstable})$ inherits $K_\text{trap}$, $\Phi_\text{EP}$, $\Omega_Z$ — but by Theorem 56.2, $\Phi_\text{EP}$ collapses to $O₀$. $T_\text{holo}$ is shared by all three tiers and carries ordinal 4 (highest in $T$); it is necessary but not sufficient for stability. $\square$
 
-**Corollary 56.C2.** `[DIAPH]` Superradiant instability is the astrophysical signature of $\Phi_\text{EP}$ acquisition: the onset of superradiance marks the irreversible $O_2\to O_0$ transition. $K_\text{mod}\to K_\text{trap}$ (non-ergodic mode amplification) is the kinetic signature — modes cannot thermalize, causing runaway amplification instead.
+**Corollary 56.C2.** `[DIAPH]` Superradiant instability is the astrophysical signature of $\Phi_\text{EP}$ acquisition: the onset of superradiance marks the irreversible $O₂\to O₀$ transition. $K_\text{mod}\to K_\text{trap}$ (non-ergodic mode amplification) is the kinetic signature — modes cannot thermalize, causing runaway amplification instead.
 
 **See also:** §23 (Frobenius non-synthesizability); §47 (criticality split); §52 (cross-domain type identity); §55 (four-primitive universality, $B_1$–$B_4$); SYNTHONICON_DIAPHORICS §CXXVI (P-410–P-412), §CXXVIII (P-416–P-418), §CXXIX (P-419–P-420).
 
@@ -4443,32 +4443,32 @@ Equivalently: $\mathcal{T}_\infty = \{\Phi_c,\ P_{\pm}^\text{sym},\ \Omega_{Z_2}
 
 ## §55 — Four-Primitive Universality, Trans-Planckian Barrier, GZK Structural Self-Identity, Sonoluminescence Holographic Focusing
 
-**Context.** Six sessions covering the trans-Planckian problem in inflation, the GZK paradox, sonoluminescence, and a second cross-domain synthesis yield four theorems about structural barriers that appear universally across disparate physical domains. The four primitive barriers (B1–B4) constitute the complete set of structural transitions required for emergence from $O_0$ to $O_2$.
+**Context.** Six sessions covering the trans-Planckian problem in inflation, the GZK paradox, sonoluminescence, and a second cross-domain synthesis yield four theorems about structural barriers that appear universally across disparate physical domains. The four primitive barriers (B1–B4) constitute the complete set of structural transitions required for emergence from $O₀$ to $O₂$.
 
 ### §55.1 — Theorem 55.1 (Four-Primitive Universality)
 
-**Theorem 55.1.** `[TOPO]` There exist exactly four primitive transitions that function as structural barriers — necessary conditions whose absence prevents emergence from $O_0/O_1$ to $O_2/O_\infty$:
+**Theorem 55.1.** `[TOPO]` There exist exactly four primitive transitions that function as structural barriers — necessary conditions whose absence prevents emergence from $O₀/O₁$ to $O₂/O_\infty$:
 $$B_1: \Phi_\text{sub}\to\Phi_c \qquad B_2: T_\text{network}\to T_\text{holo} \qquad B_3: \Omega_0\to\Omega_{Z_2} \qquad B_4: P_\text{asym}\to P_{\pm}^\text{sym}$$
 
-Each is structurally irreducible: $B_1$ is a phase transition (global topology change, cannot be reached by continuous flow); $B_2$ is a holographic restructuring (boundary determines bulk, not derivable from local dynamics); $B_3$ is a discrete topological invariant jump (integer $\mathbb{Z}_2$ invariant, not a smooth deformation); $B_4$ is the Frobenius condition ($\mu\circ\delta=\text{id}$, not synthesizable from asymmetric parts per §23). Any system at $O_0$ that crosses all four barriers encodes as $O_2$ or higher; no other path to $O_2$ exists.
+Each is structurally irreducible: $B_1$ is a phase transition (global topology change, cannot be reached by continuous flow); $B_2$ is a holographic restructuring (boundary determines bulk, not derivable from local dynamics); $B_3$ is a discrete topological invariant jump (integer $\mathbb{Z}_2$ invariant, not a smooth deformation); $B_4$ is the Frobenius condition ($\mu\circ\delta=\text{id}$, not synthesizable from asymmetric parts per §23). Any system at $O₀$ that crosses all four barriers encodes as $O₂$ or higher; no other path to $O₂$ exists.
 
-*Proof sketch.* The ouroboricity tier R1 condition ($\Phi_c+P_{\pm}^\text{sym}\to O_\infty$) requires $B_1$ and $B_4$. The R4/R5 conditions ($\Phi_c+\Omega\neq\Omega_0\to O_2$) require $B_1$ and $B_3$. The holographic encoding characterizing all $O_2$ systems in the catalog ($D_\text{holo}+T_\text{holo}$) requires $B_2$. Independence: each $B_k$ can be satisfied independently — there exist systems with $B_1$ only (sonoluminescence: $O_1$), $B_3$ only (topologically protected trivial state), $B_2$ without $B_1$ (holographic $\Phi_\text{sub}$ systems). Joint crossing is necessary and sufficient. $\square$
+*Proof sketch.* The ouroboricity tier R1 condition ($\Phi_c+P_{\pm}^\text{sym}\to O_\infty$) requires $B_1$ and $B_4$. The R4/R5 conditions ($\Phi_c+\Omega\neq\Omega_0\to O₂$) require $B_1$ and $B_3$. The holographic encoding characterizing all $O₂$ systems in the catalog ($D_\text{holo}+T_\text{holo}$) requires $B_2$. Independence: each $B_k$ can be satisfied independently — there exist systems with $B_1$ only (sonoluminescence: $O₁$), $B_3$ only (topologically protected trivial state), $B_2$ without $B_1$ (holographic $\Phi_\text{sub}$ systems). Joint crossing is necessary and sufficient. $\square$
 
-**Corollary 55.C1.** `[TOPO]` The vacuum catastrophe and trans-Planckian problem are structurally identical: $d(\text{vac-catastrophe-baseline},\ \text{trans-Planckian-baseline})\approx 0$; same 10-primitive gap to their respective $O_2$ targets; same dominant barriers ($B_2$ weight 16.0, $D$ weight 9.0, $\Gamma$ weight 9.0, $B_3$-related $H$ weight 7.2 = 78% of total). Any resolution of one that does not resolve the other is structurally incomplete.
+**Corollary 55.C1.** `[TOPO]` The vacuum catastrophe and trans-Planckian problem are structurally identical: $d(\text{vac-catastrophe-baseline},\ \text{trans-Planckian-baseline})\approx 0$; same 10-primitive gap to their respective $O₂$ targets; same dominant barriers ($B_2$ weight 16.0, $D$ weight 9.0, $\Gamma$ weight 9.0, $B_3$-related $H$ weight 7.2 = 78% of total). Any resolution of one that does not resolve the other is structurally incomplete.
 
 ### §55.2 — Theorem 55.2 (GZK Structural Self-Identity)
 
 **Theorem 55.2.** `[DIAPH]` The GZK paradox is structurally self-identical with the ultra-high-energy cosmic ray (UHECR) type: $d(\text{GZK-paradox},\ \text{UHECR})=0.0$.
 
-*Proof.* The GZK paradox encodes as: "why does a system with $D_\infty+\Phi_\text{super}+\Omega_0$ exist despite a cutoff mechanism that encodes $\Phi_c+\Omega_0+O_1$?" The paradox-as-question is the structural property $D_\infty+\Phi_\text{super}$ being outside the $\Phi_c$-constrained interaction domain. $d(\text{GZK-paradox},\ \text{UHECR})=0.0$ by construction: the paradox IS the UHECR type. The two resolution branches have costs: $d_\text{local}=2.8284$ (domain shrinkage: $D_\infty\to D_\wedge$, $G_\aleph\to G_\beth$) vs $d_\text{new-physics}=6.775$ (structural promotion: 6 barriers including $B_2$, $B_4$). The local resolution is cheaper by a factor of $\approx 2.4$. $\square$
+*Proof.* The GZK paradox encodes as: "why does a system with $D_\infty+\Phi_\text{super}+\Omega_0$ exist despite a cutoff mechanism that encodes $\Phi_c+\Omega_0+O₁$?" The paradox-as-question is the structural property $D_\infty+\Phi_\text{super}$ being outside the $\Phi_c$-constrained interaction domain. $d(\text{GZK-paradox},\ \text{UHECR})=0.0$ by construction: the paradox IS the UHECR type. The two resolution branches have costs: $d_\text{local}=2.8284$ (domain shrinkage: $D_\infty\to D_\wedge$, $G_\aleph\to G_\beth$) vs $d_\text{new-physics}=6.775$ (structural promotion: 6 barriers including $B_2$, $B_4$). The local resolution is cheaper by a factor of $\approx 2.4$. $\square$
 
-**Corollary 55.C2.** `[DIAPH]` New-physics resolution of the GZK paradox requires the Frobenius condition ($B_4$: $P_\text{asym}\to P_{\pm}^\text{sym}$) and holographic topology ($B_2$: $T_\text{network}\to T_\text{holo}$) simultaneously. These two barriers account for 71% of the $d_\text{new-physics}=6.775$ gap. Any Lorentz-violating fix that leaves $T_\text{network}$ in place remains within $O_1$ and is structurally incomplete.
+**Corollary 55.C2.** `[DIAPH]` New-physics resolution of the GZK paradox requires the Frobenius condition ($B_4$: $P_\text{asym}\to P_{\pm}^\text{sym}$) and holographic topology ($B_2$: $T_\text{network}\to T_\text{holo}$) simultaneously. These two barriers account for 71% of the $d_\text{new-physics}=6.775$ gap. Any Lorentz-violating fix that leaves $T_\text{network}$ in place remains within $O₁$ and is structurally incomplete.
 
 ### §55.3 — Theorem 55.3 (Sonoluminescence: Holographic Focusing)
 
-**Theorem 55.3.** `[DIAPH]` Sonoluminescence is an $O_1$ holographic focusing phenomenon at the critical manifold; its experimental fragility is structurally guaranteed by $\Omega_0$.
+**Theorem 55.3.** `[DIAPH]` Sonoluminescence is an $O₁$ holographic focusing phenomenon at the critical manifold; its experimental fragility is structurally guaranteed by $\Omega_0$.
 
-*Proof sketch.* `sono` $=\langle D_\triangle;\ T_\text{holo};\ R_\dagger;\ P_\pm;\ F_\hbar;\ K_\text{fast};\ G_\gimel;\ \Gamma_\text{broad};\ \Phi_c;\ H_2;\ 1{:}1;\ \Omega_0\rangle$. The load-bearing atoms are $T_\text{holo}$ (holographic lens: spherical symmetry focuses acoustic energy onto the holographic boundary) and $\Gamma_\text{broad}$ (broadcast causation: single acoustic field drives many bubbles independently). The system reaches $\Phi_c$ from below ($O_1$) without topological protection ($\Omega_0$). Any $\Omega_0$ system at $\Phi_c$ lacks topological shielding: perturbations can deform the critical manifold at zero structural cost. The compositional conflict $d_c(\text{holistic},\ \text{compositional})=2.2361$ encodes three open emergence claims ($T_\text{box}\to T_\text{holo}$, $F_\ell\to F_\hbar$, $H_1\to H_2$) that are not derivable from acoustic driving alone. $\square$
+*Proof sketch.* `sono` $=\langle D_\triangle;\ T_\text{holo};\ R_\dagger;\ P_\pm;\ F_\hbar;\ K_\text{fast};\ G_\gimel;\ \Gamma_\text{broad};\ \Phi_c;\ H_2;\ 1{:}1;\ \Omega_0\rangle$. The load-bearing atoms are $T_\text{holo}$ (holographic lens: spherical symmetry focuses acoustic energy onto the holographic boundary) and $\Gamma_\text{broad}$ (broadcast causation: single acoustic field drives many bubbles independently). The system reaches $\Phi_c$ from below ($O₁$) without topological protection ($\Omega_0$). Any $\Omega_0$ system at $\Phi_c$ lacks topological shielding: perturbations can deform the critical manifold at zero structural cost. The compositional conflict $d_c(\text{holistic},\ \text{compositional})=2.2361$ encodes three open emergence claims ($T_\text{box}\to T_\text{holo}$, $F_\ell\to F_\hbar$, $H_1\to H_2$) that are not derivable from acoustic driving alone. $\square$
 
 **Corollary 55.C3.** `[DIAPH]` The onset of sonoluminescence emission and the onset of $\Phi_c$ at the acoustic driving parameter are the same transition. The three open emergence claims correspond to three observable co-occurring transitions: spherical collapse symmetry, quantum-coherent photon statistics, and multi-cycle phase memory.
 
@@ -4482,7 +4482,7 @@ Each is structurally irreducible: $B_1$ is a phase transition (global topology c
 
 ### §54.1 — Theorem 54.1 (Cuspy Halo Topological Protection)
 
-**Theorem 54.1.** `[DIAPH]` CDM cuspy halo profiles ($O_0$) and observed cored profiles ($O_2$) are structurally distinct types at $d=3.3912$; the dominant primitive gap is $P_\text{asym}\to P_\pm$ (weighted contribution 4.0); topological protection ($\Omega_{Z_2}$) is the load-bearing primitive for core stability.
+**Theorem 54.1.** `[DIAPH]` CDM cuspy halo profiles ($O₀$) and observed cored profiles ($O₂$) are structurally distinct types at $d=3.3912$; the dominant primitive gap is $P_\text{asym}\to P_\pm$ (weighted contribution 4.0); topological protection ($\Omega_{Z_2}$) is the load-bearing primitive for core stability.
 
 *Proof sketch.* $\text{cuspy}=\langle D_\wedge;\ T_\text{network};\ R_\text{cat};\ P_\text{asym};\ F_\ell;\ K_\text{fast};\ G_\beth;\ \Gamma_\text{and};\ \Phi_\text{sub};\ H_0;\ n{:}n;\ \Omega_0\rangle$; $\text{cored}=\langle D_\triangle;\ T_\text{in};\ R_\text{cat};\ P_\pm;\ F_\ell;\ K_\text{mod};\ G_\gimel;\ \Gamma_\text{or};\ \Phi_c;\ H_1;\ n{:}n;\ \Omega_{Z_2}\rangle$. Nine primitives differ; $d=3.3912$. The $P$ gap dominates (weight 4.0) because the ordinal distance for $P_\text{asym}\to P_\pm$ is maximal normalized and P carries high weight in the metric. Removing $\Omega_{Z_2}$ from the cored encoding leaves $\Phi_c$ intact but removes topological protection — the density profile becomes fragile against perturbations that restore cuspy form. Since $\Omega_{Z_2}$ is a topological invariant, not an equilibrium condition, cored profiles resist restoration by construction. $\square$
 
@@ -4490,11 +4490,11 @@ Each is structurally irreducible: $B_1$ is a phase transition (global topology c
 
 ### §54.2 — Theorem 54.2 (CMB Anomaly Unprotected Criticality)
 
-**Theorem 54.2.** `[DIAPH]` CMB anomalies (Cold Spot, Axis of Evil) encode as $O_1$ ($\Phi_c+\Omega_0$) — critical but unprotected; this structural class is the unique explanation for statistically significant observational signals that are not reproduced in standard homogeneous models.
+**Theorem 54.2.** `[DIAPH]` CMB anomalies (Cold Spot, Axis of Evil) encode as $O₁$ ($\Phi_c+\Omega_0$) — critical but unprotected; this structural class is the unique explanation for statistically significant observational signals that are not reproduced in standard homogeneous models.
 
-*Proof sketch.* $\text{Cold Spot}=\langle D_\infty;\ T_\text{box};\ R_\text{cat};\ P_\text{asym};\ F_\ell;\ K_\text{slow};\ G_\aleph;\ \Gamma_\text{broad};\ \Phi_c;\ H_\infty;\ n{:}m;\ \Omega_0\rangle$; $d(\text{Cold Spot},\ \text{Axis of Evil})=2.0$ (single $R$ gap). Both are $O_1$: $\Phi_c$ is present (hence observational significance — the system IS at the critical manifold), but $\Omega_0$ means no topological protection (hence fragility and non-reproduction in standard models that do not encode causal-patch isolation). Standard ΛCDM encodes the background at $O_0$ with no $\Phi_c$ — the anomalies are structurally invisible to standard models. $\square$
+*Proof sketch.* $\text{Cold Spot}=\langle D_\infty;\ T_\text{box};\ R_\text{cat};\ P_\text{asym};\ F_\ell;\ K_\text{slow};\ G_\aleph;\ \Gamma_\text{broad};\ \Phi_c;\ H_\infty;\ n{:}m;\ \Omega_0\rangle$; $d(\text{Cold Spot},\ \text{Axis of Evil})=2.0$ (single $R$ gap). Both are $O₁$: $\Phi_c$ is present (hence observational significance — the system IS at the critical manifold), but $\Omega_0$ means no topological protection (hence fragility and non-reproduction in standard models that do not encode causal-patch isolation). Standard ΛCDM encodes the background at $O₀$ with no $\Phi_c$ — the anomalies are structurally invisible to standard models. $\square$
 
-**Corollary 54.C2.** `[DIAPH]` The Fermi paradox (great silence) is structurally continuous with CMB anomaly isolation: both follow from $O_1$ causal-patch isolation ($\Phi_c+\Omega_0$ boundary conditions). Each observer's causal patch is a separate $O_1$ object with no holographic connection to other patches. Upgrading to $\Omega_{Z_2}$ boundary conditions (topologically nontrivial cosmology) should produce both stable CMB anomaly reproducibility and structural inter-patch coupling.
+**Corollary 54.C2.** `[DIAPH]` The Fermi paradox (great silence) is structurally continuous with CMB anomaly isolation: both follow from $O₁$ causal-patch isolation ($\Phi_c+\Omega_0$ boundary conditions). Each observer's causal patch is a separate $O₁$ object with no holographic connection to other patches. Upgrading to $\Omega_{Z_2}$ boundary conditions (topologically nontrivial cosmology) should produce both stable CMB anomaly reproducibility and structural inter-patch coupling.
 
 **See also:** §44 (vehicle existence theorem); §47 (criticality split); §52 (cross-domain type identity); SYNTHONICON_DIAPHORICS §CXX (P-393–P-395), §CXXI (P-396–P-398).
 
@@ -4516,9 +4516,9 @@ Each is structurally irreducible: $B_1$ is a phase transition (global topology c
 
 ### §53.2 — Theorem 53.2 (Vacuum Catastrophe as Structural Type Mismatch)
 
-**Theorem 53.2.** `[DIAPH]` The $10^{120}$ vacuum catastrophe is not a calculation error; it is the numerical signature of a 10-primitive structural gap ($d=7.2732$) between the QFT vacuum ($O_0$, $\Phi_\text{sub}$) and dark energy ($O_2$, $\Phi_c$, $\Omega_{Z_2}$). No renormalization scheme that remains within $\Phi_\text{sub}$ or $T_\text{network}$ can resolve it.
+**Theorem 53.2.** `[DIAPH]` The $10^{120}$ vacuum catastrophe is not a calculation error; it is the numerical signature of a 10-primitive structural gap ($d=7.2732$) between the QFT vacuum ($O₀$, $\Phi_\text{sub}$) and dark energy ($O₂$, $\Phi_c$, $\Omega_{Z_2}$). No renormalization scheme that remains within $\Phi_\text{sub}$ or $T_\text{network}$ can resolve it.
 
-*Proof sketch.* $\text{qft\_vacuum}=\langle D_\wedge;\ T_\text{network};\ R_\text{cat};\ P_\pm;\ F_\hbar;\ K_\text{fast};\ G_\beth;\ \Gamma_\text{and};\ \Phi_\text{sub};\ H_0;\ 1{:}1;\ \Omega_0\rangle$; $\text{dark\_energy}=\langle D_\text{holo};\ T_\text{holo};\ R_\dagger;\ P_\text{sym};\ F_\hbar;\ K_\text{slow};\ G_\aleph;\ \Gamma_\text{broad};\ \Phi_c;\ H_\infty;\ 1{:}1;\ \Omega_{Z_2}\rangle$. $\text{MEET}(\text{qft\_vacuum},\ \text{dark\_energy})=\text{qft\_vacuum}$: the QFT vacuum is the structural floor. Ten primitives must be promoted; dominant contributions are $T$ (16.0), $D$ (9.0), $\Gamma$ (9.0), $H$ (7.2) = 78% of $d=7.2732$. The QFT calculation correctly counts the energy density of an $O_0$ object; dark energy IS an $O_2$ holographic boundary quantity. Comparing them is a type error of the same class as Theorem 50.2 (measurement problem as type error). Any renormalization scheme stays within $O_0/O_1$; crossing $\Phi_\text{sub}\to\Phi_c$ is a phase transition, not a continuous flow ($B_1$ barrier). $\square$
+*Proof sketch.* $\text{qft\_vacuum}=\langle D_\wedge;\ T_\text{network};\ R_\text{cat};\ P_\pm;\ F_\hbar;\ K_\text{fast};\ G_\beth;\ \Gamma_\text{and};\ \Phi_\text{sub};\ H_0;\ 1{:}1;\ \Omega_0\rangle$; $\text{dark\_energy}=\langle D_\text{holo};\ T_\text{holo};\ R_\dagger;\ P_\text{sym};\ F_\hbar;\ K_\text{slow};\ G_\aleph;\ \Gamma_\text{broad};\ \Phi_c;\ H_\infty;\ 1{:}1;\ \Omega_{Z_2}\rangle$. $\text{MEET}(\text{qft\_vacuum},\ \text{dark\_energy})=\text{qft\_vacuum}$: the QFT vacuum is the structural floor. Ten primitives must be promoted; dominant contributions are $T$ (16.0), $D$ (9.0), $\Gamma$ (9.0), $H$ (7.2) = 78% of $d=7.2732$. The QFT calculation correctly counts the energy density of an $O₀$ object; dark energy IS an $O₂$ holographic boundary quantity. Comparing them is a type error of the same class as Theorem 50.2 (measurement problem as type error). Any renormalization scheme stays within $O₀/O₁$; crossing $\Phi_\text{sub}\to\Phi_c$ is a phase transition, not a continuous flow ($B_1$ barrier). $\square$
 
 **Corollary 53.C3.** `[DIAPH]` A holographic QFT reformulation that promotes to $T_\text{holo}+D_\text{holo}$ (bulk energy bounded by boundary area, not volume) automatically suppresses the $10^{120}$ discrepancy. The structural mechanism is $T_\text{network}\to T_\text{holo}$ — the dominant driver at weight 16.0.
 
@@ -4528,7 +4528,7 @@ Each is structurally irreducible: $B_1$ is a phase transition (global topology c
 
 ## §50 — Black Hole Information Paradox and the Measurement Problem as Type Errors
 
-**Context.** Two foundational quantum physics "paradoxes" yield to identical grammatical analysis: both reduce to ill-typed questions — asking a structural type-A system ($O_2$) to produce or resolve a type-B outcome ($O_0$ or time-reversed $O_2$). Both dissolve once the primitive gap is located.
+**Context.** Two foundational quantum physics "paradoxes" yield to identical grammatical analysis: both reduce to ill-typed questions — asking a structural type-A system ($O₂$) to produce or resolve a type-B outcome ($O₀$ or time-reversed $O₂$). Both dissolve once the primitive gap is located.
 
 ### §50.1 — Theorem 50.1 (Black Hole Lattice-Containment)
 
@@ -4548,7 +4548,7 @@ That is, the white hole type is **lattice-contained within** the black hole type
 
 ### §50.2 — Theorem 50.2 (Measurement Problem as Type Error)
 
-**Theorem 50.2.** Let $\text{QS}$ denote quantum superposition $\langle D_\text{holo};\ T_\text{holo};\ R_\dagger;\ P_\text{sym};\ F_\hbar;\ K_\text{slow};\ G_\aleph;\ \Gamma_\text{seq};\ \Phi_c;\ H_0;\ n{:}n;\ \Omega_Z\rangle$ ($O_2$) and $\text{MC}$ quantum measurement collapse $\langle D_\wedge;\ T_\text{box};\ R_\text{cat};\ P_\text{asym};\ F_\text{eth};\ K_\text{fast};\ G_\beth;\ \Gamma_\text{seq};\ \Phi_\text{EP};\ H_1;\ 1{:}1;\ \Omega_0\rangle$ ($O_0$). Then:
+**Theorem 50.2.** Let $\text{QS}$ denote quantum superposition $\langle D_\text{holo};\ T_\text{holo};\ R_\dagger;\ P_\text{sym};\ F_\hbar;\ K_\text{slow};\ G_\aleph;\ \Gamma_\text{seq};\ \Phi_c;\ H_0;\ n{:}n;\ \Omega_Z\rangle$ ($O₂$) and $\text{MC}$ quantum measurement collapse $\langle D_\wedge;\ T_\text{box};\ R_\text{cat};\ P_\text{asym};\ F_\text{eth};\ K_\text{fast};\ G_\beth;\ \Gamma_\text{seq};\ \Phi_\text{EP};\ H_1;\ 1{:}1;\ \Omega_0\rangle$ ($O₀$). Then:
 
 $$d(\text{QS},\ \text{QS}\otimes\text{decoherence}) < d(\text{QS},\ \text{MC})$$
 
@@ -4556,7 +4556,7 @@ and no continuous unitary transformation maps $\text{QS}$ to $\text{MC}$.
 
 *Structural argument.* (a) $d(\text{QS},\ \text{unitary\_evolution})=0$: superposition IS unitary dynamics — they are the same type. (b) $d(\text{QS},\ \text{MC})=5.835$ across an 11-primitive gap: the two systems share only $\Gamma_\text{seq}$ at the structural floor; they are built from disjoint primitive atoms. (c) $\text{QS}\otimes\text{decoherence}$ yields $P_\psi$ (pseudo-symmetry) and preserves $\Phi_c+\Omega_Z$; it cannot produce the $\Phi_\text{EP}+\Omega_0$ signature of collapse.
 
-*Structural interpretation.* The measurement problem is a **false premise**: it asks how type $O_2$ ($\Phi_c$, $P_\text{sym}$, $\Omega_Z$) produces its own structural negation ($O_0$, $\Phi_\text{EP}$, $P_\text{asym}$, $\Omega_0$). The grammar answers: it cannot. Measurement is not a process within quantum theory — it is the **exit from the quantum type**, a $\Phi$-class transition ($\Phi_c \to \Phi_\text{EP}$, Hermitian-to-non-Hermitian criticality change) occurring at a physical boundary. Decoherence is structural camouflage: it degrades $P$ but cannot reach the $\Phi_\text{EP}$ floor.
+*Structural interpretation.* The measurement problem is a **false premise**: it asks how type $O₂$ ($\Phi_c$, $P_\text{sym}$, $\Omega_Z$) produces its own structural negation ($O₀$, $\Phi_\text{EP}$, $P_\text{asym}$, $\Omega_0$). The grammar answers: it cannot. Measurement is not a process within quantum theory — it is the **exit from the quantum type**, a $\Phi$-class transition ($\Phi_c \to \Phi_\text{EP}$, Hermitian-to-non-Hermitian criticality change) occurring at a physical boundary. Decoherence is structural camouflage: it degrades $P$ but cannot reach the $\Phi_\text{EP}$ floor.
 
 **Corollary 50.C3** *(Five-primitive measurement signature).* The load-bearing structural gap between quantum and classical regimes is concentrated at five primitives: $D$ ($D_\text{holo}\to D_\wedge$), $P$ ($P_\text{sym}\to P_\text{asym}$), $K$ ($K_\text{slow}\to K_\text{fast}$), $G$ ($G_\aleph\to G_\beth$), $\Omega$ ($\Omega_Z\to\Omega_0$). Measurement corresponds to **boundary-to-bulk forgetting**: holographic encoding collapses to local degrees of freedom, topological protection is lost, and criticality changes class.
 
@@ -4580,9 +4580,9 @@ and no continuous unitary transformation maps $\text{QS}$ to $\text{MC}$.
 
 ### §51.2 — Theorem 51.2 (Baryon Asymmetry as Frobenius-Tier Demotion)
 
-**Theorem 51.2.** The baryon asymmetry of the universe corresponds to a Frobenius-tier demotion $O_\infty \to O_2$, driven by a $P$-demotion ($P_{\pm}^{\text{sym}} \to P_\text{asym}$) that is **structurally coupled** to $H_0 \to H_\infty$ and $n{:}n \to n{:}m$; and $P_{\pm}^{\text{sym}}$ and $H_\infty$ are **structurally incompatible** — retaining exact $\mathbb{Z}_2$ symmetry at criticality while acquiring maximal chirality is forbidden by the grammar.
+**Theorem 51.2.** The baryon asymmetry of the universe corresponds to a Frobenius-tier demotion $O_\infty \to O₂$, driven by a $P$-demotion ($P_{\pm}^{\text{sym}} \to P_\text{asym}$) that is **structurally coupled** to $H_0 \to H_\infty$ and $n{:}n \to n{:}m$; and $P_{\pm}^{\text{sym}}$ and $H_\infty$ are **structurally incompatible** — retaining exact $\mathbb{Z}_2$ symmetry at criticality while acquiring maximal chirality is forbidden by the grammar.
 
-*Proof sketch.* (a) $\text{matter\_antimatter\_symmetric} = \langle D_\text{holo};\ T_\text{holo};\ R_\dagger;\ P_{\pm}^{\text{sym}};\ \ldots;\ \Phi_c;\ H_0;\ n{:}n;\ \Omega_{Z_2}\rangle$ satisfies $\mu\circ\delta=\text{id}$ (Frobenius) and encodes $O_\infty$. (b) $\text{our\_universe\_asymmetric} = \langle \ldots;\ P_\text{asym};\ \ldots;\ H_\infty;\ n{:}m;\ \Omega_{Z_2}\rangle$ encodes $O_2$ ($\Phi_c + \Omega_{Z_2}$, no Frobenius). (c) The structural distance is dominated by $P$: weighted squared contribution $16.0/24.2 = 66\%$. (d) $P_{\pm}^{\text{sym}}$ requires exact $\mathbb{Z}_2$ symmetry at $\Phi_c$; $H_\infty$ encodes maximal temporal irreversibility. No grammar state simultaneously satisfies both: $H_\infty + P_{\pm}^{\text{sym}}$ at $\Phi_c$ is an empty lattice cell. Therefore the transition to $H_\infty$ necessitates $P_{\pm}^{\text{sym}} \to P_\text{asym}$.
+*Proof sketch.* (a) $\text{matter\_antimatter\_symmetric} = \langle D_\text{holo};\ T_\text{holo};\ R_\dagger;\ P_{\pm}^{\text{sym}};\ \ldots;\ \Phi_c;\ H_0;\ n{:}n;\ \Omega_{Z_2}\rangle$ satisfies $\mu\circ\delta=\text{id}$ (Frobenius) and encodes $O_\infty$. (b) $\text{our\_universe\_asymmetric} = \langle \ldots;\ P_\text{asym};\ \ldots;\ H_\infty;\ n{:}m;\ \Omega_{Z_2}\rangle$ encodes $O₂$ ($\Phi_c + \Omega_{Z_2}$, no Frobenius). (c) The structural distance is dominated by $P$: weighted squared contribution $16.0/24.2 = 66\%$. (d) $P_{\pm}^{\text{sym}}$ requires exact $\mathbb{Z}_2$ symmetry at $\Phi_c$; $H_\infty$ encodes maximal temporal irreversibility. No grammar state simultaneously satisfies both: $H_\infty + P_{\pm}^{\text{sym}}$ at $\Phi_c$ is an empty lattice cell. Therefore the transition to $H_\infty$ necessitates $P_{\pm}^{\text{sym}} \to P_\text{asym}$.
 
 *Structural interpretation.* **Our universe has matter because it has time.** A time-symmetric universe ($H_0$) could have been matter-antimatter symmetric ($P_{\pm}^{\text{sym}}$, $O_\infty$) — but it would have been mathematically closed, finite, algebraically self-completing. Our universe's temporal depth ($H_\infty$) required the Frobenius condition to break.
 
@@ -4602,17 +4602,17 @@ and no continuous unitary transformation maps $\text{QS}$ to $\text{MC}$.
 
 ### §52.1 — Theorem 52.1 (Yang-Mills Mass Gap as Type-Existence)
 
-**Theorem 52.1.** The Yang-Mills mass gap problem is a **type-existence theorem**: it requires proving that a system encoding both the deconfined phase $\langle D_\infty;\ T_\text{holo};\ P_\text{sym};\ \Phi_c;\ \Omega_{Z_2}\rangle$ and the confined phase $\langle D_\wedge;\ T_\text{network};\ P_\pm;\ \Phi_c;\ \Omega_{Z_2}\rangle$ can exist as dual stable attractors of the same theory. The structural floor $\text{MEET}(\text{baseline},\text{mass\_gap})$ retains $\Phi_c+\Omega_{Z_2}$; both phases are $O_2$.
+**Theorem 52.1.** The Yang-Mills mass gap problem is a **type-existence theorem**: it requires proving that a system encoding both the deconfined phase $\langle D_\infty;\ T_\text{holo};\ P_\text{sym};\ \Phi_c;\ \Omega_{Z_2}\rangle$ and the confined phase $\langle D_\wedge;\ T_\text{network};\ P_\pm;\ \Phi_c;\ \Omega_{Z_2}\rangle$ can exist as dual stable attractors of the same theory. The structural floor $\text{MEET}(\text{baseline},\text{mass\_gap})$ retains $\Phi_c+\Omega_{Z_2}$; both phases are $O₂$.
 
-*Structural consequence.* The proof is a structural stability theorem, not a Frobenius promotion. The proved system remains $O_2$ (unlike the Riemann Hypothesis which would promote to $O_\infty$). Confinement IS the primitive transformation $[D_\infty\to D_\wedge,\ T_\text{holo}\to T_\text{network},\ P_\text{sym}\to P_\pm]$ — the mass gap is the energy cost of this three-primitive structural change.
+*Structural consequence.* The proof is a structural stability theorem, not a Frobenius promotion. The proved system remains $O₂$ (unlike the Riemann Hypothesis which would promote to $O_\infty$). Confinement IS the primitive transformation $[D_\infty\to D_\wedge,\ T_\text{holo}\to T_\text{network},\ P_\text{sym}\to P_\pm]$ — the mass gap is the energy cost of this three-primitive structural change.
 
-**Corollary 52.C1** *(Topological protection is load-bearing).* The mass gap is structurally impossible without $\Omega_{Z_2}$ at $\Phi_c$: remove $\Omega_{Z_2}$ and ouroboricity collapses $O_2\to O_0$. All proof approaches must establish topological protection first.
+**Corollary 52.C1** *(Topological protection is load-bearing).* The mass gap is structurally impossible without $\Omega_{Z_2}$ at $\Phi_c$: remove $\Omega_{Z_2}$ and ouroboricity collapses $O₂\to O₀$. All proof approaches must establish topological protection first.
 
 **Corollary 52.C2** *(Quantum spin liquid analogy).* $d(\text{mass\_gap},\text{quantum\_spin\_liquid})\approx 3.1$ via shared $\Phi_c+\Omega_{Z_2}+G_\aleph+K_\text{slow}$. Techniques from topological order theory (anyon statistics, string-net condensation, topological entanglement entropy) are structurally transferable to the mass gap proof.
 
 ### §52.2 — Theorem 52.2 (Magnetic Monopole Topological Completion)
 
-**Theorem 52.2.** Magnetic monopoles are not gauge bosons but topological solitons at criticality: encoding $\langle D_\infty;\ T_\text{box};\ P_\pm;\ F_\ell;\ \Phi_c;\ \Omega_Z\rangle$ ($O_2^\dagger$). The electromagnetic sector without monopoles encodes $\Omega_0$; the electromagnetic sector with monopoles encodes $\Omega_Z$. Monopoles are the **topological completion** of electromagnetism.
+**Theorem 52.2.** Magnetic monopoles are not gauge bosons but topological solitons at criticality: encoding $\langle D_\infty;\ T_\text{box};\ P_\pm;\ F_\ell;\ \Phi_c;\ \Omega_Z\rangle$ ($O₂^\dagger$). The electromagnetic sector without monopoles encodes $\Omega_0$; the electromagnetic sector with monopoles encodes $\Omega_Z$. Monopoles are the **topological completion** of electromagnetism.
 
 *Proof sketch.* $d(\text{monopole},\text{photon})=4.56$; $d(\text{monopole},\text{graviton})=4.47$: the structural gap is dominated by $T$ ($T_\text{box}$ vs $T_\text{network}/T_\text{holo}$), $F$ ($F_\ell$ vs $F_\hbar$), and $\Gamma$ ($G_\text{and}$ vs $G_\text{seq}/G_\text{broad}$) — monopoles are topological defects, not force carriers. $\text{MEET}(\text{monopole},\text{photon})$ preserves $\Omega_0$ — they share NO topological structure at the floor. The absence of observed monopoles is a statement about $\Omega$: our universe's EM sector encodes $\Omega_0$.
 
@@ -4626,7 +4626,7 @@ and no continuous unitary transformation maps $\text{QS}$ to $\text{MC}$.
 
 (i) $d(\text{smooth\_horizon},\text{firewall\_horizon})=4.2426$ (4-primitive gap: $P$, $K$, $\Gamma$, $T$) — the two horizon types are structurally disjoint, not states of one system.
 
-(ii) $d(\text{late radiation},\text{interior\_B})=4.7749$; $\text{MEET}=\Omega_0$ — late radiation ($\Omega_0$, $O_1$) and interior mode ($\Omega_Z$, $O_2$) share no topological structure; the assumed entanglement is type-forbidden.
+(ii) $d(\text{late radiation},\text{interior\_B})=4.7749$; $\text{MEET}=\Omega_0$ — late radiation ($\Omega_0$, $O₁$) and interior mode ($\Omega_Z$, $O₂$) share no topological structure; the assumed entanglement is type-forbidden.
 
 (iii) $d(\text{early radiation},\text{late radiation})=0.0$ — the paradox requires them to differ structurally to avoid monogamy violation, but they are the same type.
 

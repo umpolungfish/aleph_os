@@ -185,8 +185,8 @@ def trace_state(V: np.ndarray) -> np.ndarray:
 def o_inf_alignment(V: np.ndarray) -> np.ndarray:
     """
     phi_inf(x) = <v_x, v_bar_inf> / ||v_bar_inf||
-    where v_bar_inf = average profile vector of O_inf letters (ו, מ, ש).
-    Measures alignment of x with the O_inf stratum.
+    where v_bar_inf = average profile vector of O_∞ letters (ו, מ, ש).
+    Measures alignment of x with the O_∞ stratum.
     """
     inf_glyphs = ['ו', 'מ', 'ש']
     inf_indices = [CANONICAL_GLYPHS.index(g) for g in inf_glyphs]
@@ -278,7 +278,7 @@ def run():
         tr = float(np.trace(Lg))
         print(f'  {g:6s}  {LETTERS[g].tier:8s}  {norm:8.4f}  {"yes" if sa else "no":>13s}  {tr:10.4f}')
 
-    # ── 5. O_inf spectral analysis ───────────────────────────────────────────
+    # ── 5. O_∞ spectral analysis ───────────────────────────────────────────
     print(f'\n{SEP2}')
     print('[5] SPECTRAL PROPERTIES OF O_∞ OPERATORS (ו, מ, ש)\n')
     for g in ['ו', 'מ', 'ש']:

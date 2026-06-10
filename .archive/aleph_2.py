@@ -139,18 +139,18 @@ class LetterType:
 
     def ouroboricity_tier(self) -> str:
         if self.Phi == Criticality.PHI_C and self.P == ParitySymmetry.P_PM_SYM:
-            return "O_inf"
+            return "O_∞"
         if (self.Phi == Criticality.PHI_C and self.Omega != TopoProtection.OMEGA_0 and
             self.D in (Dimensionality.D_WEDGE, Dimensionality.D_CIRCLE, Dimensionality.D_TRIANGLE)):
-            return "O_2"
+            return "O₂"
         if self.Phi == Criticality.PHI_C and self.Omega != TopoProtection.OMEGA_0 and self.D == Dimensionality.D_INFINITY:
-            return "O_2"
+            return "O₂"
         if self.Phi == Criticality.PHI_C and self.Omega == TopoProtection.OMEGA_0:
-            return "O_1"
-        return "O_0"
+            return "O₁"
+        return "O₀"
 
     def __repr__(self) -> str:
-        tiers = {"O_0": "⚫O₀", "O_1": "🟢O₁", "O_2": "🔵O₂", "O_inf": "🟣O_∞"}
+        tiers = {"O₀": "⚫O₀", "O₁": "🟢O₁", "O₂": "🔵O₂", "O_∞": "🟣O_∞"}
         return f"<LetterType {tiers[self.ouroboricity_tier()]}>"
 
 
@@ -348,13 +348,13 @@ class Palace(Enum):
 def can_cross_barrier(from_palace: Palace, to_palace: Palace, typ: LetterType) -> bool:
     if from_palace == to_palace:
         return True
-    # O_0 -> O_1 requires phi_c_probe
+    # O₀ -> O₁ requires phi_c_probe
     if from_palace.value <= Palace.BARRIER.value and to_palace == Palace.ANGELIC:
         return typ.Phi == Criticality.PHI_C
-    # O_1 -> O_2 requires topo_protection_probe
+    # O₁ -> O₂ requires topo_protection_probe
     if from_palace == Palace.ANGELIC and to_palace.value >= Palace.MIDPOINT.value:
         return typ.Omega != TopoProtection.OMEGA_0
-    # O_2 -> O_inf requires frobenius_probe
+    # O₂ -> O_∞ requires frobenius_probe
     if from_palace.value >= Palace.MIDPOINT.value and to_palace == Palace.THRONE:
         return typ.P == ParitySymmetry.P_PM_SYM
     return False
@@ -461,14 +461,14 @@ def example1_safe_computation():
     interp.verbose = False
     result = interp.evaluate(('tensor', 'bet', 'gimel'))
     print("Example 1: bet ⊗ gimel =", result)
-    assert result.typ.ouroboricity_tier() == "O_0"
+    assert result.typ.ouroboricity_tier() == "O₀"
 
 def example2_self_reference():
     interp = ALEPHInterpreter()
     interp.verbose = False
     result = interp.evaluate(('tensor', 'aleph', 'aleph'))
     print("Example 2: aleph ⊗ aleph =", result)
-    assert result.typ.ouroboricity_tier() == "O_2"
+    assert result.typ.ouroboricity_tier() == "O₂"
 
 def example3_vav_cast():
     interp = ALEPHInterpreter()
@@ -477,7 +477,7 @@ def example3_vav_cast():
     cast_expr = ('vav_cast', 'aleph', 'tav', 'proof')
     result = interp.evaluate(cast_expr)
     print("Example 3: vav_cast[aleph, tav] succeeded:", result)
-    assert result.typ.ouroboricity_tier() == "O_2"
+    assert result.typ.ouroboricity_tier() == "O₂"
 
 def example4_palace_ascent():
     interp = ALEPHInterpreter()
@@ -494,7 +494,7 @@ def example4_palace_ascent():
     results = interp.run_example(program)
     final = results[-1]
     print("Example 4: Full ascent result =", final)
-    assert final.typ.ouroboricity_tier() == "O_inf"
+    assert final.typ.ouroboricity_tier() == "O_∞"
 
 def example5_join_meet():
     aleph = _LETTERS["aleph"]
@@ -503,8 +503,8 @@ def example5_join_meet():
     meet_typ = aleph.meet(bet)
     print("Example 5: aleph ∨ bet =", join_typ)
     print("         aleph ∧ bet =", meet_typ)
-    assert join_typ.ouroboricity_tier() == "O_2"
-    assert meet_typ.ouroboricity_tier() == "O_0"
+    assert join_typ.ouroboricity_tier() == "O₂"
+    assert meet_typ.ouroboricity_tier() == "O₀"
 
 def example6_frobenius_composition():
     interp = ALEPHInterpreter()
@@ -513,8 +513,8 @@ def example6_frobenius_composition():
     mem_aleph = interp.evaluate(('tensor', 'mem', 'aleph'))
     print("Example 6: mem ⊗ shin =", mem_shin, "tier:", mem_shin.typ.ouroboricity_tier())
     print("         mem ⊗ aleph =", mem_aleph, "tier:", mem_aleph.typ.ouroboricity_tier())
-    assert mem_shin.typ.ouroboricity_tier() == "O_inf"
-    assert mem_aleph.typ.ouroboricity_tier() == "O_2"
+    assert mem_shin.typ.ouroboricity_tier() == "O_∞"
+    assert mem_aleph.typ.ouroboricity_tier() == "O₂"
 
 
 if __name__ == "__main__":

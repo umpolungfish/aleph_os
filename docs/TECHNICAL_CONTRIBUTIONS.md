@@ -88,14 +88,14 @@ Define the **Frobenius condition** $\mathcal{F}(x)$: $x_P = 4$ (i.e., $P = P_{\p
 The **ouroboricity tier** of $x$ is assigned by the following priority rules:
 
 - **$O_\infty$**: $x_\Phi = 1$ (critical) and $\mathcal{F}(x)$
-- **$O_0$**: $x_\Phi \notin \{1\}$ (sub- or super-critical)
-- **$O_1$**: $x_\Phi = 1$ and $x_\Omega = 0$
-- **$O_2$**: $x_\Phi = 1$ and $x_\Omega \neq 0$ and $x_D \in \{0,1,3\}$
-- **$O_2^\dagger$**: $x_\Phi = 1$ and $x_\Omega \neq 0$ and $x_D = 2$
+- **$O₀$**: $x_\Phi \notin \{1\}$ (sub- or super-critical)
+- **$O₁$**: $x_\Phi = 1$ and $x_\Omega = 0$
+- **$O₂$**: $x_\Phi = 1$ and $x_\Omega \neq 0$ and $x_D \in \{0,1,3\}$
+- **$O₂^\dagger$**: $x_\Phi = 1$ and $x_\Omega \neq 0$ and $x_D = 2$
 
 $O_\infty$ is the **Frobenius tier**: the unique tier at which the special Frobenius condition $\mu \circ \delta = \text{id}$ (realized by $P_{\pm}^{\text{sym}}$) holds at criticality.
 
-In $\mathcal{A}$, the tier distribution is: $|O_\infty| = 3$, $|O_2| = 5$, $|O_1| = 1$, $|O_0| = 13$.
+In $\mathcal{A}$, the tier distribution is: $|O_\infty| = 3$, $|O₂| = 5$, $|O₁| = 1$, $|O₀| = 13$.
 
 ---
 
@@ -213,7 +213,7 @@ where $y_1, \ldots, y_{22}$ is the fixed enumeration of $\mathcal{A}$ and $w_k$ 
 
 ### 6.2 The Octad Balance Theorem
 
-**Definition 6.3.** Let $G^+ = \{g_1, g_2, g_3, g_4\}$ and $G^- = \{g_5, g_6, g_7, g_8\}$ be two disjoint 4-element subsets of $\mathcal{A}$ (with $G^+ \cup G^-$ the 8-element balanced partition identified from the extra null eigenvector of $G$, each $G^\pm$ containing one element from each tier stratum: one $O_\infty$, one $O_2$, and two $O_0$ representatives).
+**Definition 6.3.** Let $G^+ = \{g_1, g_2, g_3, g_4\}$ and $G^- = \{g_5, g_6, g_7, g_8\}$ be two disjoint 4-element subsets of $\mathcal{A}$ (with $G^+ \cup G^-$ the 8-element balanced partition identified from the extra null eigenvector of $G$, each $G^\pm$ containing one element from each tier stratum: one $O_\infty$, one $O₂$, and two $O₀$ representatives).
 
 **Theorem T7** (Octad Balance). For every $h \in \mathcal{A}$ and every primitive index $k \in \{1, \ldots, 12\}$:
 
@@ -254,7 +254,7 @@ The same identity holds with $\otimes$ replaced by $\vee$ or $\wedge$.
 
 **Corollary.** $\mathcal{A}$ does not admit a standard *-algebra structure on $\mathcal{H}_I$: no element-wise involution $x \mapsto x^*$ satisfies $L_{x^*} = L_x^\dagger$ for all $x$.
 
-**Remark.** The attractor of $\tau$ (the element to which most generators map as their nearest adjoint) is the unique $O_1$ element of $\mathcal{A}$ — the single letter at tier $O_1$, between $O_0$ and $O_2$ in the ouroboricity ordering. This suggests the $*$-structure, if it exists, would require a non-standard involution indexed by the tier structure rather than the element labels.
+**Remark.** The attractor of $\tau$ (the element to which most generators map as their nearest adjoint) is the unique $O₁$ element of $\mathcal{A}$ — the single letter at tier $O₁$, between $O₀$ and $O₂$ in the ouroboricity ordering. This suggests the $*$-structure, if it exists, would require a non-standard involution indexed by the tier structure rather than the element labels.
 
 ---
 
@@ -290,7 +290,7 @@ The specific instance studied — the 22-generator algebra derived from the Synt
 
 2. **Full abstraction.** Is $\mathcal{A}$ fully abstract for $\text{Ker}(I)$? Specifically: if $I(t_1) = I(t_2)$ for all contexts, does $t_1 \equiv t_2$ definitionally?
 
-3. **The $*$-involution.** The attractor of $\tau$ (the $O_1$ element) suggests a tier-indexed involution. Can such an involution be constructed to yield a genuine $*$-algebra structure on $\mathcal{H}_I$?
+3. **The $*$-involution.** The attractor of $\tau$ (the $O₁$ element) suggests a tier-indexed involution. Can such an involution be constructed to yield a genuine $*$-algebra structure on $\mathcal{H}_I$?
 
 4. **Axiom proof of the Octad Balance.** Theorem T7 is proved by exhaustive computation. A structural proof — deriving the identity from the primitive tuple assignments of the 8 generators — would explain *why* these 8 generators balance and potentially characterize all algebras satisfying T7.
 

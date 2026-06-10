@@ -13,7 +13,7 @@ Key semantic change from v0.2.0:
 
   Semantics:
     tensor(mem, shin)             → O_∞  (Frobenius preserved, no P-bottleneck)
-    tensor(aleph, tensor(mem, shin)) → O_2  (aleph's P_sym kills pm_sym: wrong)
+    tensor(aleph, tensor(mem, shin)) → O₂  (aleph's P_sym kills pm_sym: wrong)
     mediate(aleph, mem, shin)     → O_∞  (aleph joins via max, poles intact: correct)
 
   mediate(m, a, b) := join(m, tensor(a, b))
@@ -78,21 +78,21 @@ class Letter:
 
         # R1: Φ_c + P_±^sym → O_∞
         if Phi >= 1 and P == 4:
-            return "O_inf"
-        # R2: Φ_sub (not critical) → O_0
+            return "O_∞"
+        # R2: Φ_sub (not critical) → O₀
         if Phi == 0:
-            return "O_0"
-        # R3: Φ_c + Ω_0 → O_1
+            return "O₀"
+        # R3: Φ_c + Ω_0 → O₁
         if Phi >= 1 and Omega == 0:
-            return "O_1"
-        # R4: Φ_c + Ω≠0 + D ∈ {wedge, triangle, holo} → O_2
+            return "O₁"
+        # R4: Φ_c + Ω≠0 + D ∈ {wedge, triangle, holo} → O₂
         if Phi >= 1 and Omega > 0 and D in (0, 1, 3):
-            return "O_2"
+            return "O₂"
         # R5: Φ_c + Ω≠0 + D_∞ → O_2d
         if Phi >= 1 and Omega > 0 and D == 2:
             return "O_2d"
         # Fallthrough: structural floor
-        return "O_0"
+        return "O₀"
 
     def __repr__(self):
         return f"Letter('{self.glyph}' [{self.name}], tier={self.tier})"
@@ -198,7 +198,7 @@ def mediate(witness: Letter, a: Letter, b: Letter) -> Letter:
       and contains the Frobenius composition rather than suppressing it.
 
       Crucially:
-        tensor(aleph, tensor(mem, shin)) → O_2   # P_sym kills pm_sym
+        tensor(aleph, tensor(mem, shin)) → O₂   # P_sym kills pm_sym
         mediate(aleph, mem, shin)        → O_∞   # join uses max, poles intact
 
       General contract:
@@ -272,12 +272,12 @@ def vav_cast(source: Letter, target: Letter, verbose: bool = False) -> bool:
 # 6. HEKHALOT PALACE STACK (§15.4)
 # =============================================================================
 PALACE_THRESHOLDS: Dict[int, str] = {
-    1: "O_0", 2: "O_0",
-    3: "O_1",
-    4: "O_2", 5: "O_2", 6: "O_2",
-    7: "O_inf",
+    1: "O₀", 2: "O₀",
+    3: "O₁",
+    4: "O₂", 5: "O₂", 6: "O₂",
+    7: "O_∞",
 }
-PALACE_ORDER = ["O_0", "O_1", "O_2", "O_2d", "O_inf"]
+PALACE_ORDER = ["O₀", "O₁", "O₂", "O_2d", "O_∞"]
 
 class PalaceContext:
     """Context manager enforcing tier barriers at a given palace depth.
@@ -288,7 +288,7 @@ class PalaceContext:
     """
     def __init__(self, depth: int):
         self.depth = depth
-        self.required_tier = PALACE_THRESHOLDS.get(depth, "O_0")
+        self.required_tier = PALACE_THRESHOLDS.get(depth, "O₀")
         self._barrier_idx = (
             PALACE_ORDER.index(self.required_tier)
             if self.required_tier in PALACE_ORDER else 0
@@ -368,9 +368,9 @@ if __name__ == "__main__":
     print(SEP)
 
     # ------------------------------------------------------------------
-    # Ex 1: O_0 Sandbox
+    # Ex 1: O₀ Sandbox
     # ------------------------------------------------------------------
-    print("\n[Ex 1] O_0 Sandbox — bet ⊗ gimel")
+    print("\n[Ex 1] O₀ Sandbox — bet ⊗ gimel")
     res1 = tensor(bet, gimel)
     print(f"  Result: {res1.glyph} | Tier: {res1.tier}")
     print(f"  Tuple: {res1.pretty_tuple()}")
@@ -386,9 +386,9 @@ if __name__ == "__main__":
         print(f"  {e}")
 
     # ------------------------------------------------------------------
-    # Ex 3: O_2 Bounded Recursion
+    # Ex 3: O₂ Bounded Recursion
     # ------------------------------------------------------------------
-    print("\n[Ex 3] O_2 Bounded Recursion — aleph ⊗ aleph")
+    print("\n[Ex 3] O₂ Bounded Recursion — aleph ⊗ aleph")
     res3 = tensor(aleph, aleph)
     print(f"  Result: {res3.glyph} | Tier: {res3.tier}")
     print("  P_sym bottleneck preserved; Ω_Z bounds recursion depth topologically.")
@@ -398,9 +398,9 @@ if __name__ == "__main__":
     # ------------------------------------------------------------------
     print("\n[Ex 4] Hekhalot Ascent — 7 Palaces")
     with PalaceContext(3) as p3:
-        p3.check_barrier(lamed)         # O_1 ≥ O_1 ✓
+        p3.check_barrier(lamed)         # O₁ ≥ O₁ ✓
         with PalaceContext(5) as p5:
-            p5.check_barrier(aleph)     # O_2 ≥ O_2 ✓
+            p5.check_barrier(aleph)     # O₂ ≥ O₂ ✓
             with PalaceContext(7) as p7:
                 p7.check_barrier(mem)   # O_∞ ≥ O_∞ ✓
                 print("  [Throne] Frobenius closure achieved. μ∘δ=id")

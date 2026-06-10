@@ -6,11 +6,11 @@ Parses all .aleph programs, builds a directed dataflow graph where:
   - Edges = dataflow: operand → result, labeled by operation type
 
 Node color by ouroboricity tier:
-  O_inf  → gold   (#ffd700)
+  O_∞  → gold   (#ffd700)
   O_2d   → indigo (#8a2be2)
-  O_2    → cyan   (#00ced1)
-  O_1    → amber  (#ffa500)
-  O_0    → gray   (#808080)
+  O₂    → cyan   (#00ced1)
+  O₁    → amber  (#ffa500)
+  O₀    → gray   (#808080)
   binding (computed) → teal (#20b2aa)
   system  → white (#eeeeee)
 
@@ -25,9 +25,9 @@ Edge color by operation:
 
 Animation:
   Phase 1 — build: nodes appear program by program; cross-program reference
-             nodes flash white; O_inf nodes larger.
+             nodes flash white; O_∞ nodes larger.
   Phase 2 — flow wave: Gaussian pulse travels through definition order;
-             O_inf hubs pulse gold; cross-program edges light amber.
+             O_∞ hubs pulse gold; cross-program edges light amber.
 
 Output: docs/animated_cfg_aleph.gif
 """
@@ -58,11 +58,11 @@ OUT = ROOT / "docs" / "animated_cfg_aleph.gif"
 BG = "#0a0a15"
 
 _TIER_COLOR = {
-    "O_inf":  "#ffd700",
+    "O_∞":  "#ffd700",
     "O_2d":   "#8a2be2",
-    "O_2":    "#00ced1",
-    "O_1":    "#ffa500",
-    "O_0":    "#606060",
+    "O₂":    "#00ced1",
+    "O₁":    "#ffa500",
+    "O₀":    "#606060",
     "binding":"#20b2aa",
     "system": "#eeeeee",
 }
@@ -238,7 +238,7 @@ def load_all_programs() -> tuple[
     # Seed base letters
     for name in _LETTER_NAMES:
         letter = LETTERS.get(name) or LETTERS.get(name.capitalize())
-        tier = letter.tier if letter else "O_0"
+        tier = letter.tier if letter else "O₀"
         G.add_node(name, tier=tier, kind="letter")
 
     for fpath in aleph_files:
@@ -353,8 +353,8 @@ def render_frame(
         blended = np.empty_like(base_colors)
         for i, n in enumerate(all_nodes):
             w = weights[i]
-            tier = ax.figure._aleph_tiers[n] if hasattr(ax.figure, "_aleph_tiers") else "O_0"
-            target = _PULSE_GOLD if tier == "O_inf" else _PULSE_WHITE
+            tier = ax.figure._aleph_tiers[n] if hasattr(ax.figure, "_aleph_tiers") else "O₀"
+            target = _PULSE_GOLD if tier == "O_∞" else _PULSE_WHITE
             blended[i] = base_colors[i] * (1 - w) + target * w
         blended = np.clip(blended, 0, 1)
         sizes = base_sizes + base_sizes * 1.8 * weights
@@ -447,13 +447,13 @@ def main(
         for n in all_nodes
     ])
 
-    # Base sizes: O_inf large, base letters slightly bigger, bindings medium
+    # Base sizes: O_∞ large, base letters slightly bigger, bindings medium
     degrees = dict(C.degree())
     max_deg = max(degrees.values()) if degrees else 1
     base_sizes = np.array([
-        (80 if tier_map[n] == "O_inf" else
-         40 if tier_map[n] in ("O_2", "O_2d") else
-         22 if tier_map[n] == "O_1" else
+        (80 if tier_map[n] == "O_∞" else
+         40 if tier_map[n] in ("O₂", "O_2d") else
+         22 if tier_map[n] == "O₁" else
          14) + 40 * (np.log1p(degrees.get(n, 1)) / np.log1p(max_deg)) ** 1.5
         for n in all_nodes
     ])
@@ -491,7 +491,7 @@ def main(
                            for pb in prog_boundary_nodes)
             prog_idx = sum(1 for (_, _, node_order, _) in programs
                            if any(n in revealed for n in node_order))
-            o_inf_count = sum(1 for n in all_nodes[:k] if tier_map[n] == "O_inf")
+            o_inf_count = sum(1 for n in all_nodes[:k] if tier_map[n] == "O_∞")
             title = (
                 f"ALEPH OS — full corpus | build {k}/{N} | "
                 f"program {min(prog_idx, n_programs)}/{n_programs} | "

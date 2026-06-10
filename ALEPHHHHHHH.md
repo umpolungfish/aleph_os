@@ -5,8 +5,8 @@
 
 [0] GPT PRESCRIBED TEST: (ב⊗ש) vs (ח⊗ש)
 
-  ב ⊗ ש  →  tier=O_2   tuple=(1, 3, 2, 2, 1, 1, 2, 3, 1, 3, 1, 2)
-  ח ⊗ ש  →  tier=O_2   tuple=(1, 3, 2, 2, 1, 1, 2, 3, 1, 3, 1, 2)
+  ב ⊗ ש  →  tier=O₂   tuple=(1, 3, 2, 2, 1, 1, 2, 3, 1, 3, 1, 2)
+  ח ⊗ ש  →  tier=O₂   tuple=(1, 3, 2, 2, 1, 1, 2, 3, 1, 3, 1, 2)
 
   Results identical: True
   → Substituting ב→ח in tensor context: INDISTINGUISHABLE
@@ -72,28 +72,28 @@
 
   glyph  name      tier        d_I(⊗)  d_I(med)         Δ  winner
   ─────────────────────────────────────────────────────────────────
-      א  Aleph     O_2         7.4833    7.2388    0.2445  MED
-      ב  Bet       O_0         8.5440    7.2388    1.3052  MED
-      ג  Gimel     O_0        15.0466    5.9498    9.0968  MED
-      ד  Dalet     O_0        14.7445    5.9498    8.7947  MED
-      ה  Hei       O_2        14.5258   14.4014    0.1245  MED
-      ו  Vav       O_inf       6.2450    5.9498    0.2952  MED
-      ז  Zayin     O_0        14.7445    5.9498    8.7947  MED
-      ח  Chet      O_0         8.5440    7.2388    1.3052  MED
-      ט  Tet       O_0        13.4387    5.9498    7.4890  MED
-      י  Yod       O_0         6.4498    7.2388   -0.7890  TEN
-      כ  Kaf       O_0         8.5440    7.2388    1.3052  MED
-      ל  Lamed     O_1        15.0200    8.5088    6.5112  MED
-      מ  Mem       O_inf       0.0000    4.8374   -4.8374  TEN
-      נ  Nun       O_0        14.7445    5.9498    8.7947  MED
-      ס  Samech    O_0         7.4162    7.2388    0.1774  MED
-      ע  Ayin      O_2        14.6492   14.4014    0.2478  MED
-      פ  Pei       O_0        15.3428    7.3075    8.0352  MED
-      צ  Tzadi     O_0        14.7445    5.9498    8.7947  MED
-      ק  Kuf       O_2         6.8557    7.2388   -0.3831  TEN
-      ר  Resh      O_0        15.0532    8.0250    7.0283  MED
-      ש  Shin      O_inf       4.8374    4.8374    0.0000  TIE
-      ת  Tav       O_2         7.8358    7.2388    0.5970  MED
+      א  Aleph     O₂         7.4833    7.2388    0.2445  MED
+      ב  Bet       O₀         8.5440    7.2388    1.3052  MED
+      ג  Gimel     O₀        15.0466    5.9498    9.0968  MED
+      ד  Dalet     O₀        14.7445    5.9498    8.7947  MED
+      ה  Hei       O₂        14.5258   14.4014    0.1245  MED
+      ו  Vav       O_∞       6.2450    5.9498    0.2952  MED
+      ז  Zayin     O₀        14.7445    5.9498    8.7947  MED
+      ח  Chet      O₀         8.5440    7.2388    1.3052  MED
+      ט  Tet       O₀        13.4387    5.9498    7.4890  MED
+      י  Yod       O₀         6.4498    7.2388   -0.7890  TEN
+      כ  Kaf       O₀         8.5440    7.2388    1.3052  MED
+      ל  Lamed     O₁        15.0200    8.5088    6.5112  MED
+      מ  Mem       O_∞       0.0000    4.8374   -4.8374  TEN
+      נ  Nun       O₀        14.7445    5.9498    8.7947  MED
+      ס  Samech    O₀         7.4162    7.2388    0.1774  MED
+      ע  Ayin      O₂        14.6492   14.4014    0.2478  MED
+      פ  Pei       O₀        15.3428    7.3075    8.0352  MED
+      צ  Tzadi     O₀        14.7445    5.9498    8.7947  MED
+      ק  Kuf       O₂         6.8557    7.2388   -0.3831  TEN
+      ר  Resh      O₀        15.0532    8.0250    7.0283  MED
+      ש  Shin      O_∞       4.8374    4.8374    0.0000  TIE
+      ת  Tav       O₂         7.8358    7.2388    0.5970  MED
 
   Mediation wins: 18/22 letters
   Tensor wins: 0/22
@@ -106,24 +106,24 @@
 
     rep  name        tier      class  row summary (tier→count)
   ─────────────────────────────────────────────────────────────────
-      א  Aleph       O_2       ×1  O_2:21  O_2d:1
-      ב  Bet         O_0       ×3  O_0:13  O_2:8  O_2d:1  [ב,ח,כ]
-      ג  Gimel       O_0       ×1  O_0:13  O_1:2  O_2:7
-      ד  Dalet       O_0       ×2  O_0:13  O_1:2  O_2:7  [ד,צ]
-      ה  Hei         O_2       ×1  O_2:22
-      ו  Vav         O_inf     ×1  O_1:10  O_2:9  O_inf:3
-      ז  Zayin       O_0       ×2  O_0:13  O_1:2  O_2:7  [ז,נ]
-      ט  Tet         O_0       ×1  O_0:13  O_1:2  O_2:7
-      י  Yod         O_0       ×1  O_0:13  O_1:2  O_2:7
-      ל  Lamed       O_1       ×1  O_1:11  O_2:2  O_2d:9
-      מ  Mem         O_inf     ×1  O_2:18  O_2d:1  O_inf:3
-      ס  Samech      O_0       ×1  O_0:13  O_2:8  O_2d:1
-      ע  Ayin        O_2       ×1  O_2:22
-      פ  Pei         O_0       ×1  O_0:13  O_1:2  O_2:7
-      ק  Kuf         O_2       ×1  O_2:21  O_2d:1
-      ר  Resh        O_0       ×1  O_0:13  O_1:2  O_2:7
-      ש  Shin        O_inf     ×1  O_2:18  O_2d:1  O_inf:3
-      ת  Tav         O_2       ×1  O_2:21  O_2d:1
+      א  Aleph       O₂       ×1  O₂:21  O_2d:1
+      ב  Bet         O₀       ×3  O₀:13  O₂:8  O_2d:1  [ב,ח,כ]
+      ג  Gimel       O₀       ×1  O₀:13  O₁:2  O₂:7
+      ד  Dalet       O₀       ×2  O₀:13  O₁:2  O₂:7  [ד,צ]
+      ה  Hei         O₂       ×1  O₂:22
+      ו  Vav         O_∞     ×1  O₁:10  O₂:9  O_∞:3
+      ז  Zayin       O₀       ×2  O₀:13  O₁:2  O₂:7  [ז,נ]
+      ט  Tet         O₀       ×1  O₀:13  O₁:2  O₂:7
+      י  Yod         O₀       ×1  O₀:13  O₁:2  O₂:7
+      ל  Lamed       O₁       ×1  O₁:11  O₂:2  O_2d:9
+      מ  Mem         O_∞     ×1  O₂:18  O_2d:1  O_∞:3
+      ס  Samech      O₀       ×1  O₀:13  O₂:8  O_2d:1
+      ע  Ayin        O₂       ×1  O₂:22
+      פ  Pei         O₀       ×1  O₀:13  O₁:2  O₂:7
+      ק  Kuf         O₂       ×1  O₂:21  O_2d:1
+      ר  Resh        O₀       ×1  O₀:13  O₁:2  O₂:7
+      ש  Shin        O_∞     ×1  O₂:18  O_2d:1  O_∞:3
+      ת  Tav         O₂       ×1  O₂:21  O_2d:1
 
 ════════════════════════════════════════════════════════════════════════
   VERDICT

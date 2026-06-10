@@ -8,7 +8,7 @@ animated GIF:
   Phase 1 — build: nodes appear in first-mention order; edges flash on first
              appearance; cross-origin nodes (Hebrew letter primitives) pulse gold.
   Phase 2 — flow: Gaussian pulse travels through the node order; operation edges
-             light up by type; O_inf / O_2d nodes pulse brightest.
+             light up by type; O_∞ / O_2d nodes pulse brightest.
 
 Output directory: docs/programs/<name>.gif
 """
@@ -41,11 +41,11 @@ BG           = "#0a0a15"
 # ── color maps ────────────────────────────────────────────────────────────────
 
 _TIER_COLOR = {
-    "O_inf":  "#ffd700",
+    "O_∞":  "#ffd700",
     "O_2d":   "#8a2be2",
-    "O_2":    "#00ced1",
-    "O_1":    "#ffa500",
-    "O_0":    "#606060",
+    "O₂":    "#00ced1",
+    "O₁":    "#ffa500",
+    "O₀":    "#606060",
     "binding":"#20b2aa",
 }
 

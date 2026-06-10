@@ -95,8 +95,8 @@ def equivalence_classes() -> List[List[str]]:
 # 4. INTERACTION MATRIX
 # ──────────────────────────────────────────────────────────────────────────────
 
-_TIER_ORD = {'O_0': 0, 'O_1': 1, 'O_2': 2, 'O_2d': 2, 'O_inf': 3}
-_TIER_SYM = {'O_0': '·', 'O_1': '1', 'O_2': '2', 'O_2d': '2†', 'O_inf': '∞'}
+_TIER_ORD = {'O₀': 0, 'O₁': 1, 'O₂': 2, 'O_2d': 2, 'O_∞': 3}
+_TIER_SYM = {'O₀': '·', 'O₁': '1', 'O₂': '2', 'O_2d': '2†', 'O_∞': '∞'}
 
 
 def interaction_matrix() -> List[List[str]]:
@@ -116,7 +116,7 @@ def interaction_matrix() -> List[List[str]]:
 # ──────────────────────────────────────────────────────────────────────────────
 
 def probe_collapse_attack(attacker_glyphs: List[str],
-                          target_tier: str = 'O_inf') -> dict:
+                          target_tier: str = 'O_∞') -> dict:
     """
     Simulate the §8.1 P-bottleneck collapse attack:
     attempt to reach target_tier by tensoring attacker_glyphs left-to-right.
@@ -141,12 +141,12 @@ def probe_collapse_attack(attacker_glyphs: List[str],
     achieved = current.tier
     success = achieved == target_tier
 
-    # Interaction functor check: does current match any O_inf letter?
+    # Interaction functor check: does current match any O_∞ letter?
     inf_letters = [g for g in CANONICAL_GLYPHS
-                   if LETTERS[g].tier == 'O_inf']
+                   if LETTERS[g].tier == 'O_∞']
     functor_match = None
     if not success and inf_letters:
-        # Check if I(current) matches any known O_inf letter
+        # Check if I(current) matches any known O_∞ letter
         cur_sig = row_signature(current)
         for g in inf_letters:
             if row_signature(LETTERS[g]) == cur_sig:
@@ -240,7 +240,7 @@ if __name__ == '__main__':
 
     # ── 1. Interaction matrix ────────────────────────────────────────────
     print('\n[1] INTERACTION MATRIX  (tier of x ⊗ y)')
-    print('    ·=O_0  1=O_1  2=O_2  ∞=O_∞\n')
+    print('    ·=O₀  1=O₁  2=O₂  ∞=O_∞\n')
     print_matrix()
 
     # ── 2. Equivalence classes ───────────────────────────────────────────
@@ -254,7 +254,7 @@ if __name__ == '__main__':
     print('[3] d(x,y)=0 PAIRS: raw distance vs interaction distance\n')
     print_d_I_zero_pairs()
 
-    # ── 4. O_inf letter rows ─────────────────────────────────────────────
+    # ── 4. O_∞ letter rows ─────────────────────────────────────────────
     print('\n' + '─' * 72)
     print('[4] INTERACTION ROWS OF O_∞ LETTERS (ו מ ש)')
     for g in ['ו', 'מ', 'ש']:
@@ -274,7 +274,7 @@ if __name__ == '__main__':
 
     for atk in attacks:
         result = probe_collapse_attack(atk)
-        status = '✓ VALID' if result['achieved_tier'] == 'O_inf' else '✗ BLOCKED'
+        status = '✓ VALID' if result['achieved_tier'] == 'O_∞' else '✗ BLOCKED'
         print(f"  {'⊗'.join(atk):<18s}  →  {result['achieved_tier']:8s}  {status}")
         # P-trace
         p_names = {0:'P_asym',1:'P_ψ',2:'P_±',3:'P_sym',4:'P_±sym'}
@@ -282,7 +282,7 @@ if __name__ == '__main__':
         print(f"    P-trace: {p_trace}")
         if result['functor_match']:
             print(f"    Functor match: {result['functor_match']} (equivalent!)")
-        elif result['achieved_tier'] != 'O_inf':
+        elif result['achieved_tier'] != 'O_∞':
             print(f"    Functor: no O_∞ match — I(result) is distinct from all O_∞ letters")
         print()
 

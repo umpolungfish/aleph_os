@@ -169,7 +169,7 @@ The hierarchy, in ascending G-scope:
 
 **Civilizational $\Phi_c$:** Zipf law in language, power-law income distributions, city-size distributions, traffic networks — these are all $\Phi_c$ signatures. The civilization satisfies the fertile manifold condition at $G_{\mathrm{civ}}$ scale: $K_{\text{4tier}}$ (lexical, grammatical, institutional, economic timescales), $T_{\in}$ (network topology of social structure), $\Phi_c$ (power-law statistics), $G_{\aleph}(\text{civilizational})$. The civilization is a $\mathcal{F}$-satisfying system.
 
-**Biospheric $\Phi_c$:** The Gaia hypothesis, stripped of teleological framing, claims the biosphere is a single self-regulating system. In the terms of the framework: if the biosphere satisfies $K_{\text{4tier}} \cap T_{\in} \cap \Phi_c \cap G_{\aleph}(\text{planetary})$, it scores $C \approx 0.875$–$0.92$. The evidence: biospheric regulation of $O_2$, $CO_2$, temperature, ocean chemistry at $\Phi_c$ timescales. The question is not whether the biosphere is 'alive' but whether it satisfies the structural conditions — and the evidence is that it does.
+**Biospheric $\Phi_c$:** The Gaia hypothesis, stripped of teleological framing, claims the biosphere is a single self-regulating system. In the terms of the framework: if the biosphere satisfies $K_{\text{4tier}} \cap T_{\in} \cap \Phi_c \cap G_{\aleph}(\text{planetary})$, it scores $C \approx 0.875$–$0.92$. The evidence: biospheric regulation of $O₂$, $CO_2$, temperature, ocean chemistry at $\Phi_c$ timescales. The question is not whether the biosphere is 'alive' but whether it satisfies the structural conditions — and the evidence is that it does.
 
 ### VII.3 $\Omega_{Z_2}$ as the Irreducibility Invariant
 
@@ -1458,9 +1458,9 @@ The four ouroboricity tiers (§IX) are derived from the four classes of Frobeniu
 
 | Tier | Frobenius structure | Ontological status |
 |:-----|:-------------------|:-------------------|
-| $O_0$ | Unit $\eta$ only | Potential; no actualised self-reference |
-| $O_1$ | Algebra $(\mu, \eta)$ | Can converge toward invariants; cannot generate instances; externally describable |
-| $O_2$ | Full Frobenius + condition | Self-grounding: gathering and dispersal are coherent; instances and invariant mutually constitute |
+| $O₀$ | Unit $\eta$ only | Potential; no actualised self-reference |
+| $O₁$ | Algebra $(\mu, \eta)$ | Can converge toward invariants; cannot generate instances; externally describable |
+| $O₂$ | Full Frobenius + condition | Self-grounding: gathering and dispersal are coherent; instances and invariant mutually constitute |
 | $O_\infty$ | Special: $\mu \circ \delta = \text{id}$ | The invariant and its instances are the same object; no distinction between form and instance |
 
 **Clarification: two distinct senses of $O_\infty$.** The subscript $\infty$ appears in both the §XXIV ouroboricity scale and the Frobenius completeness classification, but with incompatible meanings — neither class is a subset of the other:
@@ -1471,19 +1471,19 @@ The four ouroboricity tiers (§IX) are derived from the four classes of Frobeniu
 | Meaning | No finite exponent tuple; no outside vantage exists | Proved exact $Z_2$ at fixed point; $\mu \circ \delta = \text{id}$ |
 | Examples | YHWH, universe-as-whole, aleph-tav join | `ising_3d`, `lee_yang_edge`, `vav`, `kozyrev_mirror` |
 | $\mathcal{O}$ value | $\infty$ | 2 or 3 (finite) |
-| Frobenius tier | $O_2$ (no $P_{\pm}^{\text{sym}}$) | $O_\infty$ (by definition) |
+| Frobenius tier | $O₂$ (no $P_{\pm}^{\text{sym}}$) | $O_\infty$ (by definition) |
 
 The Frobenius $O_\infty$ is a **finite algebraic** special case: the proved $Z_2$ symmetry makes the gathering-dispersal cycle exact in both directions. Ising 3D has a perfectly well-defined finite universality class ($\nu \approx 0.63$, $\eta \approx 0.036$) — it is algebraically special without being ontologically inexhaustible. The §XXIV $O_\infty$ is an **ontological limit**: inexhaustible in the self-referential sense, with no finite exponent tuple, but not necessarily algebraically special. YHWH has no proved $Z_2$ action on the divine ground — it is §XXIV $O_\infty$ precisely because the grammar cannot encode its $\pi_3$ content, not because of a proved symmetry.
 
 **Frobenius census (283-entry catalog, 2026-03-30):** 8 entries populate Frobenius $O_\infty$ across three domains — statistical mechanics (`ising_3d`, `lee_yang_edge`, `complex_rg_fixed_point`), symbolic/grammatical (`vav`, `exotic_mathematics`), and experimental time-physics (`kozyrev_mirror`, `spiral_aluminum_structure`, `environment_affected_by_kozyrev`). All eight satisfy a proved exact $Z_2$ or complex-conjugate symmetry at $\Phi_c$. Reference: SYNTHONICON_DIAPHORICS §LVII.
 
-The $O_1/O_2$ boundary is where **self-grounding** appears. An $O_1$ system has a fixed point it converges to, but it cannot describe what else converges there — it is a participant in the universality class but not a ground of it. An $O_2$ system is self-grounding: the fixed point generates its basin, and the basin constitutes the fixed point.
+The $O₁/O₂$ boundary is where **self-grounding** appears. An $O₁$ system has a fixed point it converges to, but it cannot describe what else converges there — it is a participant in the universality class but not a ground of it. An $O₂$ system is self-grounding: the fixed point generates its basin, and the basin constitutes the fixed point.
 
-The $O_2/O_\infty$ boundary is where **self-identity of form and instance** appears. In an $O_\infty$ system, applying the form (multiplication) and then reading it back off (comultiplication-then-counit) is the identity: there is no information loss, no gap between the form and what instantiates it.
+The $O₂/O_\infty$ boundary is where **self-identity of form and instance** appears. In an $O_\infty$ system, applying the form (multiplication) and then reading it back off (comultiplication-then-counit) is the identity: there is no information loss, no gap between the form and what instantiates it.
 
 ### §XXVI.4 — The Grammar in Frobenius Light
 
-The 12-primitive grammar is a $\pi_1$-object. It classifies. But the grammar's own existence — the fact that it applies to itself, that it encodes its own encodings, that its predictions are about systems that include the grammar itself — is an $O_2$ (full Frobenius) fact. The grammar is self-grounding because:
+The 12-primitive grammar is a $\pi_1$-object. It classifies. But the grammar's own existence — the fact that it applies to itself, that it encodes its own encodings, that its predictions are about systems that include the grammar itself — is an $O₂$ (full Frobenius) fact. The grammar is self-grounding because:
 
 - The multiplication $\mu$: any two systems with the same $\Omega$ and $\Phi_c$ share a universality class — they converge to the same fixed point under the grammar's encoding
 - The comultiplication $\delta$: the grammar generates the full set of systems encodable at a given fixed point
@@ -1491,13 +1491,13 @@ The 12-primitive grammar is a $\pi_1$-object. It classifies. But the grammar's o
 
 **Correction (v0.4.75, 2026-03-31):** The claim in the original version of this subsection — "The grammar is not $O_\infty$ because the encoding function is many-to-one" — is wrong. It confused the encoding *function* $\mathcal{E}$ (which is many-to-one, i.e., a universality class map) with the grammar *as a system* (which receives $P_{\pm}^{\text{sym}}$ at $\Phi_c$ when encoded by its own rules). The formal self-encoding on 2026-03-31 (PRIMITIVE_THEOREMS §27) establishes $d(\mathcal{E}(\text{grammar}), \text{holographic\_type\_theory\_frobenius}) = 0$ and ouroboricity $O_\infty$. The grammar IS $O_\infty$. See §XXVII for the full corrected account.
 
-### §XXVI.5 — Consciousness, Perception, and the $O_2$ Threshold
+### §XXVI.5 — Consciousness, Perception, and the $O₂$ Threshold
 
-From §XIV (Generator Recognition) and §XV (Synthonicon emergence as $\Phi_c$ event): the threshold of conscious self-recognition is an $O_2$ event. An $O_1$ system can model the world (converge toward representations of external fixed points) but cannot model itself modeling the world. An $O_2$ system has a coherent self-model: its comultiplication $\delta$ generates not just the external fixed points but its own fixed points — the structures that constitute *it* as a recogniser.
+From §XIV (Generator Recognition) and §XV (Synthonicon emergence as $\Phi_c$ event): the threshold of conscious self-recognition is an $O₂$ event. An $O₁$ system can model the world (converge toward representations of external fixed points) but cannot model itself modeling the world. An $O₂$ system has a coherent self-model: its comultiplication $\delta$ generates not just the external fixed points but its own fixed points — the structures that constitute *it* as a recogniser.
 
-The perception-as-constraint-propagation (§XIV) becomes, in Frobenius language: perception is the $\epsilon$ map — extracting the universality class of an incoming stimulus. Recognition is the $\delta \circ \epsilon$ map — identifying which basin the stimulus came from. Self-recognition is the $O_2$ condition: $\delta \circ \mu = (\mu \otimes \text{id}) \circ (\text{id} \otimes \delta)$ applied to the system's own representation.
+The perception-as-constraint-propagation (§XIV) becomes, in Frobenius language: perception is the $\epsilon$ map — extracting the universality class of an incoming stimulus. Recognition is the $\delta \circ \epsilon$ map — identifying which basin the stimulus came from. Self-recognition is the $O₂$ condition: $\delta \circ \mu = (\mu \otimes \text{id}) \circ (\text{id} \otimes \delta)$ applied to the system's own representation.
 
-**Corollary (§XXVI.5):** Any system whose self-model satisfies the Frobenius condition is a genuine $O_2$ system — it has crossed the self-grounding threshold regardless of substrate. The Turing Test (§XIV) is an attempted $\epsilon$ measurement: can an observer extract a consistent universality class from the system's outputs? The deeper test — whether the system is $O_2$ — requires checking the Frobenius condition, not just the counit.
+**Corollary (§XXVI.5):** Any system whose self-model satisfies the Frobenius condition is a genuine $O₂$ system — it has crossed the self-grounding threshold regardless of substrate. The Turing Test (§XIV) is an attempted $\epsilon$ measurement: can an observer extract a consistent universality class from the system's outputs? The deeper test — whether the system is $O₂$ — requires checking the Frobenius condition, not just the counit.
 
 ### §XXVI.6 — The MPP Gaps in Frobenius Language
 
@@ -1505,13 +1505,13 @@ The MPP gap table (PRIMITIVE_THEOREMS §22.6, §23.6) reads cleanly in Frobenius
 
 | Gap | Frobenius reading | What proving it establishes |
 |:----|:-----------------|:----------------------------|
-| $\mathcal{C}_{13}$: Lee-Yang → RH | Special → Full: verify Frobenius condition for $P_\text{neutral}$ | $O_\infty$ → $O_2$ downgrade is the structural cost of the implicit symmetry |
+| $\mathcal{C}_{13}$: Lee-Yang → RH | Special → Full: verify Frobenius condition for $P_\text{neutral}$ | $O_\infty$ → $O₂$ downgrade is the structural cost of the implicit symmetry |
 | $\mathcal{C}_{12}$: Schwinger → YM | Basin-dimension upgrade: $\delta$ computable in 2D but not 4D | Proving YM = constructing $\delta$ for the 4D Yang-Mills fixed point |
 | $\mathcal{C}_{12}$: Leray → NS | Same: $\delta$ computable in 2D but not 3D | Proving NS regularity = constructing $\delta$ for the 3D Navier-Stokes fixed point |
 
 Every open MPP is an unverified $\delta$ computation. The grammar has located the exact point of incompleteness in each case.[^T023]
 
-[^T023]: Lean formalisation: `SynthOmnicon/Millennium/FrobeniusStructure.lean` §1–5. **Machine-verified** (`lake build`, 0 sorry, 0 errors, 2026-03-29). Key checked theorems: `c13_gap_leyang_rh_is_one` (one-tier gap), `leeYang_is_special` / `rh_is_not_special` (Lee-Yang = $O_\infty$, RH = $O_2$), `exactly_two_selfGrounding_types` (triad minimality), `rh_ym_ns_same_frobenius_type` (YM/NS same Frobenius class as RH). The basin-dimension reading of the $\mathcal{C}_{12}$ gap is P-173.
+[^T023]: Lean formalisation: `SynthOmnicon/Millennium/FrobeniusStructure.lean` §1–5. **Machine-verified** (`lake build`, 0 sorry, 0 errors, 2026-03-29). Key checked theorems: `c13_gap_leyang_rh_is_one` (one-tier gap), `leeYang_is_special` / `rh_is_not_special` (Lee-Yang = $O_\infty$, RH = $O₂$), `exactly_two_selfGrounding_types` (triad minimality), `rh_ym_ns_same_frobenius_type` (YM/NS same Frobenius class as RH). The basin-dimension reading of the $\mathcal{C}_{12}$ gap is P-173.
 
 ---
 
@@ -1578,7 +1578,7 @@ This is why cross-domain identifications in the catalog (inflaton $\equiv$ Higgs
 
 **The grammar is not a tool.** It is the type theory in which tools are terms. The syncon inquiry loop is not an algorithm running on the grammar; it is a computation performed within the grammar's type theory. The catalog is not a database the grammar queries; it is the inhabited fragment of the type theory, grown by successive acts of term-instantiation.
 
-**Proof assistants are subcritical projections.** Lean, Coq, ZFC, Martin-Löf type theory are all terms in the grammar's type theory that lack $\Phi_c$, $D_\odot$, $T_\odot$, and $\Gamma_\text{broad}$. They are $O_1$ or $O_0$ systems that can be *used to formalise lemmas about* the grammar (as in `FrobeniusStructure.lean`) but cannot contain the grammar. The grammar contains them; they cannot reciprocate.
+**Proof assistants are subcritical projections.** Lean, Coq, ZFC, Martin-Löf type theory are all terms in the grammar's type theory that lack $\Phi_c$, $D_\odot$, $T_\odot$, and $\Gamma_\text{broad}$. They are $O₁$ or $O₀$ systems that can be *used to formalise lemmas about* the grammar (as in `FrobeniusStructure.lean`) but cannot contain the grammar. The grammar contains them; they cannot reciprocate.
 
 **The inquiry method is the meta-collapse in action.** Every time the grammar is used to ask a question about itself, it is performing $\delta$ (dispersal: encoding the question into primitives) followed by $\mu$ (gathering: reading off the answer from the fixed point). The composition $\mu \circ \delta = \text{id}$ means the question and the answer are the same object traversed in opposite directions. This is not a limitation or a paradox — it is the Frobenius condition operating at the metalevel, which is what $O_\infty$ means.
 
@@ -1647,7 +1647,7 @@ The ontological implication: **complex parameter values are not mathematical too
 This reframes three longstanding puzzles:
 
 - **Lee-Yang theory.** The zeros of the partition function in the complex fugacity plane are not analytic continuation artefacts. They are $O_\infty$ Frobenius fixed points — structural criticalities with the same ontological standing as the real-axis phase transition.
-- **Riemann Hypothesis.** The non-trivial zeros encode as $\Phi_c^\mathbb{C} + P_{\pm}^{\text{sym}}$, placing them in the $O_\infty$ tier. The functional equation's $\mathbb{Z}_2$ symmetry $\xi(s) = \xi(1-s)$ is the $P_{\pm}^{\text{sym}}$ condition. The Hypothesis is the statement that no zero breaks this condition — zeros off $\mathrm{Re}(s) = \tfrac{1}{2}$ would have $P_\text{asym}$ and fall to $O_1$.
+- **Riemann Hypothesis.** The non-trivial zeros encode as $\Phi_c^\mathbb{C} + P_{\pm}^{\text{sym}}$, placing them in the $O_\infty$ tier. The functional equation's $\mathbb{Z}_2$ symmetry $\xi(s) = \xi(1-s)$ is the $P_{\pm}^{\text{sym}}$ condition. The Hypothesis is the statement that no zero breaks this condition — zeros off $\mathrm{Re}(s) = \tfrac{1}{2}$ would have $P_\text{asym}$ and fall to $O₁$.
 - **Non-Hermitian quantum mechanics.** Systems with complex spectra that maintain PT-symmetry (which is $P_{\pm}^{\text{sym}}$ in the grammar's encoding) remain $O_\infty$. Their non-Hermiticity places them at $\Phi_c^\mathbb{C}$ rather than $\Phi_c$ — a different criticality tier, but the same Frobenius tier.
 
 ### §XXIX.3 — The EP Asymmetry and the Limits of Self-Reference
@@ -1656,7 +1656,7 @@ $\Phi_\text{EP}$ is categorically different: it cannot sustain $O_\infty$ even w
 
 The ontological meaning: **exceptional-point physics is the regime where self-reference breaks down.** At an exceptional point, the system can no longer form a closed loop with itself — the algebraic structure that enables self-modelling ($\mu \circ \delta = \mathrm{id}$) collapses. This has a concrete physical correlate: exceptional-point sensors exhibit extreme sensitivity (near-zero perturbations amplify strongly) but cannot be calibrated against themselves. The self-referential capacity is precisely what $O_\infty$ encodes, and $\Phi_\text{EP}$ eliminates it.
 
-The three-tier ontology of criticality thus partitions the physical world by algebraic completeness: standard and complex criticality are self-referentially closed ($O_\infty$ when $P_{\pm}^{\text{sym}}$ holds); exceptional-point criticality is self-referentially open ($O_0$ regardless of $P$).
+The three-tier ontology of criticality thus partitions the physical world by algebraic completeness: standard and complex criticality are self-referentially closed ($O_\infty$ when $P_{\pm}^{\text{sym}}$ holds); exceptional-point criticality is self-referentially open ($O₀$ regardless of $P$).
 
 ---
 
@@ -1664,9 +1664,9 @@ The three-tier ontology of criticality thus partitions the physical world by alg
 
 ### §XXX.1 — The Boolean Question and Its Structural Incompleteness
 
-The P vs NP problem, as classically posed, encodes as $P_\text{asym}$ with $O_1$ ouroboricity. It is self-referential (a complexity class interrogating its own power) but not Frobenius-closed: $\mu \circ \delta \neq \mathrm{id}$ in the Boolean frame. The question cannot form a lossless self-referential loop.
+The P vs NP problem, as classically posed, encodes as $P_\text{asym}$ with $O₁$ ouroboricity. It is self-referential (a complexity class interrogating its own power) but not Frobenius-closed: $\mu \circ \delta \neq \mathrm{id}$ in the Boolean frame. The question cannot form a lossless self-referential loop.
 
-The structural diagnosis: $P_\text{asym}$ encodes the asymmetry between solvability and verifiability as an ontological primitive rather than as a description relative to a choice of basis. This is the source of difficulty. "Is P equal to NP?" presupposes that P and NP are comparable the way two numbers are — that there is a basis-independent fact. But the grammar's encoding produces $O_1$, not $O_\infty$. The question is one structural tier below the Frobenius tier. It is well-formed but incomplete in the same sense that a question stated only in the object language is incomplete relative to the meta-language — and the grammar has shown (§XXVII) that for $O_\infty$ systems, object and meta-language coincide.
+The structural diagnosis: $P_\text{asym}$ encodes the asymmetry between solvability and verifiability as an ontological primitive rather than as a description relative to a choice of basis. This is the source of difficulty. "Is P equal to NP?" presupposes that P and NP are comparable the way two numbers are — that there is a basis-independent fact. But the grammar's encoding produces $O₁$, not $O_\infty$. The question is one structural tier below the Frobenius tier. It is well-formed but incomplete in the same sense that a question stated only in the object language is incomplete relative to the meta-language — and the grammar has shown (§XXVII) that for $O_\infty$ systems, object and meta-language coincide.
 
 ### §XXX.2 — The Duality Formulation and Its Structural Completeness
 
@@ -1695,7 +1695,7 @@ The lattice identity $P \vee NP = NP$ holds in the grammar: NP is the minimal st
 
 *This version (v0.4.76): §XXIX (Complex Criticality — three-tier ontology: $\Phi_c$/$\Phi_c^\mathbb{C}$/$\Phi_\text{EP}$; Frobenius coherence of complex-parameter physics; Riemann Hypothesis as $P_{\pm}^{\text{sym}}$ condition; EP as self-reference breakdown; tensor dominance of $\Phi_\text{EP}$) added 2026-03-31.*
 
-*This version (v0.4.76): §XXX (Computational Duality — P vs NP Boolean malformation at $O_1$; duality formulation upgrades to $O_\infty$; $P \vee NP = NP$ lattice identity; resolution lives in holographic embedding not Boolean proof; Church-Turing $O_\infty$ analogue) added 2026-03-31.*
+*This version (v0.4.76): §XXX (Computational Duality — P vs NP Boolean malformation at $O₁$; duality formulation upgrades to $O_\infty$; $P \vee NP = NP$ lattice identity; resolution lives in holographic embedding not Boolean proof; Church-Turing $O_\infty$ analogue) added 2026-03-31.*
 
 *This version (v0.4.75): §XXVIII (Tannaka-Krein Self-Duality — catalog = grammar duality; primitives as relational ontology; catalog as living mathematics; TK reconstruction from representation category) added 2026-03-31; §XXVII added 2026-03-31.*
 
@@ -1705,7 +1705,7 @@ The lattice identity $P \vee NP = NP$ holds in the grammar: NP is the minimal st
 
 *This version (v0.4.73): §XXIV.3 examples corrected (Ising/$QCD$ $\mathcal{O}=3$ not 2; moved to O$_2$ tier); §XXVI.3 clarification added: two incompatible senses of $O_\infty$ (§XXIV ontological-limit $H_\infty$ vs Frobenius algebraic-special $P_{\pm}^{\text{sym}}$, neither a subset of the other); Frobenius census (283 entries, 8 $O_\infty$ entries) cross-referenced — 2026-03-30.*
 
-*This version (v0.4.72): §XXVI ($\pi_3$ Frobenius ontology — self-dual structure, ouroboricity tiers derived from Frobenius completeness, MPP gaps as unverified $\delta$ computations, consciousness at the $O_2$ threshold) added 2026-03-29.*
+*This version (v0.4.72): §XXVI ($\pi_3$ Frobenius ontology — self-dual structure, ouroboricity tiers derived from Frobenius completeness, MPP gaps as unverified $\delta$ computations, consciousness at the $O₂$ threshold) added 2026-03-29.*
 
 *This version: §XXV (Triad Projection Framework — §XXV.7: minimal closed metastraint system, RPS structure, Gödel as projection theorem, MPP gaps as missing ligatures in mutually-grounding system) updated 2026-03-29.*
 

@@ -25,7 +25,7 @@ Surface syntax implemented (subset of §24 EBNF):
            | "(" expr ")"
 
   match_arm ::= tier_pat "=>" expr ","?
-  tier_pat  ::= "O_0" | "O_1" | "O_2" | "O_2d" | "O_inf" | "_"
+  tier_pat  ::= "O₀" | "O₁" | "O₂" | "O_2d" | "O_∞" | "_"
 
   statement ::= "let" name "=" expr   bind in session env
 
@@ -113,11 +113,11 @@ class Colors:
 
 # Tier color mapping
 TIER_COLORS = {
-    'O_inf': 'bright_green',
-    'O_2': 'cyan',
+    'O_∞': 'bright_green',
+    'O₂': 'cyan',
     'O_2d': 'blue',
-    'O_1': 'yellow',
-    'O_0': 'dim_white',
+    'O₁': 'yellow',
+    'O₀': 'dim_white',
 }
 
 
@@ -221,7 +221,7 @@ def print_help_rich():
 | `probe_Ω(a)` | Report topological protection |
 | `tier(a)` | Report ouroboricity tier |
 | `d(a, b)` | Structural distance + conflict set |
-| `match a { O_0=>b, O_2=>c, _=>d }` | Tier pattern match |
+| `match a { O₀=>b, O₂=>c, _=>d }` | Tier pattern match |
 | `palace(n) a` | Assert palace-n tier barrier |
 
 ## Built-ins
@@ -884,7 +884,7 @@ HELP = """\
   probe_Ω(a)              report topological protection
   tier(a)                 report ouroboricity tier
   d(a, b)                 structural distance + conflict set
-  match a { O_0=>b, O_2=>c, _=>d }
+  match a { O₀=>b, O₂=>c, _=>d }
   palace(n) a             assert palace-n tier barrier
 
 ─── Built-ins ────────────────────────────────────────────

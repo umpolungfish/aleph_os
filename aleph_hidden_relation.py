@@ -157,9 +157,9 @@ print(f'  5b. Tier-summed coefficients:')
 for t, s in sorted(tier_sums.items()):
     print(f'      {t:8s}:  {s:+.6f}')
 
-# 5c. Is the relation related to the O_inf letters (Frobenius)?
+# 5c. Is the relation related to the O_∞ letters (Frobenius)?
 inf_coef = sum(extra[IDX[g]] for g in ['ו', 'מ', 'ש'])
-print(f'  5c. Sum of c_i for O_inf letters (ו,מ,ש): {inf_coef:+.6f}')
+print(f'  5c. Sum of c_i for O_∞ letters (ו,מ,ש): {inf_coef:+.6f}')
 
 # 5d. Does c correlate with any 12-primitive?
 prim_names = ["D","T","R","P","F","K","G","Γ","Φ","H","S","Ω"]

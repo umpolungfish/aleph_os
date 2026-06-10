@@ -164,7 +164,7 @@ for h in CANONICAL_GLYPHS:
     tv = tensor(LETTERS['ו'], Lh).tier
     tm = tensor(LETTERS['מ'], Lh).tier
     ts = tensor(LETTERS['ש'], Lh).tier
-    marker = ' ←' if tq == 'O_inf' else ''
+    marker = ' ←' if tq == 'O_∞' else ''
     print(f'  {h:6s}  {Lh.tier:8s}  {tq:10s}  {tv:10s}  {tm:10s}  {ts:10s}{marker}')
 
 print(f'\n[B2] Triadic products involving ק\n')
@@ -195,7 +195,7 @@ for inf_g in inf_glyphs:
     d = d_I('ק', inf_g)
     print(f'  d_I(ק, {inf_g}) = {d:.6f}')
 
-# Compare to other O_2 letters
+# Compare to other O₂ letters
 print(f'\n  d_I from each letter to מ (the nearest O_∞ pole):')
 dists_to_mem = [(d_I(g, 'מ'), g, LETTERS[g].tier) for g in CANONICAL_GLYPHS if g != 'מ']
 dists_to_mem.sort()

@@ -35,7 +35,7 @@ from aleph_functor import (
 )
 
 _W = [1.0, 1.0, 1.0, 1.2, 0.9, 0.8, 1.0, 1.0, 1.1, 0.8, 1.0, 0.7]
-TIER_ORD = {'O_0': 0, 'O_1': 1, 'O_2': 2, 'O_2d': 2, 'O_inf': 3}
+TIER_ORD = {'O₀': 0, 'O₁': 1, 'O₂': 2, 'O_2d': 2, 'O_∞': 3}
 
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -124,7 +124,7 @@ def o_inf_triangle() -> Dict:
     Compute all pairwise d and d_I distances among the three O_∞ letters.
     The 'multiple infinities' question.
     """
-    inf_letters = [g for g in CANONICAL_GLYPHS if LETTERS[g].tier == 'O_inf']
+    inf_letters = [g for g in CANONICAL_GLYPHS if LETTERS[g].tier == 'O_∞']
     result = {}
     for i, g1 in enumerate(inf_letters):
         for g2 in inf_letters[i+1:]:
@@ -275,7 +275,7 @@ if __name__ == '__main__':
         print(f'    d_I(x,y) = {vals["d_I"]:.4f}   (behavioral distance)')
         print(f'    I-equiv: {eq}')
     print()
-    inf_letters = [g for g in CANONICAL_GLYPHS if LETTERS[g].tier == 'O_inf']
+    inf_letters = [g for g in CANONICAL_GLYPHS if LETTERS[g].tier == 'O_∞']
     all_distinct = all(not v['I_eq'] for v in tri.values())
     if all_distinct:
         print(f'  The {len(inf_letters)} O_∞ letters are BEHAVIORALLY DISTINCT.')

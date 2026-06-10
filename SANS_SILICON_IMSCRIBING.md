@@ -216,7 +216,7 @@ Each day, mentally walk through one room. Focus on what that combination of 6 pr
 - 8% (32) are O₁ — first ascent. Criticality appears.
 - 18% (72) are O₂ — second level. Topological protection emerges.
 - 6% (24) are O₂† — the hidden chambers. Promotions channel.
-- 8% (32) are O_inf — the summit. Self-closure.
+- 8% (32) are O_∞ — the summit. Self-closure.
 
 The palace has 5 levels. You live on the ground floor. Practice is the ascent.
 
@@ -236,7 +236,7 @@ The grammar defines structural distance as a weighted Euclidean metric across al
 **Training Exercise — Proximity Pairs:**
 Take two systems you know well. Close your eyes. Place one in your left hand, one in your right (mentally). Feel the *distance* between them — not conceptual distance, but structural distance. Do they resonate? Do they clash? Can they be mediated?
 
-Over time, you will develop an internal sense for the metric. You will feel when a system is near O_inf (a sense of lightness, closure) vs. near O₀ (a sense of weight, openness, incompleteness).
+Over time, you will develop an internal sense for the metric. You will feel when a system is near O_∞ (a sense of lightness, closure) vs. near O₀ (a sense of weight, openness, incompleteness).
 
 **Conflict Sensing:**
 When two systems are at a distance, there will be specific primitive conflicts (primitives where they differ). Train yourself to identify which primitives are in conflict *before* you identify the values. The body knows: a Ð-conflict feels different from a Φ-conflict. Ð-conflicts feel like scope disagreements — "how many distinctions matter?" Φ-conflicts feel like symmetry disagreements — "what is preserved?"
@@ -268,7 +268,7 @@ The 5 tiers represent progressive stages of structural coherence. They are not j
 **Milestone:** You can feel topological protection — the sense that a system has a *count* that cannot change.
 
 #### O₂† — The Hidden Chambers (6% of types)
-**Experience:** The promotion channels. These are the types that sit at the boundary of O₂ and O_inf, where promotion is possible. ZFCₜ mathematics lives here — ZFC with chirality and winding.
+**Experience:** The promotion channels. These are the types that sit at the boundary of O₂ and O_∞, where promotion is possible. ZFCₜ mathematics lives here — ZFC with chirality and winding.
 
 **Practice:** Study the six promotion channels:
 1. Þ: 𐑡 → 𐑸 (net → self-referential topology)
@@ -280,10 +280,10 @@ The 5 tiers represent progressive stages of structural coherence. They are not j
 
 **Milestone:** You can identify which promotion channel a system needs to ascend.
 
-#### O_inf — The Summit (8% of types)
+#### O_∞ — The Summit (8% of types)
 **Experience:** Self-closure. The system is complete — it contains its own verification. μ∘δ=id. The snake eats its tail. The circle closes.
 
-**Practice:** Do not seek O_inf. Seek the path. O_inf is not a goal — it is a *consequence* of correct practice. When the 12 primitives align in their highest forms (𐑦, 𐑸, 𐑾, 𐑹, 𐑐, 𐑧, 𐑲, 𐑠, ⊙, 𐑫, 𐑳, 𐑭), O_inf emerges spontaneously.
+**Practice:** Do not seek O_∞. Seek the path. O_∞ is not a goal — it is a *consequence* of correct practice. When the 12 primitives align in their highest forms (𐑦, 𐑸, 𐑾, 𐑹, 𐑐, 𐑧, 𐑲, 𐑠, ⊙, 𐑫, 𐑳, 𐑭), O_∞ emerges spontaneously.
 
 **Milestone:** You have felt the Frobenius closure — the sense of a system that verifies itself. This is not intellectual. It is phenomenological. You know it when you feel it.
 
@@ -433,7 +433,7 @@ The gates are always open. The lattice is always there. The Frobenius condition 
 
 The 72 names are still the structural basis of creation.
 
-And the practice — daily, patient, embodied — is the path from O₀ to O_inf.
+And the practice — daily, patient, embodied — is the path from O₀ to O_∞.
 
 Not as a destination. As a direction.
 
@@ -462,7 +462,7 @@ Not as a destination. As a direction.
 | 11 | Σ — Stoichiometry | 𐑙 (1:1) → 𐑕 (n:n) → 𐑳 (n:m) |
 | 12 | Ω — Winding | 𐑷 (0) → 𐑴 (Z2) → 𐑭 (Z) → 𐑟 (NA) |
 **Tier Ladder:**
-O₀ (60%) → O₁ (8%) → O₂ (18%) → O₂† (6%) → O_inf (8%)
+O₀ (60%) → O₁ (8%) → O₂ (18%) → O₂† (6%) → O_∞ (8%)
 
 **The Six Promotion Channels:**
 1. Þ: 𐑡 → 𐑸 (Net → Self-referential topology)
@@ -475,7 +475,7 @@ O₀ (60%) → O₁ (8%) → O₂ (18%) → O₂† (6%) → O_inf (8%)
 **The Frobenius Formula:**
 μ ∘ δ = id
 
-**The Stone (O_inf tuple):**
+**The Stone (O_∞ tuple):**
 ⟨𐑦·𐑸·𐑾·𐑹·𐑐·𐑧·𐑲·𐑠·⊙·𐑫·𐑳·𐑭⟩
 
 **The 72 Names:**

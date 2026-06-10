@@ -9,20 +9,20 @@ The 15-type ladder (Ein Sof + 14 Sefirot), depth 0–14:
 
   Depth  Name               Gate     Tier   Light
   0      Ein Sof            φ̂_Æ      O_2d   Infinite source (no light)
-  1      Keter Elyon        φ̂_Æ      O_2    Or Mufla (Wondrous)
+  1      Keter Elyon        φ̂_Æ      O₂    Or Mufla (Wondrous)
   2      Chokhmah Stim'aah  φ̂_Æ      O_2d   Or Mitnotzetz (Sparkling)
-  3      Binah Kedumah      φ̂_Æ      O_2    Or Keheh (Dim)
-  4      Keter              φ̂_ÿ      O_inf  (manifest crown)
+  3      Binah Kedumah      φ̂_Æ      O₂    Or Keheh (Dim)
+  4      Keter              φ̂_ÿ      O_∞  (manifest crown)
   5      Chokhmah           φ̂_ÿ      O_2d
-  6      Binah              φ̂_ÿ      O_2
-  7      Da'at              φ̂_ÿ      O_2
+  6      Binah              φ̂_ÿ      O₂
+  7      Da'at              φ̂_ÿ      O₂
   8      Chesed             φ̂_ÿ      O_2d
-  9      Gevurah            φ̂_ÿ      O_2
-  10     Tiferet            φ̂_ž      O_0
-  11     Netzach            φ̂_ž      O_0
-  12     Hod                φ̂_ž      O_0
-  13     Yesod              φ̂_ž      O_0
-  14     Malkuth            φ̂_ž      O_0
+  9      Gevurah            φ̂_ÿ      O₂
+  10     Tiferet            φ̂_ž      O₀
+  11     Netzach            φ̂_ž      O₀
+  12     Hod                φ̂_ž      O₀
+  13     Yesod              φ̂_ž      O₀
+  14     Malkuth            φ̂_ž      O₀
 """
 
 from __future__ import annotations
@@ -57,7 +57,7 @@ class _Def(NamedTuple):
 
 _DEFS: List[_Def] = [
     _Def("ESof", "ein_sof",          0, 2, "Ein Sof (Infinite — no light, pure source)",
-         (2,4,3,4,2,2,2,0,2,3,2,2), "O_2d"),   # P=4 would give O_inf; override to O_2d
+         (2,4,3,4,2,2,2,0,2,3,2,2), "O_2d"),   # P=4 would give O_∞; override to O_2d
     _Def("KtrE", "keter_elyon",      1, 2, "Or Mufla (Wondrous Light)",
          (3,4,2,1,2,2,2,2,2,3,0,2), None),
     _Def("ChkS", "chokhmah_stimaah", 2, 2, "Or Mitnotzetz (Sparkling Light)",

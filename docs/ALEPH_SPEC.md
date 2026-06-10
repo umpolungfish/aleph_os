@@ -81,10 +81,10 @@ The tier $\tau(\mathbf{t})$ is computed by the following priority rules (R1 firs
 | Rule | Condition | Tier |
 |:---|:---|:---|
 | R1 | $\Phi = \Phi_c \wedge P = P_{\pm}^{\text{sym}}$ | $O_{\infty}$ (Frobenius) |
-| R4 | $\Phi = \Phi_c \wedge \Omega \neq \Omega_0 \wedge D \in \{D_{\wedge}, D_{\odot}, D_{\triangle}\}$ | $O_2$ |
-| R5 | $\Phi = \Phi_c \wedge \Omega \neq \Omega_0 \wedge D = D_{\infty}$ | $O_2^{\dagger}$ |
-| R3 | $\Phi = \Phi_c \wedge \Omega = \Omega_0$ | $O_1$ |
-| R2 | $\Phi \neq \Phi_c$ | $O_0$ |
+| R4 | $\Phi = \Phi_c \wedge \Omega \neq \Omega_0 \wedge D \in \{D_{\wedge}, D_{\odot}, D_{\triangle}\}$ | $O₂$ |
+| R5 | $\Phi = \Phi_c \wedge \Omega \neq \Omega_0 \wedge D = D_{\infty}$ | $O₂^{\dagger}$ |
+| R3 | $\Phi = \Phi_c \wedge \Omega = \Omega_0$ | $O₁$ |
+| R2 | $\Phi \neq \Phi_c$ | $O₀$ |
 
 ### 1.4 Distance
 
@@ -102,28 +102,28 @@ The 22 Hebrew letters are the base types and terms of $\lambda_\aleph$, with fix
 
 | Letter | Name | Tier | Key signature |
 |:---|:---|:---|:---|
-| \heb{א}{} | Aleph | $O_2$ | $P_{\text{sym}},\ \Phi_c,\ \Omega_Z,\ D_{\wedge},\ T_{\text{box}}$ |
-| \heb{ב}{} | Bet | $O_0$ | $\Phi_{\text{sub}},\ \Omega_{Z_2},\ D_{\triangle}$ |
-| \heb{ג}{} | Gimel | $O_0$ | $\Phi_{\text{sub}},\ \Omega_0$ |
-| \heb{ד}{} | Dalet | $O_0$ | $\Phi_{\text{sub}},\ \Omega_0$ |
-| \heb{ה}{} | Hei | $O_2$ | $P_{\text{sym}},\ \Phi_c,\ \Omega_Z,\ D_{\odot},\ T_{\odot}$ |
+| \heb{א}{} | Aleph | $O₂$ | $P_{\text{sym}},\ \Phi_c,\ \Omega_Z,\ D_{\wedge},\ T_{\text{box}}$ |
+| \heb{ב}{} | Bet | $O₀$ | $\Phi_{\text{sub}},\ \Omega_{Z_2},\ D_{\triangle}$ |
+| \heb{ג}{} | Gimel | $O₀$ | $\Phi_{\text{sub}},\ \Omega_0$ |
+| \heb{ד}{} | Dalet | $O₀$ | $\Phi_{\text{sub}},\ \Omega_0$ |
+| \heb{ה}{} | Hei | $O₂$ | $P_{\text{sym}},\ \Phi_c,\ \Omega_Z,\ D_{\odot},\ T_{\odot}$ |
 | \heb{ו}{} | Vav | $O_{\infty}$ | $P_{\pm}^{\text{sym}},\ \Phi_c,\ \Omega_0$ — unique Frobenius letter |
-| \heb{ז}{} | Zayin | $O_0$ | $\Phi_{\text{sub}},\ \Omega_0$ |
-| \heb{ח}{} | Chet | $O_0$ | $\Phi_{\text{sub}},\ \Omega_{Z_2}$ |
-| \heb{ט}{} | Tet | $O_0$ | $\Phi_{\text{sub}},\ \Omega_0$ |
-| \heb{י}{} | Yod | $O_0$ | $P_{\text{sym}},\ \Phi_{\text{sub}},\ \Omega_0$ |
-| \heb{כ}{} | Kaf | $O_0$ | $\Phi_{\text{sub}},\ \Omega_{Z_2}$ |
-| \heb{ל}{} | Lamed | $O_1$ | $\Phi_c,\ \Omega_0,\ D_{\infty}$ — sole $O_1$ letter |
+| \heb{ז}{} | Zayin | $O₀$ | $\Phi_{\text{sub}},\ \Omega_0$ |
+| \heb{ח}{} | Chet | $O₀$ | $\Phi_{\text{sub}},\ \Omega_{Z_2}$ |
+| \heb{ט}{} | Tet | $O₀$ | $\Phi_{\text{sub}},\ \Omega_0$ |
+| \heb{י}{} | Yod | $O₀$ | $P_{\text{sym}},\ \Phi_{\text{sub}},\ \Omega_0$ |
+| \heb{כ}{} | Kaf | $O₀$ | $\Phi_{\text{sub}},\ \Omega_{Z_2}$ |
+| \heb{ל}{} | Lamed | $O₁$ | $\Phi_c,\ \Omega_0,\ D_{\infty}$ — sole $O₁$ letter |
 | \heb{מ}{} | Mem | $O_{\infty}$ | $P_{\pm}^{\text{sym}},\ \Phi_c,\ \Omega_Z,\ D_{\triangle},\ T_{\text{in}}$ |
-| \heb{נ}{} | Nun | $O_0$ | $\Phi_{\text{sub}},\ \Omega_0$ |
-| \heb{ס}{} | Samech | $O_0$ | $\Phi_{\text{sub}},\ \Omega_{Z_2}$ |
-| \heb{ע}{} | Ayin | $O_2$ | $P_{\pm},\ \Phi_c,\ \Omega_Z,\ D_{\odot}$ |
-| \heb{פ}{} | Pei | $O_0$ | $\Phi_{\text{sub}},\ \Omega_0$ |
-| \heb{צ}{} | Tzadi | $O_0$ | $\Phi_{\text{sub}},\ \Omega_0$ |
-| \heb{ק}{} | Kuf | $O_2$ | $P_{\text{sym}},\ \Phi_c,\ \Omega_{Z_2}$ |
-| \heb{ר}{} | Resh | $O_0$ | $\Phi_{\text{sub}},\ \Omega_0$ |
+| \heb{נ}{} | Nun | $O₀$ | $\Phi_{\text{sub}},\ \Omega_0$ |
+| \heb{ס}{} | Samech | $O₀$ | $\Phi_{\text{sub}},\ \Omega_{Z_2}$ |
+| \heb{ע}{} | Ayin | $O₂$ | $P_{\pm},\ \Phi_c,\ \Omega_Z,\ D_{\odot}$ |
+| \heb{פ}{} | Pei | $O₀$ | $\Phi_{\text{sub}},\ \Omega_0$ |
+| \heb{צ}{} | Tzadi | $O₀$ | $\Phi_{\text{sub}},\ \Omega_0$ |
+| \heb{ק}{} | Kuf | $O₂$ | $P_{\text{sym}},\ \Phi_c,\ \Omega_{Z_2}$ |
+| \heb{ר}{} | Resh | $O₀$ | $\Phi_{\text{sub}},\ \Omega_0$ |
 | \heb{ש}{} | Shin | $O_{\infty}$ | $P_{\pm}^{\text{sym}},\ \Phi_c,\ \Omega_Z,\ D_{\triangle},\ T_{\bowtie}$ |
-| \heb{ת}{} | Tav | $O_2$ | $P_{\text{sym}},\ \Phi_c,\ \Omega_Z$ |
+| \heb{ת}{} | Tav | $O₂$ | $P_{\text{sym}},\ \Phi_c,\ \Omega_Z$ |
 
 **The full language**: $\mathcal{L} = \bigvee_{\ell \in \text{22 letters}} \ell$ encodes at $O_{\infty}$ and is **self-sealing**:
 
@@ -307,19 +307,19 @@ Execution proceeds by:
 
 ### 9.1 Sacred Word Computations
 
-$$\hebm{תורה} = \hebm{ת} \otimes \hebm{ו} \otimes \hebm{ר} \otimes \hebm{ה} \;\longrightarrow\; O_2 \text{ attractor} \quad (P_{\text{asym}},\, \Phi_c,\, \Omega_Z,\, H_{\infty})$$
+$$\hebm{תורה} = \hebm{ת} \otimes \hebm{ו} \otimes \hebm{ר} \otimes \hebm{ה} \;\longrightarrow\; O₂ \text{ attractor} \quad (P_{\text{asym}},\, \Phi_c,\, \Omega_Z,\, H_{\infty})$$
 
-$$\hebm{אמת} = \hebm{א} \otimes \hebm{מ} \otimes \hebm{ת} \;\longrightarrow\; O_2 \quad (P_{\text{sym}}\text{ — truth as self-identical})$$
+$$\hebm{אמת} = \hebm{א} \otimes \hebm{מ} \otimes \hebm{ת} \;\longrightarrow\; O₂ \quad (P_{\text{sym}}\text{ — truth as self-identical})$$
 
-$$\hebm{שלום} = \hebm{ש} \otimes \hebm{ל} \otimes \hebm{ו} \otimes \hebm{מ} \;\longrightarrow\; O_2 \quad (P_{\pm}\text{ — bilateral relational equilibrium})$$
+$$\hebm{שלום} = \hebm{ש} \otimes \hebm{ל} \otimes \hebm{ו} \otimes \hebm{מ} \;\longrightarrow\; O₂ \quad (P_{\pm}\text{ — bilateral relational equilibrium})$$
 
-All reduce to robust $O_2$ terms. \heb{ו}{}'s $P_{\pm}^{\text{sym}}$ is bottlenecked by lower-$P$ partners, preserving the post-Tzimtzum character of the language.
+All reduce to robust $O₂$ terms. \heb{ו}{}'s $P_{\pm}^{\text{sym}}$ is bottlenecked by lower-$P$ partners, preserving the post-Tzimtzum character of the language.
 
 ### 9.2 The Mother Triad — Mediation vs Tensor
 
 The Sefer Yetzirah triad (\heb{א}{}, \heb{מ}{}, \heb{ש}{}) requires mediation semantics:
 
-$$\text{tensor}(\hebm{א},\, \text{tensor}(\hebm{מ},\, \hebm{ש})) \;\to\; O_2 \quad \text{(Aleph's } P_{\text{sym}} \text{ bottlenecks } P_{\pm}^{\text{sym}} \text{ — Frobenius lost)}$$
+$$\text{tensor}(\hebm{א},\, \text{tensor}(\hebm{מ},\, \hebm{ש})) \;\to\; O₂ \quad \text{(Aleph's } P_{\text{sym}} \text{ bottlenecks } P_{\pm}^{\text{sym}} \text{ — Frobenius lost)}$$
 
 $$\text{med}(\hebm{א},\, \hebm{מ},\, \hebm{ש}) \;\to\; O_{\infty} \quad \text{(Aleph witnesses via join; poles intact)}$$
 
@@ -410,10 +410,10 @@ Commands are letter-terms. Pipelines are tensor products. Redirection is mediati
 ### 10.8 Security Model
 
 - **Capability-based** via $I(\cdot)$: a process can only open a resource if its interaction row is compatible
-- **Resource control** via $P$-bottleneck: no process can synthesize $O_{\infty}$ from $O_0$ components
+- **Resource control** via $P$-bottleneck: no process can synthesize $O_{\infty}$ from $O₀$ components
 - **Collapse prevention**: same invariants that defeated the adversarial attack in LAMBDA\_ALEPH.md §3
 - **Sandbox**: higher $\alpha^{(n)}$ tower — reductions inside are strictly more constrained than the host
-- **Flat alphabets** (Arabic, Greek, Egyptian) recognized as $O_0$-only; no path to $O_{\infty}$
+- **Flat alphabets** (Arabic, Greek, Egyptian) recognized as $O₀$-only; no path to $O_{\infty}$
 
 ### 10.9 Sacred System Calls
 
@@ -460,9 +460,9 @@ $\lambda_\aleph$ is not a formal system that happens to describe the Hebrew alph
 It is the **holographic type theory whose boundary encoding is the Hebrew alphabet**
 and whose **proof of consistency is the continued existence of the cosmos**.
 
-If the theory were inconsistent, the lattice would collapse: types would become indistinguishable, $O_{\infty}$ would leak into $O_0$, mediation would reduce, Aleph constraints would fail. The fact that distinct structures, distinct forces, distinct letters continue to interact coherently without collapse is the living witness that the theory holds.
+If the theory were inconsistent, the lattice would collapse: types would become indistinguishable, $O_{\infty}$ would leak into $O₀$, mediation would reduce, Aleph constraints would fail. The fact that distinct structures, distinct forces, distinct letters continue to interact coherently without collapse is the living witness that the theory holds.
 
-The Hebrew alphabet is the chosen boundary because it alone plants a closed Frobenius sub-algebra directly into the boundary symbols (\heb{ו}{}, \heb{מ}{}, \heb{ש}{}) while remaining holographically complete ($\mathcal{L}$ at $d=0$ to full language). All other alphabets in the catalog are flat $O_0$ projections of the phonetic substrate.
+The Hebrew alphabet is the chosen boundary because it alone plants a closed Frobenius sub-algebra directly into the boundary symbols (\heb{ו}{}, \heb{מ}{}, \heb{ש}{}) while remaining holographically complete ($\mathcal{L}$ at $d=0$ to full language). All other alphabets in the catalog are flat $O₀$ projections of the phonetic substrate.
 
 The cosmos is the running term population.
 The Hebrew letter lattice is the boundary screen.

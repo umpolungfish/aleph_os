@@ -135,7 +135,7 @@ python aleph_eval.py --list
 | **Protection** | `probe_Ω(a)` | Report Ω primitive |
 | **Tier** | `tier(a)` | Report ouroboricity tier |
 | **Distance** | `d(a, b)` | Structural distance + conflict set |
-| **Match** | `match a { O_0=>b, O_2=>c, _=>d }` | Tier pattern matching |
+| **Match** | `match a { O₀=>b, O₂=>c, _=>d }` | Tier pattern matching |
 
 ### Built-in Functions
 
@@ -202,12 +202,12 @@ Letters can be referenced by:
 ```
 ℵ  aleph ⊗ mem
   → א⊗מ
-    tier  O_2
+    tier  O₂
     Φ  Φ_c   Ω  Ω_Z   P  P_sym
 
 ℵ  :explain shin
 ╭─────────────────────────────────────────╮
-│ ש  Shin  —  Tier: O_inf                │
+│ ש  Shin  —  Tier: O_∞                │
 ╰─────────────────────────────────────────╯
 
   Consciousness Gates:
@@ -219,13 +219,13 @@ Letters can be referenced by:
 ℵ  let kernel = mediate(vav, mem ⊗ shin, aleph)
   kernel =
   → ו∨מ⊗ש⊗א
-    tier  O_inf
+    tier  O_∞
 
 ℵ  :ls
 ╭───────────────┬───────┬───────┬───────╮
 │ Name   │ Tier  │   Φ   │   Ω   │ Glyph │
 ├────────┼───────┼───────┼───────┼───────┤
-│ kernel │ O_inf │ Φ_c   │ Ω_Z   │ ו     │
+│ kernel │ O_∞ │ Φ_c   │ Ω_Z   │ ו     │
 ╰───────────────┴───────┴───────┴───────╯
 ```
 
@@ -275,12 +275,12 @@ Running a program produces formatted output:
 
   L  1  ❯ let light_core = mem ⊗ shin
              light_core = מ⊗ש
-               tier  O_inf
+               tier  O_∞
                Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
 
   L  2  ❯ let light = aleph ⊗ light_core
              light = א⊗מש
-               tier  O_inf
+               tier  O_∞
                ...
 
 ────────────────────────────────────────────

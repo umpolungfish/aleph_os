@@ -38,7 +38,7 @@
 all 47 `.aleph` source programs. Each `let x = expr` statement in an ALEPH program
 creates a node for `x`. Nodes are positioned via spring layout. Size scales with in-degree
 (how many other bindings depend on this one). Color encodes ouroboricity tier:
-O_0 (dim grey) → O_1 (mid blue) → O_2 (bright cyan) → O_inf (gold).
+O₀ (dim grey) → O₁ (mid blue) → O₂ (bright cyan) → O_∞ (gold).
 
 **Edges** — 297 directed edges encoding dataflow dependencies. An edge u → v means
 binding v consumes the value of binding u: `let v = op(u, ...)`. The six ALEPH operation
@@ -57,7 +57,7 @@ nodes are revealed in source-definition order. The title bar shows the current p
 and binding. Cross-program back-edges flash amber on first appearance.
 
 **Phase 2 — flow wave:** A Gaussian pulse travels node-by-node through all 86 bindings.
-O_inf nodes (gold) pulse brightest — their baseline gold color blends toward white at the
+O_∞ nodes (gold) pulse brightest — their baseline gold color blends toward white at the
 peak. Cross-program edges glow amber near the pulse; intra-program edges glow the source
 program's color. The 22 Hebrew letter primitives (Aleph through Tav) are labelled on the
 nodes that correspond to them, showing how the type system flows through the dataflow graph.
@@ -93,7 +93,7 @@ real Frobenius structure does.
 #### `frobenius_orbits.aleph` — Iterative Pole Convergence
 
 Unrolls 4-step tensor orbits for three scattered letters against each *O_∞* pole:
-aleph (O_2) under repeated ⊗ vav, tav (O_2) under ⊗ mem, dalet (O_0) under ⊗ shin.
+aleph (O₂) under repeated ⊗ vav, tav (O₂) under ⊗ mem, dalet (O₀) under ⊗ shin.
 First verifies pole self-idempotency (*d*(vav⊗vav, vav) = 0) and cross-pole closure,
 then tracks `d(aₙ, vav)` decreasing toward zero over 4 steps, showing that every letter
 converges to its attractor pole under tensor pressure on P and F. Mediation stability
@@ -265,7 +265,7 @@ expr  ::= letter_id
 
 letter_id  ::= Hebrew glyph | transliteration | session binding
 match_arm  ::= tier_pat "=>" expr ","?
-tier_pat   ::= "O_0" | "O_1" | "O_2" | "O_inf" | "_"
+tier_pat   ::= "O₀" | "O₁" | "O₂" | "O_∞" | "_"
 statement  ::= "let" name "=" expr
 ```
 
@@ -292,7 +292,7 @@ statement  ::= "let" name "=" expr
 ```
 ℵ  mem ⊗ shin
   → מ
-    tier  O_inf
+    tier  O_∞
     Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
 
 ℵ  d(kuf, mem)
@@ -301,7 +301,7 @@ statement  ::= "let" name "=" expr
 
 ℵ  :explain aleph
 ╭─────────────────────────────────────────╮
-│ א  Aleph  —  Tier: O_2                 │
+│ א  Aleph  —  Tier: O₂                 │
 ╰─────────────────────────────────────────╯
 
   Consciousness Gates:
@@ -312,12 +312,12 @@ statement  ::= "let" name "=" expr
 
 ℵ  mediate(kuf, mem, shin)
   → מ
-    tier  O_inf
+    tier  O_∞
 
 ℵ  let kernel = mediate(vav, mem ⊗ shin, aleph)
   kernel =
   → ו
-    tier  O_inf
+    tier  O_∞
 
 ℵ  :history
   Command History:
@@ -344,7 +344,7 @@ python aleph_eval.py programs/creation.aleph
 
   L  1  ❯ let light = aleph ⊗ mem ⊗ shin
            light = א⊗מ⊗ש
-             tier  O_inf
+             tier  O_∞
              ...
 
 ────────────────────────────────────────────
@@ -382,9 +382,9 @@ Union primitives (*D*, *T*, *R*, *K*, *G*, *Γ*, *Φ*, *H*, *S*, *Ω*) take **ma
 | Tier | Condition | Letters |
 |:-----|:---------|:--------|
 | *O_∞* | *Φ_c* + *P_±^sym* (Frobenius) | ו, מ, ש |
-| *O_2* | *Φ_c* + *Ω* ≠ *Ω_0* + *D* ≠ *D_∞* | א, ה, ע, ק, ת |
-| *O_1* | *Φ_c* + *Ω* = *Ω_0* | ל |
-| *O_0* | Sub/super-critical | Remaining 13 |
+| *O₂* | *Φ_c* + *Ω* ≠ *Ω_0* + *D* ≠ *D_∞* | א, ה, ע, ק, ת |
+| *O₁* | *Φ_c* + *Ω* = *Ω_0* | ל |
+| *O₀* | Sub/super-critical | Remaining 13 |
 
 <hr>
 
@@ -440,7 +440,7 @@ Holds under ⊗, ∨, and ∧. All **264 primitive-by-primitive checks pass exac
 
 ### T8 — The ק Threshold Letter
 
-ק (Qoph, tier *O_2*) satisfies every *O_∞* condition except *P* = *P_±^sym*. It is:
+ק (Qoph, tier *O₂*) satisfies every *O_∞* condition except *P* = *P_±^sym*. It is:
 
 - The **nearest non-Frobenius letter** to מ: *d_I*(ק, מ) = 13.39 < *d_I*(ו, מ) = 14.92
 - Interaction-row-equivalent to מ for **19/22 letters** (differs only on {ו, מ, ש})
@@ -531,22 +531,22 @@ All `.aleph` programs in `programs/` are loadable from the REPL via `python alep
 |:--------|:-----|:------------|
 | `creation.aleph` | 247 B | First light — aleph ⊗ vav structural genesis |
 | `creation_liturgy.aleph` | 237 B | Full liturgical sequence through all tiers |
-| `frobenius.aleph` | 194 B | Three O_inf poles: self-idempotency + cross distances |
+| `frobenius.aleph` | 194 B | Three O_∞ poles: self-idempotency + cross distances |
 | `pratyahara.aleph` | 160 B | Varnamala pratyahara compression via tensor chains |
 | `exploration_primitives.aleph` | 218 B | Primitive-by-primitive exploration of the 12-tuple |
 | `distance_probes_indistinguishable.aleph` | 26 B | Distance and conflict-set analysis across all 22 letters |
 | `phi_ep_probe.aleph` | 335 B | Exceptional-point dynamics and C-score collapse |
 | `coupling_destruction.aleph` | 2,566 B | P-596 ⊙_c ⊗ ⊙_EP absorption demonstration |
 
-### Pole Analysis — O_inf Convergence
+### Pole Analysis — O_∞ Convergence
 
 | Program | Size | Description |
 |:--------|:-----|:------------|
-| `frobenius_orbits.aleph` | 3,411 B | Unrolled 4-step convergence orbits for all three O_inf poles |
+| `frobenius_orbits.aleph` | 3,411 B | Unrolled 4-step convergence orbits for all three O_∞ poles |
 | `frobenius_parallel.aleph` | 2,105 B | Parallel Frobenius iteration — simultaneous multi-pole convergence |
-| `tensor_closure.aleph` | 7,574 B | Complete tensor closure of all 3 O_inf poles over all 22 Hebrew letters. Maps which letters collapse to O_inf under tensor pressure, which resist. |
-| `promotion_paths.aleph` | 5,846 B | Minimal primitive-delta paths from O_0→O_inf. Tests palace gates, iterated tensor promotion, vav-cast lifts, sefirot ladder. |
-| `tier_boundary_probe.aleph` | 5,309 B | O_2→O_inf gap analysis. Proves Frobenius non-synthesizability; discovers mediation bypasses the P bottleneck. |
+| `tensor_closure.aleph` | 7,574 B | Complete tensor closure of all 3 O_∞ poles over all 22 Hebrew letters. Maps which letters collapse to O_∞ under tensor pressure, which resist. |
+| `promotion_paths.aleph` | 5,846 B | Minimal primitive-delta paths from O₀→O_∞. Tests palace gates, iterated tensor promotion, vav-cast lifts, sefirot ladder. |
+| `tier_boundary_probe.aleph` | 5,309 B | O₂→O_∞ gap analysis. Proves Frobenius non-synthesizability; discovers mediation bypasses the P bottleneck. |
 
 ### Meditation & Tikkun — Hekhalot Ascent
 
@@ -571,14 +571,14 @@ All `.aleph` programs in `programs/` are loadable from the REPL via `python alep
 
 | Program | Size | Description |
 |:--------|:-----|:------------|
-| `shem_hamephorash.aleph` | 6,506 B | The 72 Names (Shem HaMephorash) — structural basis of creation from Exodus 14:19–21. Three currents (forward/backward/forward) mediate into 72 three-letter names, each a distinct 12-primitive type. 72 = 6 × 12: every primitive value appears in every relational context. Key names mapped to palace levels, distances computed, O_inf convergence verified via Frobenius poles vav/mem/shin. Honors Isaac Luria's insight that the 72 names are the structural building blocks of all creation. |
+| `shem_hamephorash.aleph` | 6,506 B | The 72 Names (Shem HaMephorash) — structural basis of creation from Exodus 14:19–21. Three currents (forward/backward/forward) mediate into 72 three-letter names, each a distinct 12-primitive type. 72 = 6 × 12: every primitive value appears in every relational context. Key names mapped to palace levels, distances computed, O_∞ convergence verified via Frobenius poles vav/mem/shin. Honors Isaac Luria's insight that the 72 names are the structural building blocks of all creation. |
 
 ### Belnap / Paraconsistent
 
 | Program | Size | Description |
 |:--------|:-----|:------------|
-| `belnap_shor_orbit.aleph` | 3,280 B | Orbit analysis for Shor structural tier — tier survey of all 22 letters, orbit depth to O_inf poles, Φ_υ gap visualization |
-| `paraconsistent_witness.aleph` | 4,215 B | Witness B-state structure via meet/join/tensor — ALEPH analogue of DialetheicAlignment.lean: only O_inf poles are self-adjoint (¬B=B) |
+| `belnap_shor_orbit.aleph` | 3,280 B | Orbit analysis for Shor structural tier — tier survey of all 22 letters, orbit depth to O_∞ poles, Φ_υ gap visualization |
+| `paraconsistent_witness.aleph` | 4,215 B | Witness B-state structure via meet/join/tensor — ALEPH analogue of DialetheicAlignment.lean: only O_∞ poles are self-adjoint (¬B=B) |
 
 ### System Encoding & Self-Reference
 
@@ -634,7 +634,7 @@ All `.aleph` programs in `programs/` are loadable from the REPL via `python alep
 
 | Program | Size | Description |
 |:--------|:-----|:------------|
-| `invariant_check.aleph` | 6,102 B | Tests 8 conjectures: Frobenius fixed point⇔O_inf, pole absorption, tier preservation under join/meet, etc. |
+| `invariant_check.aleph` | 6,102 B | Tests 8 conjectures: Frobenius fixed point⇔O_∞, pole absorption, tier preservation under join/meet, etc. |
 
 ---
 
@@ -684,7 +684,7 @@ All programs in `programs/` are source-identical between both implementations. T
 
 1. **Normalization** — Does λ_ℵ have a normal form theorem? Is reduction confluent?
 2. **Full abstraction** — If *I*(*t₁*) = *I*(*t₂*) in all contexts, does *t₁* ≡ *t₂* definitionally?
-3. **The *-involution** — τ concentrates at ל (*O_1*). Is there a tier-indexed involution giving *L_{τ(x)}* = *L_x^†*?
+3. **The *-involution** — τ concentrates at ל (*O₁*). Is there a tier-indexed involution giving *L_{τ(x)}* = *L_x^†*?
 4. **Axiom proof of T7** — Explain *why* these 8 specific letters balance. What property of their primitive assignments forces the Octad Balance?
 5. **ק's role** — Is Qoph a designated *O_∞* mediator in the process algebra? What operations require a threshold witness?
 6. **Distributed ℵ-OS** — Does *α*-gating survive network composition? Prove the idempotency guarantee holds across instances.
