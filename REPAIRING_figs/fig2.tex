@@ -1,0 +1,68 @@
+% Compile with: lualatex figure2_tiers.tex
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{fontspec}
+\setmainfont{Noto Sans Hebrew}[Script=Hebrew]
+\usetikzlibrary{shapes, positioning, fit}
+\begin{document}
+\begin{tikzpicture}[
+  tier/.style={rectangle, rounded corners, draw, minimum width=12cm, font=\normalsize},
+  letter/.style={font=\Large, minimum size=1.2cm},
+  every node/.append style={align=center}
+]
+>
+  % --- Apex tier (closure: complete) ---
+  \node[tier, fill=yellow!20, draw=yellow!60!black, label=above:{\textbf{Apex — Closure Complete}}]
+    (apex) at (0,4) {};
+  \node[letter] at (-1.8,4) {ו};
+  \node[letter] at (0,4) {מ};
+  \node[letter] at (1.8,4) {ש};
+  \node[font=\small, below=0.3cm of apex] {Vav, Mem, Shin — return to themselves under any combination};
+>
+  % --- Gate tier (closure: partial) ---
+  \node[tier, fill=blue!10, draw=blue!50!black, label=above:{\textbf{Gate Letters — Partial Closure}}]
+    (gate) at (0,1.5) {};
+  \node[letter] at (-3.6,1.5) {א};
+  \node[letter] at (-1.8,1.5) {ה};
+  \node[letter] at (0,1.5) {ע};
+  \node[letter] at (1.8,1.5) {ק};
+  \node[letter] at (3.6,1.5) {ת};
+  \node[font=\small, below=0.3cm of gate] {Aleph, Hei, Ayin, Kuf, Tav — mediate ascent, do not close};
+>
+  % --- Threshold (closure: beginning) ---
+  \node[tier, fill=green!10, draw=green!50!black, label=above:{\textbf{Threshold — Closure Begins}}]
+    (thresh) at (0,-0.5) {};
+  \node[letter] at (0,-0.5) {ל};
+  \node[font=\small, below=0.3cm of thresh] {Lamed alone — begins to close but is not complete};
+>
+  % --- Ground tier (closure: none) ---
+  \node[tier, fill=red!8, draw=red!50!black, label=above:{\textbf{Ground Letters — No Closure}}]
+    (ground) at (0,-3) {};
+  \node[letter, font=\footnotesize] at (-5.5,-3) {ב};
+  \node[letter, font=\footnotesize] at (-4.583,-3) {ג};
+  \node[letter, font=\footnotesize] at (-3.666,-3) {ד};
+  \node[letter, font=\footnotesize] at (-2.75,-3) {ז};
+  \node[letter, font=\footnotesize] at (-1.833,-3) {ח};
+  \node[letter, font=\footnotesize] at (-0.916,-3) {ט};
+  \node[letter, font=\footnotesize] at (0,-3) {י};
+  \node[letter, font=\footnotesize] at (0.916,-3) {כ};
+  \node[letter, font=\footnotesize] at (1.833,-3) {נ};
+  \node[letter, font=\footnotesize] at (2.75,-3) {ס};
+  \node[letter, font=\footnotesize] at (3.666,-3) {פ};
+  \node[letter, font=\footnotesize] at (4.583,-3) {צ};
+  \node[letter, font=\footnotesize] at (5.5,-3) {ר};
+  \node[font=\small, below=0.3cm of ground] {Bet, Gimel, Dalet, Zayin, Het, Tet, Yod, Kaf, Nun, Samekh, Pe, Tzadi, Resh};
+>
+  % --- Arrows between tiers ---
+  \draw[->, thick, gray!60] (0, 3.0) -- (0, 2.2);
+  \draw[->, thick, gray!60] (0, 0.7) -- (0, 0.0);
+  \draw[->, thick, gray!60] (0, -1.3) -- (0, -2.0);
+>
+  % --- Side annotation (closure degree) ---
+  \node[font=\small\itshape, rotate=90, gray!70] at (-6.5, 0.5) {closure degree →};
+>
+  % --- Title ---
+  \node[font=\large\bfseries, above=0.8cm of apex] {מִפְקָד — The Census of Twenty-Two Letters};
+>
+\end{tikzpicture}
+\end{document}

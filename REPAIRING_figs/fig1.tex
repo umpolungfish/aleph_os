@@ -1,0 +1,52 @@
+% Compile with: lualatex figure1_wheel.tex
+% Requires: fontspec, tikz, Noto Sans Hebrew (or any Hebrew-capable font)
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{fontspec}
+\setmainfont{Noto Sans Hebrew}[Script=Hebrew]
+\usetikzlibrary{decorations.text, calc}
+\begin{document}
+\begin{tikzpicture}[scale=1.2]
+  % The twenty-two letters in order
+  \def\letters{{א,ב,ג,ד,ה,ו,ז,ח,ט,י,כ,ל,מ,נ,ס,ע,פ,צ,ק,ר,ש,ת}}
+  \def\n{22}
+>
+  % --- Outer disc (fixed) ---
+  \draw[thick, fill=brown!20, draw=brown!60!black] (0,0) circle (5);
+  \draw[thick, brown!40!black] (0,0) circle (4.2);
+  \foreach \i in {0,...,21} {
+    \pgfmathsetmacro{\angle}{90 - \i * 360 / 22}
+    \pgfmathsetmacro{\rad}{4.6}
+    \node[font=\small] at (\angle:\rad) {\pgfmathparse{\letters[\i]}\pgfmathresult};
+  }
+  \draw[decorate, decoration={text along path, text={| \small|א ב ג ד ה ו ז ח ט י כ ל מ נ ס ע פ צ ק ר ש ת},
+        reverse, raise=-2pt}] (0,0) circle (4.9);
+>
+  % --- Inner disc (rotating) ---
+  \draw[thick, fill=brown!35, draw=brown!60!black] (0,0) circle (2.8);
+  \draw[thick, brown!40!black] (0,0) circle (2.0);
+  \foreach \i in {0,...,21} {
+    \pgfmathsetmacro{\angle}{90 - \i * 360 / 22 + 8}
+    \pgfmathsetmacro{\rad}{2.4}
+    \node[font=\footnotesize] at (\angle:\rad) {\pgfmathparse{\letters[\i]}\pgfmathresult};
+  }
+>
+  % --- Spindle ---
+  \draw[fill=black!80] (0,0) circle (0.25);
+  \draw[fill=black!60] (0,0) circle (0.12);
+>
+  % --- Rotation arrows ---
+  \draw[->, >=stealth, thick, brown!50!black] (30:3.8) arc (30:100:3.8)
+    node[midway, above, font=\tiny] {inner disc rotates};
+  \draw[<-, >=stealth, thin, brown!30!black] (200:4.6) arc (200:260:4.6)
+    node[midway, below, font=\tiny] {outer disc fixed};
+>
+  % --- Wear marks (grooves) ---
+  \foreach \a in {0,15,30,...,345} {
+    \draw[very thin, brown!25!black] (\a:3.95) -- (\a:4.05);
+  }
+>
+  % --- Label ---
+  \node[font=\small\itshape, below] at (0,-5.5) {גַּלְגַּל — The Wheel of the Twenty-Two Paths};
+\end{tikzpicture}
+\end{document}

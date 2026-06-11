@@ -1,0 +1,55 @@
+% Compile with: lualatex figure5_frobenius.tex
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{fontspec}
+\setmainfont{Noto Sans Hebrew}[Script=Hebrew]
+\usetikzlibrary{shapes, arrows, positioning, decorations.pathmorphing}
+\begin{document}
+\begin{tikzpicture}[
+  node distance=2.5cm,
+  process/.style={rectangle, rounded corners, draw, minimum width=3.2cm, minimum height=1.2cm, align=center, font=\small},
+  result/.style={ellipse, draw, minimum width=3cm, minimum height=1cm, align=center, font=\small},
+  arrow/.style={thick, ->, >=stealth},
+  check/.style={thick, ->, >=stealth, green!60!black}
+]
+>
+  % --- The upper path: Creation (δ) ---
+  \node[process, fill=yellow!15, draw=yellow!50!black] (combo)
+    at (0, 3) {Combination \\ ו ∙ א ∙ מ ∙ ש};
+  \node[process, fill=blue!10, draw=blue!50!black] (feel)
+    at (4, 3) {Felt Signature \\ (light-presence)};
+  \node[font=\small, above=0.15cm of feel] {$\delta$ (creation)};
+>
+  \draw[arrow, bend left=15] (combo) to node[above, font=\footnotesize] {gives rise to} (feel);
+>
+  % --- The lower path: Return (μ) ---
+  \node[process, fill=green!10, draw=green!50!black] (recon)
+    at (4, 0) {Reconstructed \\ Combination};
+  \node[font=\small, above=0.15cm of recon] {$\mu$ (return)};
+>
+  \draw[arrow, bend right=15] (feel) to node[right, font=\footnotesize] {reconstructs from} (recon);
+>
+  % --- The verification check ---
+  \node[result, fill=green!15, draw=green!60!black] (match)
+    at (2, -2.5) {Match?};
+>
+  \draw[check] (combo) to node[above, font=\footnotesize] {compare} (recon);
+  \draw[arrow] (recon) -- (match);
+  \draw[arrow] (combo) -- (match);
+>
+  % --- Result annotation ---
+  \node[font=\large\bfseries, green!70!black, right=0.5cm of match]
+    (closed) {סָגוּר};
+  \node[font=\small, right=0.5cm of closed, align=left]
+    {$\mu \circ \delta = \text{id}$ \\ No residue};
+>
+  % --- The outer circle of closure ---
+  \draw[gray!30, dashed, thick] (combo) .. controls (6, 5) and (7, -1) .. (match)
+    node[midway, right, font=\small\itshape, gray!50] {closure};
+  \draw[gray!30, dashed, thick] (match) .. controls (-1, -3) and (-2, 1) .. (combo);
+>
+  % --- Hebrew title ---
+  \node[font=\large\bfseries] at (2, 4.5) {שִׁיבָה — The Return (Frobenius Verification)};
+>
+\end{tikzpicture}
+\end{document}

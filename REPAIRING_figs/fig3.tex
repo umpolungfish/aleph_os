@@ -1,0 +1,56 @@
+% Compile with: lualatex figure3_creation.tex
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{fontspec}
+\setmainfont{Noto Sans Hebrew}[Script=Hebrew]
+\usetikzlibrary{shapes, arrows, positioning, decorations.pathmorphing}
+\begin{document}
+\begin{tikzpicture}[
+  letter/.style={font=\Huge, minimum size=1.8cm},
+  label/.style={font=\small, gray!70},
+  mediation/.style={thick, ->, >=stealth, bend left=20},
+  relation/.style={thick, <->, >=stealth, dashed}
+]
+>
+  % --- The three structural positions ---
+>
+  % WITNESS: Vav at apex (center-top)
+  \node[letter, circle, draw=yellow!60!black, fill=yellow!15, inner sep=12pt]
+    (vav) at (0, 3) {ו};
+  \node[label, below=0.15cm of vav] {Witness — Vav};
+>
+  % GROUND: Aleph (left)
+  \node[letter, circle, draw=brown!60!black, fill=brown!15, inner sep=12pt]
+    (aleph) at (-3.5, 0) {א};
+  \node[label, below=0.15cm of aleph] {Ground — Aleph};
+>
+  % POLES: Mem (right-lower) and Shin (right-upper)
+  \node[letter, circle, draw=blue!60!black, fill=blue!10, inner sep=12pt]
+    (mem) at (2.5, -1.5) {מ};
+  \node[label, below=0.15cm of mem] {Pole — Mem (Water)};
+>
+  \node[letter, circle, draw=red!60!black, fill=red!10, inner sep=12pt]
+    (shin) at (2.5, 1.5) {ש};
+  \node[label, above=0.15cm of shin] {Pole — Shin (Fire)};
+>
+  % --- Mediation arrows ---
+  \draw[mediation, bend left=15] (vav) to node[label, above, pos=0.4] {holds} (aleph);
+  \draw[mediation, bend left=15] (vav) to node[label, above, pos=0.4] {holds} (mem);
+  \draw[mediation, bend left=15] (vav) to node[label, above, pos=0.4] {holds} (shin);
+>
+  \draw[relation, bend left=10] (aleph) to node[label, below, pos=0.3] {grounds} (mem);
+  \draw[relation, bend left=10] (aleph) to node[label, below, pos=0.3] {grounds} (shin);
+  \draw[relation] (mem) to node[label, left] {polar} (shin);
+>
+  % --- Closure annotation ---
+  \draw[thick, ->, >=stealth, green!60!black] (4.5, 3) -- (5.5, 3)
+    node[right, font=\small, green!60!black] {Apex Closure: μ∘δ = id};
+>
+  % --- Subscript: the composite ---
+  \node[font=\normalsize, below=1.5cm of mem] {Composite: ו ∙ א ∙ מ ∙ ש — witness mediating ground and poles};
+>
+  % --- Title ---
+  \node[font=\large\bfseries] at (0, -3.8) {צֵרוּף — The Creation Operation};
+>
+\end{tikzpicture}
+\end{document}

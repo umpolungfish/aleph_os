@@ -1,0 +1,49 @@
+% Compile with: lualatex figure6_cycle.tex
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{fontspec}
+\setmainfont{Noto Sans Hebrew}[Script=Hebrew]
+\usetikzlibrary{shapes, arrows, positioning}
+\begin{document}
+\begin{tikzpicture}[
+  node distance=3.5cm,
+  op/.style={circle, draw, minimum size=2.2cm, align=center, font=\small\bfseries, line width=1.5pt},
+  arrow/.style={thick, ->, >=stealth, line width=1.2pt},
+  return/.style={thick, ->, >=stealth, dashed, gray, line width=1pt}
+]
+>
+  % --- The five stations of the session ---
+  \node[op, fill=gray!10, draw=gray!50!black]  (prep)   at (0:3) {הכנה \\ Preparation};
+  \node[op, fill=brown!15, draw=brown!60!black] (census) at (72:3) {מפקד \\ Census};
+  \node[op, fill=yellow!20, draw=yellow!60!black] (create) at (144:3) {צירוף \\ Creation};
+  \node[op, fill=green!15, draw=green!60!black]  (tikkun) at (216:3) {תיקון \\ Repair};
+  \node[op, fill=blue!15, draw=blue!60!black]   (verify) at (288:3) {שיבה \\ Verification};
+>
+  % --- Forward cycle (creation flow) ---
+  \draw[arrow] (prep)   to node[font=\footnotesize, above, sloped] {opens} (census);
+  \draw[arrow] (census) to node[font=\footnotesize, above, sloped] {informs} (create);
+  \draw[arrow] (create) to node[font=\footnotesize, above, sloped] {tests} (tikkun);
+  \draw[arrow] (tikkun) to node[font=\footnotesize, above, sloped] {checks} (verify);
+>
+  % --- Return path (verification closes the loop) ---
+  \draw[return, bend right=20] (verify) to node[font=\footnotesize, below, sloped] {closes} (prep);
+>
+  % --- Inner annotation ---
+  \node[font=\small\itshape, align=center] at (0,0)
+    {$\mu \circ \delta = \text{id}$ \\ The circle closes};
+>
+  % --- Outer rim: the 22 letters ---
+  \foreach \a/\l in {0/א, 16.36/ב, 32.73/ג, 49.09/ד, 65.45/ה, 81.82/ו,
+      98.18/ז, 114.55/ח, 130.91/ט, 147.27/י, 163.64/כ, 180/ל,
+      196.36/מ, 212.73/נ, 229.09/ס, 245.45/ע, 261.82/פ, 278.18/צ,
+      294.55/ק, 310.91/ר, 327.27/ש, 343.64/ת} {
+    \node[font=\tiny, gray!40] at (\a:4.6) {\l};
+  }
+  \draw[gray!15, thick] (0,0) circle (4.8);
+  \draw[gray!10, thick] (0,0) circle (4.2);
+>
+  % --- Title ---
+  \node[font=\large\bfseries] at (0, -5.8) {שלשים ושתים נתיבות — The Thirty-Two Paths of the Session};
+>
+\end{tikzpicture}
+\end{document}
