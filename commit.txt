@@ -1,3 +1,15 @@
+Moved ancillary documents to ig-docs (2026-06-14)
+
+21 files moved: KABBALIST_NARRATIVE.md/.pdf, KABBALIST_OPERATOR.md/.pdf,
+REPAIRING.md/.pdf, ALEPHHHHHHH.md, alephvav.md, SANS_SILICON_IMSCRIBING.md,
+docs/EGYPTIAN_MEDU.md, docs/HEBREW_TYPE_LANGUAGE.md, docs/PRIMITIVE_THEOREMS.md,
+docs/SYNTHONICON_DIAPHORICS.md, docs/SYNTHONICON_ONTICS.md,
+docs/TECHNICAL_CONTRIBUTIONS.md/.pdf, REPAIRING_figs/ (all .md/.pdf).
+Kept: README.md, USAGE.md, docs/ALEPH_SPEC.md, docs/LAMBDA_ALEPH.md,
+docs/ALEPH_DISCOVERY.md, docs/README_FORMATTER.md, all source code.
+
+---
+
 SNS_PRIME.md notation migration: O_inf→O_∞, O_0→O₀, O_1→O₁, O_2→O₂ (32 files)
 
 ---
