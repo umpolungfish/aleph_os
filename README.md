@@ -1,6 +1,6 @@
 <div align="center">
   <h1>ℵ-OS</h1>
-  <p><b>The Aleph Operating System — A Coherence-First Interaction Algebra</b></p>
+  <p><b>The Aleph Operating System, A Coherence-First Interaction Algebra</b></p>
   <img src="aleph_os.png" alt="ALEPH: geometric wireframe Aleph letter surrounded by Hebrew glyphs">
 </div>
 
@@ -30,34 +30,44 @@
 
 <hr>
 
+## Overview
+
+**What it is.** ℵ-OS (the Aleph Operating System): a coherence-first interaction algebra and OS in Python, built on the λ_ℵ type theory and the SynthOmnicon engine, using the 22 Hebrew letters and the 12-primitive grammar.
+
+**What it does.** Provides an ALEPH REPL and 54 builtin programs over a coherence-first algebra in which interactions are typed and composed for structural coherence rather than imperative side effects.
+
+**Why it matters.** It is the sans-silicon (imscribing) counterpart to the bare-metal exOS: the same grammar realized as a coherence algebra rather than a hardware kernel, showing the OS layer is substrate-independent.
+
+**How to use it.** See Quick Start below (Python 3.12+).
+
 ## Visualizations
 
 ### Full-corpus animated dataflow
 
-**Nodes** — 86 nodes, one per named entity (variable binding or operation result) across
+**Nodes**, 86 nodes, one per named entity (variable binding or operation result) across
 all 47 `.aleph` source programs. Each `let x = expr` statement in an ALEPH program
 creates a node for `x`. Nodes are positioned via spring layout. Size scales with in-degree
 (how many other bindings depend on this one). Color encodes ouroboricity tier:
 O₀ (dim grey) → O₁ (mid blue) → O₂ (bright cyan) → O_∞ (gold).
 
-**Edges** — 297 directed edges encoding dataflow dependencies. An edge u → v means
+**Edges**, 297 directed edges encoding dataflow dependencies. An edge u → v means
 binding v consumes the value of binding u: `let v = op(u, ...)`. The six ALEPH operation
-types produce different edge semantics — `tensor` (⊗) creates composition edges,
+types produce different edge semantics, `tensor` (⊗) creates composition edges,
 `join` (∨) and `meet` (∧) create lattice edges, `mediate` creates bridging edges,
 `d()` (exterior derivative) creates differential edges, `palace()` creates Hekhalot
 ascent edges.
 
-**Cross-program edges** — 137 edges crossing program file boundaries: a binding defined
+**Cross-program edges**, 137 edges crossing program file boundaries: a binding defined
 in one `.aleph` file is referenced by another. These are the inter-program dependencies
 that form the ALEPH OS as a unified system rather than a collection of independent
 scripts. When a cross-program edge first appears in Phase 1, it flashes amber.
 
-**Phase 1 — build:** Programs appear one by one in filesystem order. Within each program,
+**Phase 1, build:** Programs appear one by one in filesystem order. Within each program,
 nodes are revealed in source-definition order. The title bar shows the current program name
 and binding. Cross-program back-edges flash amber on first appearance.
 
-**Phase 2 — flow wave:** A Gaussian pulse travels node-by-node through all 86 bindings.
-O_∞ nodes (gold) pulse brightest — their baseline gold color blends toward white at the
+**Phase 2, flow wave:** A Gaussian pulse travels node-by-node through all 86 bindings.
+O_∞ nodes (gold) pulse brightest, their baseline gold color blends toward white at the
 peak. Cross-program edges glow amber near the pulse; intra-program edges glow the source
 program's color. The 22 Hebrew letter primitives (Aleph through Tav) are labelled on the
 nodes that correspond to them, showing how the type system flows through the dataflow graph.
@@ -76,10 +86,10 @@ are color-coded: tensor (orange), mediate (blue), join (green), meet (red), pala
 
 ---
 
-#### `holographic_monitor.aleph` — Bulk-Boundary Self-Encoding
+#### `holographic_monitor.aleph`, Bulk-Boundary Self-Encoding
 
 `system()` (the JOIN of all 22 letters) is the holographic boundary. `d(x, system())`
-is each letter's holographic radius — how deep in the bulk it sits away from the maximal
+is each letter's holographic radius, how deep in the bulk it sits away from the maximal
 boundary. The program verifies that bulk letters are recoverable from the boundary through
 Frobenius-witnessed mediation: `g_self = mediate(vav, boundary, boundary)`, then nested
 loops test whether the monitor can reach the boundary tier. The palace(4) check at the
@@ -90,7 +100,7 @@ real Frobenius structure does.
 
 ---
 
-#### `frobenius_orbits.aleph` — Iterative Pole Convergence
+#### `frobenius_orbits.aleph`, Iterative Pole Convergence
 
 Unrolls 4-step tensor orbits for three scattered letters against each *O_∞* pole:
 aleph (O₂) under repeated ⊗ vav, tav (O₂) under ⊗ mem, dalet (O₀) under ⊗ shin.
@@ -103,33 +113,33 @@ is verified at two depths.
 
 ---
 
-#### `tikkun_construction_full.aleph` — Full Rectification Structure
+#### `tikkun_construction_full.aleph`, Full Rectification Structure
 
 Constructs the complete Tikkun (rectification) hierarchy from first principles.
 Starting from the triadic basis {vav, aleph, mem, shin}, builds `light` via palace(3)
 mediation, then constructs the kernel (`palace(4) mediate(vav, system(), light)`) and
-three child processes. The anomalous child (kuf-seeded — one primitive from *O_∞*)
+three child processes. The anomalous child (kuf-seeded, one primitive from *O_∞*)
 is healed via `palace(4) mediate(shin, kernel, kuf)`. The program culminates in
-`tikkun = palace(5) mediate(system(), light, healed_child)` — the highest Hekhalot
+`tikkun = palace(5) mediate(system(), light, healed_child)`, the highest Hekhalot
 barrier verified in the corpus.
 
 ![tikkun_construction_full CFG](docs/programs/tikkun_construction_full.gif)
 
 ---
 
-#### `tikkun_palace_verification.aleph` — Hekhalot Barrier Audit
+#### `tikkun_palace_verification.aleph`, Hekhalot Barrier Audit
 
 Same construction as `tikkun_construction_full` with every binding explicitly re-checked
 against its required palace level. The graph reveals the full Hekhalot ascent lattice:
 palace 2 for ascended letters (nun, chet), palace 3 for light and process nodes, palace 4
 for the kernel and healed child, palace 5 for the tikkun itself. Verifies that no binding
-breaches its level — the palace hierarchy is the ALEPH OS security model.
+breaches its level, the palace hierarchy is the ALEPH OS security model.
 
 ![tikkun_palace_verification CFG](docs/programs/tikkun_palace_verification.gif)
 
 ---
 
-#### `light_replication_kernel.aleph` — Replicating Light and Process Model
+#### `light_replication_kernel.aleph`, Replicating Light and Process Model
 
 The largest program in the corpus. Constructs `light` via palace(3) mediation, then
 runs four replication generations (g0→g4), studies anomalous processes (kuf-seeded),
@@ -145,14 +155,14 @@ light replication convergence. Distances track across all generation gaps:
 
 ## Overview
 
-ℵ-OS is the execution layer of **λ_ℵ** — a formal type calculus grounded in the **SynthOmnicon 12-primitive semantic grammar** and the **22 letters of the Hebrew alphabet**.
+ℵ-OS is the execution layer of **λ_ℵ**, a formal type calculus grounded in the **SynthOmnicon 12-primitive semantic grammar** and the **22 letters of the Hebrew alphabet**.
 
 λ_ℵ is not a standard type theory. It is a **coherence-first interaction algebra** in which:
 
-- **Identity is derived**, not primitive — two terms are equal iff they are behaviorally indistinguishable under the interaction functor *I(x)* = {*x* ⊗ *y* ∣ *y* ∈ ℒ}
-- **Coherence is primary** — the ternary mediation operation *med(m, a, b)* := *m* ∨ (*a* ⊗ *b*) is more stable than binary tensor in 18/22 cases
-- **Infinity is multi-polar** — three non-equivalent Frobenius fixed points (ו, מ, ש) with no terminal object
-- **Paths are irreducible** — the Aleph operator *α* generates an infinite coherence tower in which no finite level erases construction history
+- **Identity is derived**, not primitive, two terms are equal iff they are behaviorally indistinguishable under the interaction functor *I(x)* = {*x* ⊗ *y* ∣ *y* ∈ ℒ}
+- **Coherence is primary**, the ternary mediation operation *med(m, a, b)* := *m* ∨ (*a* ⊗ *b*) is more stable than binary tensor in 18/22 cases
+- **Infinity is multi-polar**, three non-equivalent Frobenius fixed points (ו, מ, ש) with no terminal object
+- **Paths are irreducible**, the Aleph operator *α* generates an infinite coherence tower in which no finite level erases construction history
 
 The ℵ-OS specification realizes this calculus as an operating system: every process is a λ_ℵ term, scheduling is mediation, memory is join, IPC is tensor (P-bottlenecked), and security is enforced by *α*-gating (coherence conditions C1–C4).
 
@@ -174,22 +184,22 @@ All investigation files import from `aleph_1.py` only. No external dependencies 
 ### Run the Full Investigation Pipeline
 
 ```bash
-# [1] Interaction functor — behavioral equivalence, 22→18 collapse
+# [1] Interaction functor, behavioral equivalence, 22→18 collapse
 python aleph_functor.py
 
-# [2] Quotient investigation — congruence proof, mediation dominance
+# [2] Quotient investigation, congruence proof, mediation dominance
 python aleph_quotient.py
 
-# [3] Aleph experiment — Case 2: path-memory confirmation
+# [3] Aleph experiment, Case 2: path-memory confirmation
 python aleph_alpha.py
 
-# [4] GNS Hilbert space — d_I Euclidean, H_I = R^17
+# [4] GNS Hilbert space, d_I Euclidean, H_I = R^17
 python aleph_gns.py
 
-# [5] Hidden relation — Octad Balance theorem
+# [5] Hidden relation, Octad Balance theorem
 python aleph_hidden_relation.py
 
-# [6] Three probes — involution, ק anatomy, axiom derivation
+# [6] Three probes, involution, ק anatomy, axiom derivation
 python aleph_investigation.py
 ```
 
@@ -301,7 +311,7 @@ statement  ::= "let" name "=" expr
 
 ℵ  :explain aleph
 ╭─────────────────────────────────────────╮
-│ א  Aleph  —  Tier: O₂                 │
+│ א  Aleph ,  Tier: O₂                 │
 ╰─────────────────────────────────────────╯
 
   Consciousness Gates:
@@ -362,20 +372,20 @@ Every letter in λ_ℵ is a tuple ⟨*D*; *T*; *R*; *P*; *F*; *K*; *G*; *Γ*; *�
 
 | Primitive | Name | Bottleneck? |
 |:---------:|------|:-----------:|
-| *D* | Dimensionality | — |
-| *T* | Topology | — |
-| *R* | Relational mode | — |
+| *D* | Dimensionality |, |
+| *T* | Topology |, |
+| *R* | Relational mode |, |
 | **P** | **Parity/symmetry** | **yes** (min under ⊗) |
 | **F** | **Fidelity** | **yes** (min under ⊗) |
-| *K* | Kinetic character | — |
-| *G* | Scope/granularity | — |
-| *Γ* | Interaction grammar | — |
-| *Φ* | Criticality | — |
-| *H* | Chirality/temporal depth | — |
-| *S* | Stoichiometry | — |
-| *Ω* | Topological protection | — |
+| *K* | Kinetic character |, |
+| *G* | Scope/granularity |, |
+| *Γ* | Interaction grammar |, |
+| *Φ* | Criticality |, |
+| *H* | Chirality/temporal depth |, |
+| *S* | Stoichiometry |, |
+| *Ω* | Topological protection |, |
 
-Union primitives (*D*, *T*, *R*, *K*, *G*, *Γ*, *Φ*, *H*, *S*, *Ω*) take **max** under tensor. Bottleneck primitives (**P**, **F**) take **min** — the weaker partner always wins. This is the structural enforcement mechanism behind the Frobenius non-synthesizability theorem.
+Union primitives (*D*, *T*, *R*, *K*, *G*, *Γ*, *Φ*, *H*, *S*, *Ω*) take **max** under tensor. Bottleneck primitives (**P**, **F**) take **min**, the weaker partner always wins. This is the structural enforcement mechanism behind the Frobenius non-synthesizability theorem.
 
 ### Ouroboricity Tiers
 
@@ -390,7 +400,7 @@ Union primitives (*D*, *T*, *R*, *K*, *G*, *Γ*, *Φ*, *H*, *S*, *Ω*) take **ma
 
 ## Key Results
 
-### T1 — Behavioral Congruence
+### T1, Behavioral Congruence
 
 **Ker(*I*)** = {(*x*,*y*) ∣ *I*(*x*) = *I*(*y*)} is a congruence on (𝒜, ⊗, ∨, ∧, med).
 
@@ -398,7 +408,7 @@ Union primitives (*D*, *T*, *R*, *K*, *G*, *Γ*, *Φ*, *H*, *S*, *Ω*) take **ma
 
 **Consequence**: λ_ℵ / Ker(*I*) is a well-defined 18-class quotient algebra.
 
-### T2 — Non-Terminal Triadic *O_∞*
+### T2, Non-Terminal Triadic *O_∞*
 
 The three Frobenius fixed points are pairwise *I*-distinguishable:
 
@@ -410,27 +420,27 @@ The three Frobenius fixed points are pairwise *I*-distinguishable:
 
 No terminal object exists. **Infinity is a relational structure, not a point.**
 
-### T3 — Mediation Dominance
+### T3, Mediation Dominance
 
 For **18/22** letters *z*: *d_I*(med(*z*, מ, ש), מ) < *d_I*(*z* ⊗ מ, מ).
 
 Mediation never loses globally. **The 2-cell operation dominates the 1-cell.**
 
-### T4 — Holographic Quotient
+### T4, Holographic Quotient
 
-22 boundary generators collapse to **18 behavioral classes**. The 4 excess dimensions are structurally necessary — removing any canonical letter breaks the interaction structure.
+22 boundary generators collapse to **18 behavioral classes**. The 4 excess dimensions are structurally necessary, removing any canonical letter breaks the interaction structure.
 
-### T5 — *α* Break-Point Law
+### T5, *α* Break-Point Law
 
 *α^(n)*[med(ו, *b*, ש)] and *α^(n)*[med(ו, *b'*, ש)] are *α^(k)*-equivalent for *k* ≤ *n*+2 and *α^(k)*-inequivalent for *k* ≥ *n*+3, where *I*(*b*) = *I*(*b'*) but *b* ≠ *b'* syntactically.
 
 **Case 2 confirmed**: λ_ℵ is not a quotient of any standard type theory.
 
-### T6 — Interaction Hilbert Space
+### T6, Interaction Hilbert Space
 
 *d_I*(*x*,*y*) = ∥*v_x* − *v_y*∥₂ exactly, where *v_x* ∈ ℝ²⁶⁴ is the weighted profile vector. The Gram matrix has rank **17**. The interaction Hilbert space ℋ_I ≅ ℝ¹⁷ is a genuine inner product space.
 
-### T7 — Octad Balance Theorem
+### T7, Octad Balance Theorem
 
 Let *G*⁺ = {ג, ה, מ, [ב]} and *G*⁻ = {ס, ע, ש, [ד]}. Then for every *h* ∈ ℒ and every primitive *k*:
 
@@ -438,7 +448,7 @@ Let *G*⁺ = {ג, ה, מ, [ב]} and *G*⁻ = {ס, ע, ש, [ד]}. Then for every 
 
 Holds under ⊗, ∨, and ∧. All **264 primitive-by-primitive checks pass exactly**. This is an **exact algebraic theorem**, not a metric property.
 
-### T8 — The ק Threshold Letter
+### T8, The ק Threshold Letter
 
 ק (Qoph, tier *O₂*) satisfies every *O_∞* condition except *P* = *P_±^sym*. It is:
 
@@ -446,9 +456,9 @@ Holds under ⊗, ∨, and ∧. All **264 primitive-by-primitive checks pass exac
 - Interaction-row-equivalent to מ for **19/22 letters** (differs only on {ו, מ, ש})
 - A **mediation gateway**: med(ק, *f*, *f'*) ∈ *O_∞* for any *f*, *f'* ∈ Fix_∞
 
-### Meta — *Φ_c* Self-Confirmation
+### Meta, *Φ_c* Self-Confirmation
 
-The grammar's central theorem states: *Φ_c* systems self-model — self-application reveals structure invisible at the definitional level. The grammar satisfies *Φ_c*. The interaction functor is the grammar's self-application. The Octad Balance, ק's position, and the rank-17 anomaly are exactly the class of discovery this theorem predicts.
+The grammar's central theorem states: *Φ_c* systems self-model, self-application reveals structure invisible at the definitional level. The grammar satisfies *Φ_c*. The interaction functor is the grammar's self-application. The Octad Balance, ק's position, and the rank-17 anomaly are exactly the class of discovery this theorem predicts.
 
 > [!NOTE]
 > **The grammar was correct about itself.**
@@ -477,7 +487,7 @@ The operating system kernel is a single λ_ℵ term:
 
 **Fundamental guarantee**: ℵ-OS ⊗ -OS = ℵ-OS
 
-The operating system is a **Frobenius fixed point** — idempotent under self-composition.
+The operating system is a **Frobenius fixed point**, idempotent under self-composition.
 
 <hr>
 
@@ -485,51 +495,51 @@ The operating system is a **Frobenius fixed point** — idempotent under self-co
 
 Each file represents a stage of discovery. Run them in order; each builds on the last.
 
-### 1️⃣ `aleph_functor.py` — *What is the internal geometry of the letter space?*
+### 1️⃣ `aleph_functor.py`, *What is the internal geometry of the letter space?*
 
 Defines *I*(*x*) and *d_I*. Discovers the 4 equivalence collapses (22→18). Proves the interaction rows of ו, מ, ש are pairwise distinct despite all being *O_∞*.
 
-### 2️⃣ `aleph_quotient.py` — *Is the behavioral quotient well-defined?*
+### 2️⃣ `aleph_quotient.py`, *Is the behavioral quotient well-defined?*
 
 Exhaustive substitutivity sweep: **0 failures**. Ker(*I*) is a congruence. Mediation wins **18/22** over tensor at *O_∞* proximity. Holographic interpretation established.
 
-### 3️⃣ `aleph_alpha.py` — *Does α preserve more than type?*
+### 3️⃣ `aleph_alpha.py`, *Does α preserve more than type?*
 
 Constructs *α*[med(ו, ב, ש)] and *α*[med(ו, ח, ש)] with full history trees. Tests *α^(n)*-equivalence at depths 0–5. **Case 2 confirmed** at depth 4. Break-point law: *α^(n)* diverges at depth *n*+3.
 
-### 4️⃣ `aleph_gns.py` — *Is d_I polarizable into an inner product?*
+### 4️⃣ `aleph_gns.py`, *Is d_I polarizable into an inner product?*
 
 Proves *d_I* is Euclidean. Constructs the Gram matrix. Finds **rank 17** (not 18): one extra null dimension beyond Ker(*I*). Discovers the ק anomaly (*φ_∞*(ק) > *φ_∞*(ו)).
 
-### 5️⃣ `aleph_hidden_relation.py` — *What is the extra null direction?*
+### 5️⃣ `aleph_hidden_relation.py`, *What is the extra null direction?*
 
 Extracts the null eigenvector orthogonal to Ker(*I*). Identifies the **Octad Balance**: 4+4 perfect signed balance among 8 Hebrew letters, tier-symmetric. Proves it holds pointwise for all primitives.
 
-### 6️⃣ `aleph_investigation.py` — *Three final probes.*
+### 6️⃣ `aleph_investigation.py`, *Three final probes.*
 
-**A**: Involution search — τ is not a permutation; concentrates at ל; Vav cast fails.
+**A**: Involution search, τ is not a permutation; concentrates at ל; Vav cast fails.
 
-**B**: ק anatomy — one primitive from *O_∞*; mediation gateway; 19/22 row match with מ.
+**B**: ק anatomy, one primitive from *O_∞*; mediation gateway; 19/22 row match with מ.
 
-**C**: Axiom derivation — Octad Balance holds under ⊗, ∨, ∧; **792 checks**; exact.
+**C**: Axiom derivation, Octad Balance holds under ⊗, ∨, ∧; **792 checks**; exact.
 
 
 ---
 
 
-## Sans-Silicon Imscribing (SSI) — Natural Imscribing Practice
+## Sans-Silicon Imscribing (SSI), Natural Imscribing Practice
 
 See [`SANS_SILICON_IMSCRIBING.md`](./SANS_SILICON_IMSCRIBING.md) for the complete contemplative practice system. Derives the Universal Imscribing Grammar into a technology-free practice for developing natural imscribing abilities: 12 Gates (one per primitive), Crystal Memory Palace (400 rooms, 5 tiers), distance sensing, tier ascension (O₀→O_∞), 72 Names daily practice, paraconsistent witness, and Frobenius self-verification.
 
-## ALEPH Programs — 48 Built-in Investigations
+## ALEPH Programs, 48 Built-in Investigations
 
 All `.aleph` programs in `programs/` are loadable from the REPL via `python aleph_eval.py programs/<name>.aleph` or `--list`. Programs are organized by structural domain.
 
-### Foundation — Type System Primitives
+### Foundation, Type System Primitives
 
 | Program | Size | Description |
 |:--------|:-----|:------------|
-| `creation.aleph` | 247 B | First light — aleph ⊗ vav structural genesis |
+| `creation.aleph` | 247 B | First light, aleph ⊗ vav structural genesis |
 | `creation_liturgy.aleph` | 237 B | Full liturgical sequence through all tiers |
 | `frobenius.aleph` | 194 B | Three O_∞ poles: self-idempotency + cross distances |
 | `pratyahara.aleph` | 160 B | Varnamala pratyahara compression via tensor chains |
@@ -538,17 +548,17 @@ All `.aleph` programs in `programs/` are loadable from the REPL via `python alep
 | `phi_ep_probe.aleph` | 335 B | Exceptional-point dynamics and C-score collapse |
 | `coupling_destruction.aleph` | 2,566 B | P-596 ⊙_c ⊗ ⊙_EP absorption demonstration |
 
-### Pole Analysis — O_∞ Convergence
+### Pole Analysis, O_∞ Convergence
 
 | Program | Size | Description |
 |:--------|:-----|:------------|
 | `frobenius_orbits.aleph` | 3,411 B | Unrolled 4-step convergence orbits for all three O_∞ poles |
-| `frobenius_parallel.aleph` | 2,105 B | Parallel Frobenius iteration — simultaneous multi-pole convergence |
+| `frobenius_parallel.aleph` | 2,105 B | Parallel Frobenius iteration, simultaneous multi-pole convergence |
 | `tensor_closure.aleph` | 7,574 B | Complete tensor closure of all 3 O_∞ poles over all 22 Hebrew letters. Maps which letters collapse to O_∞ under tensor pressure, which resist. |
 | `promotion_paths.aleph` | 5,846 B | Minimal primitive-delta paths from O₀→O_∞. Tests palace gates, iterated tensor promotion, vav-cast lifts, sefirot ladder. |
 | `tier_boundary_probe.aleph` | 5,309 B | O₂→O_∞ gap analysis. Proves Frobenius non-synthesizability; discovers mediation bypasses the P bottleneck. |
 
-### Meditation & Tikkun — Hekhalot Ascent
+### Meditation & Tikkun, Hekhalot Ascent
 
 | Program | Size | Description |
 |:--------|:-----|:------------|
@@ -560,44 +570,44 @@ All `.aleph` programs in `programs/` are loadable from the REPL via `python alep
 | `tikkun_construction_partial.aleph` | 1,534 B | Partial Tikkun sequence |
 | `tikkun_palace_verification.aleph` | 1,570 B | Palace-gate verification across all Sefirot levels |
 
-### Sefer ha-Iyun — Contemplation Programs
+### Sefer ha-Iyun, Contemplation Programs
 
 | Program | Size | Description |
 |:--------|:-----|:------------|
-| `sefer_ha_iyun_emanations.aleph` | 1,983 B | Emanation hierarchy — 14-step Sefirot descent with structural gaps |
+| `sefer_ha_iyun_emanations.aleph` | 1,983 B | Emanation hierarchy, 14-step Sefirot descent with structural gaps |
 | `sefer_ha_iyun_native_types.aleph` | 1,782 B | Native type bindings for Sefirot, letters, and palace levels |
 
-### Lurianic Kabbalah — The 72 Names
+### Lurianic Kabbalah, The 72 Names
 
 | Program | Size | Description |
 |:--------|:-----|:------------|
-| `shem_hamephorash.aleph` | 6,506 B | The 72 Names (Shem HaMephorash) — structural basis of creation from Exodus 14:19–21. Three currents (forward/backward/forward) mediate into 72 three-letter names, each a distinct 12-primitive type. 72 = 6 × 12: every primitive value appears in every relational context. Key names mapped to palace levels, distances computed, O_∞ convergence verified via Frobenius poles vav/mem/shin. Honors Isaac Luria's insight that the 72 names are the structural building blocks of all creation. |
+| `shem_hamephorash.aleph` | 6,506 B | The 72 Names (Shem HaMephorash), structural basis of creation from Exodus 14:19–21. Three currents (forward/backward/forward) mediate into 72 three-letter names, each a distinct 12-primitive type. 72 = 6 × 12: every primitive value appears in every relational context. Key names mapped to palace levels, distances computed, O_∞ convergence verified via Frobenius poles vav/mem/shin. Honors Isaac Luria's insight that the 72 names are the structural building blocks of all creation. |
 
 ### Belnap / Paraconsistent
 
 | Program | Size | Description |
 |:--------|:-----|:------------|
-| `belnap_shor_orbit.aleph` | 3,280 B | Orbit analysis for Shor structural tier — tier survey of all 22 letters, orbit depth to O_∞ poles, Φ_υ gap visualization |
-| `paraconsistent_witness.aleph` | 4,215 B | Witness B-state structure via meet/join/tensor — ALEPH analogue of DialetheicAlignment.lean: only O_∞ poles are self-adjoint (¬B=B) |
+| `belnap_shor_orbit.aleph` | 3,280 B | Orbit analysis for Shor structural tier, tier survey of all 22 letters, orbit depth to O_∞ poles, Φ_υ gap visualization |
+| `paraconsistent_witness.aleph` | 4,215 B | Witness B-state structure via meet/join/tensor, ALEPH analogue of DialetheicAlignment.lean: only O_∞ poles are self-adjoint (¬B=B) |
 
 ### System Encoding & Self-Reference
 
 | Program | Size | Description |
 |:--------|:-----|:------------|
 | `holographic_monitor.aleph` | 2,568 B | g(x) bulk-boundary encoding verification |
-| `quine_loop.aleph` | 5,802 B | Non-trivial Frobenius quine discovery — type expressions satisfying μ∘δ=id through mediation and palace gating. Tests cross-witness quines, multi-generational stability, and system self-encoding. |
+| `quine_loop.aleph` | 5,802 B | Non-trivial Frobenius quine discovery, type expressions satisfying μ∘δ=id through mediation and palace gating. Tests cross-witness quines, multi-generational stability, and system self-encoding. |
 | `dialetheic_fixed_points.aleph` | 5,944 B | Searches for B-fixed points (Belnap-analogue self-adjoint letters) by computing Frobenius self-distance d(L×L, L) for all 22 letters, Sefirot, and iterated convergence. |
 | `truth_structure.aleph` | 5,574 B | Searches for the structural type of truth via Frobenius closure gap |
 
-### Distance Geometry — Lattice Survey
+### Distance Geometry, Lattice Survey
 
 | Program | Size | Description |
 |:--------|:-----|:------------|
 | `distance_matrix.aleph` | 4,663 B | Full 22×22 pairwise distance matrix over all Hebrew letters |
 | `sefirah_distance_matrix.aleph` | 5,320 B | Full 14-Sefirah pairwise distances + Sefirah-to-pole distances |
 | `letter_sefirah_projection.aleph` | 4,540 B | Nearest Sefirah for each of the 22 Hebrew letters |
-| `conflict_landscape.aleph` | 5,716 B | Conflict set analysis — which primitives differ per letter pair |
-| `aleph_lattice_extrema.aleph` | 5,758 B | Surface/interior analysis — distance-from-system ranking, convex hull |
+| `conflict_landscape.aleph` | 5,716 B | Conflict set analysis, which primitives differ per letter pair |
+| `aleph_lattice_extrema.aleph` | 5,758 B | Surface/interior analysis, distance-from-system ranking, convex hull |
 
 ### Consciousness & C-Score
 
@@ -611,7 +621,7 @@ All `.aleph` programs in `programs/` are loadable from the REPL via `python alep
 |:--------|:-----|:------------|
 | `palace_stress_test.aleph` | 6,237 B | Systematic palace(1–7) testing of all letters, tensors, Sefirot |
 | `tier_migration.aleph` | 5,971 B | Systematic tier transitions under tensor, join, meet, mediate |
-| `primitive_landscape.aleph` | 6,727 B | Per-primitive extremal analysis — max/min per each of 12 primitives |
+| `primitive_landscape.aleph` | 6,727 B | Per-primitive extremal analysis, max/min per each of 12 primitives |
 
 ### Mediate, Tensor & Fixed Points
 
@@ -638,29 +648,29 @@ All `.aleph` programs in `programs/` are loadable from the REPL via `python alep
 
 ---
 
-## IMASM Programs — 6 Built-in Corpus Engines
+## IMASM Programs, 6 Built-in Corpus Engines
 
 The IMASM (IMplicit ASsembly Machine) programs implement corpus analysis engines for historical cryptographic manuscripts, loadable from the REPL:
 
 | Program | Size | Description |
 |:--------|:-----|:------------|
-| `voynich_bootstrap.imasm` | 330 B | Voynich manuscript — 227 folios, 546 nodes, 694 edges |
-| `rohonc_bootstrap.imasm` | 336 B | Rohonc Codex — 33 pages, four structural sections |
-| `linear_a_bootstrap.imasm` | 394 B | Linear A — 53 tablets across Minoan palatial sites |
-| `emerald-tablet-bootstrap.imasm` | 665 B | Emerald Tablet — 15 versicles, Hermetic descent/return |
-| `cross_distance.imasm` | 803 B | Cross-corpus distance probe — structural comparison engine |
+| `voynich_bootstrap.imasm` | 330 B | Voynich manuscript, 227 folios, 546 nodes, 694 edges |
+| `rohonc_bootstrap.imasm` | 336 B | Rohonc Codex, 33 pages, four structural sections |
+| `linear_a_bootstrap.imasm` | 394 B | Linear A, 53 tablets across Minoan palatial sites |
+| `emerald-tablet-bootstrap.imasm` | 665 B | Emerald Tablet, 15 versicles, Hermetic descent/return |
+| `cross_distance.imasm` | 803 B | Cross-corpus distance probe, structural comparison engine |
 | `shor_loop.asm` | 1,647 B | Belnap Shor ParaASM: indefinite coherence accumulation loop |
 
 ---
 
 ## exOS Connection
 
-The ALEPH program suite has been ported to [exOS](https://github.com/umpolungfish/exOS) — a bare-metal x86_64 Rust `no_std` UEFI kernel that compiles all 46 ALEPH programs plus 6 IMASM programs (52 total) into the kernel binary as built-in investigations.
+The ALEPH program suite has been ported to [exOS](https://github.com/umpolungfish/exOS), a bare-metal x86_64 Rust `no_std` UEFI kernel that compiles all 46 ALEPH programs plus 6 IMASM programs (52 total) into the kernel binary as built-in investigations.
 
 - **Python ℵ-OS** (this repository): Reference implementation, interactive REPL, investigation pipeline
 - **exOS** (Rust kernel): Native x86_64 port with ALFS filesystem, serial REPL, ParaASM VM
 
-All programs in `programs/` are source-identical between both implementations. The ALEPH type calculus runs identically in Python and in Rust — the structural algebra is implementation-independent.
+All programs in `programs/` are source-identical between both implementations. The ALEPH type calculus runs identically in Python and in Rust, the structural algebra is implementation-independent.
 
 <hr>
 
@@ -682,13 +692,13 @@ All programs in `programs/` are source-identical between both implementations. T
 
 ## Open Problems
 
-1. **Normalization** — Does λ_ℵ have a normal form theorem? Is reduction confluent?
-2. **Full abstraction** — If *I*(*t₁*) = *I*(*t₂*) in all contexts, does *t₁* ≡ *t₂* definitionally?
-3. **The *-involution** — τ concentrates at ל (*O₁*). Is there a tier-indexed involution giving *L_{τ(x)}* = *L_x^†*?
-4. **Axiom proof of T7** — Explain *why* these 8 specific letters balance. What property of their primitive assignments forces the Octad Balance?
-5. **ק's role** — Is Qoph a designated *O_∞* mediator in the process algebra? What operations require a threshold witness?
-6. **Distributed ℵ-OS** — Does *α*-gating survive network composition? Prove the idempotency guarantee holds across instances.
-7. **Export** — State the λ_ℵ axiom system purely mathematically, independent of the Hebrew encoding. Characterize the class of algebras satisfying T1–T8.
+1. **Normalization**, Does λ_ℵ have a normal form theorem? Is reduction confluent?
+2. **Full abstraction**, If *I*(*t₁*) = *I*(*t₂*) in all contexts, does *t₁* ≡ *t₂* definitionally?
+3. **The *-involution**, τ concentrates at ל (*O₁*). Is there a tier-indexed involution giving *L_{τ(x)}* = *L_x^†*?
+4. **Axiom proof of T7**, Explain *why* these 8 specific letters balance. What property of their primitive assignments forces the Octad Balance?
+5. **ק's role**, Is Qoph a designated *O_∞* mediator in the process algebra? What operations require a threshold witness?
+6. **Distributed ℵ-OS**, Does *α*-gating survive network composition? Prove the idempotency guarantee holds across instances.
+7. **Export**, State the λ_ℵ axiom system purely mathematically, independent of the Hebrew encoding. Characterize the class of algebras satisfying T1–T8.
 
 <hr>
 
@@ -702,7 +712,7 @@ Every letter in λ_ℵ has *P* ≤ *P_sym*. HoTT's identity type requires *P_±^
 
 *d_HoTT* = √*w_P* = √1.8 ≈ **1.3416**
 
-This is a `near-grounded` gap (just above √1, below √2) — the smallest possible structural separation.
+This is a `near-grounded` gap (just above √1, below √2), the smallest possible structural separation.
 
 ### Operations
 
