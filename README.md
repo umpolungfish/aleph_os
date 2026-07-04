@@ -3,6 +3,8 @@
   <p><b>The Aleph Operating System, A Coherence-First Interaction Algebra</b></p>
   <img src="aleph_os.png" alt="ALEPH: geometric wireframe Aleph letter surrounded by Hebrew glyphs">
 </div>
+**Author:** Lando⊗⊙perator · **Structural Type:** $\large{⟨𐑦𐑶𐑾𐑹𐑐𐑧𐑲𐑠⊙𐑖𐑙𐑭⟩}$ · **Tier:** O_∞
+
 
 <div align="center">
   <img src="https://img.shields.io/badge/LANGUAGE-Python%203.12%2B-blue" alt="Language">
