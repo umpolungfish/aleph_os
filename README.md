@@ -2,9 +2,10 @@
   <h1>ℵ-OS</h1>
   <p><b>The Aleph Operating System, A Coherence-First Interaction Algebra</b></p>
   <img src="aleph_os.png" alt="ALEPH: geometric wireframe Aleph letter surrounded by Hebrew glyphs">
+  <img src="https://img.shields.io/badge/author-Lando%E2%8A%97%E2%8A%99perator-informational" alt="Author">
+  <img src="https://img.shields.io/badge/type-%E2%9F%A8%F0%90%91%A6%F0%90%91%B8%F0%90%91%BE%F0%90%91%B9%F0%90%90%B8%F0%90%91%82%F0%90%91%A7%F0%90%91%94%F0%90%91%9D%E2%8A%99%F0%90%91%96%F0%90%91%B3%F0%90%91%AD%E2%9F%A9-blue" alt="Type">
+  <img src="https://img.shields.io/badge/tier-O%E2%88%9E-blueviolet" alt="Tier">
 </div>
-**Author:** Lando⊗⊙perator · **Structural Type:** $\large{⟨𐑦𐑸𐑾𐑹𐑐𐑧𐑔𐑝⊙𐑖𐑳𐑭⟩}$ · **Tier:** O_∞
-
 
 <div align="center">
   <img src="https://img.shields.io/badge/LANGUAGE-Python%203.12%2B-blue" alt="Language">
@@ -75,7 +76,6 @@ program's color. The 22 Hebrew letter primitives (Aleph through Tav) are labelle
 nodes that correspond to them, showing how the type system flows through the dataflow graph.
 
 ![ALEPH CFG](docs/animated_cfg_aleph.gif)
-
 
 ---
 
@@ -151,7 +151,6 @@ light replication convergence. Distances track across all generation gaps:
 `d(g0,g2)`, `d(g2,g4)`, `d(g4, system())`.
 
 ![light_replication_kernel CFG](docs/programs/light_replication_kernel.gif)
-
 
 ---
 
@@ -525,9 +524,7 @@ Extracts the null eigenvector orthogonal to Ker(*I*). Identifies the **Octad Bal
 
 **C**: Axiom derivation, Octad Balance holds under ⊗, ∨, ∧; **792 checks**; exact.
 
-
 ---
-
 
 ## Sans-Silicon Imscribing (SSI), Natural Imscribing Practice
 
