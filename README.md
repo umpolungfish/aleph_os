@@ -664,7 +664,7 @@ The IMASM (IMplicit ASsembly Machine) programs implement corpus analysis engines
 
 ## exOS Connection
 
-The ALEPH program suite has been ported to [exOS](https://github.com/umpolungfish/exOS), a bare-metal x86_64 Rust `no_std` UEFI kernel that compiles all 46 ALEPH programs plus 6 IMASM programs (52 total) into the kernel binary as built-in investigations.
+The ALEPH program suite has been ported to [exOS](https://github.com/USER/exOS), a bare-metal x86_64 Rust `no_std` UEFI kernel that compiles all 46 ALEPH programs plus 6 IMASM programs (52 total) into the kernel binary as built-in investigations.
 
 - **Python ℵ-OS** (this repository): Reference implementation, interactive REPL, investigation pipeline
 - **exOS** (Rust kernel): Native x86_64 port with ALFS filesystem, serial REPL, ParaASM VM
