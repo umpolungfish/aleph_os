@@ -1,50 +1,23 @@
-Moved ancillary documents to ig-docs (2026-06-14)
+Retire the gen-2 glyph-pair notation for bare Shavian
 
-21 files moved: KABBALIST_NARRATIVE.md/.pdf, KABBALIST_OPERATOR.md/.pdf,
-REPAIRING.md/.pdf, ALEPHHHHHHH.md, alephvav.md, SANS_SILICON_IMSCRIBING.md,
-docs/EGYPTIAN_MEDU.md, docs/HEBREW_TYPE_LANGUAGE.md, docs/PRIMITIVE_THEOREMS.md,
-docs/SYNTHONICON_DIAPHORICS.md, docs/SYNTHONICON_ONTICS.md,
-docs/TECHNICAL_CONTRIBUTIONS.md/.pdf, REPAIRING_figs/ (all .md/.pdf).
-Kept: README.md, USAGE.md, docs/ALEPH_SPEC.md, docs/LAMBDA_ALEPH.md,
-docs/ALEPH_DISCOVERY.md, docs/README_FORMATTER.md, all source code.
+The primitives stand on their own now, so the old `⊙_ÿ` / `Ð_ω` / `Φ_}` forms are
+residue. Rewrote all 49 of them to their Shavian values across source: 19,645
+tokens, 670 files.
 
----
+The map was not typed. I enumerated the gen-2 tokens that actually appear in the
+corpus, paired each marker to its phonetic name, and resolved every value through
+`models.from_symbol` — so the values come from code that runs, not from a table.
+Reality arbitrated one conflict: the SOUNDS document gives `Ř_Ð`, `Γ_\`, `Σ_M`,
+but the corpus has `Ř_=`, `Γ_ʔ`, `Σ_ï` in the tens of thousands and the doc's
+variants nowhere at all. The doc is mangled; the files are the record.
 
-SNS_PRIME.md notation migration: O_inf→O_∞, O_0→O₀, O_1→O₁, O_2→O₂ (32 files)
+Left alone deliberately: `ig_outputs/` and the other run artifacts, ~455k tokens
+of it. Those runs really did emit gen-2 in May. Rewriting them would forge the
+record of what they produced, which is not tidying. The two naming documents keep
+their old-notation columns for the same reason.
 
----
-
-REPAIRING.md: six TikZ figures with correct Hebrew rendering (2026-05-29)
-  — ltx-fig preprocessor extracts and compiles embedded ```latex blocks as standalone figures
-  — Hebrew fix: \newfontfamily\hebrewfont{Noto Sans Hebrew}[Script=Hebrew, RightToLeft]
-    with explicit \heb{...} wrapping at every node (vowel-pointed forms included)
-  — ltx-fig font patches cleared: standalone figures manage their own fontspec, no patching needed
-
-KABBALIST_NARRATIVE.md + ltx: 1500s kabbalist narrative + compile wrapper (2026-05-28)
-  — Hebrew characters added throughout: letter glyphs, SY quote, session record lines, key terms
-KABBALIST_OPERATOR.md: operator's manual for the ALEPH_OS (2026-05-28)
-=======================================================================
-
-New document: KABBALIST_OPERATOR.md
-
-An operator's manual explaining how a kabbalist would use the four
-mechanical devices of the ALEPH_OS — the REPL (aleph_eval.py), the
-.aleph liturgical programs, the .imasm corpus bootstrap instruments, and
-the six-stage Python investigation pipeline — to conduct the structural
-operations of Sefer Yetzirah on silicon.
-
-Covers:
-- Device architecture and mode of use for each instrument
-- SSI (Sans-Silicon Imscribing) as prerequisite preparation
-- The 22-letter tier census (the kabbalist's crystal map)
-- All ten operation classes: creation, tikkun, sefirot, divine names,
-  contemplative, frobenius, coupling destruction, witness, holographic
-  monitoring, promotion/ascent, bootstrap
-- The six-stage investigation pipeline (scholarly mode)
-- Output reading reference table
-- The operator's workflow (session protocol)
-- Structural wisdom: the computed surprises (Vav as third mother,
-  triadic apex, mediation > tensor, holographic 22→18, Kuf null-space)
-
-All structural quantities cited were computed via tool round-trip from
-alephvav.md program traces; no value was estimated.
+Bare `Phi` is untouched. Gen-1 `Phi` is today's ⊙, but today's `Φ` is Parity —
+those are genuinely different structures that happen to share letters, and no
+register makes them one, so every site needs reading. Contrast ⊙ appearing as
+both primitive and value, which is not a collision at all: `⊙ ≠ ⊙` is operator ≠
+operation, and it states `μ∘δ ≠ id` exactly.
