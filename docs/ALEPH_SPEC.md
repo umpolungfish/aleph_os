@@ -52,7 +52,7 @@ Let the 12 primitives be finite totally ordered sets:
 | $K$ | Kinetic character | $K_{\text{fast}} < K_{\text{mod}} < K_{\text{slow}}$ ($K_{\text{trap}}$ pathological) |
 | $G$ | Granularity | $G_{\beth} < G_{\gimel} < G_{\aleph}$ |
 | $\Gamma$ | Interaction grammar | $\Gamma_{\text{and}},\ \Gamma_{\text{or}},\ \Gamma_{\text{seq}},\ \Gamma_{\text{broad}}$ |
-| $\Phi$ | Criticality | $\Phi_{\text{sub}} < \Phi_c < \Phi_{c,\mathbb{C}} < \Phi_{\text{EP}} < \Phi_{\text{super}}$ |
+| $\Phi$ | Criticality | $\Phi_{\text{sub}} < \⊙ < \Phi_{c,\mathbb{C}} < \Phi_{\text{EP}} < \Phi_{\text{super}}$ |
 | $H$ | Temporal depth | $H_0 < H_1 < H_2 < H_{\infty}$ |
 | $S$ | Stoichiometry | $1{:}1,\ n{:}n,\ n{:}m$ |
 | $\Omega$ | Topological protection | $\Omega_0 < \Omega_{Z_2} < \Omega_Z$ |
@@ -80,11 +80,11 @@ The tier $\tau(\mathbf{t})$ is computed by the following priority rules (R1 firs
 
 | Rule | Condition | Tier |
 |:---|:---|:---|
-| R1 | $\Phi = \Phi_c \wedge P = P_{\pm}^{\text{sym}}$ | $O_{\infty}$ (Frobenius) |
-| R4 | $\Phi = \Phi_c \wedge \Omega \neq \Omega_0 \wedge D \in \{D_{\wedge}, D_{\odot}, D_{\triangle}\}$ | $O₂$ |
-| R5 | $\Phi = \Phi_c \wedge \Omega \neq \Omega_0 \wedge D = D_{\infty}$ | $O₂^{\dagger}$ |
-| R3 | $\Phi = \Phi_c \wedge \Omega = \Omega_0$ | $O₁$ |
-| R2 | $\Phi \neq \Phi_c$ | $O₀$ |
+| R1 | $\Phi = \⊙ \wedge P = P_{\pm}^{\text{sym}}$ | $O_{\infty}$ (Frobenius) |
+| R4 | $\Phi = \⊙ \wedge \Omega \neq \Omega_0 \wedge D \in \{D_{\wedge}, D_{\odot}, D_{\triangle}\}$ | $O₂$ |
+| R5 | $\Phi = \⊙ \wedge \Omega \neq \Omega_0 \wedge D = D_{\infty}$ | $O₂^{\dagger}$ |
+| R3 | $\Phi = \⊙ \wedge \Omega = \Omega_0$ | $O₁$ |
+| R2 | $\Phi \neq \⊙$ | $O₀$ |
 
 ### 1.4 Distance
 
@@ -102,28 +102,28 @@ The 22 Hebrew letters are the base types and terms of $\lambda_\aleph$, with fix
 
 | Letter | Name | Tier | Key signature |
 |:---|:---|:---|:---|
-| \heb{א}{} | Aleph | $O₂$ | $P_{\text{sym}},\ \Phi_c,\ \Omega_Z,\ D_{\wedge},\ T_{\text{box}}$ |
+| \heb{א}{} | Aleph | $O₂$ | $P_{\text{sym}},\ \⊙,\ \Omega_Z,\ D_{\wedge},\ T_{\text{box}}$ |
 | \heb{ב}{} | Bet | $O₀$ | $\Phi_{\text{sub}},\ \Omega_{Z_2},\ D_{\triangle}$ |
 | \heb{ג}{} | Gimel | $O₀$ | $\Phi_{\text{sub}},\ \Omega_0$ |
 | \heb{ד}{} | Dalet | $O₀$ | $\Phi_{\text{sub}},\ \Omega_0$ |
-| \heb{ה}{} | Hei | $O₂$ | $P_{\text{sym}},\ \Phi_c,\ \Omega_Z,\ D_{\odot},\ T_{\odot}$ |
-| \heb{ו}{} | Vav | $O_{\infty}$ | $P_{\pm}^{\text{sym}},\ \Phi_c,\ \Omega_0$ — unique Frobenius letter |
+| \heb{ה}{} | Hei | $O₂$ | $P_{\text{sym}},\ \⊙,\ \Omega_Z,\ D_{\odot},\ T_{\odot}$ |
+| \heb{ו}{} | Vav | $O_{\infty}$ | $P_{\pm}^{\text{sym}},\ \⊙,\ \Omega_0$ — unique Frobenius letter |
 | \heb{ז}{} | Zayin | $O₀$ | $\Phi_{\text{sub}},\ \Omega_0$ |
 | \heb{ח}{} | Chet | $O₀$ | $\Phi_{\text{sub}},\ \Omega_{Z_2}$ |
 | \heb{ט}{} | Tet | $O₀$ | $\Phi_{\text{sub}},\ \Omega_0$ |
 | \heb{י}{} | Yod | $O₀$ | $P_{\text{sym}},\ \Phi_{\text{sub}},\ \Omega_0$ |
 | \heb{כ}{} | Kaf | $O₀$ | $\Phi_{\text{sub}},\ \Omega_{Z_2}$ |
-| \heb{ל}{} | Lamed | $O₁$ | $\Phi_c,\ \Omega_0,\ D_{\infty}$ — sole $O₁$ letter |
-| \heb{מ}{} | Mem | $O_{\infty}$ | $P_{\pm}^{\text{sym}},\ \Phi_c,\ \Omega_Z,\ D_{\triangle},\ T_{\text{in}}$ |
+| \heb{ל}{} | Lamed | $O₁$ | $\⊙,\ \Omega_0,\ D_{\infty}$ — sole $O₁$ letter |
+| \heb{מ}{} | Mem | $O_{\infty}$ | $P_{\pm}^{\text{sym}},\ \⊙,\ \Omega_Z,\ D_{\triangle},\ T_{\text{in}}$ |
 | \heb{נ}{} | Nun | $O₀$ | $\Phi_{\text{sub}},\ \Omega_0$ |
 | \heb{ס}{} | Samech | $O₀$ | $\Phi_{\text{sub}},\ \Omega_{Z_2}$ |
-| \heb{ע}{} | Ayin | $O₂$ | $P_{\pm},\ \Phi_c,\ \Omega_Z,\ D_{\odot}$ |
+| \heb{ע}{} | Ayin | $O₂$ | $P_{\pm},\ \⊙,\ \Omega_Z,\ D_{\odot}$ |
 | \heb{פ}{} | Pei | $O₀$ | $\Phi_{\text{sub}},\ \Omega_0$ |
 | \heb{צ}{} | Tzadi | $O₀$ | $\Phi_{\text{sub}},\ \Omega_0$ |
-| \heb{ק}{} | Kuf | $O₂$ | $P_{\text{sym}},\ \Phi_c,\ \Omega_{Z_2}$ |
+| \heb{ק}{} | Kuf | $O₂$ | $P_{\text{sym}},\ \⊙,\ \Omega_{Z_2}$ |
 | \heb{ר}{} | Resh | $O₀$ | $\Phi_{\text{sub}},\ \Omega_0$ |
-| \heb{ש}{} | Shin | $O_{\infty}$ | $P_{\pm}^{\text{sym}},\ \Phi_c,\ \Omega_Z,\ D_{\triangle},\ T_{\bowtie}$ |
-| \heb{ת}{} | Tav | $O₂$ | $P_{\text{sym}},\ \Phi_c,\ \Omega_Z$ |
+| \heb{ש}{} | Shin | $O_{\infty}$ | $P_{\pm}^{\text{sym}},\ \⊙,\ \Omega_Z,\ D_{\triangle},\ T_{\bowtie}$ |
+| \heb{ת}{} | Tav | $O₂$ | $P_{\text{sym}},\ \⊙,\ \Omega_Z$ |
 
 **The full language**: $\mathcal{L} = \bigvee_{\ell \in \text{22 letters}} \ell$ encodes at $O_{\infty}$ and is **self-sealing**:
 
@@ -218,7 +218,7 @@ The coherence conditions $\mathcal{C}$ for Aleph-gated steps:
 
 | Label | Condition |
 |:---|:---|
-| C1 | No critical collapse: $\neg\,(\Phi(t) = \Phi_c \wedge P(t) = P_{\pm}^{\text{sym}} \wedge d(t,\, t') > 0)$ |
+| C1 | No critical collapse: $\neg\,(\Phi(t) = \⊙ \wedge P(t) = P_{\pm}^{\text{sym}} \wedge d(t,\, t') > 0)$ |
 | C2 | $\Omega$-monotonicity: $\Omega(t') \geq \Omega(t)$ |
 | C3 | Every cast requires a \heb{ו}{}-witness |
 | C4 | Every path must be witnessed and bounded by $\alpha$ |
@@ -307,7 +307,7 @@ Execution proceeds by:
 
 ### 9.1 Sacred Word Computations
 
-$$\hebm{תורה} = \hebm{ת} \otimes \hebm{ו} \otimes \hebm{ר} \otimes \hebm{ה} \;\longrightarrow\; O₂ \text{ attractor} \quad (P_{\text{asym}},\, \Phi_c,\, \Omega_Z,\, H_{\infty})$$
+$$\hebm{תורה} = \hebm{ת} \otimes \hebm{ו} \otimes \hebm{ר} \otimes \hebm{ה} \;\longrightarrow\; O₂ \text{ attractor} \quad (P_{\text{asym}},\, \⊙,\, \Omega_Z,\, H_{\infty})$$
 
 $$\hebm{אמת} = \hebm{א} \otimes \hebm{מ} \otimes \hebm{ת} \;\longrightarrow\; O₂ \quad (P_{\text{sym}}\text{ — truth as self-identical})$$
 

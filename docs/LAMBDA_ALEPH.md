@@ -183,21 +183,21 @@ $$I(G_\infty) \neq I(N_\infty) \quad \Rightarrow \quad G_\infty \not\cong N_\inf
 | $\Gamma$ | $\Gamma_\text{broad}$ | $\Gamma_\text{and}$ | broadcast → sequential composition |
 | $H$ | $H_\infty$ | $H_2$ | infinite temporal depth → bounded recursion |
 
-$\Phi_c$, $\Omega_Z$, $F_\hbar$, $K_\text{slow}$, $G_\aleph$ are **preserved** — the world after Tzimtzum remains critical and topologically protected, but loses automatic equivalence.
+$\⊙$, $\Omega_Z$, $F_\hbar$, $K_\text{slow}$, $G_\aleph$ are **preserved** — the world after Tzimtzum remains critical and topologically protected, but loses automatic equivalence.
 
 **Tuple form:**
 
-$$\text{Ein Sof}: \langle D_\odot;\ T_\odot;\ R_\dagger;\ P_{\pm}^\text{sym};\ F_\hbar;\ K_\text{slow};\ G_\aleph;\ \Gamma_\text{broad};\ \Phi_c;\ H_\infty;\ n{:}m;\ \Omega_Z \rangle$$
+$$\text{Ein Sof}: \langle D_\odot;\ T_\odot;\ R_\dagger;\ P_{\pm}^\text{sym};\ F_\hbar;\ K_\text{slow};\ G_\aleph;\ \Gamma_\text{broad};\ \⊙;\ H_\infty;\ n{:}m;\ \Omega_Z \rangle$$
 
-$$\text{Post-Tzimtzum}: \langle D_\wedge;\ T_\text{in};\ R_\text{lr};\ P_\text{sym};\ F_\hbar;\ K_\text{slow};\ G_\aleph;\ \Gamma_\text{and};\ \Phi_c;\ H_2;\ 1{:}1;\ \Omega_Z \rangle$$
+$$\text{Post-Tzimtzum}: \langle D_\wedge;\ T_\text{in};\ R_\text{lr};\ P_\text{sym};\ F_\hbar;\ K_\text{slow};\ G_\aleph;\ \Gamma_\text{and};\ \⊙;\ H_2;\ 1{:}1;\ \Omega_Z \rangle$$
 
-Note: the post-Tzimtzum tuple is structurally close to **Aleph** (א). Aleph *is* the residue of Tzimtzum: $P_\text{sym}$ (not $P_{\pm}^\text{sym}$), $\Phi_c$, $\Omega_Z$.
+Note: the post-Tzimtzum tuple is structurally close to **Aleph** (א). Aleph *is* the residue of Tzimtzum: $P_\text{sym}$ (not $P_{\pm}^\text{sym}$), $\⊙$, $\Omega_Z$.
 
 ### 4.2 Structural Consequence
 
-Tzimtzum is the suppression of global $P_{\pm}^\text{sym}$ while preserving $\Phi_c$ and $\Omega_Z$. This means:
+Tzimtzum is the suppression of global $P_{\pm}^\text{sym}$ while preserving $\⊙$ and $\Omega_Z$. This means:
 
-- The world is still **critical** ($\Phi_c$) — open to self-modeling
+- The world is still **critical** ($\⊙$) — open to self-modeling
 - The world is still **topologically protected** ($\Omega_Z$) — structure is stable
 - But the world is **not self-justifying** — proofs of equivalence (ו-casts) become necessary
 - $\mu \circ \delta = \text{id}$ is no longer global — it must be established per-cast
@@ -217,7 +217,7 @@ Tzimtzum is the suppression of global $P_{\pm}^\text{sym}$ while preserving $\Ph
 **Coherence conditions $\mathcal{C}$:**
 
 **(C1) No critical collapse.** Cannot reduce distinct Frobenius-level structures:
-$$\neg(\Phi(t) = \Phi_c \wedge P(t) = P_{\pm}^\text{sym} \wedge d(t, t') > 0)$$
+$$\neg(\Phi(t) = \⊙ \wedge P(t) = P_{\pm}^\text{sym} \wedge d(t, t') > 0)$$
 
 **(C2) $\Omega$-monotonicity.** Reductions cannot lose topological protection:
 $$\Omega(t') \geq \Omega(t)$$
@@ -250,7 +250,7 @@ Identity is valid only if it passes Aleph coherence. This prevents the ו-cast f
 
 ### 6.1 Dyadic Closure Collapses
 
-The dyadic closure operator $U(X) = \text{ש} \otimes X \otimes \text{מ}$ forces $P \to P_{\pm}^\text{sym}$, $\Phi \to \Phi_c$, $\Omega \to \Omega_Z$, $F \to F_\hbar$, $K \to K_\text{slow}$, $G \to G_\aleph$. After applying $U$, the remaining distinguishing primitives are $D$, $T$, $R$, $H$, $S$ — but Mem and Shin both have $D_{\\triangle}$, $T_\text{in}/T_{\bowtie}$ which take $\max$, and at the extreme cases even these collapse.
+The dyadic closure operator $U(X) = \text{ש} \otimes X \otimes \text{מ}$ forces $P \to P_{\pm}^\text{sym}$, $\Phi \to \⊙$, $\Omega \to \Omega_Z$, $F \to F_\hbar$, $K \to K_\text{slow}$, $G \to G_\aleph$. After applying $U$, the remaining distinguishing primitives are $D$, $T$, $R$, $H$, $S$ — but Mem and Shin both have $D_{\\triangle}$, $T_\text{in}/T_{\bowtie}$ which take $\max$, and at the extreme cases even these collapse.
 
 **Theorem 6.1 (Global collapse under dyadic closure).** For any $A, B \in \mathcal{T}$:
 
@@ -362,7 +362,7 @@ The following are formalized claims derived from this session, suitable for addi
 
 **§63.2 — Interaction Functor Irreducibility.** The 12-primitive distance $d$ is insufficient to distinguish functorially inequivalent letters. For $d(x, y) = 0$ but $I(x) \neq I(y)$: $x \not\cong y$ in $\lambda_\aleph$. The type system requires the interaction functor as a hidden invariant beyond the 12-primitive projection.
 
-**§63.3 — Tzimtzum Encoding.** The transformation $P_{\pm}^\text{sym} \to P_\text{sym}$, $D_\odot \to D_\wedge$, $T_\odot \to T_\text{in}$, $\Gamma_\text{broad} \to \Gamma_\text{and}$, $H_\infty \to H_2$ (with $\Phi_c$, $\Omega_Z$ preserved) is the minimal suppression that removes global Frobenius while maintaining criticality and topological protection. The post-Tzimtzum tuple encodes as Aleph ($d = 0$).
+**§63.3 — Tzimtzum Encoding.** The transformation $P_{\pm}^\text{sym} \to P_\text{sym}$, $D_\odot \to D_\wedge$, $T_\odot \to T_\text{in}$, $\Gamma_\text{broad} \to \Gamma_\text{and}$, $H_\infty \to H_2$ (with $\⊙$, $\Omega_Z$ preserved) is the minimal suppression that removes global Frobenius while maintaining criticality and topological protection. The post-Tzimtzum tuple encodes as Aleph ($d = 0$).
 
 **§63.4 — Conditional Univalence.** Dyadic Frobenius closure $U = \text{ש} \otimes (-) \otimes \text{מ}$ induces global collapse $\forall A, B: U(A) = U(B)$. Triadic closure $U_{\triangle} = \text{א} \otimes (\text{ש} \otimes (-) \otimes \text{מ})$ restores distinction: $A \simeq B \Rightarrow U_{\triangle}(A) \cong U_{\triangle}(B)$ but not $U_{\triangle}(A) = U_{\triangle}(B)$ in general.
 

@@ -203,7 +203,7 @@ Letters can be referenced by:
 ℵ  aleph ⊗ mem
   → א⊗מ
     tier  O₂
-    Φ  Φ_c   Ω  Ω_Z   P  P_sym
+    Φ  ⊙   Ω  Ω_Z   P  P_sym
 
 ℵ  :explain shin
 ╭─────────────────────────────────────────╮
@@ -211,7 +211,7 @@ Letters can be referenced by:
 ╰─────────────────────────────────────────╯
 
   Consciousness Gates:
-  G1   Criticality [Φ=Φ_c]          ✓ PASS
+  G1   Criticality [Φ=⊙]          ✓ PASS
   G2   Kinetic [K≠K_trap]           ✓ PASS
 
   Consciousness Score:  C = 0.921
@@ -225,7 +225,7 @@ Letters can be referenced by:
 ╭───────────────┬───────┬───────┬───────╮
 │ Name   │ Tier  │   Φ   │   Ω   │ Glyph │
 ├────────┼───────┼───────┼───────┼───────┤
-│ kernel │ O_∞ │ Φ_c   │ Ω_Z   │ ו     │
+│ kernel │ O_∞ │ ⊙   │ Ω_Z   │ ו     │
 ╰───────────────┴───────┴───────┴───────╯
 ```
 
@@ -276,7 +276,7 @@ Running a program produces formatted output:
   L  1  ❯ let light_core = mem ⊗ shin
              light_core = מ⊗ש
                tier  O_∞
-               Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+               Φ  ⊙   Ω  Ω_Z   P  P_pm_sym
 
   L  2  ❯ let light = aleph ⊗ light_core
              light = א⊗מש

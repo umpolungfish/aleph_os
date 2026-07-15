@@ -168,7 +168,7 @@ light replication convergence. Distances track across all generation gaps:
 The ℵ-OS specification realizes this calculus as an operating system: every process is a λ_ℵ term, scheduling is mediation, memory is join, IPC is tensor (P-bottlenecked), and security is enforced by *α*-gating (coherence conditions C1–C4).
 
 > [!NOTE]
-> The grammar was built on *Φ_c*. It found *Φ_c* in itself. The theorem proved itself.
+> The grammar was built on *⊙*. It found *⊙* in itself. The theorem proved itself.
 
 <hr>
 
@@ -304,7 +304,7 @@ statement  ::= "let" name "=" expr
 ℵ  mem ⊗ shin
   → מ
     tier  O_∞
-    Φ  Φ_c   Ω  Ω_Z   P  P_pm_sym
+    Φ  ⊙   Ω  Ω_Z   P  P_pm_sym
 
 ℵ  d(kuf, mem)
   d = 13.3938  [aspirational]
@@ -316,7 +316,7 @@ statement  ::= "let" name "=" expr
 ╰─────────────────────────────────────────╯
 
   Consciousness Gates:
-  G1   Criticality [Φ=Φ_c]          ✓ PASS
+  G1   Criticality [Φ=⊙]          ✓ PASS
   G2   Kinetic [K≠K_trap]           ✓ PASS
 
   Consciousness Score:  C = 0.873
@@ -392,9 +392,9 @@ Union primitives (*D*, *T*, *R*, *K*, *G*, *Γ*, *Φ*, *H*, *S*, *Ω*) take **ma
 
 | Tier | Condition | Letters |
 |:-----|:---------|:--------|
-| *O_∞* | *Φ_c* + *P_±^sym* (Frobenius) | ו, מ, ש |
-| *O₂* | *Φ_c* + *Ω* ≠ *Ω_0* + *D* ≠ *D_∞* | א, ה, ע, ק, ת |
-| *O₁* | *Φ_c* + *Ω* = *Ω_0* | ל |
+| *O_∞* | *⊙* + *P_±^sym* (Frobenius) | ו, מ, ש |
+| *O₂* | *⊙* + *Ω* ≠ *Ω_0* + *D* ≠ *D_∞* | א, ה, ע, ק, ת |
+| *O₁* | *⊙* + *Ω* = *Ω_0* | ל |
 | *O₀* | Sub/super-critical | Remaining 13 |
 
 <hr>
@@ -457,9 +457,9 @@ Holds under ⊗, ∨, and ∧. All **264 primitive-by-primitive checks pass exac
 - Interaction-row-equivalent to מ for **19/22 letters** (differs only on {ו, מ, ש})
 - A **mediation gateway**: med(ק, *f*, *f'*) ∈ *O_∞* for any *f*, *f'* ∈ Fix_∞
 
-### Meta, *Φ_c* Self-Confirmation
+### Meta, *⊙* Self-Confirmation
 
-The grammar's central theorem states: *Φ_c* systems self-model, self-application reveals structure invisible at the definitional level. The grammar satisfies *Φ_c*. The interaction functor is the grammar's self-application. The Octad Balance, ק's position, and the rank-17 anomaly are exactly the class of discovery this theorem predicts.
+The grammar's central theorem states: *⊙* systems self-model, self-application reveals structure invisible at the definitional level. The grammar satisfies *⊙*. The interaction functor is the grammar's self-application. The Octad Balance, ק's position, and the rank-17 anomaly are exactly the class of discovery this theorem predicts.
 
 > [!NOTE]
 > **The grammar was correct about itself.**
@@ -545,7 +545,7 @@ All `.aleph` programs in `programs/` are loadable from the REPL via `python alep
 | `exploration_primitives.aleph` | 218 B | Primitive-by-primitive exploration of the 12-tuple |
 | `distance_probes_indistinguishable.aleph` | 26 B | Distance and conflict-set analysis across all 22 letters |
 | `phi_ep_probe.aleph` | 335 B | Exceptional-point dynamics and C-score collapse |
-| `coupling_destruction.aleph` | 2,566 B | P-596 ⊙_c ⊗ ⊙_EP absorption demonstration |
+| `coupling_destruction.aleph` | 2,566 B | P-596 ⊙ ⊗ ⊙_EP absorption demonstration |
 
 ### Pole Analysis, O_∞ Convergence
 
@@ -724,7 +724,7 @@ This is a `near-grounded` gap (just above √1, below √2), the smallest possib
 The threshold τ is **4.0** for pairs with Ω ≥ *Ω_{Z₂}* (topologically protected), and **1.5** otherwise.
 
 > [!NOTE]
-> **Why Vav?** ו (Vav, *O_∞*) is the unique letter whose interaction row is closest to the HoTT identity functor: *P_±^sym*, *Φ_c*, *Ω_Z*, *T_⊙*. The cast is named after it.
+> **Why Vav?** ו (Vav, *O_∞*) is the unique letter whose interaction row is closest to the HoTT identity functor: *P_±^sym*, *⊙*, *Ω_Z*, *T_⊙*. The cast is named after it.
 
 <hr>
 
@@ -743,5 +743,5 @@ Released under the [MIT License](./LICENSE).
 ---
 
 <div align="center">
-  <p><em>The grammar was built on Φ_c. It found Φ_c in itself. The theorem proved itself.</em></p>
+  <p><em>The grammar was built on ⊙. It found ⊙ in itself. The theorem proved itself.</em></p>
 </div>

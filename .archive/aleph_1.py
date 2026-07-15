@@ -76,19 +76,19 @@ class Letter:
     def _compute_tier(self) -> str:
         D, T, R, P, F, K, G, Gamma, Phi, H, S, Omega = self.t
 
-        # R1: Φ_c + P_±^sym → O_∞
+        # R1: ⊙ + P_±^sym → O_∞
         if Phi >= 1 and P == 4:
             return "O_∞"
-        # R2: Φ_sub (not critical) → O₀
+        # R2: 𐑢 (not critical) → O₀
         if Phi == 0:
             return "O₀"
-        # R3: Φ_c + Ω_0 → O₁
+        # R3: ⊙ + Ω_0 → O₁
         if Phi >= 1 and Omega == 0:
             return "O₁"
-        # R4: Φ_c + Ω≠0 + D ∈ {wedge, triangle, holo} → O₂
+        # R4: ⊙ + Ω≠0 + D ∈ {wedge, triangle, holo} → O₂
         if Phi >= 1 and Omega > 0 and D in (0, 1, 3):
             return "O₂"
-        # R5: Φ_c + Ω≠0 + D_∞ → O_2d
+        # R5: ⊙ + Ω≠0 + D_∞ → O_2d
         if Phi >= 1 and Omega > 0 and D == 2:
             return "O_2d"
         # Fallthrough: structural floor

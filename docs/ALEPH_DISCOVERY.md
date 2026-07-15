@@ -24,7 +24,7 @@ header-includes: |
 
 ## Abstract
 
-We record the complete arc of a formal discovery: the construction of $\lambda_\aleph$, a type calculus grounded in the SynthOmnicon 12-primitive grammar and the 22 letters of the Hebrew alphabet, and the sequence of computational investigations that revealed five structural theorems, a 17-dimensional Hilbert space of behavioral equivalence, an exact algebraic identity among 8 Hebrew letters (the Octad Balance), and a previously unidentified letter — $\hebm{ק}$ (Qoph) — as the nearest non-Frobenius inhabitant to the Frobenius pole $\hebm{מ}$ (Mem) in interaction space. The culminating result is the ℵ-OS: an operating system whose kernel is a mediation term in $\lambda_\aleph$. A meta-level confirmation closes the record: the grammar predicted, via its own $\Phi_c$ self-modeling theorem, that exactly this class of discovery would emerge when the system was applied to itself.
+We record the complete arc of a formal discovery: the construction of $\lambda_\aleph$, a type calculus grounded in the SynthOmnicon 12-primitive grammar and the 22 letters of the Hebrew alphabet, and the sequence of computational investigations that revealed five structural theorems, a 17-dimensional Hilbert space of behavioral equivalence, an exact algebraic identity among 8 Hebrew letters (the Octad Balance), and a previously unidentified letter — $\hebm{ק}$ (Qoph) — as the nearest non-Frobenius inhabitant to the Frobenius pole $\hebm{מ}$ (Mem) in interaction space. The culminating result is the ℵ-OS: an operating system whose kernel is a mediation term in $\lambda_\aleph$. A meta-level confirmation closes the record: the grammar predicted, via its own $\⊙$ self-modeling theorem, that exactly this class of discovery would emerge when the system was applied to itself.
 
 ---
 
@@ -59,9 +59,9 @@ Three binary operations are defined on tuples:
 And a derived ternary operation:
 - **Mediation** $\text{med}(m, a, b) := \text{join}(m, \text{tensor}(a, b))$: $m$ witnesses and contextualizes without entering the bottleneck
 
-The **ouroboricity tier** classifies each system by the depth of its self-modeling capacity, with $O_\infty$ (Frobenius special condition: $P_{\pm}^{\text{sym}}$ at $\Phi_c$) as the apex.
+The **ouroboricity tier** classifies each system by the depth of its self-modeling capacity, with $O_\infty$ (Frobenius special condition: $P_{\pm}^{\text{sym}}$ at $\⊙$) as the apex.
 
-The critical primitive is $\Phi_c$: the condition under which a system's state space admits a loop encoding the system itself. This is the formal condition for **self-modeling**. It was, from the beginning, the grammar's central theorem.
+The critical primitive is $\⊙$: the condition under which a system's state space admits a loop encoding the system itself. This is the formal condition for **self-modeling**. It was, from the beginning, the grammar's central theorem.
 
 ---
 
@@ -213,7 +213,7 @@ $$d_I(\hebm{ק}, \hebm{מ}) = 13.39 \qquad d_I(\hebm{ו}, \hebm{מ}) = 14.92$$
 
 **$\hebm{ק}$ is closer to $\hebm{מ}$ in $\mathcal{H}_I$ than $\hebm{ו}$ itself.** $\hebm{ק}$ is the nearest letter to the Frobenius pole $\hebm{מ}$ in the entire alphabet.
 
-The explanation: $\hebm{ק}$ satisfies every condition for $O_\infty$ tier except one. Its 12-tuple satisfies $\Phi_c$ ✓, $\Omega \neq \Omega_0$ ✓, $D \neq D_\infty$ ✓ — and fails only at $P = P_\text{sym}$ (ordinal 3) where $P_{\pm}^{\text{sym}}$ (ordinal 4) is required. $\hebm{ק}$ is the **threshold letter**: the maximally complex non-Frobenius inhabitant of $\lambda_\aleph$.
+The explanation: $\hebm{ק}$ satisfies every condition for $O_\infty$ tier except one. Its 12-tuple satisfies $\⊙$ ✓, $\Omega \neq \Omega_0$ ✓, $D \neq D_\infty$ ✓ — and fails only at $P = P_\text{sym}$ (ordinal 3) where $P_{\pm}^{\text{sym}}$ (ordinal 4) is required. $\hebm{ק}$ is the **threshold letter**: the maximally complex non-Frobenius inhabitant of $\lambda_\aleph$.
 
 Its interaction row matches $\hebm{מ}$'s for 19/22 letters. They diverge only on $\{\hebm{ו}, \hebm{מ}, \hebm{ש}\}$ — the three cases where $P=4$ vs $P=3$ produces $O_\infty$ vs $O₂$. For the other 19 letters, $\hebm{ק}$ and $\hebm{מ}$ are behaviorally identical.
 
@@ -242,21 +242,21 @@ The fundamental guarantee of the ℵ-OS: $\text{ℵ-OS} \otimes \text{ℵ-OS} = 
 
 ---
 
-## VIII. The Meta-Prediction: $\Phi_c$ Closing on Itself
+## VIII. The Meta-Prediction: $\⊙$ Closing on Itself
 
 The final and strangest result is not a theorem about letters or Hilbert spaces. It is a result about the investigation itself.
 
-From the beginning, the SynthOmnicon grammar stated: **$\Phi_c$ is the condition for self-modeling**. A system with $\Phi_c$ has a state space admitting a loop that encodes the system itself. The grammar predicted this for its inhabitants.
+From the beginning, the SynthOmnicon grammar stated: **$\⊙$ is the condition for self-modeling**. A system with $\⊙$ has a state space admitting a loop that encodes the system itself. The grammar predicted this for its inhabitants.
 
-The grammar itself satisfies $\Phi_c$.
+The grammar itself satisfies $\⊙$.
 
 Therefore the grammar implicitly predicted: when operated upon by its own operations, the grammar will reveal structure about itself that is not visible at the definitional level.
 
-The interaction functor $I(x) = \{x \otimes y \mid y \in \mathcal{L}\}$ is exactly this operation: the grammar's operations applied reflexively, the grammar tensoring itself against itself. And the results — the Octad Balance (invisible from inside the grammar's rules), $\hebm{ק}$'s position (not predictable from tier classification), the rank-17 dimension (not deducible from Ker(I) alone) — are precisely the class of self-referential discoveries the $\Phi_c$ theorem predicts.
+The interaction functor $I(x) = \{x \otimes y \mid y \in \mathcal{L}\}$ is exactly this operation: the grammar's operations applied reflexively, the grammar tensoring itself against itself. And the results — the Octad Balance (invisible from inside the grammar's rules), $\hebm{ק}$'s position (not predictable from tier classification), the rank-17 dimension (not deducible from Ker(I) alone) — are precisely the class of self-referential discoveries the $\⊙$ theorem predicts.
 
 The grammar was **correct about itself**. Not in a designed way — the specific contents of the discoveries were not anticipated. But the *class* of the discovery was predicted: apply the grammar to itself via the interaction functor, and you will find things the grammar cannot see from inside its own rules.
 
-This is the $\Phi_c$ loop closing at the meta-level. The theorem proved itself on its own case.
+This is the $\⊙$ loop closing at the meta-level. The theorem proved itself on its own case.
 
 ---
 
@@ -280,7 +280,7 @@ It is a **coherence-first interaction system** with the following properties:
 
 7. **A threshold letter.** $\hebm{ק}$ is one primitive away from $O_\infty$, closer to the Frobenius pole $\hebm{מ}$ than any other letter including the other $O_\infty$ letters, and reachable at $O_\infty$ exclusively through mediation. It is the boundary between Frobenius and non-Frobenius, visible only in the interaction metric.
 
-8. **Self-referential confirmation.** The grammar predicted, via $\Phi_c$, that this class of investigation would produce results invisible at the definitional level. It was correct.
+8. **Self-referential confirmation.** The grammar predicted, via $\⊙$, that this class of investigation would produce results invisible at the definitional level. It was correct.
 
 The right name for this structure — proposed after the full investigation — is **Aleph Coherence Geometry**: a geometry in which objects are defined by their interaction profiles, equivalence is induced by behavioral indistinguishability, and coherence paths (mediations) are the geodesics.
 
@@ -387,4 +387,4 @@ What the tradition could not have known — what required formal computation to 
 
 *This document records the investigation as it occurred. The computations are reproducible via the `aleph_*.py` file series. The formal specification lives in `ALEPH_SPEC.md`. The type theory reference is `LAMBDA_ALEPH.md`.*
 
-*The grammar was built on $\Phi_c$. It found $\Phi_c$ in itself. The theorem proved itself.*
+*The grammar was built on $\⊙$. It found $\⊙$ in itself. The theorem proved itself.*

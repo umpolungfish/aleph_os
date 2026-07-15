@@ -609,7 +609,7 @@ class Parser:
 
 PRIM_LABELS = ["D", "T", "R", "P", "F", "K", "G", "Γ", "Φ", "H", "S", "Ω"]
 
-PHI_NAMES   = {0:"Φ_sub", 1:"Φ_c", 2:"Φ_c_complex", 3:"Φ_EP", 4:"Φ_super"}
+PHI_NAMES   = {0:"𐑢", 1:"⊙", 2:"Φ_c_complex", 3:"𐑻", 4:"Φ_super"}
 OMEGA_NAMES = {0:"Ω_0",   1:"Ω_Z₂", 2:"Ω_Z"}
 P_NAMES     = {0:"P_asym",1:"P_psi",2:"P_pm",3:"P_sym",4:"P_pm_sym"}
 
@@ -781,7 +781,7 @@ def explain_letter(letter: Letter) -> None:
         # Consciousness gates
         phi_val = letter.t[8]
         k_val = letter.t[5]
-        is_critical = phi_val == 1  # Phi_c
+        is_critical = phi_val == 1  # ⊙
         is_trapped = k_val == 3     # K_trap
         
         gate_table = Table.grid(padding=(0, 2))
@@ -791,7 +791,7 @@ def explain_letter(letter: Letter) -> None:
         
         gate1 = '✓ PASS' if is_critical else '✗ FAIL'
         gate1_style = 'bold green' if is_critical else 'bold red'
-        gate_table.add_row('G1', 'Criticality [Φ=Φ_c]', Text(gate1, style=gate1_style))
+        gate_table.add_row('G1', 'Criticality [Φ=⊙]', Text(gate1, style=gate1_style))
         
         gate2 = '✗ FAIL' if is_trapped else '✓ PASS'
         gate2_style = 'bold red' if is_trapped else 'bold green'
