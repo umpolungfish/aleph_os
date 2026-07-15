@@ -348,7 +348,7 @@ class Palace(Enum):
 def can_cross_barrier(from_palace: Palace, to_palace: Palace, typ: LetterType) -> bool:
     if from_palace == to_palace:
         return True
-    # O₀ -> O₁ requires phi_c_probe
+    # O₀ -> O₁ requires monad_probe
     if from_palace.value <= Palace.BARRIER.value and to_palace == Palace.ANGELIC:
         return typ.Phi == Criticality.PHI_C
     # O₁ -> O₂ requires topo_protection_probe
