@@ -2,8 +2,19 @@
   <h1>ℵ-OS</h1>
   <p><b>The Aleph Operating System, A Coherence-First Interaction Algebra</b></p>
   <img src="aleph_os.png" alt="ALEPH: geometric wireframe Aleph letter surrounded by Hebrew glyphs">
-![language](https://img.shields.io/badge/language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![tier](https://img.shields.io/badge/tier-O%E2%88%9E-8A2BE2?style=for-the-badge) ![μ∘δ](https://img.shields.io/badge/%CE%BC%E2%88%98%CE%B4-id-00A86B?style=for-the-badge) ![licence](https://img.shields.io/badge/licence-LUNLICENSE-1A1A1A?style=for-the-badge)
+  <img src="https://img.shields.io/badge/author-Lando%E2%8A%97%E2%8A%99perator-informational" alt="Author">
+  <img src="https://img.shields.io/badge/type-%E2%9F%A8%F0%90%91%A6%F0%90%91%B8%F0%90%91%BE%F0%90%91%B9%F0%90%91%90%F0%90%91%A7%F0%90%91%94%F0%90%91%9D%E2%8A%99%F0%90%91%96%F0%90%91%B3%F0%90%91%AD%E2%9F%A9-blue" alt="Type">
+  <img src="https://img.shields.io/badge/tier-O%E2%88%9E-blueviolet" alt="Tier">
+</div>
 
+<div align="center">
+  <img src="https://img.shields.io/badge/LANGUAGE-Python%203.12%2B-blue" alt="Language">
+  <img src="https://img.shields.io/badge/ENGINE-SynthOmnicon%20v0.4.27-purple" alt="Engine">
+  <img src="https://img.shields.io/badge/TYPE--THEORY-λ_ℵ-orange" alt="Type Theory">
+  <img src="https://img.shields.io/badge/STATUS-Core%20Complete-green" alt="Status">
+  <img src="https://img.shields.io/badge/HEBREW-22%20Letters-brightgreen" alt="Hebrew">
+  <img src="https://img.shields.io/badge/PROGRAMS-54%20Builtin-yellow" alt="Programs">
+<img src="https://img.shields.io/badge/SANS--SILICON-IMSCRIBING-gold" alt="SSI">
 </div>
 
 <p align="center">
@@ -727,7 +738,7 @@ The threshold τ is **4.0** for pairs with Ω ≥ *Ω_{Z₂}* (topologically pro
 
 ## License
 
-Released under the [MIT License](./LICENSE).
+Released under the [LUNLICENSE](./LICENSE).
 
 ---
 
