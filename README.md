@@ -494,7 +494,8 @@ The operating system is a **Frobenius fixed point**, idempotent under self-compo
 
 ## Investigation Pipeline
 
-Each file represents a stage of discovery. Run them in order; each builds on the last.
+Each file answers one question about the letter space. They run in order; each builds
+on the last.
 
 ### 1️⃣ `aleph_functor.py`, *What is the internal geometry of the letter space?*
 
@@ -664,7 +665,7 @@ The IMASM (IMplicit ASsembly Machine) programs implement corpus analysis engines
 
 ## exOS Connection
 
-The ALEPH program suite has been ported to [exOS](https://github.com/USER/exOS), a bare-metal x86_64 Rust `no_std` UEFI kernel that compiles all 46 ALEPH programs plus 6 IMASM programs (52 total) into the kernel binary as built-in investigations.
+The ALEPH program suite has been ported to [exOS](../exOS), a bare-metal x86_64 Rust `no_std` UEFI kernel that compiles all 46 ALEPH programs plus 6 IMASM programs (52 total) into the kernel binary as built-in investigations.
 
 - **Python ℵ-OS** (this repository): Reference implementation, interactive REPL, investigation pipeline
 - **exOS** (Rust kernel): Native x86_64 port with ALFS filesystem, serial REPL, ParaASM VM
@@ -679,7 +680,7 @@ All programs in `programs/` are source-identical between both implementations. T
 |:---------|:-------|:----------------------|
 | [`docs/ALEPH_SPEC.md`](docs/ALEPH_SPEC.md) | Formal specification | Understand the calculus axiomatically (typing rules, reductions, C1–C4, §10 ℵ-OS) |
 | [`docs/LAMBDA_ALEPH.md`](docs/LAMBDA_ALEPH.md) | Type theory reference | See the categorical model, collapse attack analysis, conditional univalence |
-| [`docs/ALEPH_DISCOVERY.md`](docs/ALEPH_DISCOVERY.md) | Narrative record | Follow the investigation from inception to completion |
+| [`docs/ALEPH_DISCOVERY.md`](docs/ALEPH_DISCOVERY.md) | Investigation record | Read how each result is reached |
 | [`docs/TECHNICAL_CONTRIBUTIONS.md`](docs/TECHNICAL_CONTRIBUTIONS.md) | Academic paper | Present the results to a mathematical audience |
 | [`docs/HEBREW_TYPE_LANGUAGE.md`](docs/HEBREW_TYPE_LANGUAGE.md) | Alphabet encoding | See how each letter was assigned its 12-primitive tuple |
 | [`docs/PRIMITIVE_THEOREMS.md`](docs/PRIMITIVE_THEOREMS.md) | Formal theorem registry | Reference §23 (Frobenius non-synthesizability) and all prior theorems |
