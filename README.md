@@ -22,7 +22,7 @@ grounded in the SynthOmnicon 12-primitive grammar and the 22 Hebrew letters:
 identity is behavioral equivalence under the interaction functor, coherence
 (mediation) is primary, infinity is multi-polar (three Frobenius fixed points
 ו, מ, ש), and the Aleph operator α builds an irreducible path-memory tower.
-Every process is a λ_ℵ term — scheduling is mediation, memory is join, IPC is
+Every process is a λ_ℵ term - scheduling is mediation, memory is join, IPC is
 tensor, security is α-gating (C1–C4). It is the sans-silicon counterpart to
 the bare-metal exOS: the same grammar as algebra rather than hardware.
 
